@@ -22,7 +22,7 @@ async function render() {
   );
 }
 
-test("server-renders the briefing home page", async () => {
+test("server-renders the compact briefing home page", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -30,7 +30,7 @@ test("server-renders the briefing home page", async () => {
   const html = await response.text();
   assert.match(html, /<title>早晚读讯 · 私人阅读页面<\/title>/);
   assert.match(html, /早晚读讯/);
-  assert.match(html, /第一期正在准备/);
+  assert.match(html, /等待下一次更新/);
   assert.match(html, /深度阅读/);
-  assert.match(html, /首轮自动采集待启动/);
+  assert.match(html, /仅收录可追溯的原文链接/);
 });
