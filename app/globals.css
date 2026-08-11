@@ -144,6 +144,14 @@ main {
   text-underline-offset: 4px;
 }
 
+.digest-entry p {
+  margin: 12px 0 0;
+  color: #41413e;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  line-height: 1.9;
+}
+
 .entry-source {
   margin-top: 8px;
   color: var(--muted);

@@ -12,6 +12,7 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
         <span>【{number}】</span>
         <a href={item.href}>{item.title}</a>
       </h2>
+      {item.details?.map((detail) => <p key={detail}>{detail}</p>)}
       <div className="entry-source">
         来源：{item.source} · {item.category} · {item.time}
         <a href={item.href} target="_blank" rel="noreferrer">
