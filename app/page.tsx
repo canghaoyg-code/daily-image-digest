@@ -5,81 +5,75 @@ import {
   type BriefingItem,
 } from "./briefing-data";
 
-function ReadingItem({ item, number }: { item: BriefingItem; number: number }) {
+function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
   return (
-    <article className="reading-item">
-      <span className="digest-number">【{number}】</span>
-      <div className="digest-content">
-        <h3>
-          <a href={item.href}>{item.title}</a>
-        </h3>
-        <p>{item.summary}</p>
-        <div className="reading-item-meta">
-          <span>{item.source}</span>
-          <span>{item.category}</span>
-          <span>{item.time}</span>
-        </div>
+    <section className="digest-entry">
+      <h2>
+        <span>【{number}】</span>
+        <a href={item.href}>{item.title}</a>
+      </h2>
+      <p>{item.summary}</p>
+      <div className="entry-source">
+        来源：{item.source} · {item.category} · {item.time}
       </div>
-    </article>
+    </section>
   );
 }
 
-function ReadingSection({
+function DigestGroup({
   title,
   items,
-  emptyLabel,
 }: {
   title: string;
   items: BriefingItem[];
-  emptyLabel: string;
 }) {
   return (
-    <section className="reading-section" aria-labelledby={`${title}-heading`}>
-      <div className="section-title-row">
-        <h2 id={`${title}-heading`}>{title}</h2>
-        {items.length > 0 && <span>{items.length} 篇</span>}
-      </div>
-      {items.length > 0 ? (
-        <div className="reading-list">
-          {items.map((item, index) => (
-            <ReadingItem key={item.title} item={item} number={index + 1} />
-          ))}
-        </div>
-      ) : (
-        <p className="empty-label">{emptyLabel}</p>
-      )}
+    <section className="digest-group" aria-labelledby={`${title}-heading`}>
+      <h1 id={`${title}-heading`}>{title}</h1>
+      {items.map((item, index) => (
+        <DigestEntry key={item.title} item={item} number={index + 1} />
+      ))}
     </section>
   );
 }
 
 export default function Home() {
   return (
-    <main>
-      <header className="site-header">
-        <a className="site-name" href="#top" id="top">
-          早晚读讯
-        </a>
-        <span>07:00 · 20:00</span>
+    <>
+      <header className="topbar">
+        <div className="topbar-inner">
+          <a className="brand" href="#today">
+            早晚读讯
+          </a>
+          <span className="tagline">阅读 · 筛选 · 记录</span>
+          <nav aria-label="主导航">
+            <a href="#today">今日</a>
+            <a href="#deep-reading">深度阅读</a>
+          </nav>
+        </div>
       </header>
 
-      <section className="status" aria-labelledby="status-heading">
-        <p>{briefingMeta.label}</p>
-        <h1 id="status-heading">{briefingMeta.headline}</h1>
-        <span>{briefingMeta.updatedAt}</span>
-      </section>
+      <main>
+        <article className="daily-post" id="today">
+          <header className="post-header">
+            <h1>【早晚读讯】本次精选</h1>
+            <p>
+              {briefingMeta.label} · {briefingMeta.updatedAt}
+            </p>
+          </header>
 
-      <ReadingSection
-        title="新闻"
-        items={briefingItems}
-        emptyLabel="更新后会在这里显示。"
-      />
-      <ReadingSection
-        title="深度阅读"
-        items={deepReads}
-        emptyLabel="更新后会在这里显示。"
-      />
+          <div className="post-note">
+            本页内容来自公开发布的原文与可靠媒体；来自 X 的内容均会明确标为线索或观点。
+          </div>
 
-      <footer>仅收录可追溯的原文链接</footer>
-    </main>
+          <DigestGroup title="今日资讯" items={briefingItems} />
+          <DigestGroup title="深度阅读" items={deepReads} />
+
+          <footer>
+            每天 07:00 与 20:00 更新 · 仅收录可追溯的原文链接
+          </footer>
+        </article>
+      </main>
+    </>
   );
 }
