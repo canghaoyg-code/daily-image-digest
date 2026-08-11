@@ -58,10 +58,8 @@ export default function Home() {
       <main>
         <article className="daily-post" id="today">
           <header className="post-header">
-            <h1>【早晚读讯】本次精选</h1>
-            <p>
-              {briefingMeta.label} · {briefingMeta.updatedAt}
-            </p>
+            <h1>【{briefingMeta.label}】</h1>
+            <p>{briefingMeta.updatedAt}</p>
           </header>
 
           <DigestGroup title="今日资讯" items={briefingItems} />
