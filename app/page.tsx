@@ -12,14 +12,11 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
         <span>【{number}】</span>
         <a href={item.href}>{item.title}</a>
       </h2>
-      <p>{item.summary}</p>
-      {item.details?.map((detail) => (
-        <p className="entry-detail" key={detail}>
-          {detail}
-        </p>
-      ))}
       <div className="entry-source">
         来源：{item.source} · {item.category} · {item.time}
+        <a href={item.href} target="_blank" rel="noreferrer">
+          原文
+        </a>
       </div>
     </section>
   );
@@ -66,10 +63,6 @@ export default function Home() {
               {briefingMeta.label} · {briefingMeta.updatedAt}
             </p>
           </header>
-
-          <div className="post-note">
-            本页以媒体、官方发布与研究机构原文为主；X 只作为线索或观点补充，并会明确标注。
-          </div>
 
           <DigestGroup title="今日资讯" items={briefingItems} />
           <DigestGroup title="深度阅读" items={deepReads} />

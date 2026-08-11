@@ -1,6 +1,6 @@
 export type BriefingItem = {
   title: string;
-  summary: string;
+  summary?: string;
   category: string;
   source: string;
   kind: "新闻" | "观点" | "深读";
