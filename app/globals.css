@@ -162,6 +162,12 @@ main {
   line-height: 1.9;
 }
 
+.digest-entry .entry-detail {
+  margin-top: 8px;
+  color: #62615c;
+  font-size: 15px;
+}
+
 .entry-source {
   margin-top: 12px;
   color: var(--muted);

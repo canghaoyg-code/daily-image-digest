@@ -13,6 +13,11 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
         <a href={item.href}>{item.title}</a>
       </h2>
       <p>{item.summary}</p>
+      {item.details?.map((detail) => (
+        <p className="entry-detail" key={detail}>
+          {detail}
+        </p>
+      ))}
       <div className="entry-source">
         来源：{item.source} · {item.category} · {item.time}
       </div>
@@ -63,7 +68,7 @@ export default function Home() {
           </header>
 
           <div className="post-note">
-            本页内容来自公开发布的原文与可靠媒体；来自 X 的内容均会明确标为线索或观点。
+            本页以媒体、官方发布与研究机构原文为主；X 只作为线索或观点补充，并会明确标注。
           </div>
 
           <DigestGroup title="今日资讯" items={briefingItems} />

@@ -6,7 +6,7 @@ export type BriefingItem = {
   kind: "新闻" | "观点" | "深读";
   time: string;
   href: string;
-  featured?: boolean;
+  details?: string[];
 };
 
 export const briefingMeta = {
@@ -25,6 +25,10 @@ export const briefingItems: BriefingItem[] = [
     kind: "新闻",
     time: "6 月 16 日",
     href: "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260616.pdf",
+    details: [
+      "这不是政策决定本身，而是会议中委员对经济与通胀的判断记录。AI 相关资本开支正在成为观察日本需求强度的新变量。",
+      "值得继续看的是：技术投资带来的价格压力，是否会改变日本银行对后续利率路径的判断。",
+    ],
   },
   {
     title: "新加坡：AI 投资正在抵消能源成本与关税压力",
@@ -35,6 +39,9 @@ export const briefingItems: BriefingItem[] = [
     kind: "新闻",
     time: "7 月 27 日",
     href: "https://www.channelnewsasia.com/singapore/economy-ai-oil-prices-middle-east-conflict-trump-tariffs-mas-6279896",
+    details: [
+      "这条消息把科技投资和宏观压力放在同一张图里：服务器、电子与数据中心需求在支撑部分增长，能源与贸易摩擦则带来另一端的不确定性。",
+    ],
   },
   {
     title: "X 线索｜澳大利亚与越南将深化防务与关键矿产合作",
@@ -47,16 +54,6 @@ export const briefingItems: BriefingItem[] = [
     href: "https://x.com/business/status/2087014931497472425",
   },
   {
-    title: "X 线索｜CNBC：新加坡增长预期继续受 AI 投资带动",
-    summary:
-      "来自 CNBC 关注动态的即时报道线索；与已收录的 MAS 宏观判断方向一致，但仍保留其线索属性。",
-    category: "商业与市场",
-    source: "X · CNBC",
-    kind: "观点",
-    time: "今天",
-    href: "https://x.com/CNBC/status/2087010995084431673",
-  },
-  {
     title: "X 线索｜通用汽车拟出售印第安纳电池合资项目部分权益",
     summary:
       "来自 Bloomberg 关注动态的即时报道线索，涉及通用汽车与三星 SDI 的电池合资项目；等待企业公告或独立报道进一步确认。",
@@ -67,16 +64,6 @@ export const briefingItems: BriefingItem[] = [
     href: "https://x.com/business/status/2087013665144758446",
   },
   {
-    title: "X 线索｜市场关注日银 9 月会议的进一步加息可能",
-    summary:
-      "来自外汇交易员转述的市场消息；它与日银近期关于通胀与货币宽松程度的公开讨论相呼应，但不作为政策预告。",
-    category: "宏观与市场",
-    source: "X · 外汇交易员",
-    kind: "观点",
-    time: "今天",
-    href: "https://x.com/fxtrader/status/2087011666991145237",
-  },
-  {
     title: "樟宜将启动 40 亿新元空管系统与基础设施升级",
     summary:
       "新加坡计划分阶段改造空管设施和三十多套航行系统，并评估让 AI 协助空管员进行规划与态势判断。",
@@ -85,6 +72,9 @@ export const briefingItems: BriefingItem[] = [
     kind: "新闻",
     time: "7 月 22 日",
     href: "https://www.channelnewsasia.com/singapore/changi-airport-control-tower-upgrading-4-billion-air-navigation-6270166",
+    details: [
+      "它不只是机场扩建消息，也反映了交通基础设施把 AI 用于规划、调度与辅助判断的更广泛趋势。",
+    ],
   },
   {
     title: "Google 推出面向防御方的 Gemini 3.5 Flash Cyber",
@@ -95,6 +85,9 @@ export const briefingItems: BriefingItem[] = [
     kind: "新闻",
     time: "7 月 21 日",
     href: "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
+    details: [
+      "重点不在“更强的模型”本身，而在其被限定用于漏洞发现、验证与修复等防御场景，显示 AI 安全能力正进入更具体的部署阶段。",
+    ],
   },
   {
     title: "澳大利亚与加拿大把关键矿产合作延伸至防务产业协作",
@@ -105,6 +98,48 @@ export const briefingItems: BriefingItem[] = [
     kind: "新闻",
     time: "3 月 5 日",
     href: "https://www.pm.gov.au/media/australia-canada-joint-statement",
+    details: [
+      "关键矿产正在从贸易议题转向产业安全议题。合作延伸到供应链韧性与防务技术，意味着资源国之间的政策联动值得长期跟踪。",
+    ],
+  },
+  {
+    title: "IMF：科技动能托住增长，但全球经济仍处在冲突与能源冲击之间",
+    summary:
+      "国际货币基金组织在 7 月更新中预计，2026 年全球增长为 3.0%；技术相关投资支撑部分经济体，但能源冲击与金融市场重估仍是主要风险。",
+    category: "宏观与市场",
+    source: "国际货币基金组织",
+    kind: "新闻",
+    time: "7 月 8 日",
+    href: "https://www.imf.org/en/publications/weo/issues/2026/07/08/world-economic-outlook-update-july-2026",
+    details: [
+      "这份判断把 AI 驱动的技术链需求与地缘冲突的拖累并列，是理解今年市场“局部很热、整体仍脆弱”的一条宏观线索。",
+    ],
+  },
+  {
+    title: "IEA：油市开始修复，但供应恢复仍取决于局势是否继续缓和",
+    summary:
+      "国际能源署称，随着霍尔木兹海峡运输恢复，6 月全球石油供应明显回升；不过产量仍低于冲突前水平，后续路径高度依赖局势发展。",
+    category: "能源与地缘经济",
+    source: "国际能源署",
+    kind: "新闻",
+    time: "7 月",
+    href: "https://www.iea.org/reports/oil-market-report-July-2026?mode=overview",
+    details: [
+      "能源价格会通过通胀、航运与企业成本传导到更广泛的市场。这条数据可与 IMF 的宏观判断一起阅读。",
+    ],
+  },
+  {
+    title: "Google DeepMind 推出 Co-Scientist，尝试把多智能体用于科研假设生成",
+    summary:
+      "Google DeepMind 介绍了一套以 Gemini 为基础的多智能体系统，用于迭代提出、讨论和改进生命科学等复杂问题的研究假设。",
+    category: "AI 与研究",
+    source: "Google DeepMind / Nature",
+    kind: "新闻",
+    time: "5 月 19 日",
+    href: "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/",
+    details: [
+      "它更像研究者的协作工具而不是自动得出结论的机器；价值在于扩大假设空间，最终验证仍由领域专家完成。",
+    ],
   },
 ];
 
@@ -118,6 +153,9 @@ export const deepReads: BriefingItem[] = [
     kind: "深读",
     time: "7 月 29 日",
     href: "https://openai.com/index/chatgpt-for-academic-researchers/",
+    details: [
+      "文章不仅介绍支持计划，也给出科研人员怎样把模型用于文献、假设、代码与协作的具体工作流。",
+    ],
   },
   {
     title: "Claude Code 是怎样从内部工具走向产品的",
@@ -128,6 +166,9 @@ export const deepReads: BriefingItem[] = [
     kind: "深读",
     time: "7 月 6 日",
     href: "https://www.anthropic.com/features/making-of-claude-code",
+    details: [
+      "适合关注一个内部实验如何逐步形成产品：团队边界、用户反馈与可靠性要求，往往比模型能力本身更决定产品形态。",
+    ],
   },
   {
     title: "代理式 AI 正在怎样改变科学计算？",
@@ -138,6 +179,9 @@ export const deepReads: BriefingItem[] = [
     kind: "深读",
     time: "7 月 28 日",
     href: "https://openai.com/index/scientific-computing-agentic-ai/",
+    details: [
+      "它关注的不是用 AI 替代科学家，而是那些长期缺乏维护、却又拖慢研究节奏的软件基础设施。",
+    ],
   },
   {
     title: "AI 生物安全：能力扩展与防滥用如何并行？",
@@ -148,5 +192,8 @@ export const deepReads: BriefingItem[] = [
     kind: "深读",
     time: "7 月 16 日",
     href: "https://deepmind.google/blog/our-approach-to-bioresilience/",
+    details: [
+      "文章把生命科学的正向应用与能力滥用风险一起讨论，适合作为理解 AI 安全治理具体落点的材料。",
+    ],
   },
 ];
