@@ -30,7 +30,7 @@ test("server-renders the compact briefing home page", async () => {
   const html = await response.text();
   assert.match(html, /<title>早晚读讯 · 私人阅读页面<\/title>/);
   assert.match(html, /早晚读讯/);
-  assert.match(html, /等待下一次更新/);
+  assert.match(html, /已更新/);
   assert.match(html, /深度阅读/);
   assert.match(html, /仅收录可追溯的原文链接/);
 });

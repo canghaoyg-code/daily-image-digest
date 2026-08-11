@@ -9,61 +9,74 @@ export type BriefingItem = {
   featured?: boolean;
 };
 
-// The scheduled collection task replaces these preview entries with verified items.
+export const briefingMeta = {
+  label: "本次采集",
+  headline: "已更新",
+  updatedAt: "8 月 11 日 · 11:30",
+};
+
 export const briefingItems: BriefingItem[] = [
   {
-    title: "首轮采集将在下一次定时任务后显示",
+    title: "日银内部意见：AI 相关需求正在推高经济与价格",
     summary:
-      "系统会将重复报道合并，并保留原始来源、发布时间和核验状态，避免把同一事件读上好几遍。",
-    category: "更新说明",
-    source: "早晚读讯",
+      "日本银行 6 月会议意见提到，AI 需求正高于预期地推升经济活动与价格；委员对后续利率调整仍有分歧。",
+    category: "宏观与市场",
+    source: "日本银行",
     kind: "新闻",
-    time: "等待采集",
-    href: "#collection",
-    featured: true,
+    time: "6 月 16 日",
+    href: "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260616.pdf",
   },
   {
-    title: "X 关注动态会被整理为可追溯的线索",
+    title: "新加坡：AI 投资正在抵消能源成本与关税压力",
     summary:
-      "官方账号、媒体和个人分析会被分别标注；投资观点和个人判断不会被当成已证实新闻。",
+      "新加坡金管局称，AI 相关的电子、服务器基础设施需求仍在支撑科技部门，但同时提示估值与外部冲击风险。",
     category: "AI 与产业",
-    source: "X 关注列表",
-    kind: "观点",
-    time: "等待采集",
-    href: "#collection",
+    source: "CNA / MAS",
+    kind: "新闻",
+    time: "7 月 27 日",
+    href: "https://www.channelnewsasia.com/singapore/economy-ai-oil-prices-middle-east-conflict-trump-tariffs-mas-6279896",
   },
   {
-    title: "重要新闻保留多来源核验结果",
+    title: "X 线索｜澳大利亚与越南将深化防务与关键矿产合作",
     summary:
-      "政策、市场、公共安全与国际事件优先链接到权威媒体或原始公告，并明确尚待证实的信息。",
+      "来自 Bloomberg 关注动态的即时报道线索；尚未用独立原始公告复核，因此按线索而非事实新闻呈现。",
     category: "国际与社会",
-    source: "核验规则",
-    kind: "新闻",
-    time: "等待采集",
-    href: "#collection",
+    source: "X · Bloomberg",
+    kind: "观点",
+    time: "今天",
+    href: "https://x.com/business/status/2087014931497472425",
+  },
+  {
+    title: "X 线索｜CNBC：新加坡增长预期继续受 AI 投资带动",
+    summary:
+      "来自 CNBC 关注动态的即时报道线索；与已收录的 MAS 宏观判断方向一致，但仍保留其线索属性。",
+    category: "商业与市场",
+    source: "X · CNBC",
+    kind: "观点",
+    time: "今天",
+    href: "https://x.com/CNBC/status/2087010995084431673",
   },
 ];
 
 export const deepReads: BriefingItem[] = [
   {
-    title: "深度阅读不追求更长，而追求更值得读",
+    title: "给 10 万研究者开放前沿模型，能带来什么？",
     summary:
-      "每篇文章会说明它的核心论点、证据质量与不同看法，帮助你在几秒内决定是否打开原文。",
-    category: "阅读方法",
-    source: "早晚读讯",
+      "OpenAI 介绍面向高校研究者的支持计划，并讨论模型、工具与科研工作流如何结合。",
+    category: "AI 与研究",
+    source: "OpenAI",
     kind: "深读",
-    time: "等待采集",
-    href: "#collection",
-    featured: true,
+    time: "7 月 29 日",
+    href: "https://openai.com/index/chatgpt-for-academic-researchers/",
   },
   {
-    title: "优先保留有原创观点的作者文章",
+    title: "Claude Code 是怎样从内部工具走向产品的",
     summary:
-      "来自技术、商业、研究和社会观察领域的长文会与即时新闻分开呈现，不让观点淹没事实。",
-    category: "观点与分析",
-    source: "来源筛选规则",
+      "Anthropic 以产品与工程团队的视角回顾 Claude Code 的形成过程，适合作为 AI 编程工具产品化的案例阅读。",
+    category: "工具与产品",
+    source: "Anthropic",
     kind: "深读",
-    time: "等待采集",
-    href: "#collection",
+    time: "7 月 6 日",
+    href: "https://www.anthropic.com/features/making-of-claude-code",
   },
 ];

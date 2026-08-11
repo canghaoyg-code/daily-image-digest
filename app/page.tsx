@@ -1,4 +1,9 @@
-import { briefingItems, deepReads, type BriefingItem } from "./briefing-data";
+import {
+  briefingItems,
+  briefingMeta,
+  deepReads,
+  type BriefingItem,
+} from "./briefing-data";
 
 function ReadingItem({ item }: { item: BriefingItem }) {
   return (
@@ -21,17 +26,15 @@ function ReadingSection({
   items: BriefingItem[];
   emptyLabel: string;
 }) {
-  const publishedItems = items.filter((item) => item.time !== "等待采集");
-
   return (
     <section className="reading-section" aria-labelledby={`${title}-heading`}>
       <div className="section-title-row">
         <h2 id={`${title}-heading`}>{title}</h2>
-        {publishedItems.length > 0 && <span>{publishedItems.length} 篇</span>}
+        {items.length > 0 && <span>{items.length} 篇</span>}
       </div>
-      {publishedItems.length > 0 ? (
+      {items.length > 0 ? (
         <div className="reading-list">
-          {publishedItems.map((item) => (
+          {items.map((item) => (
             <ReadingItem key={item.title} item={item} />
           ))}
         </div>
@@ -53,9 +56,9 @@ export default function Home() {
       </header>
 
       <section className="status" aria-labelledby="status-heading">
-        <p>今日</p>
-        <h1 id="status-heading">等待下一次更新</h1>
-        <span>北京时间 20:00</span>
+        <p>{briefingMeta.label}</p>
+        <h1 id="status-heading">{briefingMeta.headline}</h1>
+        <span>{briefingMeta.updatedAt}</span>
       </section>
 
       <ReadingSection
