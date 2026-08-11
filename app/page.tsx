@@ -5,15 +5,22 @@ import {
   type BriefingItem,
 } from "./briefing-data";
 
-function ReadingItem({ item }: { item: BriefingItem }) {
+function ReadingItem({ item, number }: { item: BriefingItem; number: number }) {
   return (
-    <a className="reading-item" href={item.href}>
-      <span className="reading-item-source">{item.source}</span>
-      <span className="reading-item-title">{item.title}</span>
-      <span className="reading-item-meta">
-        {item.category} · {item.time}
-      </span>
-    </a>
+    <article className="reading-item">
+      <span className="digest-number">【{number}】</span>
+      <div className="digest-content">
+        <h3>
+          <a href={item.href}>{item.title}</a>
+        </h3>
+        <p>{item.summary}</p>
+        <div className="reading-item-meta">
+          <span>{item.source}</span>
+          <span>{item.category}</span>
+          <span>{item.time}</span>
+        </div>
+      </div>
+    </article>
   );
 }
 
@@ -34,8 +41,8 @@ function ReadingSection({
       </div>
       {items.length > 0 ? (
         <div className="reading-list">
-          {items.map((item) => (
-            <ReadingItem key={item.title} item={item} />
+          {items.map((item, index) => (
+            <ReadingItem key={item.title} item={item} number={index + 1} />
           ))}
         </div>
       ) : (
