@@ -12,7 +12,7 @@ export type BriefingItem = {
 export const briefingMeta = {
   label: "本次采集",
   headline: "已更新",
-  updatedAt: "8 月 11 日 · 12:30",
+  updatedAt: "8 月 11 日 · 13:00",
 };
 
 export const briefingItems: BriefingItem[] = [
@@ -139,6 +139,19 @@ export const briefingItems: BriefingItem[] = [
     href: "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/",
     details: [
       "它更像研究者的协作工具而不是自动得出结论的机器；价值在于扩大假设空间，最终验证仍由领域专家完成。",
+    ],
+  },
+  {
+    title: "热点观察｜市场开始更严苛地审视大型科技公司的 AI 投入回报",
+    summary:
+      "新闻门户的近期市场报道显示，即使大型科技公司继续扩大 AI 基础设施投入，投资者的关注点已从“投入规模”转向收入、利润与兑现节奏。",
+    category: "商业与市场",
+    source: "Le Monde · 新闻门户",
+    kind: "新闻",
+    time: "8 月 6 日",
+    href: "https://www.lemonde.fr/en/economy/article/2026/08/06/us-tech-s-record-investments-no-longer-excite-markets_6756203_19.html",
+    details: [
+      "这是一条从新闻门户发现的热点。它与 IMF 对技术动能和金融重估风险并存的判断相呼应，也提醒我们区分“AI 需求仍强”与“每一笔资本开支都已被市场认可”。",
     ],
   },
 ];
