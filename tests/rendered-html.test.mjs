@@ -32,5 +32,7 @@ test("server-renders the compact briefing home page", async () => {
   assert.match(html, /早晚读讯/);
   assert.match(html, /本次采集/);
   assert.match(html, /深度阅读/);
+  assert.match(html, /Google 推出面向防御方/);
+  assert.match(html, /AI 生物安全/);
   assert.match(html, /每天 07:00 与 20:00 更新/);
 });
