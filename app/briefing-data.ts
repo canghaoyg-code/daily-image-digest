@@ -2,6 +2,7 @@ export type BriefingItem = {
   title: string;
   category: string;
   source: string;
+  sourceType?: string;
   kind: "新闻" | "观点" | "深读";
   time: string;
   href: string;
@@ -11,7 +12,7 @@ export type BriefingItem = {
 export const briefingMeta = {
   label: "哈萨克斯坦 · 乌兹别克斯坦",
   headline: "已更新",
-  updatedAt: "8 月 12 日 · 17:00",
+  updatedAt: "8 月 12 日 · 20:01",
 };
 
 export const briefingItems: BriefingItem[] = [
@@ -162,6 +163,71 @@ export const briefingItems: BriefingItem[] = [
       "欧洲复兴开发银行预计，中亚和蒙古经济体 2026 年增长 5.6%，2027 年增长 5.3%。报告将能源价格波动、供应链中断及主要贸易伙伴增速放缓列为风险因素。",
     ],
   },
+  {
+    title: "乌兹别克斯坦纺织业前五个月产值达 43.4 万亿苏姆",
+    category: "产业与经济",
+    source: "Kun.uz",
+    sourceType: "新闻门户",
+    kind: "新闻",
+    time: "7 月 28 日",
+    href: "https://kun.uz/en/news/list",
+    details: [
+      "Kun.uz 的新闻列表显示，乌兹别克斯坦纺织业前五个月产值为 43.4 万亿苏姆，较上年同期增长 15.4%。",
+      "该门户将条目归入商业资讯栏目，原始页面保留新闻发布时间及单篇报道入口。",
+    ],
+  },
+  {
+    title: "乌兹别克斯坦总统谈苏尔汉河州电站选址与项目成本",
+    category: "能源与基础设施",
+    source: "Kun.uz",
+    sourceType: "新闻门户",
+    kind: "新闻",
+    time: "7 月 27 日",
+    href: "https://kun.uz/en/news/list",
+    details: [
+      "Kun.uz 的新闻列表刊登总统就苏尔汉河州电站项目选址作出的表态，标题称不当选址使项目成本增加 3 亿美元。",
+      "该条以新闻门户的标题和页面可见摘要为准，原文可继续查看相关项目背景。",
+    ],
+  },
+  {
+    title: "哈萨克斯坦新闻门户提示多地区 8 月初可能出现干旱",
+    category: "社会与气象",
+    source: "Tengrinews",
+    sourceType: "新闻门户",
+    kind: "新闻",
+    time: "7 月 24 日",
+    href: "https://en.tengrinews.kz/",
+    details: [
+      "Tengrinews 英文首页的近期资讯列出“8 月将从干旱开始”的天气报道，并指向哈萨克斯坦不同地区的风险说明。",
+      "同一门户的近期列表也包含阿斯塔纳极端天气与当地基础设施、体育场等话题。",
+    ],
+  },
+  {
+    title: "哈萨克斯坦计划推出 Astana Bus 品牌并于 2027 年开始生产电动公交车",
+    category: "交通与制造",
+    source: "The Astana Times",
+    sourceType: "新闻门户",
+    kind: "新闻",
+    time: "5 月 12 日",
+    href: "https://astanatimes.com/category/astana/",
+    details: [
+      "The Astana Times 在阿斯塔纳栏目中刊登了推出 Astana Bus 品牌、并在 2027 年启动电动公交车生产的报道。",
+      "该新闻门户页面保留作者、日期和原始报道入口，条目归入城市与交通相关资讯。",
+    ],
+  },
+  {
+    title: "哈萨克斯坦与乌兹别克斯坦签署投资与贸易合作落实路线图",
+    category: "双边合作",
+    source: "乌兹别克斯坦总统网站",
+    sourceType: "机构发布",
+    kind: "新闻",
+    time: "5 月 29 日",
+    href: "https://president.uz/en/lists/view/9265",
+    details: [
+      "乌兹别克斯坦总统网站称，两国领导人在阿斯塔纳见证签署落实投资与贸易协议的行动计划。",
+      "页面列出的合作领域包括汽车制造、能源、化工、冶金、制药、物流、建材、住房建设和农业等。",
+    ],
+  },
 ];
 
 export const deepReads: BriefingItem[] = [
@@ -219,6 +285,32 @@ export const deepReads: BriefingItem[] = [
     href: "https://www.ebrd.com/home/news-and-events/news/2026/central-asia-and-mongolia-to-see-highest-economic-growth-in-the-ebrd-regions.html",
     details: [
       "区域展望涵盖哈萨克斯坦和乌兹别克斯坦在内的中亚国家，并列出增长预测、能源价格、物流、贸易伙伴经济和地缘风险等资料。",
+    ],
+  },
+  {
+    title: "乌兹别克斯坦：IMF 2026 年第四条款磋商工作人员报告",
+    category: "政策与经济",
+    source: "国际货币基金组织",
+    sourceType: "工作人员报告",
+    kind: "深读",
+    time: "7 月",
+    href: "https://www.elibrary.imf.org/view/journals/002/2026/152/article-A001-en.xml",
+    details: [
+      "工作人员报告讨论乌兹别克斯坦的增长、通胀、能源价格、物流成本、财政与货币政策，以及气候和公共投资相关议题。",
+      "报告原文还列出基准情景、数据表和政策建议的具体章节，可供按主题查阅。",
+    ],
+  },
+  {
+    title: "经合组织：哈萨克斯坦、蒙古和乌兹别克斯坦可持续基础设施中的负责任商业行为",
+    category: "投资与基础设施",
+    source: "经合组织 OECD",
+    sourceType: "研究报告",
+    kind: "深读",
+    time: "2025 年 6 月",
+    href: "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/06/responsible-business-conduct-for-sustainable-infrastructure-in-kazakhstan-mongolia-and-uzbekistan_b898c490/2762f803-en.pdf",
+    details: [
+      "报告涵盖两国基础设施中的交通、能源和采矿等行业，并讨论投资政策、尽职调查和企业行为的制度背景。",
+      "原始 PDF 提供国别章节、政策材料和参考来源，可作为项目与监管信息的延伸阅读。",
     ],
   },
 ];

@@ -14,7 +14,7 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
       </h2>
       {item.details?.map((detail) => <p key={detail}>{detail}</p>)}
       <div className="entry-source">
-        来源：{item.source} · {item.category} · {item.time}
+        来源：{item.source}{item.sourceType ? `（${item.sourceType}）` : ""} · {item.category} · {item.time}
         <a href={item.href} target="_blank" rel="noreferrer">
           原文
         </a>
