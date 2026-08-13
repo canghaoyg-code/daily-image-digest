@@ -12,7 +12,7 @@ export type BriefingItem = {
 export const briefingMeta = {
   label: "哈萨克斯坦 · 乌兹别克斯坦",
   headline: "已更新",
-  updatedAt: "8 月 12 日 · 20:01",
+  updatedAt: "8 月 13 日 · 09:02",
 };
 
 export const briefingItems: BriefingItem[] = [
@@ -28,14 +28,16 @@ export const briefingItems: BriefingItem[] = [
     ],
   },
   {
-    title: "哈萨克斯坦与巴基斯坦加强交通与海运物流合作",
-    category: "交通与物流",
-    source: "Kazakhstan Today",
+    title: "米尔济约耶夫、扎帕罗夫和拉赫蒙将赴阿斯塔纳参加“未来运动会 2026”开幕式",
+    category: "外交与体育",
+    source: "Tengrinews",
+    sourceType: "新闻门户",
     kind: "新闻",
-    time: "7 月 31 日",
-    href: "https://www.kz-today.com/",
+    time: "8 月 13 日",
+    href: "https://tengrinews.kz/news/",
     details: [
-      "Kazakhstan Today 在 7 月 31 日的资讯栏目中发布了哈萨克斯坦与巴基斯坦交通及海运物流合作的消息。",
+      "Tengrinews 新闻页称，乌兹别克斯坦总统米尔济约耶夫、吉尔吉斯斯坦总统扎帕罗夫和塔吉克斯坦总统拉赫蒙将前往阿斯塔纳，参加“未来运动会 2026”开幕式。",
+      "该条保留新闻门户在当天列表中显示的行程与活动信息。",
     ],
   },
   {
@@ -62,25 +64,29 @@ export const briefingItems: BriefingItem[] = [
     ],
   },
   {
-    title: "乌兹别克斯坦将向私营供应商开放液化气市场",
-    category: "能源",
-    source: "Kun.uz",
+    title: "Samruk-Energy 公布 2026 年上半年生产与财务指标",
+    category: "能源与市场",
+    source: "Tengrinews",
+    sourceType: "新闻门户",
     kind: "新闻",
-    time: "7 月 28 日",
-    href: "https://kun.uz/en/news/list",
+    time: "8 月 13 日",
+    href: "https://tengrinews.kz/news/",
     details: [
-      "Kun.uz 的 7 月 28 日新闻列表刊登了乌兹别克斯坦向私营供应商开放液化气市场的消息。",
+      "Tengrinews 当天新闻列表显示，Samruk-Energy 对 2026 年上半年进行汇总，称其生产和财务指标有所增长，并提及 20 个大型项目。",
+      "页面提供报道标题、发布时间和原文入口；具体项目列表以该门户原文为准。",
     ],
   },
   {
-    title: "乌兹别克斯坦上半年电力损耗超过 48 亿千瓦时",
-    category: "能源",
-    source: "Kun.uz",
+    title: "阿拉木图 7 个地区将进行供热管网水压试验",
+    category: "城市与基础设施",
+    source: "Tengrinews",
+    sourceType: "新闻门户",
     kind: "新闻",
-    time: "7 月 28 日",
-    href: "https://kun.uz/en/news/list",
+    time: "8 月 13 日",
+    href: "https://tengrinews.kz/news/",
     details: [
-      "Kun.uz 7 月 28 日的新闻列表报道，乌兹别克斯坦在六个月内损失超过 48 亿千瓦时电力。",
+      "Tengrinews 报道，阿拉木图第二阶段供热管网水压试验将持续至 8 月 14 日，涉及 7 个地区；居民被提示留意可能的管线破裂风险。",
+      "该条按新闻门户页面的公共基础设施提示整理。",
     ],
   },
   {
