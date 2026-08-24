@@ -259,6 +259,52 @@ html[data-theme="dark"] .daily-post {
   margin: 16px 0 0;
 }
 
+.entry-visuals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 14px;
+  width: min(100%, 680px);
+  margin-top: 16px;
+}
+
+.entry-visuals .entry-image {
+  margin: 0;
+}
+
+.entry-stat {
+  display: flex;
+  min-height: 180px;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid color-mix(in srgb, var(--green) 28%, var(--line));
+  background: color-mix(in srgb, var(--green) 7%, transparent);
+}
+
+.entry-stat span {
+  color: var(--green);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.entry-stat strong {
+  margin-top: 8px;
+  color: var(--ink);
+  font-size: clamp(28px, 5vw, 46px);
+  letter-spacing: -0.05em;
+  line-height: 1.12;
+}
+
+.digest-entry .entry-stat p {
+  margin-top: 10px;
+  color: var(--muted);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
 .entry-image img {
   display: block;
   width: min(100%, 680px);
@@ -296,6 +342,16 @@ html[data-theme="dark"] .daily-post {
   line-height: 1.7;
 }
 
+.digest-entry .verification-note {
+  padding: 11px 13px;
+  border-left: 2px solid #b07a28;
+  background: color-mix(in srgb, #b07a28 7%, transparent);
+  color: var(--muted);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
 html[data-font-size="small"] .digest-entry p {
   font-size: 15px;
 }
@@ -315,7 +371,8 @@ html[data-theme="dark"] .digest-entry p {
 }
 
 .entry-discovery,
-.entry-source {
+.entry-source,
+.entry-related {
   margin-top: 8px;
   color: var(--muted);
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
@@ -323,7 +380,8 @@ html[data-theme="dark"] .digest-entry p {
 }
 
 .entry-discovery a,
-.entry-source a {
+.entry-source a,
+.entry-related a {
   margin-left: 10px;
   color: var(--green);
 }

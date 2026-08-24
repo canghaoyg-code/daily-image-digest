@@ -36,8 +36,10 @@ test("server-renders the daily illustrated digest", async () => {
   assert.match(html, /高质量文章不受热度限制/);
   assert.match(html, /今日焦点/);
   assert.match(html, /世界与新知/);
+  assert.match(html, /值得细读/);
   assert.match(html, /人物、自然与轻读/);
   assert.match(html, /快讯、标准条目、图片条目和深度条目混排/);
+  assert.match(html, /不按固定条数或位置切分/);
   assert.match(html, /12306 回应定价规则/);
   assert.match(html, /多家门店残留液体检出敌敌畏/);
   assert.match(html, /两千多台人形机器人/);
@@ -45,12 +47,18 @@ test("server-renders the daily illustrated digest", async () => {
   assert.match(html, /四川宜宾长宁县发生 4.7 级地震/);
   assert.match(html, /黑神话：钟馗/);
   assert.match(html, /推荐理由/);
-  assert.match(html, /今日一图/);
+  assert.match(html, /图片／数据优先/);
+  assert.match(html, /12.4 万亿元/);
   assert.match(html, /公共讨论 · 仍在核验/);
+  assert.match(html, /核验状态/);
   assert.match(html, /诺福克郡五百年来/);
   assert.match(html, /发现线索/);
   assert.match(html, /核验来源/);
+  assert.match(html, /同题原文/);
   assert.match(html, /aria-label="阅读工具"/);
   assert.match(html, /aria-label="阅读设置"/);
   assert.match(html, /不替代原始报道/);
+
+  assert.ok(html.indexOf("店主帮扶晕倒老人") < html.indexOf("NASA 拍到了新月坑"));
+  assert.ok(html.indexOf("一只鹅在凌晨不断鸣叫") < html.indexOf("只用字母、数字和符号"));
 });

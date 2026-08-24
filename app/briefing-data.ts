@@ -1,5 +1,7 @@
 export type BriefingItem = {
   title: string;
+  section: "今日焦点" | "世界与新知" | "值得细读" | "人物、自然与轻读";
+  format: "brief" | "standard" | "feature" | "visual" | "social";
   source: string;
   sourceType: string;
   time: string;
@@ -8,7 +10,10 @@ export type BriefingItem = {
   discoveryHref?: string;
   labels?: string[];
   recommendation?: string;
+  verificationNote?: string;
+  relatedSources?: Array<{ label: string; href: string }>;
   details: string[];
+  visualStat?: { label: string; value: string; note: string };
   image?: string;
   imageAlt?: string;
   imageCaption?: string;
@@ -16,13 +21,15 @@ export type BriefingItem = {
 
 export const briefingMeta = {
   dateCode: "20260824",
-  headline: "热度决定先看什么，质量决定留下什么",
+  headline: "两千台机器人摔倒，再站起来",
   updatedAt: "2026 年 8 月 24 日 · 第一轮多渠道采集",
 };
 
 export const briefingItems: BriefingItem[] = [
   {
     title: "“无座票为何与二等座同价”登上热搜，12306 回应定价规则",
+    section: "今日焦点",
+    format: "standard",
     source: "中新经纬／铁路 12306 客服",
     sourceType: "媒体核实／公共服务回应",
     time: "8 月 24 日",
@@ -30,6 +37,7 @@ export const briefingItems: BriefingItem[] = [
     discovery: "微博热搜：#12306回应无座票二等座同价#",
     discoveryHref: "https://s.weibo.com/weibo?q=%2312306%E5%9B%9E%E5%BA%94%E6%97%A0%E5%BA%A7%E7%A5%A8%E4%BA%8C%E7%AD%89%E5%BA%A7%E5%90%8C%E4%BB%B7%23",
     labels: ["微博高热", "媒体核实"],
+    visualStat: { label: "票价规则", value: "同席别 · 同价", note: "无固定座位票与二等座属于同一席别和等级" },
     details: [
       "铁路 12306 客服表示，“无座票”的全称是“无固定座位票”，与二等座属于同一席别和等级，因此票价一致；并非所有列车都发售无座票，通常只在部分线路和高峰时段少量发售。",
       "无座旅客可以临时使用尚未售出或暂时无人的座位，但持票旅客上车后需要让座。关于差异化定价的建议，客服称已经记录并将反馈。",
@@ -37,6 +45,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "记者暗访餐饮消杀：多家门店残留液体检出敌敌畏，当地已介入",
+    section: "值得细读",
+    format: "feature",
     source: "新京报／厦门属地监管部门",
     sourceType: "调查报道／监管跟进",
     time: "8 月 24 日",
@@ -52,6 +62,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "两千多台人形机器人在北京跑步、踢球，也不断摔倒再站起来",
+    section: "今日焦点",
+    format: "visual",
     source: "新华日报／新华社现场图片",
     sourceType: "国内媒体／赛事现场",
     time: "8 月 24 日",
@@ -59,6 +71,9 @@ export const briefingItems: BriefingItem[] = [
     discovery: "微博热搜：#世界人形机器人运动会现场画面#",
     discoveryHref: "https://s.weibo.com/weibo?q=%23%E4%B8%96%E7%95%8C%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%90%E5%8A%A8%E4%BC%9A%E7%8E%B0%E5%9C%BA%E7%94%BB%E9%9D%A2%23",
     labels: ["微博高热", "现场报道"],
+    relatedSources: [
+      { label: "AP 图集与现场报道", href: "https://apnews.com/article/ce96217d30c6462e8d3d552d5dd1bb39" },
+    ],
     image: "https://dims.apnews.com/dims4/default/aaceb24/2147483647/strip/true/crop/7752x5165+0+9/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F38%2F87%2F73a90e94017e52915aec79c63d34%2F57d603c5440e4b1e9f69651d426846e9",
     imageAlt: "北京世界人形机器人运动会现场的人形机器人",
     imageCaption: "北京世界人形机器人运动会现场。图片来源：AP",
@@ -69,6 +84,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "已故人士金融账户查询服务将推广，银行和保险资产可望“一站式”办理",
+    section: "今日焦点",
+    format: "standard",
     source: "司法部／金融监管总局／民政部",
     sourceType: "三部门联合通知",
     time: "8 月 21 日",
@@ -83,6 +100,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "四川宜宾长宁县发生 4.7 级地震，震源深度 5 千米",
+    section: "今日焦点",
+    format: "brief",
     source: "中国地震台网／央视新闻",
     sourceType: "官方地震速报",
     time: "8 月 24 日",
@@ -90,6 +109,7 @@ export const briefingItems: BriefingItem[] = [
     discovery: "抖音热榜：四川宜宾发生4.7级地震",
     discoveryHref: "https://www.douyin.com/search/%E5%9B%9B%E5%B7%9D%E5%AE%9C%E5%AE%BE%E5%8F%91%E7%94%9F4.7%E7%BA%A7%E5%9C%B0%E9%9C%87",
     labels: ["抖音高热", "官方速报"],
+    visualStat: { label: "中国地震台网正式测定", value: "4.7 级", note: "震源深度 5 千米" },
     details: [
       "中国地震台网正式测定，8 月 24 日 8 时 26 分，四川宜宾市长宁县发生 4.7 级地震，震中位于北纬 28.33 度、东经 104.98 度，震源深度 5 千米。",
       "平台上的震感视频只作为现场线索；震级、时间和位置均采用地震台网正式速报，不采用早期自动测定值或未经核实的预警截图。",
@@ -97,6 +117,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "2026 年上半年英语四六级成绩开放查询，电子成绩单 8 月 31 日可下载",
+    section: "今日焦点",
+    format: "brief",
     source: "中国教育考试网",
     sourceType: "考试机构通知",
     time: "8 月 24 日",
@@ -104,6 +126,7 @@ export const briefingItems: BriefingItem[] = [
     discovery: "抖音热榜：四六级查分通道今日已开启",
     discoveryHref: "https://www.douyin.com/search/%E5%9B%9B%E5%85%AD%E7%BA%A7%E6%9F%A5%E5%88%86%E9%80%9A%E9%81%93%E4%BB%8A%E6%97%A5%E5%B7%B2%E5%BC%80%E5%90%AF",
     labels: ["抖音高热", "实用信息", "官方入口"],
+    visualStat: { label: "电子成绩单", value: "8 月 31 日", note: "上午 9 时起可免费下载" },
     details: [
       "2026 年上半年全国大学英语四、六级考试成绩查询服务已于 8 月 24 日上午 6 时开放，考生可以通过中国教育考试网及其微信、支付宝、百度小程序查询。",
       "8 月 31 日上午 9 时起可免费查询、下载电子成绩报告单。从本次考试开始不再提供纸质成绩报告单。",
@@ -111,6 +134,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "嫦娥七号任务不满足发射条件，将不在今年预定窗口实施",
+    section: "今日焦点",
+    format: "standard",
     source: "新华社／人民日报",
     sourceType: "航天任务通报",
     time: "8 月 24 日",
@@ -125,6 +150,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "教育、社保、卫生和住房等民生支出今年安排 12.4 万亿元",
+    section: "今日焦点",
+    format: "standard",
     source: "财政部／国新办发布会",
     sourceType: "政策数据",
     time: "8 月 21 日",
@@ -132,6 +159,7 @@ export const briefingItems: BriefingItem[] = [
     discovery: "百度热搜：#12.4万亿元关乎你的衣食住行#",
     discoveryHref: "https://www.baidu.com/s?wd=12.4%E4%B8%87%E4%BA%BF%E5%85%83%E5%85%B3%E4%B9%8E%E4%BD%A0%E7%9A%84%E8%A1%A3%E9%A3%9F%E4%BD%8F%E8%A1%8C",
     labels: ["百度高热", "政策数据"],
+    visualStat: { label: "民生支出安排", value: "12.4 万亿元", note: "同比增长 5.4%" },
     details: [
       "财政部在国新办发布会上介绍，今年全国一般公共预算安排教育、社会保障、卫生健康和住房等方面资金 12.4 万亿元，同比增长 5.4%。",
       "发布会列出的进展还包括：预计全年超过 4,400 万人领取基本生活救助，超过 2,500 万名婴幼儿及其家庭已领取年度育儿补贴。",
@@ -139,6 +167,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "《黑神话：钟馗》发布 15 分钟实机演示，在 B 站形成千万级观看热点",
+    section: "今日焦点",
+    format: "visual",
     source: "游戏科学／《黑神话：钟馗》官方发布",
     sourceType: "创作者原始内容",
     time: "8 月 20 日",
@@ -146,6 +176,7 @@ export const briefingItems: BriefingItem[] = [
     discovery: "B站热门：《黑神话：钟馗》15分钟实机演示",
     discoveryHref: "https://search.bilibili.com/all?keyword=%E9%BB%91%E7%A5%9E%E8%AF%9D%E9%92%9F%E9%A6%97%2015%E5%88%86%E9%92%9F%E5%AE%9E%E6%9C%BA%E6%BC%94%E7%A4%BA",
     labels: ["B站高热", "创作者发布", "文化科技"],
+    visualStat: { label: "官方实机演示", value: "15 分钟", note: "只采用演示中可以直接看到的内容" },
     details: [
       "游戏科学公开了约 15 分钟的开发中实机画面，首次集中展示主角战斗、群体敌人和部分剧情片段。相关视频在 B 站进入热门并形成大量二次解读。",
       "本条只把官方演示能够直接看到的内容写入摘要，不根据逐帧解读推断尚未公布的剧情、系统机制或发售时间。",
@@ -153,11 +184,14 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "阿里巴巴拟配售 800 亿港元新股，称净所得将全部投入全栈 AI",
+    section: "今日焦点",
+    format: "visual",
     source: "阿里巴巴集团",
     sourceType: "公司公告",
     time: "8 月 24 日",
     href: "https://www.alibabagroup.com/zh-HK/document-2028384807859257344",
     labels: ["公司公告"],
+    visualStat: { label: "拟配售总金额", value: "800 亿港元", note: "公司称净所得将投入全栈 AI" },
     image: "https://static.alibabagroup.com/static/c33a2ec2-de56-429a-b279-2d6211a83108.png",
     imageAlt: "阿里巴巴集团公告配图",
     imageCaption: "图片来源：阿里巴巴集团",
@@ -168,6 +202,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "台风“紫檀”影响广西，中央救灾物资与社会捐赠物资同步调拨",
+    section: "今日焦点",
+    format: "brief",
     source: "中华人民共和国应急管理部",
     sourceType: "政府部门发布",
     time: "8 月 23 日",
@@ -180,6 +216,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "美加贸易谈判破裂，两个长期盟友开始面对一场全面贸易战",
+    section: "值得细读",
+    format: "feature",
     source: "美联社 AP",
     sourceType: "国际媒体",
     time: "8 月 22 日",
@@ -193,6 +231,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "一枚火箭上面级撞上月球，NASA 拍到了新月坑的明暗辐射纹",
+    section: "世界与新知",
+    format: "visual",
     source: "NASA Science",
     sourceType: "科研机构发布",
     time: "8 月 18 日",
@@ -208,6 +248,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "加拿大卫生部再次提醒：婴儿学步车在当地属于禁售产品",
+    section: "世界与新知",
+    format: "brief",
     source: "Health Canada",
     sourceType: "政府安全通告",
     time: "8 月 21 日",
@@ -220,6 +262,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "不到 10 纳米的镁薄膜，让氮化镓器件的电接触阻力进一步降低",
+    section: "世界与新知",
+    format: "visual",
     source: "名古屋大学未来材料与系统研究所",
     sourceType: "大学研究发布",
     time: "8 月 18 日",
@@ -235,6 +279,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "即将百岁的她，要回到 1939 年与家人分离的维也纳车站",
+    section: "值得细读",
+    format: "feature",
     source: "The Guardian",
     sourceType: "国际媒体／人物报道",
     time: "8 月 24 日",
@@ -248,6 +294,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "诺福克郡五百年来首次迎来野生河狸幼崽",
+    section: "人物、自然与轻读",
+    format: "standard",
     source: "The Guardian／Pensthorpe Nature Reserve",
     sourceType: "国际媒体／自然保护",
     time: "8 月 24 日",
@@ -260,6 +308,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "一只鹅在凌晨不断鸣叫，提醒主人谷仓起火",
+    section: "人物、自然与轻读",
+    format: "visual",
     source: "ABC News／Storyful",
     sourceType: "媒体报道／家庭影像",
     time: "8 月 21 日",
@@ -275,6 +325,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "有人只用字母、数字和符号，做出了一座可以步行探索的 3D 城市",
+    section: "人物、自然与轻读",
+    format: "standard",
     source: "Grow Now Games／TechSpot",
     sourceType: "创作者作品／科技媒体",
     time: "8 月 21 日",
@@ -287,6 +339,8 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "店主帮扶晕倒老人后遭索赔，讨论焦点转向“善意如何被保护”",
+    section: "今日焦点",
+    format: "social",
     source: "红星新闻网／爱看头条",
     sourceType: "地方媒体／事件仍在跟进",
     time: "8 月 24 日",
@@ -294,6 +348,7 @@ export const briefingItems: BriefingItem[] = [
     discovery: "微博热搜：#官方提出补贴帮扶老人遭索赔店家#",
     discoveryHref: "https://s.weibo.com/weibo?q=%23%E5%AE%98%E6%96%B9%E6%8F%90%E5%87%BA%E8%A1%A5%E8%B4%B4%E5%B8%AE%E6%89%B6%E8%80%81%E4%BA%BA%E9%81%AD%E7%B4%A2%E8%B5%94%E5%BA%97%E5%AE%B6%23",
     labels: ["微博高热", "持续核实"],
+    verificationNote: "事件经过采用地方媒体报道；网上流传的补贴返还说法仍在核实，不作为确定事实。",
     details: [
       "媒体报道，湖南祁东一名老人在牌馆短暂休息后晕倒，店主家人帮忙送医，老人仍不幸离世；家属随后索赔，双方经调解达成人道主义补偿。",
       "热议主要围绕调解边界、救助者责任和社会信任。网上流传的“补贴返还”说法仍需等待当地正式说明，因此本条不把社交平台转述写成确定结论。",

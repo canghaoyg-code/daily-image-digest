@@ -6,44 +6,48 @@ import {
 import ReaderControls from "./reader-controls";
 
 function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
-  const format = item.recommendation
-    ? "feature"
-    : item.labels?.includes("持续核实")
-      ? "social"
-      : item.image
-        ? "visual"
-        : item.labels?.some((label) => ["官方速报", "实用信息", "安全通告", "官方通报"].includes(label))
-          ? "brief"
-          : "standard";
-
-  const media = item.image && (
-    <figure className="entry-image">
-      <img src={item.image} alt={item.imageAlt ?? item.title} loading="lazy" />
-      {item.imageCaption && <figcaption>{item.imageCaption}</figcaption>}
-    </figure>
+  const media = (item.image || item.visualStat) && (
+    <div className="entry-visuals">
+      {item.image && (
+        <figure className="entry-image">
+          <img src={item.image} alt={item.imageAlt ?? item.title} loading="lazy" />
+          {item.imageCaption && <figcaption>{item.imageCaption}</figcaption>}
+        </figure>
+      )}
+      {item.visualStat && (
+        <div className="entry-stat" aria-label={`${item.visualStat.label}：${item.visualStat.value}`}>
+          <span>{item.visualStat.label}</span>
+          <strong>{item.visualStat.value}</strong>
+          <p>{item.visualStat.note}</p>
+        </div>
+      )}
+    </div>
   );
 
   return (
-    <section className={`digest-entry format-${format}`}>
+    <section className={`digest-entry format-${item.format}`}>
       {item.labels && (
         <div className="entry-labels" aria-label="收录标签">
           {item.labels.map((label) => <span key={label}>{label}</span>)}
-          {format === "visual" && <span>今日一图</span>}
-          {format === "social" && <span>公共讨论 · 仍在核验</span>}
+          {item.format === "visual" && <span>图片／数据优先</span>}
+          {item.format === "social" && <span>公共讨论 · 仍在核验</span>}
         </div>
       )}
       <h2>
         <span>【{number}】</span>
         <a href={item.href} target="_blank" rel="noreferrer">{item.title}</a>
       </h2>
-      {format === "visual" && media}
+      {item.format === "visual" && media}
       {item.details?.map((detail) => <p key={detail}>{detail}</p>)}
       {item.recommendation && (
         <p className="editor-recommendation">
           <strong>推荐理由：</strong>{item.recommendation}
         </p>
       )}
-      {format !== "visual" && media}
+      {item.verificationNote && (
+        <p className="verification-note"><strong>核验状态：</strong>{item.verificationNote}</p>
+      )}
+      {item.format !== "visual" && media}
       {item.discovery && item.discoveryHref && (
         <div className="entry-discovery">
           发现线索：
@@ -58,16 +62,21 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
           原文
         </a>
       </div>
+      {item.relatedSources?.length ? (
+        <div className="entry-related">
+          同题原文：
+          {item.relatedSources.map((source) => (
+            <a href={source.href} key={source.href} target="_blank" rel="noreferrer">{source.label}</a>
+          ))}
+        </div>
+      ) : null}
     </section>
   );
 }
 
 export default function Home() {
-  const sections = [
-    { title: "今日焦点", items: briefingItems.slice(0, 12) },
-    { title: "世界与新知", items: briefingItems.slice(12, 16) },
-    { title: "人物、自然与轻读", items: briefingItems.slice(16) },
-  ];
+  const sectionOrder: BriefingItem["section"][] = ["今日焦点", "世界与新知", "值得细读", "人物、自然与轻读"];
+  const orderedItems = sectionOrder.flatMap((section) => briefingItems.filter((item) => item.section === section));
 
   return (
     <>
@@ -104,14 +113,17 @@ export default function Home() {
             <p>
               编排采用快讯、标准条目、图片条目和深度条目混排；同一热点的榜单线索、官方回应与媒体核实尽量聚合，重要现场和数据图保留图片出处。
             </p>
+            <p>
+              栏目和条目长度由内容显式标注，不按固定条数或位置切分；图片权属不清时不强行配图，数据型内容优先使用站内数据卡片，主标题只取自已经核验的当日内容。
+            </p>
           </section>
 
           <section className="digest-stream" aria-label="今日图文资讯">
-            {sections.map((section) => (
-              <div className="digest-section" key={section.title}>
-                <div className="stream-divider">{section.title}</div>
-                {section.items.map((item) => (
-                  <DigestEntry key={item.title} item={item} number={briefingItems.indexOf(item) + 1} />
+            {sectionOrder.map((section) => (
+              <div className="digest-section" key={section}>
+                <div className="stream-divider">{section}</div>
+                {orderedItems.filter((item) => item.section === section).map((item) => (
+                  <DigestEntry key={item.title} item={item} number={orderedItems.indexOf(item) + 1} />
                 ))}
               </div>
             ))}
