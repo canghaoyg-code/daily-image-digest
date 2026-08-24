@@ -30,7 +30,7 @@ test("server-renders the daily illustrated digest", async () => {
   const html = await response.text();
   assert.match(html, /<title>每日图读 · 公开来源的每日图文汇编<\/title>/);
   assert.match(html, /每日图读/);
-  assert.match(html, /20260824/);
+  assert.match(html, /20260825/);
   assert.doesNotMatch(html, /采集与收录规则/);
   assert.match(html, /今日焦点/);
   assert.match(html, /世界与新知/);
@@ -55,6 +55,12 @@ test("server-renders the daily illustrated digest", async () => {
   assert.match(html, /aria-label="阅读工具"/);
   assert.match(html, /aria-label="阅读设置"/);
   assert.match(html, /观点仅代表原发布者/);
+  assert.match(html, /一部电影，七种声音/);
+  assert.match(html, /同一热点的代表性观点/);
+  assert.match(html, /约 584.6 万观看/);
+  assert.match(html, /约 9,624 赞/);
+  assert.ok((html.match(/查看这条观点/g) ?? []).length >= 7);
+  assert.ok(html.indexOf("围绕《牛来》，七个高热观点") < html.indexOf("12306 回应定价规则"));
 
   assert.ok(html.indexOf("多家门店残留液体检出敌敌畏") < html.indexOf("两千多台人形机器人"));
   assert.ok(html.indexOf("美加贸易谈判破裂") < html.indexOf("一枚火箭上面级撞上月球"));

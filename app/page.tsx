@@ -6,7 +6,7 @@ import {
 import ReaderControls from "./reader-controls";
 
 function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
-  const mediaFirst = item.format === "visual" || (item.format === "feature" && Boolean(item.image));
+  const mediaFirst = item.format === "visual" || item.format === "feature" || (item.format === "social" && Boolean(item.image));
   const media = (item.image || item.visualStat) && (
     <div className="entry-visuals">
       {item.image && (
@@ -39,6 +39,21 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
       </h2>
       {mediaFirst && media}
       {item.details?.map((detail) => <p key={detail}>{detail}</p>)}
+      {item.voices?.length ? (
+        <ol className="entry-voices" aria-label="同一热点的代表性观点">
+          {item.voices.map((voice) => (
+            <li key={`${voice.platform}-${voice.author}`}>
+              <div className="voice-meta">
+                <span>{voice.platform}</span>
+                <strong>{voice.author}</strong>
+                {voice.engagement && <em>{voice.engagement}</em>}
+              </div>
+              <p>{voice.text}</p>
+              <a href={voice.href} target="_blank" rel="noreferrer">查看这条观点</a>
+            </li>
+          ))}
+        </ol>
+      ) : null}
       {item.recommendation && (
         <p className="editor-recommendation">
           <strong>原文看点：</strong>{item.recommendation}

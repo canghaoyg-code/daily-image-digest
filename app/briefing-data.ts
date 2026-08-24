@@ -12,6 +12,13 @@ export type BriefingItem = {
   recommendation?: string;
   verificationNote?: string;
   relatedSources?: Array<{ label: string; href: string }>;
+  voices?: Array<{
+    platform: string;
+    author: string;
+    text: string;
+    href: string;
+    engagement?: string;
+  }>;
   details: string[];
   visualStat?: { label: string; value: string; note: string };
   image?: string;
@@ -20,12 +27,102 @@ export type BriefingItem = {
 };
 
 export const briefingMeta = {
-  dateCode: "20260824",
-  headline: "两千台机器人摔倒，再站起来",
-  updatedAt: "2026 年 8 月 24 日 · 第一轮多渠道采集",
+  dateCode: "20260825",
+  headline: "《牛来》：一部电影，七种声音",
+  updatedAt: "2026 年 8 月 25 日 · 多平台热点试采 · 下接上一期内容",
 };
 
 export const briefingItems: BriefingItem[] = [
+  {
+    title: "《牛来》从七千元票房冲上热搜：嘲笑、好奇和支持一起把它推向银幕中央",
+    section: "今日焦点",
+    format: "feature",
+    source: "牛来资料页／Euronews／社交平台公开内容",
+    sourceType: "多平台热点试采",
+    time: "8 月 25 日",
+    href: "https://niulai.co/story",
+    discovery: "微博话题：#电影牛来#",
+    discoveryHref: "https://s.weibo.com/weibo?q=%23%E7%94%B5%E5%BD%B1%E7%89%9B%E6%9D%A5%23",
+    labels: ["多声部热点", "连续专题 1/2", "微博／B站／知乎／Reddit"],
+    image: "https://images.euronews.com/articles/stories/09/87/85/26/1536x864_cmsv2_d85de36b-a4ba-5ad8-ac7e-b38eff6185f6-9878526.jpg",
+    imageAlt: "动画电影《牛来》的影片画面",
+    imageCaption: "《牛来》影片画面。图片来源：大连璟园文化影视传媒／Euronews",
+    visualStat: { label: "传播转折点", value: "¥7,169", note: "上映第 9 天的低票房数字，反而成为全网围观的新闻钩子" },
+    details: [
+      "《牛来》的讨论已经不只是“好看或难看”。有人把它当作猎奇观影和集体玩梗，有人被母子两人长期制作的经历打动，也有人担心影院用流量奖励粗糙作品。话题随后从微博、B站和知乎扩散到 Reddit 等海外社区。",
+      "这轮传播的特别之处，不是大家得出了同一个结论，而是彼此冲突的判断共同制造了热度：越有人说它不该上院线，越有人想亲自去看；越有人认真批评，越有人把批评改造成新梗。",
+    ],
+    relatedSources: [
+      { label: "Euronews 报道", href: "https://www.euronews.com/culture/2026/08/18/niu-lai-how-is-a-disaster-level-chinese-animated-film-rivalling-the-odyssey-at-the-box-off" },
+      { label: "知乎传播分析", href: "https://zhuanlan.zhihu.com/p/2073336625904497833" },
+      { label: "B站同题搜索", href: "https://search.bilibili.com/all?keyword=%E7%89%9B%E6%9D%A5" },
+    ],
+  },
+  {
+    title: "围绕《牛来》，七个高热观点在争论什么",
+    section: "今日焦点",
+    format: "social",
+    source: "微博／B站／知乎／Reddit／媒体评论",
+    sourceType: "公开观点摘录",
+    time: "8 月 15 日—24 日",
+    href: "https://search.bilibili.com/all?keyword=%E7%89%9B%E6%9D%A5",
+    labels: ["多声部热点", "连续专题 2/2", "7 条代表性发言"],
+    image: "https://images.euronews.com/articles/stories/09/87/85/26/808x539_cmsv2_69405c79-75f4-55aa-8c8b-1b4e9a58c042-9878526.jpg",
+    imageAlt: "电影院为《牛来》绘制的手绘宣传海报",
+    imageCaption: "北京一家影院展示的《牛来》手绘宣传海报。图片来源：AP／Euronews",
+    details: [
+      "同一部影片，在不同发布者那里分别成了集体笑场、合格乐子、草根创作、传播奇观和行业警讯。下面七条高热表达，正好呈现这场争论的完整光谱。",
+    ],
+    voices: [
+      {
+        platform: "B站",
+        author: "LexBurner",
+        text: "把观影现场形容成“全场笑翻”，并直接追问《牛来》是否真的能被叫作“神作”——重点是共同参与的现场乐趣。",
+        href: "https://search.bilibili.com/all?keyword=%E5%85%A8%E5%9C%BA%E7%AC%91%E7%BF%BB%E6%B2%A1%E4%BA%BA%E8%83%BD%E7%BB%B7%E4%BD%8F%20%E7%89%9B%E6%9D%A5",
+        engagement: "约 584.6 万观看 · 9,073 弹幕",
+      },
+      {
+        platform: "B站",
+        author: "文西与阿漆",
+        text: "给出的判断是“不合格的电影，但可能是合格的乐子”：不替制作质量辩护，也承认观众花钱买到了一次集体娱乐。",
+        href: "https://search.bilibili.com/all?keyword=%E6%9A%91%E6%9C%9F%E6%A1%A3%E6%9C%80%E5%90%8E%E7%9A%84%E7%96%AF%E7%8B%82%20%E7%89%9B%E6%9D%A5",
+        engagement: "约 93.3 万观看 · 2,478 弹幕",
+      },
+      {
+        platform: "微博",
+        author: "小野的瓜田",
+        text: "“看了可能后悔 80 分钟，但是不看绝对后悔一辈子。”这句矛盾式推荐，成了猎奇观影最典型的传播口号。",
+        href: "https://www.sina.cn/news/detail/5332634197828314.html",
+        engagement: "163 转发 · 323 评论",
+      },
+      {
+        platform: "微博",
+        author: "恨海情天的女儿",
+        text: "围绕开头飞鸟长镜头提出另一层争议：创作者可以坚持表达，但也要在艺术美感、叙事效率和大众观感之间找平衡。",
+        href: "https://www.sina.cn/news/detail/5332634197828314.html",
+        engagement: "132 转发 · 540 评论",
+      },
+      {
+        platform: "知乎",
+        author: "苗建舆情",
+        text: "把爆火归纳为三股力量叠加：唯美海报与粗糙正片的反差、以“烂”为看点的猎奇消费，以及股市玄学和品牌二创带来的跨圈传播。",
+        href: "https://zhuanlan.zhihu.com/p/2073336625904497833",
+      },
+      {
+        platform: "Reddit",
+        author: "r/popculturechat 讨论帖",
+        text: "海外讨论更看重它的“局外人艺术”属性：作品并不精致，但母子两人花多年把它完成并送上院线，这种笨拙的人力痕迹本身被一些人视为吸引力。",
+        href: "https://www.reddit.com/r/popculturechat/comments/1vvk7a1/chinese_3danimated_movie_niu_lai_becomes_the_most/",
+        engagement: "约 9,624 赞",
+      },
+      {
+        platform: "行业评论",
+        author: "《新京报》观点（Euronews 转述）",
+        text: "反对声音认为，如果影院为了热度持续降低选片标准，可能挤压更成熟作品的空间，并消耗观众对院线的信任。",
+        href: "https://www.euronews.com/culture/2026/08/18/niu-lai-how-is-a-disaster-level-chinese-animated-film-rivalling-the-odyssey-at-the-box-off",
+      },
+    ],
+  },
   {
     title: "“无座票为何与二等座同价”登上热搜，12306 回应定价规则",
     section: "今日焦点",
