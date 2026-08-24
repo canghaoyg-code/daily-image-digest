@@ -88,7 +88,6 @@ export default function Home() {
           <span className="tagline">公开来源 · 图文汇编 · 连续阅读</span>
           <nav aria-label="主导航">
             <a href="#today">今日图读</a>
-            <a href="#source-note">来源说明</a>
           </nav>
         </div>
       </header>
@@ -101,22 +100,6 @@ export default function Home() {
             </h1>
             <p>{briefingMeta.updatedAt}</p>
           </header>
-
-          <section className="source-note" id="source-note">
-            <strong>采集与收录规则</strong>
-            <p>
-              双轨收录：热点内容不设条数，综合微博、百度、抖音、B站等公开榜单的排名、增速、持续时间和跨平台共振，达到热度门槛即进入候选；高质量文章不受热度限制，重点看原创证据、信息增量、论证、独立性和持久价值。
-            </p>
-            <p>
-              平台和账号只负责发现线索，名单每天动态变化；事实回到官方通报、原始公告、记者调查、机构资料或当事方声明核验。同一事件合并重复话题，营销热搜降权，尚未证实的内容明确标注。
-            </p>
-            <p>
-              编排采用快讯、标准条目、图片条目和深度条目混排；同一热点的榜单线索、官方回应与媒体核实尽量聚合，重要现场和数据图保留图片出处。
-            </p>
-            <p>
-              栏目和条目长度由内容显式标注，不按固定条数或位置切分；图片权属不清时不强行配图，数据型内容优先使用站内数据卡片，主标题只取自已经核验的当日内容。
-            </p>
-          </section>
 
           <section className="digest-stream" aria-label="今日图文资讯">
             {sectionOrder.map((section) => (

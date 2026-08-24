@@ -31,15 +31,11 @@ test("server-renders the daily illustrated digest", async () => {
   assert.match(html, /<title>每日图读 · 公开来源的每日图文汇编<\/title>/);
   assert.match(html, /每日图读/);
   assert.match(html, /20260824/);
-  assert.match(html, /采集与收录规则/);
-  assert.match(html, /热点内容不设条数/);
-  assert.match(html, /高质量文章不受热度限制/);
+  assert.doesNotMatch(html, /采集与收录规则/);
   assert.match(html, /今日焦点/);
   assert.match(html, /世界与新知/);
   assert.match(html, /值得细读/);
   assert.match(html, /人物、自然与轻读/);
-  assert.match(html, /快讯、标准条目、图片条目和深度条目混排/);
-  assert.match(html, /不按固定条数或位置切分/);
   assert.match(html, /12306 回应定价规则/);
   assert.match(html, /多家门店残留液体检出敌敌畏/);
   assert.match(html, /两千多台人形机器人/);

@@ -138,25 +138,6 @@ html[data-theme="dark"] .daily-post {
   font-size: 13px;
 }
 
-.source-note {
-  margin-top: 26px;
-  padding: 18px 20px;
-  border-left: 3px solid var(--green);
-  background: color-mix(in srgb, var(--green) 6%, transparent);
-}
-
-.source-note strong {
-  color: var(--green);
-  font-size: 15px;
-}
-
-.source-note p {
-  margin: 8px 0 0;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.75;
-}
-
 .digest-stream {
   padding-top: 4px;
 }
