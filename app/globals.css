@@ -259,31 +259,11 @@ html[data-theme="dark"] .daily-post {
   margin: 16px 0 0;
 }
 
-.entry-gallery {
-  display: grid;
-  gap: 14px;
-  margin-top: 16px;
-}
-
-.entry-gallery-pair {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.entry-gallery .entry-image {
-  margin: 0;
-}
-
 .entry-image img {
   display: block;
   width: min(100%, 680px);
   height: auto;
   border: 1px solid var(--line);
-}
-
-.entry-gallery-pair img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
 }
 
 .format-visual .entry-image img {
@@ -335,8 +315,7 @@ html[data-theme="dark"] .digest-entry p {
 }
 
 .entry-discovery,
-.entry-source,
-.entry-related {
+.entry-source {
   margin-top: 8px;
   color: var(--muted);
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
@@ -344,8 +323,7 @@ html[data-theme="dark"] .digest-entry p {
 }
 
 .entry-discovery a,
-.entry-source a,
-.entry-related a {
+.entry-source a {
   margin-left: 10px;
   color: var(--green);
 }
@@ -508,10 +486,6 @@ html[data-theme="dark"] .settings-panel {
     margin-right: -8px;
     margin-left: -8px;
     padding: 20px 16px;
-  }
-
-  .entry-gallery-pair {
-    grid-template-columns: 1fr;
   }
 
   .reader-toolbar {

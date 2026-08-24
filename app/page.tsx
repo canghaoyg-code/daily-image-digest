@@ -1,5 +1,4 @@
 import {
-  deepReads,
   briefingItems,
   briefingMeta,
   type BriefingItem,
@@ -7,61 +6,68 @@ import {
 import ReaderControls from "./reader-controls";
 
 function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
-  const media = (item.image || item.additionalImages?.length) && (
-    <div className={`entry-gallery${item.additionalImages?.length ? " entry-gallery-pair" : ""}`}>
-      {item.image && (
-        <figure className="entry-image">
-          <img src={item.image} alt={item.imageAlt ?? item.title} loading="lazy" />
-          {item.imageCaption && <figcaption>{item.imageCaption}</figcaption>}
-        </figure>
-      )}
-      {item.additionalImages?.map((image) => (
-        <figure className="entry-image" key={image.src}>
-          <img src={image.src} alt={image.alt} loading="lazy" />
-          <figcaption>{image.caption}</figcaption>
-        </figure>
-      ))}
-    </div>
+  const format = item.recommendation
+    ? "feature"
+    : item.labels?.includes("持续核实")
+      ? "social"
+      : item.image
+        ? "visual"
+        : item.labels?.some((label) => ["官方速报", "实用信息", "安全通告", "官方通报"].includes(label))
+          ? "brief"
+          : "standard";
+
+  const media = item.image && (
+    <figure className="entry-image">
+      <img src={item.image} alt={item.imageAlt ?? item.title} loading="lazy" />
+      {item.imageCaption && <figcaption>{item.imageCaption}</figcaption>}
+    </figure>
   );
 
   return (
-    <section className={`digest-entry format-${item.format ?? "standard"}`}>
-      <div className="entry-labels" aria-label="条目类型">
-        <span>{item.category}</span><span>{item.sourceType}</span>
-        {item.format === "feature" && <span>专题聚合</span>}
-        {item.format === "social" && <span>个人观察 · 未作新闻核验</span>}
-      </div>
+    <section className={`digest-entry format-${format}`}>
+      {item.labels && (
+        <div className="entry-labels" aria-label="收录标签">
+          {item.labels.map((label) => <span key={label}>{label}</span>)}
+          {format === "visual" && <span>今日一图</span>}
+          {format === "social" && <span>公共讨论 · 仍在核验</span>}
+        </div>
+      )}
       <h2>
         <span>【{number}】</span>
         <a href={item.href} target="_blank" rel="noreferrer">{item.title}</a>
       </h2>
-      {item.format === "visual" && media}
+      {format === "visual" && media}
       {item.details?.map((detail) => <p key={detail}>{detail}</p>)}
-      {item.recommendation && <p className="editor-recommendation">推荐理由：{item.recommendation}</p>}
-      {item.format !== "visual" && media}
+      {item.recommendation && (
+        <p className="editor-recommendation">
+          <strong>推荐理由：</strong>{item.recommendation}
+        </p>
+      )}
+      {format !== "visual" && media}
+      {item.discovery && item.discoveryHref && (
+        <div className="entry-discovery">
+          发现线索：
+          <a href={item.discoveryHref} target="_blank" rel="noreferrer">
+            {item.discovery}
+          </a>
+        </div>
+      )}
       <div className="entry-source">
-        来源：{item.source} · {item.time}
+        核验来源：{item.source}{item.sourceType ? `（${item.sourceType}）` : ""} · {item.time}
         <a href={item.href} target="_blank" rel="noreferrer">
           原文
         </a>
       </div>
-      {item.relatedSources?.length ? (
-        <div className="entry-related" aria-label="同题来源">
-          同题来源：
-          {item.relatedSources.map((source) => (
-            <a href={source.href} key={source.href} target="_blank" rel="noreferrer">{source.label}</a>
-          ))}
-        </div>
-      ) : null}
     </section>
   );
 }
 
 export default function Home() {
-  const mainItems = briefingItems.filter((item) => !["visual", "social"].includes(item.format ?? "standard"));
-  const visualItems = briefingItems.filter((item) => item.format === "visual");
-  const socialItems = briefingItems.filter((item) => item.format === "social");
-  const numberFor = (item: BriefingItem) => briefingItems.indexOf(item) + 1;
+  const sections = [
+    { title: "今日焦点", items: briefingItems.slice(0, 12) },
+    { title: "世界与新知", items: briefingItems.slice(12, 16) },
+    { title: "人物、自然与轻读", items: briefingItems.slice(16) },
+  ];
 
   return (
     <>
@@ -90,35 +96,24 @@ export default function Home() {
           <section className="source-note" id="source-note">
             <strong>采集与收录规则</strong>
             <p>
-              热点内容不设条数，优先参考榜单热度、增长速度、持续时间与跨平台共振；平台和账号随当天议题动态调整，只用于发现线索。
+              双轨收录：热点内容不设条数，综合微博、百度、抖音、B站等公开榜单的排名、增速、持续时间和跨平台共振，达到热度门槛即进入候选；高质量文章不受热度限制，重点看原创证据、信息增量、论证、独立性和持久价值。
             </p>
             <p>
-              事实尽量回到机构公告、报道原文、财报或报告核验；同一事件的官方回应、媒体报道与公共讨论合并呈现，社交观察不当作新闻事实。
+              平台和账号只负责发现线索，名单每天动态变化；事实回到官方通报、原始公告、记者调查、机构资料或当事方声明核验。同一事件合并重复话题，营销热搜降权，尚未证实的内容明确标注。
             </p>
             <p>
-              高质量文章不受热度限制，按原创证据、信息增量、论证质量、独立性与长期价值筛选，并说明推荐理由。
-            </p>
-            <p>
-              条目采用快讯、标准条目和专题聚合三种长度；关键现场、数据和产品优先配图，每张图保留出处。
+              编排采用快讯、标准条目、图片条目和深度条目混排；同一热点的榜单线索、官方回应与媒体核实尽量聚合，重要现场和数据图保留图片出处。
             </p>
           </section>
 
           <section className="digest-stream" aria-label="今日图文资讯">
-            <div className="stream-divider">当日焦点</div>
-            {mainItems.map((item) => (
-              <DigestEntry key={item.title} item={item} number={numberFor(item)} />
-            ))}
-            <div className="stream-divider">今日一图</div>
-            {visualItems.map((item) => (
-              <DigestEntry key={item.title} item={item} number={numberFor(item)} />
-            ))}
-            <div className="stream-divider" id="observation">今日观察</div>
-            {socialItems.map((item) => (
-              <DigestEntry key={item.title} item={item} number={numberFor(item)} />
-            ))}
-            <div className="stream-divider">值得细读</div>
-            {deepReads.map((item, index) => (
-              <DigestEntry key={item.title} item={item} number={briefingItems.length + index + 1} />
+            {sections.map((section) => (
+              <div className="digest-section" key={section.title}>
+                <div className="stream-divider">{section.title}</div>
+                {section.items.map((item) => (
+                  <DigestEntry key={item.title} item={item} number={briefingItems.indexOf(item) + 1} />
+                ))}
+              </div>
             ))}
           </section>
 
