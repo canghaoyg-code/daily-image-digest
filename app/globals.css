@@ -161,9 +161,58 @@ html[data-theme="dark"] .daily-post {
   padding-top: 4px;
 }
 
+.stream-divider {
+  margin: 34px 0 0;
+  padding: 10px 0 9px;
+  border-top: 2px solid var(--green);
+  border-bottom: 1px solid var(--line);
+  color: var(--green);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
 .digest-entry {
   padding: 26px 0 24px;
   border-bottom: 1px solid var(--line);
+}
+
+.digest-entry.format-feature {
+  margin-top: 18px;
+  padding: 24px;
+  border: 1px solid color-mix(in srgb, var(--green) 22%, var(--line));
+  border-left: 4px solid var(--green);
+  background: color-mix(in srgb, var(--green) 4%, transparent);
+}
+
+.digest-entry.format-feature + .format-feature {
+  margin-top: 14px;
+}
+
+.digest-entry.format-feature h2 {
+  font-size: clamp(20px, 2.6vw, 25px);
+}
+
+.digest-entry.format-brief {
+  padding: 18px 0;
+}
+
+.digest-entry.format-brief p {
+  margin-top: 8px;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.digest-entry.format-visual {
+  padding-top: 22px;
+}
+
+.digest-entry.format-social {
+  margin-top: 18px;
+  padding: 22px 24px;
+  border: 1px dashed color-mix(in srgb, var(--green) 40%, var(--line));
+  background: color-mix(in srgb, var(--green) 3%, transparent);
 }
 
 .entry-labels {
@@ -210,11 +259,35 @@ html[data-theme="dark"] .daily-post {
   margin: 16px 0 0;
 }
 
+.entry-gallery {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.entry-gallery-pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.entry-gallery .entry-image {
+  margin: 0;
+}
+
 .entry-image img {
   display: block;
   width: min(100%, 680px);
   height: auto;
   border: 1px solid var(--line);
+}
+
+.entry-gallery-pair img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.format-visual .entry-image img {
+  width: 100%;
 }
 
 .entry-image figcaption {
@@ -262,7 +335,8 @@ html[data-theme="dark"] .digest-entry p {
 }
 
 .entry-discovery,
-.entry-source {
+.entry-source,
+.entry-related {
   margin-top: 8px;
   color: var(--muted);
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
@@ -270,7 +344,8 @@ html[data-theme="dark"] .digest-entry p {
 }
 
 .entry-discovery a,
-.entry-source a {
+.entry-source a,
+.entry-related a {
   margin-left: 10px;
   color: var(--green);
 }
@@ -426,6 +501,17 @@ html[data-theme="dark"] .settings-panel {
 
   .digest-entry {
     padding: 22px 0;
+  }
+
+  .digest-entry.format-feature,
+  .digest-entry.format-social {
+    margin-right: -8px;
+    margin-left: -8px;
+    padding: 20px 16px;
+  }
+
+  .entry-gallery-pair {
+    grid-template-columns: 1fr;
   }
 
   .reader-toolbar {
