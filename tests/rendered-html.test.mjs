@@ -22,7 +22,7 @@ async function render() {
   );
 }
 
-test("server-renders the compact briefing home page", async () => {
+test("server-renders the daily reading page", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -30,9 +30,10 @@ test("server-renders the compact briefing home page", async () => {
   const html = await response.text();
   assert.match(html, /<title>早晚读讯 · 私人阅读页面<\/title>/);
   assert.match(html, /早晚读讯/);
-  assert.match(html, /本次采集/);
+  assert.match(html, /哈萨克斯坦 · 乌兹别克斯坦/);
   assert.match(html, /深度阅读/);
-  assert.match(html, /Google 推出面向防御方/);
-  assert.match(html, /AI 生物安全/);
+  assert.match(html, /哈萨克斯坦国家伙伴框架/);
+  assert.match(html, /aria-label="阅读工具"/);
+  assert.match(html, /aria-label="阅读设置"/);
   assert.match(html, /每天 07:00 与 20:00 更新/);
 });

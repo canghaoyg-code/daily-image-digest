@@ -4,6 +4,7 @@ import {
   deepReads,
   type BriefingItem,
 } from "./briefing-data";
+import ReaderControls from "./reader-controls";
 
 function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
   return (
@@ -29,15 +30,17 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
 }
 
 function DigestGroup({
+  id,
   title,
   items,
 }: {
+  id: string;
   title: string;
   items: BriefingItem[];
 }) {
   return (
-    <section className="digest-group" aria-labelledby={`${title}-heading`}>
-      <h1 id={`${title}-heading`}>{title}</h1>
+    <section className="digest-group" id={id} aria-labelledby={`${id}-heading`}>
+      <h1 id={`${id}-heading`}>{title}</h1>
       {items.map((item, index) => (
         <DigestEntry key={item.title} item={item} number={index + 1} />
       ))}
@@ -68,14 +71,15 @@ export default function Home() {
             <p>{briefingMeta.updatedAt}</p>
           </header>
 
-          <DigestGroup title="今日资讯" items={briefingItems} />
-          <DigestGroup title="深度阅读" items={deepReads} />
+          <DigestGroup id="news" title="今日资讯" items={briefingItems} />
+          <DigestGroup id="deep-reading" title="深度阅读" items={deepReads} />
 
           <footer>
             每天 07:00 与 20:00 更新 · 仅收录可追溯的原文链接
           </footer>
         </article>
       </main>
+      <ReaderControls />
     </>
   );
 }
