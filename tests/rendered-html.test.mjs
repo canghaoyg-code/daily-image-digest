@@ -36,6 +36,7 @@ test("server-renders the daily illustrated digest", async () => {
   assert.match(html, /世界与新知/);
   assert.match(html, /值得细读/);
   assert.match(html, /人物、自然与轻读/);
+  assert.ok((html.match(/<img\b/g) ?? []).length >= 10);
   assert.match(html, /12306 回应定价规则/);
   assert.match(html, /多家门店残留液体检出敌敌畏/);
   assert.match(html, /两千多台人形机器人/);
@@ -55,6 +56,8 @@ test("server-renders the daily illustrated digest", async () => {
   assert.match(html, /aria-label="阅读设置"/);
   assert.match(html, /不替代原始报道/);
 
-  assert.ok(html.indexOf("店主帮扶晕倒老人") < html.indexOf("NASA 拍到了新月坑"));
+  assert.ok(html.indexOf("多家门店残留液体检出敌敌畏") < html.indexOf("两千多台人形机器人"));
+  assert.ok(html.indexOf("美加贸易谈判破裂") < html.indexOf("一枚火箭上面级撞上月球"));
+  assert.ok(html.indexOf("NASA 拍到了新月坑") < html.indexOf("店主帮扶晕倒老人"));
   assert.ok(html.indexOf("一只鹅在凌晨不断鸣叫") < html.indexOf("只用字母、数字和符号"));
 });

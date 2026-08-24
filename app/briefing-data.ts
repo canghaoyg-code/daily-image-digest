@@ -109,10 +109,10 @@ export const briefingItems: BriefingItem[] = [
     discovery: "抖音热榜：四川宜宾发生4.7级地震",
     discoveryHref: "https://www.douyin.com/search/%E5%9B%9B%E5%B7%9D%E5%AE%9C%E5%AE%BE%E5%8F%91%E7%94%9F4.7%E7%BA%A7%E5%9C%B0%E9%9C%87",
     labels: ["抖音高热", "官方速报"],
+    verificationNote: "平台震感视频只作为现场线索；震级、时间和位置均采用中国地震台网正式速报。",
     visualStat: { label: "中国地震台网正式测定", value: "4.7 级", note: "震源深度 5 千米" },
     details: [
       "中国地震台网正式测定，8 月 24 日 8 时 26 分，四川宜宾市长宁县发生 4.7 级地震，震中位于北纬 28.33 度、东经 104.98 度，震源深度 5 千米。",
-      "平台上的震感视频只作为现场线索；震级、时间和位置均采用地震台网正式速报，不采用早期自动测定值或未经核实的预警截图。",
     ],
   },
   {
@@ -128,8 +128,7 @@ export const briefingItems: BriefingItem[] = [
     labels: ["抖音高热", "实用信息", "官方入口"],
     visualStat: { label: "电子成绩单", value: "8 月 31 日", note: "上午 9 时起可免费下载" },
     details: [
-      "2026 年上半年全国大学英语四、六级考试成绩查询服务已于 8 月 24 日上午 6 时开放，考生可以通过中国教育考试网及其微信、支付宝、百度小程序查询。",
-      "8 月 31 日上午 9 时起可免费查询、下载电子成绩报告单。从本次考试开始不再提供纸质成绩报告单。",
+      "2026 年上半年全国大学英语四、六级考试成绩已开放查询；8 月 31 日上午 9 时起可免费下载电子成绩报告单，从本次考试开始不再提供纸质报告单。",
     ],
   },
   {
@@ -176,6 +175,9 @@ export const briefingItems: BriefingItem[] = [
     discovery: "B站热门：《黑神话：钟馗》15分钟实机演示",
     discoveryHref: "https://search.bilibili.com/all?keyword=%E9%BB%91%E7%A5%9E%E8%AF%9D%E9%92%9F%E9%A6%97%2015%E5%88%86%E9%92%9F%E5%AE%9E%E6%9C%BA%E6%BC%94%E7%A4%BA",
     labels: ["B站高热", "创作者发布", "文化科技"],
+    image: "https://gamesci.cn/zhongkui/assets/img_bg_pv-CToa1Cbi.png",
+    imageAlt: "《黑神话：钟馗》官方实机演示画面",
+    imageCaption: "《黑神话：钟馗》官方页面展示画面。图片来源：游戏科学",
     visualStat: { label: "官方实机演示", value: "15 分钟", note: "只采用演示中可以直接看到的内容" },
     details: [
       "游戏科学公开了约 15 分钟的开发中实机画面，首次集中展示主角战斗、群体敌人和部分剧情片段。相关视频在 B 站进入热门并形成大量二次解读。",
@@ -210,8 +212,7 @@ export const briefingItems: BriefingItem[] = [
     href: "https://www.mem.gov.cn/xw/yjglbgzdt/202608/t20260823_708249.shtml",
     labels: ["官方通报"],
     details: [
-      "应急管理部发布消息称，针对台风“紫檀”影响，相关部门向广西调拨折叠床、被褥、雨衣雨靴等 2 万件中央救灾物资。",
-      "同时启动政社协同保障机制，协调基金会和社会平台援助饮用水、方便食品、凉席及家庭箱等 2.7 万件物资，用于避险转移和安置救助。",
+      "针对台风“紫檀”影响，相关部门向广西调拨折叠床、被褥、雨衣雨靴等 2 万件中央救灾物资，同时协调基金会和社会平台援助 2.7 万件生活物资。",
     ],
   },
   {
@@ -223,6 +224,9 @@ export const briefingItems: BriefingItem[] = [
     time: "8 月 22 日",
     href: "https://apnews.com/article/4d18583fe52134ca8550652ad9772d2c",
     labels: ["值得一读", "国际分析"],
+    image: "https://dims.apnews.com/dims4/default/0f4b972/2147483647/strip/true/crop/2929x1952+35+0/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Ff7%2F32%2F0028f864e780861f28bdda886a8f%2F1a66736f059d4ba59339af0b1220be3b",
+    imageAlt: "加拿大民众在渥太华国会山集会，回应美国对加拿大主权的威胁",
+    imageCaption: "加拿大民众在渥太华国会山集会。资料图片：Justin Tang／The Canadian Press／AP",
     recommendation: "文章不仅报告关税数字，还解释谈判破裂、反制范围与盟友关系变化，适合作为理解事件背景的入口。",
     details: [
       "美联社报道，美加最后阶段的贸易谈判失败后，美国对约 200 亿美元加拿大商品加征 50% 关税。",
@@ -255,9 +259,11 @@ export const briefingItems: BriefingItem[] = [
     time: "8 月 21 日",
     href: "https://recalls-rappels.canada.ca/en/alert-recall/health-canada-warns-baby-activity-walker-previously-available-fruugoca-may-pose-risk",
     labels: ["安全通告"],
+    image: "https://recalls-rappels.canada.ca/sites/default/files/styles/x_large/public/alert/recall/82510/Fruugo%20Image%201.png?itok=8Shk1BhV",
+    imageAlt: "加拿大卫生部通告涉及的八轮婴儿学步车",
+    imageCaption: "通告涉及的婴儿学步车。图片来源：Health Canada",
     details: [
-      "加拿大卫生部点名一款此前在 Fruugo.ca 销售的八轮婴儿学步车，要求购买者立即停止使用并安全处置。该产品已从平台下架。",
-      "通告说明，学步车会让尚不能独立行走的婴儿快速接近楼梯、热源和电线等危险；加拿大法律禁止制造、进口、销售、宣传或赠送此类产品。",
+      "加拿大卫生部要求购买者立即停止使用并安全处置一款此前在 Fruugo.ca 销售的八轮婴儿学步车；此类产品会让婴儿快速接近楼梯、热源和电线等危险，在加拿大属于禁售产品。",
     ],
   },
   {
@@ -286,6 +292,9 @@ export const briefingItems: BriefingItem[] = [
     time: "8 月 24 日",
     href: "https://www.theguardian.com/world/2026/aug/24/ill-probably-feel-emotional-kindertransport-centenarian-prepares-to-revisit-site-of-family-separation",
     labels: ["值得一读", "人物长文"],
+    image: "https://i.guim.co.uk/img/media/7ac2a9d5d2d90b50bd1211d5b722f538a7302d88/1042_421_6429_5143/master/6429.jpg?crop=none&dpr=1&s=none&width=1200",
+    imageAlt: "Gabriele Keenaghan 在家中抱着童年留下的玩具熊",
+    imageCaption: "Gabriele Keenaghan 与她在 1939 年离开维也纳时获准带走的玩具熊。图片：Christopher Thomond／The Guardian",
     recommendation: "用一位幸存者重返车站的具体行动连接家庭记忆、战争历史与教育实践，细节充分，叙事价值高于单纯纪念性消息。",
     details: [
       "1939 年，12 岁的 Gabriele Keenaghan 通过“儿童运输”计划从纳粹统治下的奥地利前往英国。她在维也纳西站与祖母道别，此后再也没有见到父亲。",
@@ -301,6 +310,9 @@ export const briefingItems: BriefingItem[] = [
     time: "8 月 24 日",
     href: "https://www.theguardian.com/world/2026/aug/24/wild-beaver-kit-pair-born-norfolk",
     labels: ["轻阅读", "自然保护"],
+    image: "https://i.guim.co.uk/img/media/5d73f1e581431d61b87c983d27938dcf0a1070f5/229_0_1515_1212/master/1515.jpg?crop=none&dpr=1&s=none&width=1200",
+    imageAlt: "红外相机拍到河道中的两只野生河狸幼崽",
+    imageCaption: "红外相机拍到两只河狸幼崽。图片来源：Pensthorpe Nature Reserve／The Guardian",
     details: [
       "英国 Pensthorpe 自然保护区的红外相机拍到两只约三个月大的河狸幼崽。它们的父母在去年 12 月神秘出现在温瑟姆河，此前当地已有约五百年没有自由生活的河狸记录。",
       "幼崽已经开始学习潜水和用尾巴拍击水面。保护区接下来需要解决种群基因多样性和合法引入更多河狸的问题。",
@@ -326,12 +338,15 @@ export const briefingItems: BriefingItem[] = [
   {
     title: "有人只用字母、数字和符号，做出了一座可以步行探索的 3D 城市",
     section: "人物、自然与轻读",
-    format: "standard",
+    format: "visual",
     source: "Grow Now Games／TechSpot",
     sourceType: "创作者作品／科技媒体",
     time: "8 月 21 日",
     href: "https://www.techspot.com/news/113574-fully-walkable-3d-city-built-entirely-out-ascii.html",
     labels: ["创作者作品"],
+    image: "https://i.ytimg.com/vi/3YtygAx_C6A/maxresdefault.jpg",
+    imageAlt: "由 ASCII 字符构成的可步行三维城市",
+    imageCaption: "独立开发者展示的 ASCII 三维城市。画面来源：Grow Now Games／YouTube",
     details: [
       "一位独立开发者用 JavaScript 和 Canvas 搭建了一座赛博朋克风格城市，建筑、道路、树木、车辆和行人全部由 ASCII 字符表现。",
       "项目借助透视、景深和碰撞算法把二维字符组织成可行走的空间。它仍在开发中，但已经成为一个“用限制换风格”的有趣例子。",
