@@ -4,6 +4,8 @@ export type BriefingItem = {
   sourceType: string;
   time: string;
   href: string;
+  discovery?: string;
+  discoveryHref?: string;
   details: string[];
   image?: string;
   imageAlt?: string;
@@ -12,45 +14,51 @@ export type BriefingItem = {
 
 export const briefingMeta = {
   dateCode: "20260824",
-  headline: "有些进步，以秒计；有些归来，要等五百年",
-  updatedAt: "2026 年 8 月 24 日 · 16:20",
+  headline: "热搜每天都变，事实来源要站得住",
+  updatedAt: "2026 年 8 月 24 日 · 16:05",
 };
 
 export const briefingItems: BriefingItem[] = [
   {
-    title: "多部门指导地方严查“甲醛白菜”，并追查涉事产品流向",
-    source: "新华网",
-    sourceType: "官方媒体／监管信息",
+    title: "“无座票为何与二等座同价”登上热搜，12306 回应定价规则",
+    source: "中新经纬／铁路 12306 客服",
+    sourceType: "媒体核实／公共服务回应",
     time: "8 月 24 日",
-    href: "https://www2.xinhuanet.com/government/20260824/36cb29f1c4d84e649ba5c9da7d97bf87/c.html",
+    href: "https://finance.eastmoney.com/a/202608243850783612.html",
+    discovery: "微博热搜：#12306回应无座票二等座同价#",
+    discoveryHref: "https://s.weibo.com/weibo?q=%2312306%E5%9B%9E%E5%BA%94%E6%97%A0%E5%BA%A7%E7%A5%A8%E4%BA%8C%E7%AD%89%E5%BA%A7%E5%90%8C%E4%BB%B7%23",
     details: [
-      "新华社报道，国务院食安办、农业农村部和市场监管总局已指导属地调查河北康保县“白菜收购环节蘸取甲醛溶液”问题，要求追查涉事白菜流向，防止问题产品进入市场。",
-      "报道还提到，各地将对白菜等易腐蔬菜开展专项抽检和市场排查。此条采用监管部门公开信息作为事实来源，不以网络转述替代调查结论。",
+      "铁路 12306 客服表示，“无座票”的全称是“无固定座位票”，与二等座属于同一席别和等级，因此票价一致；并非所有列车都发售无座票，通常只在部分线路和高峰时段少量发售。",
+      "无座旅客可以临时使用尚未售出或暂时无人的座位，但持票旅客上车后需要让座。关于差异化定价的建议，客服称已经记录并将反馈。",
     ],
   },
   {
-    title: "中国代表团成立：71 名选手将参加第 48 届世界技能大赛全部项目",
-    source: "央视新闻／世界技能大赛官网",
-    sourceType: "官方媒体／赛事组织",
-    time: "8 月 23 日",
-    href: "https://news.cctv.cn/2026/08/23/ARTIOMP24DapkyXEv1di3brx260823.shtml",
+    title: "记者暗访餐饮消杀：多家门店残留液体检出敌敌畏，当地已介入",
+    source: "新京报／厦门属地监管部门",
+    sourceType: "调查报道／监管跟进",
+    time: "8 月 24 日",
+    href: "https://www.bjnews.com.cn/detail/1787462876129890.html",
+    discovery: "微博热搜：#多家餐厅残留液体敌敌畏检测阳性#",
+    discoveryHref: "https://s.weibo.com/weibo?q=%23%E5%A4%9A%E5%AE%B6%E9%A4%90%E5%8E%85%E6%AE%8B%E7%95%99%E6%B6%B2%E4%BD%93%E6%95%8C%E6%95%8C%E7%95%8F%E6%A3%80%E6%B5%8B%E9%98%B3%E6%80%A7%23",
     details: [
-      "第 48 届世界技能大赛中国代表团共 220 人，其中 71 名参赛选手来自 21 个省份，将参加全部 64 个比赛项目。",
-      "赛事计划于 9 月 22 日至 27 日在上海举行，项目覆盖运输与物流、制造与工程、信息通信、创意艺术和社会服务等领域。",
+      "新京报调查称，厦门一家消杀公司长期为多家连锁餐饮门店提供服务，员工把敌敌畏原液装入矿泉水瓶以规避检查。记者在多家餐厅消杀后的地面残留液体中检出敌敌畏阳性。",
+      "厦门市湖里区已成立联合调查组，涉事门店陆续停业清洁。此条只采用记者调查、企业回应和属地调查进展；最终责任认定以监管部门正式通报为准。",
     ],
   },
   {
     title: "两千多台人形机器人在北京跑步、踢球，也不断摔倒再站起来",
-    source: "美联社 AP",
-    sourceType: "国际媒体／现场图片",
+    source: "新华日报／新华社现场图片",
+    sourceType: "国内媒体／赛事现场",
     time: "8 月 24 日",
-    href: "https://apnews.com/photo-gallery/humanoid-robots-sprint-play-soccer-set-records-beijing-games-photos-ce96217d30c6462e8d3d552d5dd1bb39",
+    href: "https://js.news.cn/20260824/d4485cbd57154136bf2934ba3fb1796c/c.html",
+    discovery: "微博热搜：#世界人形机器人运动会现场画面#",
+    discoveryHref: "https://s.weibo.com/weibo?q=%23%E4%B8%96%E7%95%8C%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%90%E5%8A%A8%E4%BC%9A%E7%8E%B0%E5%9C%BA%E7%94%BB%E9%9D%A2%23",
     image: "https://dims.apnews.com/dims4/default/aaceb24/2147483647/strip/true/crop/7752x5165+0+9/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F38%2F87%2F73a90e94017e52915aec79c63d34%2F57d603c5440e4b1e9f69651d426846e9",
     imageAlt: "北京世界人形机器人运动会现场的人形机器人",
     imageCaption: "北京世界人形机器人运动会现场。图片来源：AP",
     details: [
-      "美联社的现场图集记录了世界人形机器人运动会：超过 2,000 台机器人参加跑步、乒乓球、足球等项目。",
-      "这类比赛既展示速度和协调能力，也把机器人的失误、人工维护和真实环境适应能力直接暴露在观众面前。",
+      "第二届世界人形机器人运动会吸引 16 个国家的 666 支队伍、2,056 台机器人，围绕 51 个赛项展开 1,301 场角逐。",
+      "比赛既展示速度、平衡和集群协同，也把摔倒、故障和人工维护直接暴露在观众面前。社交平台传播的是名场面，赛事报道补充了参赛规模与技术背景。",
     ],
   },
   {
@@ -176,14 +184,16 @@ export const briefingItems: BriefingItem[] = [
     ],
   },
   {
-    title: "围绕“甲醛白菜”的讨论里，网友最关心的是：问题为何总要先被个人发现",
-    source: "Reddit · r/China_irl",
-    sourceType: "公开社交讨论，不作为事实来源",
-    time: "8 月 23 日",
-    href: "https://www.reddit.com/r/China_irl/comments/1vvr1s0/",
+    title: "店主帮扶晕倒老人后遭索赔，讨论焦点转向“善意如何被保护”",
+    source: "红星新闻网／爱看头条",
+    sourceType: "地方媒体／事件仍在跟进",
+    time: "8 月 24 日",
+    href: "https://news.chengdu.cn/2026/0824/6a8b1ab744deea573f21e99c.shtml",
+    discovery: "微博热搜：#官方提出补贴帮扶老人遭索赔店家#",
+    discoveryHref: "https://s.weibo.com/weibo?q=%23%E5%AE%98%E6%96%B9%E6%8F%90%E5%87%BA%E8%A1%A5%E8%B4%B4%E5%B8%AE%E6%89%B6%E8%80%81%E4%BA%BA%E9%81%AD%E7%B4%A2%E8%B5%94%E5%BA%97%E5%AE%B6%23",
     details: [
-      "相关讨论集中在三个问题：同类做法是否长期存在、市场抽检如何覆盖运输环节，以及为什么往往要等个人视频引发关注后才进入公开调查。",
-      "这些评论只作为公共情绪和问题意识的样本。事件事实与后续处置仍以监管部门通报和可核验媒体报道为准。",
+      "媒体报道，湖南祁东一名老人在牌馆短暂休息后晕倒，店主家人帮忙送医，老人仍不幸离世；家属随后索赔，双方经调解达成人道主义补偿。",
+      "热议主要围绕调解边界、救助者责任和社会信任。网上流传的“补贴返还”说法仍需等待当地正式说明，因此本条不把社交平台转述写成确定结论。",
     ],
   },
 ];

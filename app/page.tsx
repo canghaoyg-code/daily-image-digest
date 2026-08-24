@@ -19,8 +19,16 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
           {item.imageCaption && <figcaption>{item.imageCaption}</figcaption>}
         </figure>
       )}
+      {item.discovery && item.discoveryHref && (
+        <div className="entry-discovery">
+          发现线索：
+          <a href={item.discoveryHref} target="_blank" rel="noreferrer">
+            {item.discovery}
+          </a>
+        </div>
+      )}
       <div className="entry-source">
-        来源：{item.source}{item.sourceType ? `（${item.sourceType}）` : ""} · {item.time}
+        核验来源：{item.source}{item.sourceType ? `（${item.sourceType}）` : ""} · {item.time}
         <a href={item.href} target="_blank" rel="noreferrer">
           原文
         </a>
@@ -55,11 +63,11 @@ export default function Home() {
           </header>
 
           <section className="source-note" id="source-note">
-            <strong>来源说明</strong>
+            <strong>今日采集方式</strong>
             <p>
-              以下内容均为公开来源的摘要与转述。官方通报、媒体报道、机构发布和创作者内容会明确区分；链接指向原文，事实如有更新以源站为准。
+              先从微博实时热搜、话题页和公开讨论中发现当天线索，再回到官方通报、记者调查、媒体报道、机构发布与当事方声明核验。微博账号不设固定名单，会随每天的热点和事件主体动态变化。
             </p>
-            <p>每天一份图文汇编，看看同一天里世界正在发生什么。</p>
+            <p>热搜只说明“大家在谈什么”，不单独承担事实证明；每条末尾分别标出发现线索与核验来源。</p>
           </section>
 
           <section className="digest-stream" aria-label="今日图文资讯">

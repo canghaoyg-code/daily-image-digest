@@ -234,6 +234,7 @@ html[data-theme="dark"] .digest-entry p {
   color: #d4d4cd;
 }
 
+.entry-discovery,
 .entry-source {
   margin-top: 8px;
   color: var(--muted);
@@ -241,6 +242,7 @@ html[data-theme="dark"] .digest-entry p {
   font-size: 12px;
 }
 
+.entry-discovery a,
 .entry-source a {
   margin-left: 10px;
   color: var(--green);
