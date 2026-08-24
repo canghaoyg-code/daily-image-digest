@@ -10,8 +10,13 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
     <section className="digest-entry">
       <h2>
         <span>【{number}】</span>
-        <a href={item.href}>{item.title}</a>
+        <a href={item.href} target="_blank" rel="noreferrer">{item.title}</a>
       </h2>
+      {item.image && (
+        <figure className="entry-image">
+          <img src={item.image} alt={item.imageAlt ?? item.title} loading="lazy" />
+        </figure>
+      )}
       {item.details?.map((detail) => <p key={detail}>{detail}</p>)}
       <div className="entry-source">
         来源：{item.source}{item.sourceType ? `（${item.sourceType}）` : ""} · {item.category} · {item.time}
@@ -48,7 +53,7 @@ export default function Home() {
           <a className="brand" href="#today">
             早晚读讯
           </a>
-          <span className="tagline">阅读 · 筛选 · 记录</span>
+          <span className="tagline">资讯 · 原文 · 连续阅读</span>
           <nav aria-label="主导航">
             <a href="#today">今日</a>
             <a href="#deep-reading">深度阅读</a>
