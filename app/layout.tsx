@@ -1,22 +1,12 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 import "./globals.css";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const requestHeaders = await headers();
-  const host =
-    requestHeaders.get("x-forwarded-host") ??
-    requestHeaders.get("host") ??
-    "localhost:3000";
-  const protocol =
-    requestHeaders.get("x-forwarded-proto") ??
-    (host.startsWith("localhost") ? "http" : "https");
-  const metadataBase = new URL(`${protocol}://${host}`);
-
+export function generateMetadata(): Metadata {
+  const metadataBase = new URL("https://zaowan-dubao.canghaoyg.chatgpt.site");
   return {
     metadataBase,
-    title: "早晚读讯 · 私人阅读页面",
-    description: "每天两次更新的个人新闻与深度阅读精选。",
+    title: "每日图读 · 公开来源的每日图文汇编",
+    description: "把官方通报、媒体报道、机构发布和创作者内容编成一份连续可读的每日图文汇编。",
     icons: {
       icon: "/favicon.svg",
       shortcut: "/favicon.svg",
@@ -24,21 +14,21 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       type: "website",
       locale: "zh_CN",
-      title: "早晚读讯",
-      description: "每天 07:00 与 20:00 更新的个人新闻与深度阅读精选。",
+      title: "每日图读",
+      description: "公开来源 · 图文汇编 · 连续阅读",
       images: [
         {
           url: new URL("/og.png", metadataBase),
           width: 1774,
           height: 887,
-          alt: "早晚读讯：07:00 · 20:00",
+          alt: "每日图读：公开来源、图文汇编、连续阅读",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "早晚读讯",
-      description: "每天 07:00 与 20:00 更新的个人新闻与深度阅读精选。",
+      title: "每日图读",
+      description: "公开来源 · 图文汇编 · 连续阅读",
       images: [new URL("/og.png", metadataBase)],
     },
   };

@@ -1,7 +1,6 @@
 import {
   briefingItems,
   briefingMeta,
-  deepReads,
   type BriefingItem,
 } from "./briefing-data";
 import ReaderControls from "./reader-controls";
@@ -13,37 +12,19 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
         <span>【{number}】</span>
         <a href={item.href} target="_blank" rel="noreferrer">{item.title}</a>
       </h2>
+      {item.details?.map((detail) => <p key={detail}>{detail}</p>)}
       {item.image && (
         <figure className="entry-image">
           <img src={item.image} alt={item.imageAlt ?? item.title} loading="lazy" />
+          {item.imageCaption && <figcaption>{item.imageCaption}</figcaption>}
         </figure>
       )}
-      {item.details?.map((detail) => <p key={detail}>{detail}</p>)}
       <div className="entry-source">
-        来源：{item.source}{item.sourceType ? `（${item.sourceType}）` : ""} · {item.category} · {item.time}
+        来源：{item.source}{item.sourceType ? `（${item.sourceType}）` : ""} · {item.time}
         <a href={item.href} target="_blank" rel="noreferrer">
           原文
         </a>
       </div>
-    </section>
-  );
-}
-
-function DigestGroup({
-  id,
-  title,
-  items,
-}: {
-  id: string;
-  title: string;
-  items: BriefingItem[];
-}) {
-  return (
-    <section className="digest-group" id={id} aria-labelledby={`${id}-heading`}>
-      <h1 id={`${id}-heading`}>{title}</h1>
-      {items.map((item, index) => (
-        <DigestEntry key={item.title} item={item} number={index + 1} />
-      ))}
     </section>
   );
 }
@@ -54,12 +35,12 @@ export default function Home() {
       <header className="topbar">
         <div className="topbar-inner">
           <a className="brand" href="#today">
-            早晚读讯
+            每日图读
           </a>
-          <span className="tagline">资讯 · 原文 · 连续阅读</span>
+          <span className="tagline">公开来源 · 图文汇编 · 连续阅读</span>
           <nav aria-label="主导航">
-            <a href="#today">今日</a>
-            <a href="#deep-reading">深度阅读</a>
+            <a href="#today">今日图读</a>
+            <a href="#source-note">来源说明</a>
           </nav>
         </div>
       </header>
@@ -67,15 +48,28 @@ export default function Home() {
       <main>
         <article className="daily-post" id="today">
           <header className="post-header">
-            <h1>【{briefingMeta.label}】</h1>
+            <h1>
+              <span>[图读]</span>【{briefingMeta.dateCode}】{briefingMeta.headline}
+            </h1>
             <p>{briefingMeta.updatedAt}</p>
           </header>
 
-          <DigestGroup id="news" title="今日资讯" items={briefingItems} />
-          <DigestGroup id="deep-reading" title="深度阅读" items={deepReads} />
+          <section className="source-note" id="source-note">
+            <strong>来源说明</strong>
+            <p>
+              以下内容均为公开来源的摘要与转述。官方通报、媒体报道、机构发布和创作者内容会明确区分；链接指向原文，事实如有更新以源站为准。
+            </p>
+            <p>每天一份图文汇编，看看同一天里世界正在发生什么。</p>
+          </section>
+
+          <section className="digest-stream" aria-label="今日图文资讯">
+            {briefingItems.map((item, index) => (
+              <DigestEntry key={item.title} item={item} number={index + 1} />
+            ))}
+          </section>
 
           <footer>
-            每天 07:00 与 20:00 更新 · 仅收录可追溯的原文链接
+            公开来源摘要 · 不替代原始报道 · 点击每条末尾“原文”核对
           </footer>
         </article>
       </main>

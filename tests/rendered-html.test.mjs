@@ -22,18 +22,21 @@ async function render() {
   );
 }
 
-test("server-renders the daily reading page", async () => {
+test("server-renders the daily illustrated digest", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>早晚读讯 · 私人阅读页面<\/title>/);
-  assert.match(html, /早晚读讯/);
-  assert.match(html, /哈萨克斯坦 · 乌兹别克斯坦/);
-  assert.match(html, /深度阅读/);
-  assert.match(html, /哈萨克斯坦国家伙伴框架/);
+  assert.match(html, /<title>每日图读 · 公开来源的每日图文汇编<\/title>/);
+  assert.match(html, /每日图读/);
+  assert.match(html, /20260824/);
+  assert.match(html, /来源说明/);
+  assert.match(html, /多部门指导地方严查/);
+  assert.match(html, /两千多台人形机器人/);
+  assert.match(html, /诺福克郡五百年来/);
+  assert.match(html, /公开社交讨论，不作为事实来源/);
   assert.match(html, /aria-label="阅读工具"/);
   assert.match(html, /aria-label="阅读设置"/);
-  assert.match(html, /每天 07:00 与 20:00 更新/);
+  assert.match(html, /不替代原始报道/);
 });
