@@ -31,7 +31,7 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
         <span className="entry-section-label">{item.section}</span>
         {item.labels?.map((label) => <span key={label}>{label}</span>)}
         {item.format === "visual" && <span>图片／数据优先</span>}
-        {item.format === "social" && <span>公共讨论 · 仍在核验</span>}
+        {item.format === "social" && <span>公共讨论</span>}
       </div>
       <h2>
         <span>【{number}】</span>
@@ -41,11 +41,11 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
       {item.details?.map((detail) => <p key={detail}>{detail}</p>)}
       {item.recommendation && (
         <p className="editor-recommendation">
-          <strong>推荐理由：</strong>{item.recommendation}
+          <strong>原文看点：</strong>{item.recommendation}
         </p>
       )}
       {item.verificationNote && (
-        <p className="verification-note"><strong>核验状态：</strong>{item.verificationNote}</p>
+        <p className="verification-note"><strong>出处说明：</strong>{item.verificationNote}</p>
       )}
       {!mediaFirst && media}
       {item.discovery && item.discoveryHref && (
@@ -57,7 +57,7 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
         </div>
       )}
       <div className="entry-source">
-        核验来源：{item.source}{item.sourceType ? `（${item.sourceType}）` : ""} · {item.time}
+        内容来源：{item.source}{item.sourceType ? `（${item.sourceType}）` : ""} · {item.time}
         <a href={item.href} target="_blank" rel="noreferrer">
           原文
         </a>
@@ -82,7 +82,7 @@ export default function Home() {
           <a className="brand" href="#today">
             每日图读
           </a>
-          <span className="tagline">公开来源 · 图文汇编 · 连续阅读</span>
+          <span className="tagline">公开来源 · 观点摘录 · 连续阅读</span>
           <nav aria-label="主导航">
             <a href="#today">今日图读</a>
           </nav>
@@ -105,7 +105,7 @@ export default function Home() {
           </section>
 
           <footer>
-            公开来源摘要 · 不替代原始报道 · 点击每条末尾“原文”核对
+            公开来源摘录 · 观点仅代表原发布者 · 点击“原文”查看完整内容
           </footer>
         </article>
       </main>

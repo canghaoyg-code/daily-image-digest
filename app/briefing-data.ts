@@ -29,7 +29,7 @@ export const briefingItems: BriefingItem[] = [
   {
     title: "“无座票为何与二等座同价”登上热搜，12306 回应定价规则",
     section: "今日焦点",
-    format: "standard",
+    format: "visual",
     source: "中新经纬／铁路 12306 客服",
     sourceType: "媒体核实／公共服务回应",
     time: "8 月 24 日",
@@ -37,6 +37,9 @@ export const briefingItems: BriefingItem[] = [
     discovery: "微博热搜：#12306回应无座票二等座同价#",
     discoveryHref: "https://s.weibo.com/weibo?q=%2312306%E5%9B%9E%E5%BA%94%E6%97%A0%E5%BA%A7%E7%A5%A8%E4%BA%8C%E7%AD%89%E5%BA%A7%E5%90%8C%E4%BB%B7%23",
     labels: ["微博高热", "媒体核实"],
+    image: "https://www.ourchinastory.com/images/content/megaprojects/2023/12/%E7%95%B6%E4%BB%A3%E4%B8%AD%E5%9C%8B-%E4%B8%AD%E5%9C%8B%E9%AB%98%E9%90%B5-%E7%84%A1%E5%BA%A7%E7%A5%A8-1_x1.jpg",
+    imageAlt: "12306 购票页面中无座票与二等座显示相同价格",
+    imageCaption: "无座票与二等座同价的购票界面资料图。图片来源：当代中国",
     visualStat: { label: "票价规则", value: "同席别 · 同价", note: "无固定座位票与二等座属于同一席别和等级" },
     details: [
       "铁路 12306 客服表示，“无座票”的全称是“无固定座位票”，与二等座属于同一席别和等级，因此票价一致；并非所有列车都发售无座票，通常只在部分线路和高峰时段少量发售。",
@@ -54,10 +57,13 @@ export const briefingItems: BriefingItem[] = [
     discovery: "微博热搜：#多家餐厅残留液体敌敌畏检测阳性#",
     discoveryHref: "https://s.weibo.com/weibo?q=%23%E5%A4%9A%E5%AE%B6%E9%A4%90%E5%8E%85%E6%AE%8B%E7%95%99%E6%B6%B2%E4%BD%93%E6%95%8C%E6%95%8C%E7%95%8F%E6%A3%80%E6%B5%8B%E9%98%B3%E6%80%A7%23",
     labels: ["微博高热", "值得一读", "调查报道"],
-    recommendation: "记者调查、现场采样、企业回应和监管跟进构成了较完整的证据链，信息增量明显；最终责任仍需等待正式调查结论。",
+    recommendation: "报道把记者暗访、现场采样、企业回应和监管跟进放在一起，适合直接阅读完整调查过程。",
+    image: "https://media.bjnews.com.cn/image/2026/08/24/5755950284832580337.png",
+    imageAlt: "记者调查餐饮门店消杀作业的报道配图",
+    imageCaption: "餐饮门店消杀调查报道配图。图片来源：新京报",
     details: [
       "新京报调查称，厦门一家消杀公司长期为多家连锁餐饮门店提供服务，员工把敌敌畏原液装入矿泉水瓶以规避检查。记者在多家餐厅消杀后的地面残留液体中检出敌敌畏阳性。",
-      "厦门市湖里区已成立联合调查组，涉事门店陆续停业清洁。此条只采用记者调查、企业回应和属地调查进展；最终责任认定以监管部门正式通报为准。",
+      "厦门市湖里区已成立联合调查组，涉事门店陆续停业清洁。报道同时记录了企业回应和属地调查进展。",
     ],
   },
   {
@@ -101,7 +107,7 @@ export const briefingItems: BriefingItem[] = [
   {
     title: "四川宜宾长宁县发生 4.7 级地震，震源深度 5 千米",
     section: "今日焦点",
-    format: "brief",
+    format: "visual",
     source: "中国地震台网／央视新闻",
     sourceType: "官方地震速报",
     time: "8 月 24 日",
@@ -109,7 +115,10 @@ export const briefingItems: BriefingItem[] = [
     discovery: "抖音热榜：四川宜宾发生4.7级地震",
     discoveryHref: "https://www.douyin.com/search/%E5%9B%9B%E5%B7%9D%E5%AE%9C%E5%AE%BE%E5%8F%91%E7%94%9F4.7%E7%BA%A7%E5%9C%B0%E9%9C%87",
     labels: ["抖音高热", "官方速报"],
-    verificationNote: "平台震感视频只作为现场线索；震级、时间和位置均采用中国地震台网正式速报。",
+    verificationNote: "震感视频来自社交平台；震级、时间和位置采用中国地震台网公布数据。",
+    image: "https://n.sinaimg.cn/spider20260629/320/w640h480/20260629/341a-21fa3c0ca7d2d3bf41d616141912c994.png",
+    imageAlt: "四川宜宾地区地震震中位置示意图",
+    imageCaption: "宜宾地区地震震中位置资料图。图片来源：中国地震台网／新浪新闻",
     visualStat: { label: "中国地震台网正式测定", value: "4.7 级", note: "震源深度 5 千米" },
     details: [
       "中国地震台网正式测定，8 月 24 日 8 时 26 分，四川宜宾市长宁县发生 4.7 级地震，震中位于北纬 28.33 度、东经 104.98 度，震源深度 5 千米。",
@@ -118,7 +127,7 @@ export const briefingItems: BriefingItem[] = [
   {
     title: "2026 年上半年英语四六级成绩开放查询，电子成绩单 8 月 31 日可下载",
     section: "今日焦点",
-    format: "brief",
+    format: "visual",
     source: "中国教育考试网",
     sourceType: "考试机构通知",
     time: "8 月 24 日",
@@ -126,6 +135,9 @@ export const briefingItems: BriefingItem[] = [
     discovery: "抖音热榜：四六级查分通道今日已开启",
     discoveryHref: "https://www.douyin.com/search/%E5%9B%9B%E5%85%AD%E7%BA%A7%E6%9F%A5%E5%88%86%E9%80%9A%E9%81%93%E4%BB%8A%E6%97%A5%E5%B7%B2%E5%BC%80%E5%90%AF",
     labels: ["抖音高热", "实用信息", "官方入口"],
+    image: "https://p0.ssl.img.360kuai.com/dmfd/__60/t018413298c47bf15d7.jpg",
+    imageAlt: "全国大学英语四六级考试成绩查询页面",
+    imageCaption: "四六级成绩查询界面资料图。图片来源：中国教育考试网页面截图",
     visualStat: { label: "电子成绩单", value: "8 月 31 日", note: "上午 9 时起可免费下载" },
     details: [
       "2026 年上半年全国大学英语四、六级考试成绩已开放查询；8 月 31 日上午 9 时起可免费下载电子成绩报告单，从本次考试开始不再提供纸质报告单。",
@@ -144,13 +156,13 @@ export const briefingItems: BriefingItem[] = [
     labels: ["抖音高热", "官方发布"],
     details: [
       "新华社报道，有关方面经综合研判，认为嫦娥七号任务当前不满足发射条件，因此不能在 2026 年预定窗口实施。",
-      "公开通报只说明了“稳妥可靠、万无一失”的原则，没有披露具体原因。网络上关于技术故障、供应链或合作因素的猜测均没有可靠依据，暂不采用。",
+      "公开通报只说明了“稳妥可靠、万无一失”的原则，没有披露具体原因；社交平台随后围绕技术、供应链和合作因素出现了多种讨论。",
     ],
   },
   {
     title: "教育、社保、卫生和住房等民生支出今年安排 12.4 万亿元",
     section: "今日焦点",
-    format: "standard",
+    format: "visual",
     source: "财政部／国新办发布会",
     sourceType: "政策数据",
     time: "8 月 21 日",
@@ -158,6 +170,9 @@ export const briefingItems: BriefingItem[] = [
     discovery: "百度热搜：#12.4万亿元关乎你的衣食住行#",
     discoveryHref: "https://www.baidu.com/s?wd=12.4%E4%B8%87%E4%BA%BF%E5%85%83%E5%85%B3%E4%B9%8E%E4%BD%A0%E7%9A%84%E8%A1%A3%E9%A3%9F%E4%BD%8F%E8%A1%8C",
     labels: ["百度高热", "政策数据"],
+    image: "https://n.sinaimg.cn/spider20260306/195/w1080h715/20260306/2005-95fe00b72c514dfeb2012cf51053d2a1.png",
+    imageAlt: "财政部门在新闻发布会上介绍财政政策",
+    imageCaption: "财政政策新闻发布会资料图。图片来源：国新办发布会／新浪财经",
     visualStat: { label: "民生支出安排", value: "12.4 万亿元", note: "同比增长 5.4%" },
     details: [
       "财政部在国新办发布会上介绍，今年全国一般公共预算安排教育、社会保障、卫生健康和住房等方面资金 12.4 万亿元，同比增长 5.4%。",
@@ -181,7 +196,7 @@ export const briefingItems: BriefingItem[] = [
     visualStat: { label: "官方实机演示", value: "15 分钟", note: "只采用演示中可以直接看到的内容" },
     details: [
       "游戏科学公开了约 15 分钟的开发中实机画面，首次集中展示主角战斗、群体敌人和部分剧情片段。相关视频在 B 站进入热门并形成大量二次解读。",
-      "本条只把官方演示能够直接看到的内容写入摘要，不根据逐帧解读推断尚未公布的剧情、系统机制或发售时间。",
+      "官方演示发布后，社交平台围绕剧情、系统机制和发售时间展开了大量逐帧解读与观点讨论。",
     ],
   },
   {
@@ -199,18 +214,21 @@ export const briefingItems: BriefingItem[] = [
     imageCaption: "图片来源：阿里巴巴集团",
     details: [
       "阿里巴巴公告称，拟以每股 112.70 港元配售 7.1 亿股新股，预计募集约 800 亿港元，交易完成仍取决于惯常条件。",
-      "公司称净所得将用于扩建 AI 基础设施及增强从应用到算力的全栈能力。公司公告说明的是融资方立场，不等同于投资建议。",
+      "公司称净所得将用于扩建 AI 基础设施及增强从应用到算力的全栈能力；这是公司对融资用途的公开表述。",
     ],
   },
   {
     title: "台风“紫檀”影响广西，中央救灾物资与社会捐赠物资同步调拨",
     section: "今日焦点",
-    format: "brief",
+    format: "visual",
     source: "中华人民共和国应急管理部",
     sourceType: "政府部门发布",
     time: "8 月 23 日",
     href: "https://www.mem.gov.cn/xw/yjglbgzdt/202608/t20260823_708249.shtml",
     labels: ["官方通报"],
+    image: "https://www.news.cn/gongyi/20260709/3c36594079be4e42ae3b5971e5405cce/202607093c36594079be4e42ae3b5971e5405cce_a698abae24e84011a8282dc178d2bff5.JPG",
+    imageAlt: "广西救灾安置点工作人员发放生活物资",
+    imageCaption: "广西救灾物资发放资料图。图片来源：新华社",
     details: [
       "针对台风“紫檀”影响，相关部门向广西调拨折叠床、被褥、雨衣雨靴等 2 万件中央救灾物资，同时协调基金会和社会平台援助 2.7 万件生活物资。",
     ],
@@ -362,11 +380,11 @@ export const briefingItems: BriefingItem[] = [
     href: "https://news.chengdu.cn/2026/0824/6a8b1ab744deea573f21e99c.shtml",
     discovery: "微博热搜：#官方提出补贴帮扶老人遭索赔店家#",
     discoveryHref: "https://s.weibo.com/weibo?q=%23%E5%AE%98%E6%96%B9%E6%8F%90%E5%87%BA%E8%A1%A5%E8%B4%B4%E5%B8%AE%E6%89%B6%E8%80%81%E4%BA%BA%E9%81%AD%E7%B4%A2%E8%B5%94%E5%BA%97%E5%AE%B6%23",
-    labels: ["微博高热", "持续核实"],
-    verificationNote: "事件经过采用地方媒体报道；网上流传的补贴返还说法仍在核实，不作为确定事实。",
+    labels: ["微博高热", "公共讨论"],
+    verificationNote: "事件经过来自地方媒体；有关补贴返还的说法来自网络讨论，目前没有统一公开说明。",
     details: [
       "媒体报道，湖南祁东一名老人在牌馆短暂休息后晕倒，店主家人帮忙送医，老人仍不幸离世；家属随后索赔，双方经调解达成人道主义补偿。",
-      "热议主要围绕调解边界、救助者责任和社会信任。网上流传的“补贴返还”说法仍需等待当地正式说明，因此本条不把社交平台转述写成确定结论。",
+      "热议主要围绕调解边界、救助者责任和社会信任；社交平台还传播了有关补贴返还的不同说法。",
     ],
   },
 ];
