@@ -8,11 +8,21 @@ import ReaderControls from "./reader-controls";
 function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
   return (
     <section className="digest-entry">
+      {item.labels && (
+        <div className="entry-labels" aria-label="收录标签">
+          {item.labels.map((label) => <span key={label}>{label}</span>)}
+        </div>
+      )}
       <h2>
         <span>【{number}】</span>
         <a href={item.href} target="_blank" rel="noreferrer">{item.title}</a>
       </h2>
       {item.details?.map((detail) => <p key={detail}>{detail}</p>)}
+      {item.recommendation && (
+        <p className="editor-recommendation">
+          <strong>推荐理由：</strong>{item.recommendation}
+        </p>
+      )}
       {item.image && (
         <figure className="entry-image">
           <img src={item.image} alt={item.imageAlt ?? item.title} loading="lazy" />
@@ -63,11 +73,13 @@ export default function Home() {
           </header>
 
           <section className="source-note" id="source-note">
-            <strong>今日采集方式</strong>
+            <strong>采集与收录规则</strong>
             <p>
-              先从微博实时热搜、话题页和公开讨论中发现当天线索，再回到官方通报、记者调查、媒体报道、机构发布与当事方声明核验。微博账号不设固定名单，会随每天的热点和事件主体动态变化。
+              双轨收录：热点内容不设条数，综合微博、百度、抖音、B站等公开榜单的排名、增速、持续时间和跨平台共振，达到热度门槛即进入候选；高质量文章不受热度限制，重点看原创证据、信息增量、论证、独立性和持久价值。
             </p>
-            <p>热搜只说明“大家在谈什么”，不单独承担事实证明；每条末尾分别标出发现线索与核验来源。</p>
+            <p>
+              平台和账号只负责发现线索，名单每天动态变化；事实回到官方通报、原始公告、记者调查、机构资料或当事方声明核验。同一事件合并重复话题，营销热搜降权，尚未证实的内容明确标注。
+            </p>
           </section>
 
           <section className="digest-stream" aria-label="今日图文资讯">

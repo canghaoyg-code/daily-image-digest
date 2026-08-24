@@ -166,6 +166,23 @@ html[data-theme="dark"] .daily-post {
   border-bottom: 1px solid var(--line);
 }
 
+.entry-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.entry-labels span {
+  padding: 3px 7px;
+  border: 1px solid color-mix(in srgb, var(--green) 32%, transparent);
+  border-radius: 999px;
+  color: var(--green);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  font-size: 11px;
+  line-height: 1;
+}
+
 .digest-entry h2 {
   margin: 0;
   color: var(--ink);
@@ -214,6 +231,16 @@ html[data-theme="dark"] .daily-post {
   font-size: 16px;
   letter-spacing: 0.01em;
   line-height: 1.9;
+}
+
+.digest-entry .editor-recommendation {
+  padding: 11px 13px;
+  border-left: 2px solid var(--red);
+  background: color-mix(in srgb, var(--red) 5%, transparent);
+  color: var(--muted);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
 }
 
 html[data-font-size="small"] .digest-entry p {

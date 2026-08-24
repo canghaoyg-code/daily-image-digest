@@ -31,11 +31,16 @@ test("server-renders the daily illustrated digest", async () => {
   assert.match(html, /<title>每日图读 · 公开来源的每日图文汇编<\/title>/);
   assert.match(html, /每日图读/);
   assert.match(html, /20260824/);
-  assert.match(html, /今日采集方式/);
-  assert.match(html, /微博账号不设固定名单/);
+  assert.match(html, /采集与收录规则/);
+  assert.match(html, /热点内容不设条数/);
+  assert.match(html, /高质量文章不受热度限制/);
   assert.match(html, /12306 回应定价规则/);
   assert.match(html, /多家门店残留液体检出敌敌畏/);
   assert.match(html, /两千多台人形机器人/);
+  assert.match(html, /已故人士金融账户查询服务/);
+  assert.match(html, /四川宜宾长宁县发生 4.7 级地震/);
+  assert.match(html, /黑神话：钟馗/);
+  assert.match(html, /推荐理由/);
   assert.match(html, /诺福克郡五百年来/);
   assert.match(html, /发现线索/);
   assert.match(html, /核验来源/);
