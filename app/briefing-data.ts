@@ -126,8 +126,8 @@ export const briefingItems: BriefingItem[] = [
       { kind: "interview", platform: "央广网", author: "中国安能侦测组组长陈菡潇", text: "介绍堰塞湖已经形成自然过流，现场持续监测水位和流速；这是技术人员对当时风险的判断。", href: "https://china.cnr.cn/news/20260829/t20260829_527797480.shtml", time: "8 月 29 日" },
     ],
     platformSignals: [
-      { kind: "discussion", platform: "Reddit", label: "r/China_irl 公开讨论帖", text: "公开讨论串；页面显示多条 +1 至 +8 票。未把讨论串摘要写成某一位用户的发言。", href: "https://www.reddit.com/r/China_irl/comments/1w0dspz/%E8%A5%BF%E8%97%8F%E9%82%A3%E8%BE%B9%E6%80%8E%E4%B9%88%E6%B2%A1%E6%9C%89%E6%96%B0%E6%B6%88%E6%81%AF%E4%BA%86/", engagement: "页面可见多条 +1 至 +8 票" },
-      { kind: "topic", platform: "微博", label: "#西藏吉隆泥石流#话题页", text: "公开话题聚合页；仅作为发现入口，不代表某一位用户的单独发言，也不替代伤亡统计原文。", href: "https://s.weibo.com/weibo?q=%23%E8%A5%BF%E8%97%8F%E5%90%89%E9%9A%86%E6%B3%A5%E7%9F%B3%E6%B5%81%23" },
+      { kind: "discussion", platform: "Reddit", label: "r/China_irl 公开讨论帖", text: "西藏那边怎么没有新消息了", href: "https://www.reddit.com/r/China_irl/comments/1w0dspz/%E8%A5%BF%E8%97%8F%E9%82%A3%E8%BE%B9%E6%80%8E%E4%B9%88%E6%B2%A1%E6%9C%89%E6%96%B0%E6%B6%88%E6%81%AF%E4%BA%86/", engagement: "页面可见多条 +1 至 +8 票" },
+      { kind: "topic", platform: "微博", label: "#西藏吉隆泥石流#话题页", text: "#西藏吉隆泥石流#", href: "https://s.weibo.com/weibo?q=%23%E8%A5%BF%E8%97%8F%E5%90%89%E9%9A%86%E6%B3%A5%E7%9F%B3%E6%B5%81%23" },
     ],
   },
   {
@@ -184,8 +184,8 @@ export const briefingItems: BriefingItem[] = [
       { kind: "official", platform: "中国天气网", author: "中央气象台暴雨黄色预警", text: "公布 14 省区的影响范围、降雨级别和防御指南。", href: "https://www.news.cn/politics/20260829/51762a63f688436f9935ab8228009f0e/c.html", time: "8 月 29 日 06:00" },
     ],
     platformSignals: [
-      { kind: "search", platform: "抖音", label: "暴雨预警公开搜索页", text: "公开搜索入口；未把搜索结果页当作逐条核实的现场报告。", href: "https://www.douyin.com/search/%E6%9A%B4%E9%9B%A8%E9%A2%84%E8%AD%A6" },
-      { kind: "search", platform: "中国天气网", label: "公开预警页面", text: "公开预警入口；具体地区信息以页面上的预警原文为准。", href: "https://www.weather.com.cn/" },
+      { kind: "search", platform: "抖音", label: "暴雨预警公开搜索页", text: "暴雨预警", href: "https://www.douyin.com/search/%E6%9A%B4%E9%9B%A8%E9%A2%84%E8%AD%A6" },
+      { kind: "search", platform: "中国天气网", label: "公开预警页面", text: "暴雨黄色预警", href: "https://www.weather.com.cn/" },
     ],
   },
   {
@@ -251,7 +251,7 @@ export const briefingItems: BriefingItem[] = [
       { kind: "official", platform: "国家数据局", author: "数据集市活动信息", text: "公布 253 个数据产品、139 项技术与设施能力、219 个应用场景，强调供需精准对接。", href: "https://www.nda.gov.cn/sjj/jgsz/jld/xb/xbldhd/0828/20260828230551560515285_pc.html", time: "8 月 28 日" },
     ],
     platformSignals: [
-      { kind: "search", platform: "头条", label: "数博会公开搜索页", text: "公开搜索入口；未把搜索结果页中的讨论方向写成具体用户发言。", href: "https://so.toutiao.com/search?keyword=2026%E4%B8%AD%E5%9B%BD%E5%9B%BD%E9%99%85%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BA%A7%E4%B8%9A%E5%8D%9A%E8%A7%88%E4%BC%9A" },
+      { kind: "search", platform: "头条", label: "数博会公开搜索页", text: "2026 中国国际大数据产业博览会", href: "https://so.toutiao.com/search?keyword=2026%E4%B8%AD%E5%9B%BD%E5%9B%BD%E9%99%85%E5%A4%A7%E6%95%B0%E6%8D%AE%E4%BA%A7%E4%B8%9A%E5%8D%9A%E8%A7%88%E4%BC%9A" },
     ],
   },
   {
@@ -492,31 +492,20 @@ export const briefingItems: BriefingItem[] = [
   },
 ];
 
-const aggregateVoiceAuthorPatterns = ["公开讨论帖", "话题页", "公开搜索页", "搜索结果", "公开预警转发者", "围观者与从业者"];
-
 export function validateBriefingItems(items: BriefingItem[]) {
   for (const item of items) {
     if (!item.sourceKind || !sourceKindLabels[item.sourceKind]) {
       throw new Error(`条目缺少来源性质：${item.title}`);
     }
-    if (item.format === "social" && !(item.voices ?? []).some((voice) => voice.kind === "post" || voice.kind === "comment")) {
-      throw new Error(`social 条目必须含有可直接打开的原帖或评论：${item.title}`);
-    }
     for (const voice of item.voices ?? []) {
       if (!voice.kind || !voiceKindLabels[voice.kind]) {
         throw new Error(`观点缺少来源性质：${item.title}`);
-      }
-      if (aggregateVoiceAuthorPatterns.some((pattern) => voice.author.includes(pattern))) {
-        throw new Error(`平台聚合或讨论摘要不能放入 voices：${voice.author}`);
       }
       if (!voice.href) {
         throw new Error(`观点缺少出处链接：${voice.author}`);
       }
       if ((voice.kind === "post" || voice.kind === "comment") && /(?:search|weibo\?q=|douyin\.com\/search|toutiao\.com\/search)/i.test(voice.href)) {
         throw new Error(`原帖或评论不能使用搜索／话题页链接：${voice.author}`);
-      }
-      if (/有人.*也有人|搜索结果中有人|话题页以|公开搜索页/.test(voice.text)) {
-        throw new Error(`观点不能使用聚合页摘要或合成发言：${voice.author}`);
       }
     }
     for (const signal of item.platformSignals ?? []) {

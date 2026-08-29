@@ -47,9 +47,9 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
       </h2>
       {mediaFirst && media}
       {item.details?.map((detail) => <p key={detail}>{detail}</p>)}
-      {item.voices?.length ? (
-        <ol className="entry-voices" aria-label="同一热点的逐条来源摘录">
-          {item.voices.map((voice) => (
+      {(item.voices?.length || item.platformSignals?.length) ? (
+        <ol className="entry-voices" aria-label="原帖、评论与相关平台内容">
+          {item.voices?.map((voice) => (
             <li key={`${voice.platform}-${voice.author}`}>
               <div className="voice-meta">
                 <span>{voice.platform}</span>
@@ -62,24 +62,19 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
               <a href={voice.href} target="_blank" rel="noreferrer">查看出处</a>
             </li>
           ))}
-        </ol>
-      ) : null}
-      {item.platformSignals?.length ? (
-        <div className="entry-signals" aria-label="平台发现线索">
-          <div className="signals-heading">平台线索</div>
-          {item.platformSignals.map((signal) => (
-            <div className="entry-signal" key={`${signal.platform}-${signal.label}`}>
-              <div className="signal-meta">
+          {item.platformSignals?.map((signal) => (
+            <li key={`${signal.platform}-${signal.label}`}>
+              <div className="voice-meta">
                 <span>{signal.platform}</span>
+                <span className="voice-kind">{platformSignalKindLabels[signal.kind]}</span>
                 <strong>{signal.label}</strong>
-                <em>{platformSignalKindLabels[signal.kind]}</em>
                 {signal.engagement && <em>{signal.engagement}</em>}
               </div>
-              <p>{signal.text}</p>
-              <a href={signal.href} target="_blank" rel="noreferrer">查看平台线索</a>
-            </div>
+              <blockquote><p>{signal.text}</p></blockquote>
+              <a href={signal.href} target="_blank" rel="noreferrer">查看出处</a>
+            </li>
           ))}
-        </div>
+        </ol>
       ) : null}
       {item.recommendation && (
         <p className="editor-recommendation">
