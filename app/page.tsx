@@ -33,6 +33,11 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
         {item.format === "visual" && <span>图片／数据优先</span>}
         {item.format === "social" && <span>公共讨论</span>}
       </div>
+      {item.topic && (
+        <div className="entry-topic" aria-label={`同题组：${item.topic}`}>
+          <span>同题组</span>{item.topic}
+        </div>
+      )}
       <h2>
         <span>【{number}】</span>
         <a href={item.href} target="_blank" rel="noreferrer">{item.title}</a>
@@ -46,10 +51,11 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
               <div className="voice-meta">
                 <span>{voice.platform}</span>
                 <strong>{voice.author}</strong>
+                {voice.time && <span className="voice-time">发布 {voice.time}</span>}
                 {voice.engagement && <em>{voice.engagement}</em>}
               </div>
-              <p>{voice.text}</p>
-              <a href={voice.href} target="_blank" rel="noreferrer">查看这条观点</a>
+              <blockquote><p>{voice.text}</p></blockquote>
+              <a href={voice.href} target="_blank" rel="noreferrer">查看出处</a>
             </li>
           ))}
         </ol>

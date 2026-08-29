@@ -203,6 +203,23 @@ html[data-theme="dark"] .daily-post {
   color: #fff;
 }
 
+.entry-topic {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  margin: 14px 0 8px;
+  color: var(--muted);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.entry-topic span {
+  color: var(--red);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
 html[data-theme="dark"] .entry-labels .entry-section-label {
   color: var(--green-deep);
 }
@@ -384,8 +401,31 @@ html[data-theme="dark"] .entry-labels .entry-section-label {
   font-style: normal;
 }
 
+.voice-meta .voice-time {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.entry-voices blockquote {
+  position: relative;
+  margin: 8px 0 0;
+  padding-left: 18px;
+  border-left: 2px solid color-mix(in srgb, var(--red) 55%, var(--line));
+}
+
+.entry-voices blockquote::before {
+  position: absolute;
+  top: -3px;
+  left: 5px;
+  color: var(--red);
+  content: "“";
+  font-family: Georgia, serif;
+  font-size: 22px;
+  line-height: 1;
+}
+
 .digest-entry .entry-voices p {
-  margin-top: 8px;
+  margin-top: 0;
   font-size: 15px;
   line-height: 1.75;
 }

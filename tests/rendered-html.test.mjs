@@ -64,7 +64,9 @@ test("server-renders the daily illustrated digest", async () => {
   assert.match(html, /最后一公里仍在泥里/);
   assert.match(html, /同一热点的代表性观点/);
   assert.match(html, /7 人遇难、554 人失联/);
-  assert.ok((html.match(/查看这条观点/g) ?? []).length >= 10);
+  assert.ok((html.match(/查看出处/g) ?? []).length >= 10);
+  assert.ok((html.match(/同题组/g) ?? []).length >= 10);
+  assert.match(html, /发布[\s\S]*?8 月 29 日 01:00/);
   assert.ok(html.indexOf("同一场泥石流的五种声音") < html.indexOf("暴雨黄色预警继续"));
   assert.ok(html.indexOf("暴雨黄色预警继续") < html.indexOf("房地产政策迎来一组新规则"));
   assert.ok(html.indexOf("数博会把‘词元’放进现场") < html.indexOf("美国法官判定五角大楼将 Anthropic 列为供应链风险违法"));

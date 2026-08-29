@@ -8,6 +8,7 @@ export type BriefingItem = {
   href: string;
   discovery?: string;
   discoveryHref?: string;
+  topic?: string;
   labels?: string[];
   recommendation?: string;
   verificationNote?: string;
@@ -17,6 +18,7 @@ export type BriefingItem = {
     author: string;
     text: string;
     href: string;
+    time?: string;
     engagement?: string;
   }>;
   details: string[];
@@ -35,6 +37,7 @@ export const briefingMeta = {
 export const briefingItems: BriefingItem[] = [
   {
     title: "吉隆泥石流已致 7 人遇难、554 人失联：救援队伍抵达核心区，最后一公里仍是悬崖与河流",
+    topic: "吉隆泥石流救援",
     section: "今日焦点",
     format: "feature",
     source: "新华社／央广网／人民网",
@@ -60,6 +63,7 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "同一场泥石流的五种声音：数字在更新，救援在推进，网友在追问‘还能不能看见现场’",
+    topic: "吉隆泥石流救援",
     section: "今日焦点",
     format: "social",
     source: "央广网／新华社／微博／Reddit 公开讨论",
@@ -76,14 +80,15 @@ export const briefingItems: BriefingItem[] = [
       "这条热点同时包含官方统计、现场工作、技术判断和公众观看经验。下面保留不同发言各自回答的问题：谁在救援、湖水怎样、画面为何有限，以及网友怎样理解‘没有新消息’。",
     ],
     voices: [
-      { platform: "新华社", author: "西藏自治区应急管理厅消息", text: "公布截至 29 日 1 时的 7 人遇难、554 人失联，并说明道路抢通 1.02 公里、设置 5 人观测哨。", href: "https://www.news.cn/politics/20260829/e20310f9f89744da82a6c343cf81834b/c.html" },
-      { platform: "央广网", author: "中国安能侦测组组长陈菡潇", text: "介绍堰塞湖已经形成自然过流，现场持续监测水位和流速；这是技术人员对当时风险的判断。", href: "https://china.cnr.cn/news/20260829/t20260829_527797480.shtml" },
+      { platform: "新华社", author: "西藏自治区应急管理厅消息", text: "公布截至 29 日 1 时的 7 人遇难、554 人失联，并说明道路抢通 1.02 公里、设置 5 人观测哨。", href: "https://www.news.cn/politics/20260829/e20310f9f89744da82a6c343cf81834b/c.html", time: "8 月 29 日 01:00" },
+      { platform: "央广网", author: "中国安能侦测组组长陈菡潇", text: "介绍堰塞湖已经形成自然过流，现场持续监测水位和流速；这是技术人员对当时风险的判断。", href: "https://china.cnr.cn/news/20260829/t20260829_527797480.shtml", time: "8 月 29 日" },
       { platform: "Reddit", author: "r/China_irl 公开讨论帖", text: "有人把公开报道中的‘更新慢’与现场可达性联系起来，也有人提醒可以从公开媒体和平台搜索最新画面；这是讨论者的判断，不等于灾情事实。", href: "https://www.reddit.com/r/China_irl/comments/1w0dspz/%E8%A5%BF%E8%97%8F%E9%82%A3%E8%BE%B9%E6%80%8E%E4%B9%88%E6%B2%A1%E6%9C%89%E6%96%B0%E6%B6%88%E6%81%AF%E4%BA%86/", engagement: "页面可见多条 +1 至 +8 票" },
       { platform: "微博", author: "#西藏吉隆泥石流#话题页", text: "以救援画面、航拍和转发通报形成持续热度；话题聚合能显示关注规模，但不等于实时伤亡统计。", href: "https://s.weibo.com/weibo?q=%23%E8%A5%BF%E8%97%8F%E5%90%89%E9%9A%86%E6%B3%A5%E7%9F%B3%E6%B5%81%23" },
     ],
   },
   {
     title: "暴雨黄色预警继续：14 省区有大到暴雨，江西、湖南和广西局地可能出现特大暴雨",
+    topic: "暴雨预警",
     section: "今日焦点",
     format: "visual",
     source: "中央气象台／中国天气网／新华网",
@@ -117,6 +122,7 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "台风之外，南方强降雨也在扩大：天气预警从一张地图变成各地的临时日程表",
+    topic: "暴雨预警",
     section: "今日焦点",
     format: "social",
     source: "中国天气网／抖音搜索／地方气象服务",
@@ -155,6 +161,7 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "数博会把‘词元’放进现场：机器人跳苗族舞，无人机踢足球，数据开始寻找应用场景",
+    topic: "数博会与数据应用",
     section: "世界与新知",
     format: "visual",
     source: "央视新闻／国家数据局",
@@ -175,6 +182,7 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "数据产业的三种现场语言：展台讲体验，数据局讲供需，旁观者问‘数据怎样变成价值’",
+    topic: "数博会与数据应用",
     section: "世界与新知",
     format: "social",
     source: "央视新闻／国家数据局／公开科技讨论",
@@ -187,13 +195,14 @@ export const briefingItems: BriefingItem[] = [
     imageCaption: "展会机器人展示画面。图片来源：新华社",
     details: ["数博会的热度来自可见的机器人表演，也来自‘数据集市’里供需双方的撮合。不同发言各自强调现场体验、产业基础设施和对落地效果的追问，保留它们的距离。"],
     voices: [
-      { platform: "央视新闻", author: "展会现场报道", text: "把机器人、自动驾驶和 AIGC 漫剧作为观众可以直接体验的‘智能融入生活’场景。", href: "https://news.cctv.com/2026/08/29/ARTI5I0LJevT0FY5TQDmHHYp260828.shtml" },
-      { platform: "国家数据局", author: "数据集市活动信息", text: "公布 253 个数据产品、139 项技术与设施能力、219 个应用场景，强调供需精准对接。", href: "https://www.nda.gov.cn/sjj/jgsz/jld/xb/xbldhd/0828/20260828230551560515285_pc.html" },
+      { platform: "央视新闻", author: "展会现场报道", text: "把机器人、自动驾驶和 AIGC 漫剧作为观众可以直接体验的‘智能融入生活’场景。", href: "https://news.cctv.com/2026/08/29/ARTI5I0LJevT0FY5TQDmHHYp260828.shtml", time: "8 月 29 日" },
+      { platform: "国家数据局", author: "数据集市活动信息", text: "公布 253 个数据产品、139 项技术与设施能力、219 个应用场景，强调供需精准对接。", href: "https://www.nda.gov.cn/sjj/jgsz/jld/xb/xbldhd/0828/20260828230551560515285_pc.html", time: "8 月 28 日" },
       { platform: "公开科技讨论", author: "围观者与从业者", text: "围绕‘展台演示如何变成可复用的产品和收入’继续提问；这是讨论性观点，不是展会结论。", href: "https://so.toutiao.com/search?keyword=%E6%95%B0%E5%8D%9A%E4%BC%9A%20%E8%AF%8D%E5%85%83%20%E6%95%B0%E6%8D%AE%E9%9B%86%E5%B8%82" },
     ],
   },
   {
     title: "美国法官判定五角大楼将 Anthropic 列为供应链风险违法：AI 安全边界进入采购诉讼",
+    topic: "Anthropic 采购诉讼",
     section: "世界与新知",
     format: "feature",
     source: "The Guardian／Reuters／AFP",
@@ -214,6 +223,7 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "Anthropic 案的三方立场：公司谈安全，五角大楼谈行动自由，法官谈政府不能用国家安全一笔带过",
+    topic: "Anthropic 采购诉讼",
     section: "世界与新知",
     format: "social",
     source: "The Guardian／Anthropic／美国国防部门公开文件",
@@ -223,13 +233,14 @@ export const briefingItems: BriefingItem[] = [
     labels: ["多声部热点", "3 条代表性观点", "观点仅代表发布者"],
     details: ["同一场诉讼里，‘AI 能不能用于战争’不是唯一问题，‘政府能否因公司拒绝某些用途而惩罚它’也成为核心。下面把原报道中的三种说法并排保留。"],
     voices: [
-      { platform: "Anthropic", author: "公司发言人", text: "欢迎法院认定供应链风险 designation 违法；公司此前反对完全自主致命武器和国内大规模监控。", href: "https://www.anthropic.com/news" },
-      { platform: "美国国防部门", author: "五角大楼立场（经 Guardian 转述）", text: "私人公司不应限制军事行动，国防部门有权选择自己使用的 AI 供应商。", href: "https://www.theguardian.com/technology/2026/aug/28/us-court-rules-pentagon-anthropic-ban-illegal-trump-claude-ai" },
-      { platform: "美国联邦法院", author: "法官 Rita Lin", text: "裁决认为，空泛援引国家安全不能成为惩罚和报复政府批评者的空白支票。", href: "https://www.theguardian.com/technology/2026/aug/28/us-court-rules-pentagon-anthropic-ban-illegal-trump-claude-ai" },
+      { platform: "Anthropic", author: "公司发言人", text: "欢迎法院认定供应链风险 designation 违法；公司此前反对完全自主致命武器和国内大规模监控。", href: "https://www.anthropic.com/news", time: "8 月 28 日" },
+      { platform: "美国国防部门", author: "五角大楼立场（经 Guardian 转述）", text: "私人公司不应限制军事行动，国防部门有权选择自己使用的 AI 供应商。", href: "https://www.theguardian.com/technology/2026/aug/28/us-court-rules-pentagon-anthropic-ban-illegal-trump-claude-ai", time: "8 月 28 日" },
+      { platform: "美国联邦法院", author: "法官 Rita Lin", text: "裁决认为，空泛援引国家安全不能成为惩罚和报复政府批评者的空白支票。", href: "https://www.theguardian.com/technology/2026/aug/28/us-court-rules-pentagon-anthropic-ban-illegal-trump-claude-ai", time: "8 月 28 日" },
     ],
   },
   {
     title: "挪威国王哈拉尔五世去世，享年 89 岁：一位把王宫打开、用‘普通感’维系公众连接的君主",
+    topic: "哈拉尔五世与挪威悼念",
     section: "世界与新知",
     format: "feature",
     source: "The Guardian／挪威王室／Reuters",
@@ -250,6 +261,7 @@ export const briefingItems: BriefingItem[] = [
   },
   {
     title: "从‘祖父般人物’到继承人：奥斯陆民众在王宫外留下鲜花，也把争议留在新王朝门口",
+    topic: "哈拉尔五世与挪威悼念",
     section: "人物、自然与轻读",
     format: "social",
     source: "NRK via Reuters／The Guardian 视频／奥斯陆公众",
@@ -262,8 +274,8 @@ export const briefingItems: BriefingItem[] = [
     imageCaption: "民众在奥斯陆王宫外献花。图片来源：Rune Hellestad／Getty via The Guardian",
     details: ["悼念现场的语言比讣告更短，也更私人：有人记得他像家里的长辈，有人把国家哀悼与王室近年的争议同时提起。"],
     voices: [
-      { platform: "NRK via Reuters", author: "奥斯陆悼念民众", text: "把哈拉尔描述成让所有人感到‘在家里’的祖父般人物。", href: "https://www.theguardian.com/world/video/2026/aug/28/norwegians-pay-tribute-to-grandfather-figure-king-harald-v-video" },
-      { platform: "The Guardian", author: "欧洲王室报道", text: "记录哈康八世继位，也提醒公众支持率、王室家人争议和新王朝的现实会继续存在。", href: "https://www.theguardian.com/world/2026/aug/28/norway-king-harald-dies-leaving-stormy-succession-mette-marit-crown-princesss-epstein-links" },
+      { platform: "NRK via Reuters", author: "奥斯陆悼念民众", text: "把哈拉尔描述成让所有人感到‘在家里’的祖父般人物。", href: "https://www.theguardian.com/world/video/2026/aug/28/norwegians-pay-tribute-to-grandfather-figure-king-harald-v-video", time: "8 月 28 日" },
+      { platform: "The Guardian", author: "欧洲王室报道", text: "记录哈康八世继位，也提醒公众支持率、王室家人争议和新王朝的现实会继续存在。", href: "https://www.theguardian.com/world/2026/aug/28/norway-king-harald-dies-leaving-stormy-succession-mette-marit-crown-princesss-epstein-links", time: "8 月 28 日" },
     ],
   },
   {
