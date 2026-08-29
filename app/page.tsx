@@ -1,7 +1,9 @@
 import {
   briefingItems,
   briefingMeta,
+  platformSignalKindLabels,
   type BriefingItem,
+  voiceKindLabels,
 } from "./briefing-data";
 import ReaderControls from "./reader-controls";
 
@@ -31,7 +33,7 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
         <span className="entry-section-label">{item.section}</span>
         {item.labels?.map((label) => <span key={label}>{label}</span>)}
         {item.format === "visual" && <span>图片／数据优先</span>}
-        {item.format === "social" && <span>公共讨论</span>}
+        {item.format === "social" && <span>观点／平台线索</span>}
       </div>
       {item.topic && (
         <div className="entry-topic" aria-label={`同题组：${item.topic}`}>
@@ -50,6 +52,7 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
             <li key={`${voice.platform}-${voice.author}`}>
               <div className="voice-meta">
                 <span>{voice.platform}</span>
+                <span className="voice-kind">{voiceKindLabels[voice.kind]}</span>
                 <strong>{voice.author}</strong>
                 {voice.time && <span className="voice-time">发布 {voice.time}</span>}
                 {voice.engagement && <em>{voice.engagement}</em>}
@@ -59,6 +62,23 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
             </li>
           ))}
         </ol>
+      ) : null}
+      {item.platformSignals?.length ? (
+        <div className="entry-signals" aria-label="平台发现线索">
+          <div className="signals-heading">平台线索</div>
+          {item.platformSignals.map((signal) => (
+            <div className="entry-signal" key={`${signal.platform}-${signal.label}`}>
+              <div className="signal-meta">
+                <span>{signal.platform}</span>
+                <strong>{signal.label}</strong>
+                <em>{platformSignalKindLabels[signal.kind]}</em>
+                {signal.engagement && <em>{signal.engagement}</em>}
+              </div>
+              <p>{signal.text}</p>
+              <a href={signal.href} target="_blank" rel="noreferrer">查看平台线索</a>
+            </div>
+          ))}
+        </div>
       ) : null}
       {item.recommendation && (
         <p className="editor-recommendation">

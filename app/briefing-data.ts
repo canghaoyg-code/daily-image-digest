@@ -1,3 +1,21 @@
+export type VoiceKind = "official" | "interview" | "post" | "comment" | "ruling" | "reported";
+export type PlatformSignalKind = "topic" | "search" | "discussion";
+
+export const voiceKindLabels: Record<VoiceKind, string> = {
+  official: "官方文本",
+  interview: "采访转述",
+  post: "原帖",
+  comment: "评论",
+  ruling: "裁决／文件",
+  reported: "报道转述",
+};
+
+export const platformSignalKindLabels: Record<PlatformSignalKind, string> = {
+  topic: "话题聚合",
+  search: "搜索线索",
+  discussion: "讨论串摘要",
+};
+
 export type BriefingItem = {
   title: string;
   section: "今日焦点" | "世界与新知" | "值得细读" | "人物、自然与轻读";
@@ -14,11 +32,20 @@ export type BriefingItem = {
   verificationNote?: string;
   relatedSources?: Array<{ label: string; href: string }>;
   voices?: Array<{
+    kind: VoiceKind;
     platform: string;
     author: string;
     text: string;
     href: string;
     time?: string;
+    engagement?: string;
+  }>;
+  platformSignals?: Array<{
+    kind: PlatformSignalKind;
+    platform: string;
+    label: string;
+    text: string;
+    href: string;
     engagement?: string;
   }>;
   details: string[];
@@ -67,12 +94,12 @@ export const briefingItems: BriefingItem[] = [
     section: "今日焦点",
     format: "social",
     source: "央广网／新华社／微博／Reddit 公开讨论",
-    sourceType: "公开发言摘录／现场讨论",
+    sourceType: "来源声音／平台线索",
     time: "8 月 28 日—29 日",
     href: "https://china.cnr.cn/news/20260829/t20260829_527797480.shtml",
     discovery: "Reddit 公开讨论：西藏那边怎么没有新消息了",
     discoveryHref: "https://www.reddit.com/r/China_irl/comments/1w0dspz/%E8%A5%BF%E8%97%8F%E9%82%A3%E8%BE%B9%E6%80%8E%E4%B9%88%E6%B2%A1%E6%9C%89%E6%96%B0%E6%B6%88%E6%81%AF%E4%BA%86/",
-    labels: ["多声部热点", "4 条代表性发言", "观点不合并"],
+    labels: ["多声部热点", "2 条来源声音＋2 条平台线索", "观点不合并"],
     image: "https://imgpai.thepaper.cn/newpai/image/20260828/15497de2-d749-4b66-805c-1a17f50c44f7.jpg",
     imageAlt: "救援人员在西藏吉隆泥石流灾区开展现场勘察",
     imageCaption: "救援人员沿受灾路段踏勘并回传现场影像。图片来源：澎湃新闻／央视新闻",
@@ -80,10 +107,12 @@ export const briefingItems: BriefingItem[] = [
       "这条热点同时包含官方统计、现场工作、技术判断和公众观看经验。下面保留不同发言各自回答的问题：谁在救援、湖水怎样、画面为何有限，以及网友怎样理解‘没有新消息’。",
     ],
     voices: [
-      { platform: "新华社", author: "西藏自治区应急管理厅消息", text: "公布截至 29 日 1 时的 7 人遇难、554 人失联，并说明道路抢通 1.02 公里、设置 5 人观测哨。", href: "https://www.news.cn/politics/20260829/e20310f9f89744da82a6c343cf81834b/c.html", time: "8 月 29 日 01:00" },
-      { platform: "央广网", author: "中国安能侦测组组长陈菡潇", text: "介绍堰塞湖已经形成自然过流，现场持续监测水位和流速；这是技术人员对当时风险的判断。", href: "https://china.cnr.cn/news/20260829/t20260829_527797480.shtml", time: "8 月 29 日" },
-      { platform: "Reddit", author: "r/China_irl 公开讨论帖", text: "有人把公开报道中的‘更新慢’与现场可达性联系起来，也有人提醒可以从公开媒体和平台搜索最新画面；这是讨论者的判断，不等于灾情事实。", href: "https://www.reddit.com/r/China_irl/comments/1w0dspz/%E8%A5%BF%E8%97%8F%E9%82%A3%E8%BE%B9%E6%80%8E%E4%B9%88%E6%B2%A1%E6%9C%89%E6%96%B0%E6%B6%88%E6%81%AF%E4%BA%86/", engagement: "页面可见多条 +1 至 +8 票" },
-      { platform: "微博", author: "#西藏吉隆泥石流#话题页", text: "以救援画面、航拍和转发通报形成持续热度；话题聚合能显示关注规模，但不等于实时伤亡统计。", href: "https://s.weibo.com/weibo?q=%23%E8%A5%BF%E8%97%8F%E5%90%89%E9%9A%86%E6%B3%A5%E7%9F%B3%E6%B5%81%23" },
+      { kind: "official", platform: "新华社", author: "西藏自治区应急管理厅消息", text: "公布截至 29 日 1 时的 7 人遇难、554 人失联，并说明道路抢通 1.02 公里、设置 5 人观测哨。", href: "https://www.news.cn/politics/20260829/e20310f9f89744da82a6c343cf81834b/c.html", time: "8 月 29 日 01:00" },
+      { kind: "interview", platform: "央广网", author: "中国安能侦测组组长陈菡潇", text: "介绍堰塞湖已经形成自然过流，现场持续监测水位和流速；这是技术人员对当时风险的判断。", href: "https://china.cnr.cn/news/20260829/t20260829_527797480.shtml", time: "8 月 29 日" },
+    ],
+    platformSignals: [
+      { kind: "discussion", platform: "Reddit", label: "r/China_irl 公开讨论帖", text: "讨论串把公开报道中的‘更新慢’与现场可达性联系起来，也有人提醒可以从公开媒体和平台搜索最新画面；这是讨论者的判断，不等于灾情事实。", href: "https://www.reddit.com/r/China_irl/comments/1w0dspz/%E8%A5%BF%E8%97%8F%E9%82%A3%E8%BE%B9%E6%80%8E%E4%B9%88%E6%B2%A1%E6%9C%89%E6%96%B0%E6%B6%88%E6%81%AF%E4%BA%86/", engagement: "页面可见多条 +1 至 +8 票" },
+      { kind: "topic", platform: "微博", label: "#西藏吉隆泥石流#话题页", text: "话题页以救援画面、航拍和转发通报形成持续热度；它是平台聚合，不是某位用户的单独发言，也不等于实时伤亡统计。", href: "https://s.weibo.com/weibo?q=%23%E8%A5%BF%E8%97%8F%E5%90%89%E9%9A%86%E6%B3%A5%E7%9F%B3%E6%B5%81%23" },
     ],
   },
   {
@@ -126,17 +155,19 @@ export const briefingItems: BriefingItem[] = [
     section: "今日焦点",
     format: "social",
     source: "中国天气网／抖音搜索／地方气象服务",
-    sourceType: "平台热度与地方提醒",
+    sourceType: "机构声音／平台线索",
     time: "8 月 29 日",
     href: "https://www.news.cn/politics/20260829/51762a63f688436f9935ab8228009f0e/c.html",
     discovery: "抖音搜索：暴雨预警",
     discoveryHref: "https://www.douyin.com/search/%E6%9A%B4%E9%9B%A8%E9%A2%84%E8%AD%A6",
-    labels: ["多平台共振", "3 条代表性发言", "热度不等于风险"],
+    labels: ["多平台共振", "1 条机构声音＋2 条平台线索", "热度不等于风险"],
     details: ["同一张预警图在不同平台被翻译成不同语言：气象部门给出降雨量，地方服务提醒道路和电源，短视频平台则把积水、雷雨和出行经验变成现场画面。它们都与天气有关，但不能互相替代。"],
     voices: [
-      { platform: "中国天气网", author: "中央气象台暴雨黄色预警", text: "公布 14 省区的影响范围、降雨级别和防御指南。", href: "https://www.news.cn/politics/20260829/51762a63f688436f9935ab8228009f0e/c.html" },
-      { platform: "抖音", author: "暴雨预警公开搜索页", text: "聚合各地用户上传的雨势和道路画面；搜索页是发现线索，不等于逐条核实过的现场报告。", href: "https://www.douyin.com/search/%E6%9A%B4%E9%9B%A8%E9%A2%84%E8%AD%A6" },
-      { platform: "地方气象服务", author: "公开预警转发者", text: "把大范围预警改写成停工、绕行、关窗和清理排水口等更靠近日常的提醒。", href: "https://www.weather.com.cn/" },
+      { kind: "official", platform: "中国天气网", author: "中央气象台暴雨黄色预警", text: "公布 14 省区的影响范围、降雨级别和防御指南。", href: "https://www.news.cn/politics/20260829/51762a63f688436f9935ab8228009f0e/c.html", time: "8 月 29 日 06:00" },
+    ],
+    platformSignals: [
+      { kind: "search", platform: "抖音", label: "暴雨预警公开搜索页", text: "聚合各地用户上传的雨势和道路画面；搜索页是发现线索，不等于逐条核实过的现场报告。", href: "https://www.douyin.com/search/%E6%9A%B4%E9%9B%A8%E9%A2%84%E8%AD%A6" },
+      { kind: "search", platform: "地方气象服务", label: "公开预警转发页面", text: "把大范围预警改写成停工、绕行、关窗和清理排水口等更靠近日常的提醒。", href: "https://www.weather.com.cn/" },
     ],
   },
   {
@@ -186,18 +217,20 @@ export const briefingItems: BriefingItem[] = [
     section: "世界与新知",
     format: "social",
     source: "央视新闻／国家数据局／公开科技讨论",
-    sourceType: "多声部热点／产业观察",
+    sourceType: "机构信息／平台线索",
     time: "8 月 27 日—29 日",
     href: "https://www.nda.gov.cn/sjj/jgsz/jld/xb/xbldhd/0828/20260828230551560515285_pc.html",
-    labels: ["多声部热点", "3 条代表性发言", "不把展会等同落地"],
+    labels: ["多声部热点", "2 条机构声音＋1 条平台线索", "不把展会等同落地"],
     image: "https://www3.xinhuanet.com/tech/20260827/136847e5df86442c9cb895910179c15a/20260827136847e5df86442c9cb895910179c15a_7bb663840e0e43cb8190ef682c68f72e.jpg",
     imageAlt: "机器人在科技展会现场进行动态展示",
     imageCaption: "展会机器人展示画面。图片来源：新华社",
     details: ["数博会的热度来自可见的机器人表演，也来自‘数据集市’里供需双方的撮合。不同发言各自强调现场体验、产业基础设施和对落地效果的追问，保留它们的距离。"],
     voices: [
-      { platform: "央视新闻", author: "展会现场报道", text: "把机器人、自动驾驶和 AIGC 漫剧作为观众可以直接体验的‘智能融入生活’场景。", href: "https://news.cctv.com/2026/08/29/ARTI5I0LJevT0FY5TQDmHHYp260828.shtml", time: "8 月 29 日" },
-      { platform: "国家数据局", author: "数据集市活动信息", text: "公布 253 个数据产品、139 项技术与设施能力、219 个应用场景，强调供需精准对接。", href: "https://www.nda.gov.cn/sjj/jgsz/jld/xb/xbldhd/0828/20260828230551560515285_pc.html", time: "8 月 28 日" },
-      { platform: "公开科技讨论", author: "围观者与从业者", text: "围绕‘展台演示如何变成可复用的产品和收入’继续提问；这是讨论性观点，不是展会结论。", href: "https://so.toutiao.com/search?keyword=%E6%95%B0%E5%8D%9A%E4%BC%9A%20%E8%AF%8D%E5%85%83%20%E6%95%B0%E6%8D%AE%E9%9B%86%E5%B8%82" },
+      { kind: "official", platform: "央视新闻", author: "展会现场报道", text: "把机器人、自动驾驶和 AIGC 漫剧作为观众可以直接体验的‘智能融入生活’场景。", href: "https://news.cctv.com/2026/08/29/ARTI5I0LJevT0FY5TQDmHHYp260828.shtml", time: "8 月 29 日" },
+      { kind: "official", platform: "国家数据局", author: "数据集市活动信息", text: "公布 253 个数据产品、139 项技术与设施能力、219 个应用场景，强调供需精准对接。", href: "https://www.nda.gov.cn/sjj/jgsz/jld/xb/xbldhd/0828/20260828230551560515285_pc.html", time: "8 月 28 日" },
+    ],
+    platformSignals: [
+      { kind: "discussion", platform: "头条搜索", label: "数博会词元／数据集市讨论线索", text: "搜索结果中有人继续追问‘展台演示如何变成可复用的产品和收入’；这是发现到的讨论方向，不是展会结论。", href: "https://so.toutiao.com/search?keyword=%E6%95%B0%E5%8D%9A%E4%BC%9A%20%E8%AF%8D%E5%85%83%20%E6%95%B0%E6%8D%AE%E9%9B%86%E5%B8%82" },
     ],
   },
   {
@@ -233,9 +266,9 @@ export const briefingItems: BriefingItem[] = [
     labels: ["多声部热点", "3 条代表性观点", "观点仅代表发布者"],
     details: ["同一场诉讼里，‘AI 能不能用于战争’不是唯一问题，‘政府能否因公司拒绝某些用途而惩罚它’也成为核心。下面把原报道中的三种说法并排保留。"],
     voices: [
-      { platform: "Anthropic", author: "公司发言人", text: "欢迎法院认定供应链风险 designation 违法；公司此前反对完全自主致命武器和国内大规模监控。", href: "https://www.anthropic.com/news", time: "8 月 28 日" },
-      { platform: "美国国防部门", author: "五角大楼立场（经 Guardian 转述）", text: "私人公司不应限制军事行动，国防部门有权选择自己使用的 AI 供应商。", href: "https://www.theguardian.com/technology/2026/aug/28/us-court-rules-pentagon-anthropic-ban-illegal-trump-claude-ai", time: "8 月 28 日" },
-      { platform: "美国联邦法院", author: "法官 Rita Lin", text: "裁决认为，空泛援引国家安全不能成为惩罚和报复政府批评者的空白支票。", href: "https://www.theguardian.com/technology/2026/aug/28/us-court-rules-pentagon-anthropic-ban-illegal-trump-claude-ai", time: "8 月 28 日" },
+      { kind: "official", platform: "Anthropic", author: "公司发言人", text: "欢迎法院认定供应链风险 designation 违法；公司此前反对完全自主致命武器和国内大规模监控。", href: "https://www.anthropic.com/news", time: "8 月 28 日" },
+      { kind: "official", platform: "美国国防部门", author: "五角大楼立场（经 Guardian 转述）", text: "私人公司不应限制军事行动，国防部门有权选择自己使用的 AI 供应商。", href: "https://www.theguardian.com/technology/2026/aug/28/us-court-rules-pentagon-anthropic-ban-illegal-trump-claude-ai", time: "8 月 28 日" },
+      { kind: "ruling", platform: "美国联邦法院", author: "法官 Rita Lin", text: "裁决认为，空泛援引国家安全不能成为惩罚和报复政府批评者的空白支票。", href: "https://www.theguardian.com/technology/2026/aug/28/us-court-rules-pentagon-anthropic-ban-illegal-trump-claude-ai", time: "8 月 28 日" },
     ],
   },
   {
@@ -274,8 +307,8 @@ export const briefingItems: BriefingItem[] = [
     imageCaption: "民众在奥斯陆王宫外献花。图片来源：Rune Hellestad／Getty via The Guardian",
     details: ["悼念现场的语言比讣告更短，也更私人：有人记得他像家里的长辈，有人把国家哀悼与王室近年的争议同时提起。"],
     voices: [
-      { platform: "NRK via Reuters", author: "奥斯陆悼念民众", text: "把哈拉尔描述成让所有人感到‘在家里’的祖父般人物。", href: "https://www.theguardian.com/world/video/2026/aug/28/norwegians-pay-tribute-to-grandfather-figure-king-harald-v-video", time: "8 月 28 日" },
-      { platform: "The Guardian", author: "欧洲王室报道", text: "记录哈康八世继位，也提醒公众支持率、王室家人争议和新王朝的现实会继续存在。", href: "https://www.theguardian.com/world/2026/aug/28/norway-king-harald-dies-leaving-stormy-succession-mette-marit-crown-princesss-epstein-links", time: "8 月 28 日" },
+      { kind: "interview", platform: "NRK via Reuters", author: "奥斯陆悼念现场受访者（报道转述）", text: "把哈拉尔描述成让所有人感到‘在家里’的祖父般人物。", href: "https://www.theguardian.com/world/video/2026/aug/28/norwegians-pay-tribute-to-grandfather-figure-king-harald-v-video", time: "8 月 28 日" },
+      { kind: "reported", platform: "The Guardian", author: "欧洲王室报道", text: "记录哈康八世继位，也提醒公众支持率、王室家人争议和新王朝的现实会继续存在。", href: "https://www.theguardian.com/world/2026/aug/28/norway-king-harald-dies-leaving-stormy-succession-mette-marit-crown-princesss-epstein-links", time: "8 月 28 日" },
     ],
   },
   {
@@ -420,8 +453,36 @@ export const briefingItems: BriefingItem[] = [
     imageCaption: "消防员演示急救鞋的摆放位置。图片来源：金泽市消防局 Instagram via The Guardian",
     details: ["金泽市消防部门发布视频，提醒居民不要在急救人员进入住宅后把鞋子重新摆正：担架由三人抬出时，鞋子的位置是按各自角色预先安排的，改动可能让他们穿鞋、转运慢约 30 秒。视频获得超过 50 万次观看，一条‘急救时就让他们穿鞋进来’的评论获得超过 800 个赞。"],
     voices: [
-      { platform: "金泽市消防局 Instagram", author: "公开科普视频", text: "演示三名担架搬运者如何在不晃动患者、不碰掉氧气面罩的情况下各自穿回鞋子。", href: "https://www.instagram.com/kanazawa_syoubou/", engagement: "视频累计观看超过 50 万次（报道可见）" },
-      { platform: "Instagram 评论区", author: "公开评论者", text: "‘这是紧急情况，直接让他们穿鞋进来就好。’用一句玩笑把礼仪让位给救命。", href: "https://www.theguardian.com/world/2026/aug/28/never-tidy-paramedics-shoes-japan-custom-etiquette", engagement: "页面可见超过 800 个赞" },
+      { kind: "official", platform: "金泽市消防局 Instagram", author: "公开科普视频", text: "演示三名担架搬运者如何在不晃动患者、不碰掉氧气面罩的情况下各自穿回鞋子。", href: "https://www.instagram.com/kanazawa_syoubou/", time: "8 月 5 日", engagement: "视频累计观看超过 50 万次（报道可见）" },
+      { kind: "comment", platform: "Instagram 评论区", author: "公开评论者", text: "‘这是紧急情况，直接让他们穿鞋进来就好。’用一句玩笑把礼仪让位给救命。", href: "https://www.theguardian.com/world/2026/aug/28/never-tidy-paramedics-shoes-japan-custom-etiquette", engagement: "页面可见超过 800 个赞" },
     ],
   },
 ];
+
+const aggregateVoiceAuthorPatterns = ["公开讨论帖", "话题页", "公开搜索页", "搜索结果", "公开预警转发者", "围观者与从业者"];
+
+export function validateBriefingItems(items: BriefingItem[]) {
+  for (const item of items) {
+    for (const voice of item.voices ?? []) {
+      if (!voice.kind || !voiceKindLabels[voice.kind]) {
+        throw new Error(`观点缺少来源性质：${item.title}`);
+      }
+      if (aggregateVoiceAuthorPatterns.some((pattern) => voice.author.includes(pattern))) {
+        throw new Error(`平台聚合或讨论摘要不能放入 voices：${voice.author}`);
+      }
+      if (!voice.href) {
+        throw new Error(`观点缺少出处链接：${voice.author}`);
+      }
+    }
+    for (const signal of item.platformSignals ?? []) {
+      if (!platformSignalKindLabels[signal.kind]) {
+        throw new Error(`平台线索缺少来源性质：${item.title}`);
+      }
+      if (!signal.href) {
+        throw new Error(`平台线索缺少链接：${signal.label}`);
+      }
+    }
+  }
+}
+
+validateBriefingItems(briefingItems);

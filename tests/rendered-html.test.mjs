@@ -52,7 +52,10 @@ test("server-renders the daily illustrated digest", async () => {
   assert.match(html, /原文看点/);
   assert.match(html, /图片／数据优先/);
   assert.match(html, /250—270 毫米/);
-  assert.match(html, /公共讨论/);
+  assert.match(html, /观点／平台线索/);
+  assert.match(html, /平台线索/);
+  assert.match(html, /官方文本/);
+  assert.match(html, /采访转述/);
   assert.match(html, /出处说明/);
   assert.match(html, /日本消防部门提醒/);
   assert.match(html, /发现线索/);
