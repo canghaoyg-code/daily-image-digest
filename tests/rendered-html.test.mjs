@@ -53,7 +53,7 @@ test("server-renders the daily illustrated digest", async () => {
   assert.match(html, /图片／数据优先/);
   assert.match(html, /250—270 毫米/);
   assert.match(html, /原帖／评论/);
-  assert.match(html, /原帖、评论与相关平台内容/);
+  assert.match(html, /同题原文摘录/);
   assert.match(html, /官方文本/);
   assert.match(html, /采访转述/);
   assert.match(html, /出处说明/);
@@ -65,7 +65,7 @@ test("server-renders the daily illustrated digest", async () => {
   assert.match(html, /aria-label="阅读设置"/);
   assert.match(html, /观点仅代表原发布者/);
   assert.match(html, /最后一公里仍在泥里/);
-  assert.match(html, /原帖、评论与相关平台内容/);
+  assert.match(html, /同题原文摘录/);
   assert.match(html, /7 人遇难、554 人失联/);
   assert.ok((html.match(/查看出处/g) ?? []).length >= 10);
   assert.ok((html.match(/同题组/g) ?? []).length >= 10);

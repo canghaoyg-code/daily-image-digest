@@ -47,8 +47,8 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
       </h2>
       {mediaFirst && media}
       {item.details?.map((detail) => <p key={detail}>{detail}</p>)}
-      {(item.voices?.length || item.platformSignals?.length) ? (
-        <ol className="entry-voices" aria-label="原帖、评论与相关平台内容">
+      {item.voices?.length ? (
+        <ol className="entry-voices" aria-label="同题原文摘录">
           {item.voices?.map((voice) => (
             <li key={`${voice.platform}-${voice.author}`}>
               <div className="voice-meta">
@@ -60,18 +60,6 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
               </div>
               <blockquote><p>{voice.text}</p></blockquote>
               <a href={voice.href} target="_blank" rel="noreferrer">查看出处</a>
-            </li>
-          ))}
-          {item.platformSignals?.map((signal) => (
-            <li key={`${signal.platform}-${signal.label}`}>
-              <div className="voice-meta">
-                <span>{signal.platform}</span>
-                <span className="voice-kind">{platformSignalKindLabels[signal.kind]}</span>
-                <strong>{signal.label}</strong>
-                {signal.engagement && <em>{signal.engagement}</em>}
-              </div>
-              <blockquote><p>{signal.text}</p></blockquote>
-              <a href={signal.href} target="_blank" rel="noreferrer">查看出处</a>
             </li>
           ))}
         </ol>
@@ -93,6 +81,16 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
           </a>
         </div>
       )}
+      {item.platformSignals?.length ? (
+        <div className="entry-related">
+          平台入口：
+          {item.platformSignals.map((signal) => (
+            <a href={signal.href} key={signal.href} target="_blank" rel="noreferrer">
+              {signal.platform} · {signal.label} · {platformSignalKindLabels[signal.kind]}
+            </a>
+          ))}
+        </div>
+      ) : null}
       <div className="entry-source">
         内容来源：{item.source}{item.sourceType ? `（${item.sourceType}）` : ""} · {sourceKindLabels[item.sourceKind]} · {item.time}
         <a href={item.href} target="_blank" rel="noreferrer">
