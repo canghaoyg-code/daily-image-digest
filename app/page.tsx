@@ -1,12 +1,13 @@
 import {
   briefingItems,
   briefingMeta,
-  platformSignalKindLabels,
   sourceKindLabels,
   type BriefingItem,
-  voiceKindLabels,
+  validateBriefingItems,
 } from "./briefing-data";
 import ReaderControls from "./reader-controls";
+
+const validatedBriefingItems = validateBriefingItems(briefingItems);
 
 function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
   const mediaFirst = item.format === "visual" || item.format === "feature" || (item.format === "social" && Boolean(item.image));
@@ -45,25 +46,14 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
         <span>【{number}】</span>
         <a href={item.href} target="_blank" rel="noreferrer">{item.title}</a>
       </h2>
+      {(item.author || item.engagement) && (
+        <div className="entry-attribution">
+          {item.author && <strong>{item.author}</strong>}
+          {item.engagement && <span>{item.engagement}</span>}
+        </div>
+      )}
       {mediaFirst && media}
       {item.details?.map((detail) => <p key={detail}>{detail}</p>)}
-      {item.voices?.length ? (
-        <ol className="entry-voices" aria-label="同题原文摘录">
-          {item.voices?.map((voice) => (
-            <li key={`${voice.platform}-${voice.author}`}>
-              <div className="voice-meta">
-                <span>{voice.platform}</span>
-                <span className="voice-kind">{voiceKindLabels[voice.kind]}</span>
-                <strong>{voice.author}</strong>
-                {voice.time && <span className="voice-time">发布 {voice.time}</span>}
-                {voice.engagement && <em>{voice.engagement}</em>}
-              </div>
-              <blockquote><p>{voice.text}</p></blockquote>
-              <a href={voice.href} target="_blank" rel="noreferrer">查看出处</a>
-            </li>
-          ))}
-        </ol>
-      ) : null}
       {item.recommendation && (
         <p className="editor-recommendation">
           <strong>原文看点：</strong>{item.recommendation}
@@ -81,18 +71,8 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
           </a>
         </div>
       )}
-      {item.platformSignals?.length ? (
-        <div className="entry-related">
-          平台入口：
-          {item.platformSignals.map((signal) => (
-            <a href={signal.href} key={signal.href} target="_blank" rel="noreferrer">
-              {signal.platform} · {signal.label} · {platformSignalKindLabels[signal.kind]}
-            </a>
-          ))}
-        </div>
-      ) : null}
       <div className="entry-source">
-        内容来源：{item.source}{item.sourceType ? `（${item.sourceType}）` : ""} · {sourceKindLabels[item.sourceKind]} · {item.time}
+        来源：{item.source}{item.sourceType ? `（${item.sourceType}）` : ""} · {sourceKindLabels[item.sourceKind]} · {item.time}
         <a href={item.href} target="_blank" rel="noreferrer">
           原文
         </a>
@@ -134,7 +114,7 @@ export default function Home() {
           </header>
 
           <section className="digest-stream" aria-label="今日图文资讯">
-            {briefingItems.map((item, index) => (
+            {validatedBriefingItems.map((item, index) => (
               <DigestEntry key={item.title} item={item} number={index + 1} />
             ))}
           </section>
