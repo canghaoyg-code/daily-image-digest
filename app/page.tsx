@@ -2,6 +2,7 @@ import {
   briefingItems,
   briefingMeta,
   platformSignalKindLabels,
+  sourceKindLabels,
   type BriefingItem,
   voiceKindLabels,
 } from "./briefing-data";
@@ -33,7 +34,7 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
         <span className="entry-section-label">{item.section}</span>
         {item.labels?.map((label) => <span key={label}>{label}</span>)}
         {item.format === "visual" && <span>图片／数据优先</span>}
-        {item.format === "social" && <span>观点／平台线索</span>}
+        {item.format === "social" && <span>原帖／评论</span>}
       </div>
       {item.topic && (
         <div className="entry-topic" aria-label={`同题组：${item.topic}`}>
@@ -47,7 +48,7 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
       {mediaFirst && media}
       {item.details?.map((detail) => <p key={detail}>{detail}</p>)}
       {item.voices?.length ? (
-        <ol className="entry-voices" aria-label="同一热点的代表性观点">
+        <ol className="entry-voices" aria-label="同一热点的逐条来源摘录">
           {item.voices.map((voice) => (
             <li key={`${voice.platform}-${voice.author}`}>
               <div className="voice-meta">
@@ -98,7 +99,7 @@ function DigestEntry({ item, number }: { item: BriefingItem; number: number }) {
         </div>
       )}
       <div className="entry-source">
-        内容来源：{item.source}{item.sourceType ? `（${item.sourceType}）` : ""} · {item.time}
+        内容来源：{item.source}{item.sourceType ? `（${item.sourceType}）` : ""} · {sourceKindLabels[item.sourceKind]} · {item.time}
         <a href={item.href} target="_blank" rel="noreferrer">
           原文
         </a>
