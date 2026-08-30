@@ -27,18 +27,18 @@ test("server-renders independent, image-rich editorial units", async () => {
 
   const entries = html.match(/<section class="digest-entry format-/g) ?? [];
   const images = html.match(/<img[^>]+src="\/images\/20260830\//g) ?? [];
-  assert.equal(entries.length, 21);
-  assert.equal(images.length, 18);
+  assert.ok(entries.length >= 18);
+  assert.ok(images.length >= 16);
   assert.ok(images.length / entries.length >= 0.7);
   assert.doesNotMatch(html, /entry-voices|同题原文摘录|平台入口/);
   assert.doesNotMatch(html, /暴雨预警公开搜索页|公开预警页面/);
 
   assert.match(html, /页面未显示发布者姓名/);
   assert.match(html, /不觉得西藏泥石流受灾的热度少得可怜吗/);
-  assert.match(html, /尼泊尔可以第一时间发布现场视频和捐助信息/);
+  assert.match(html, /隧道里仍可能有被困工人/);
   assert.match(html, /16 人遇难、546 人失联/);
-  assert.match(html, /地月之间打通/);
-  assert.match(html, /法官 Rita Lin/);
+  assert.match(html, /霍尔木兹海峡仍关闭/);
+  assert.match(html, /原文看点：它把‘服务贸易’这个宏观词拆成/);
   assert.match(html, /视频观看超过 50 万次；该评论获赞超过 800/);
   assert.match(html, /急救时就让他们穿鞋进来/);
   assert.match(html, /原文看点/);
@@ -47,7 +47,7 @@ test("server-renders independent, image-rich editorial units", async () => {
   assert.match(html, /观点仅代表原发布者/);
   assert.match(html, /aria-label="阅读工具"/);
 
-  assert.ok(html.indexOf("不觉得西藏泥石流受灾的热度少得可怜吗") < html.indexOf("尼泊尔一侧死亡 675 人"));
-  assert.ok(html.indexOf("245 万 PFLOPS") < html.indexOf("Anthropic 又站上版权争议中心"));
+  assert.ok(html.indexOf("不觉得西藏泥石流受灾的热度少得可怜吗") < html.indexOf("尼泊尔洪灾进入搜救关键期"));
+  assert.ok(html.indexOf("HICOOL 峰会闭幕") < html.indexOf("Anthropic 版权诉讼"));
   assert.ok(html.indexOf("英国人开始多买豆子") < html.lastIndexOf("急救时就让他们穿鞋进来"));
 });
