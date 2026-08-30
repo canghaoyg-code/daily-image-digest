@@ -21,8 +21,8 @@ export type BriefingItem = {
 
 export const briefingMeta = {
   dateCode: "20260830",
-  headline: "灾害现场之外，今天的世界也在加速换挡",
-  updatedAt: "2026 年 8 月 30 日 · 今日更新 · 公开来源综合读讯",
+  headline: "从抢通一座口岸的信号，到 12 秒传回的月照",
+  updatedAt: "2026 年 8 月 30 日 · 20:04 更新 · 公开来源综合读讯",
 };
 
 export const briefingItems: BriefingItem[] = [
@@ -30,13 +30,13 @@ export const briefingItems: BriefingItem[] = [
     title: "吉隆泥石流最新发布：16 人遇难、546 人失联，搜救仍在继续",
     topic: "吉隆泥石流救援", section: "今日焦点", format: "feature",
     source: "新华社／中国新闻网／界面新闻", sourceType: "新闻发布会／救援进展", sourceKind: "media-report",
-    time: "8 月 30 日 08:18—09:27", href: "https://www.news.cn/20260830/1a1e0e0371aa412a82f10acb63e2a5b2/c.html",
+    time: "8 月 30 日 08:18—19:39", href: "https://www.news.cn/20260830/1a1e0e0371aa412a82f10acb63e2a5b2/c.html",
     discovery: "今日热搜：刚入警一年的她失联在吉隆口岸", discoveryHref: "https://news.china.com/socialgd/10000169/20260830/49707500.html", labels: ["持续更新", "跨境灾害"],
     image: "/images/20260830/jilong-rescue-01.png", imageAlt: "西藏吉隆泥石流灾区的救援人员和受损道路", imageCaption: "资料图：救援人员向吉隆口岸方向挺进。图片来源：澎湃新闻／央视新闻",
     visualStat: { label: "截至 8 月 29 日 18 时", value: "16 / 546", note: "中国境内 16 人遇难、546 人失联；遗体转运和身份识别加快推进" },
-    details: ["新华社 8 月 30 日报道，西藏自治区人民政府新闻办公室通报：截至 8 月 29 日 18 时，吉隆泥石流灾害已造成 16 人遇难、546 人失联。", "界面新闻转述发布会信息称，冰岩崩从发生到冲击吉隆口岸约 6 至 7 分钟，约 0.7 平方公里、27 处建筑及附属设施被夷为平地；这些是报道中的现场与调查口径，不替报道外推结论。"],
+    details: ["新华社 8 月 30 日报道，西藏自治区人民政府新闻办公室通报：截至 8 月 29 日 18 时，吉隆泥石流灾害已造成 16 人遇难、546 人失联。", "界面新闻转述发布会信息称，冰岩崩从发生到冲击吉隆口岸约 6 至 7 分钟，约 0.7 平方公里、27 处建筑及附属设施被夷为平地；这些是报道中的现场与调查口径，不替报道外推结论。", "新华社 19:39 更新：30 日 13:30，吉隆口岸首个紧邻国门的应急基站开通；截至 18 时，救援现场已恢复通话，另有 8 个基站新增。这个进展改变的是现场通信条件，不等同于搜救结果已经明朗。"],
     verificationNote: "本条采用 30 日发布会的最新时点；与前一日数字不同，是因为统计时点和发布口径更新。",
-    relatedSources: [{ label: "中国新闻网：西藏吉隆泥石流灾害造成 16 人遇难 546 人失联", href: "https://www.chinanews.com.cn/sh/2026/08-30/10686625.shtml" }, { label: "界面新闻：口岸设施被夷为平地", href: "https://www.jiemian.com/article/15029243.html" }],
+    relatedSources: [{ label: "中国新闻网：西藏吉隆泥石流灾害造成 16 人遇难 546 人失联", href: "https://www.chinanews.com.cn/sh/2026/08-30/10686625.shtml" }, { label: "新华社：西藏吉隆口岸通信信号抢通", href: "https://www.chinanews.com.cn/sh/2026/08-30/10686907.shtml" }, { label: "界面新闻：口岸设施被夷为平地", href: "https://www.jiemian.com/article/15029243.html" }],
   },
   {
     title: "刚入警一年的她，在吉隆口岸失联",
@@ -108,6 +108,21 @@ export const briefingItems: BriefingItem[] = [
     time: "8 月 30 日 09:32", href: "https://www.beijing.gov.cn/fuwu/lqfw/gggs/202608/t20260830_4842870.html", labels: ["科技创业", "展会现场"],
     image: "/images/20260830/data-expo-01.jpg", imageAlt: "科技展会现场的机器人展示", imageCaption: "8 月 29 日 HICOOL 峰会闭幕现场，观众与机器人互动。图片来源：武亦彬／北京日报",
     details: ["北京日报报道，HICOOL 2026 全球创业者峰会 8 月 29 日闭幕，来自 30 多个国家的 600 多家高科技创新企业参展。展区覆盖智能机器人、高级别自动驾驶、医药健康、脑机接口和绿色能源。", "原文看点：强化学习领域专家理查德·萨顿在闭幕式上把 AI 从‘人类数据时代’推向‘经验时代’，并发布面向机器人自主进化的学院计划。"],
+  },
+  {
+    title: "12 秒传完 8K 月照：地月双向激光通信把深空数据链再推远",
+    topic: "地月激光通信", section: "世界与新知", format: "visual", source: "央视新闻客户端／中国新闻网", sourceType: "科技突破／专家解读", sourceKind: "media-report",
+    time: "8 月 30 日 14:22", href: "https://www.chinanews.com.cn/gn/2026/08-30/10686784.shtml", labels: ["科技", "深空探测", "当日新知"],
+    visualStat: { label: "地月双向高速激光通信试验", value: "8K / 12 秒", note: "超过 40 万公里链路；下行速率约 100 Mbps，上行约 1.25 Mbps" },
+    details: ["央视新闻报道，我国完成超过 40 万公里的地月双向高速激光通信试验；过去用微波链路传回一张 8K 月面全景照片约需 4 至 5 分钟，如今约 12 秒。", "中国科学院空间应用工程与技术中心研究员杨雷解释，团队需要同时解决对准难、信号弱、速率低三类问题；它记录的是一次公开报道的技术突破，不把试验结果外推成所有深空任务都已实现同等速度。"],
+  },
+  {
+    title: "8 月集中生成 10 个台风：厄尔尼诺让今年的风暴季还没到尾声",
+    topic: "台风活跃度", section: "今日焦点", format: "standard", source: "央视财经微信公众号／中新网", sourceType: "气象观察／专家解读", sourceKind: "media-report",
+    time: "8 月 30 日 14:44", href: "https://www.chinanews.com.cn/sh/2026/08-30/10686794.shtml", labels: ["天气", "气候", "当日更新"],
+    image: "/images/20260830/rain-warning.jpeg", imageAlt: "台风减弱后的热带低压和海南强降雨预警资料图", imageCaption: "资料图：热带低压与强降雨预警示意。图片来源：中国天气网／新华网",
+    visualStat: { label: "2026 年全球台风活动", value: "23 个 / 5 个超强", note: "截至报道发布，今年已生成 23 个台风，其中 8 月集中生成 10 个" },
+    details: ["中新网转引央视财经报道：今年已有 23 个台风生成，其中 5 个达到超强台风级别，8 月集中生成 10 个。中央气象台专家把偏高海温、快速发展的厄尔尼诺和季风槽活动列为重要背景。", "报道也提醒，台风‘扎堆’不代表影响会简单叠加，是否登陆、风雨大小仍取决于强度、路径和速度；国家气候中心预测，厄尔尼诺可能在 11—12 月达到峰值。"],
   },
   {
     title: "上海‘模速空间’的年轻团队：从一双机器人的眼睛到 300 多款产品",

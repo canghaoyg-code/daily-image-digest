@@ -49,5 +49,6 @@ test("server-renders independent, image-rich editorial units", async () => {
 
   assert.ok(html.indexOf("不觉得西藏泥石流受灾的热度少得可怜吗") < html.indexOf("尼泊尔洪灾进入搜救关键期"));
   assert.ok(html.indexOf("HICOOL 峰会闭幕") < html.indexOf("Anthropic 版权诉讼"));
-  assert.ok(html.indexOf("英国人开始多买豆子") < html.lastIndexOf("急救时就让他们穿鞋进来"));
+  assert.ok(html.indexOf("8 月集中生成 10 个台风") < html.indexOf("上海‘模速空间’"));
+  assert.ok(html.indexOf("12 秒传完 8K 月照") < html.indexOf("8 月集中生成 10 个台风"));
 });
