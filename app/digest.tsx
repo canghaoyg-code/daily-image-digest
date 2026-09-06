@@ -30,12 +30,13 @@ function DigestEntry({ item, number, edition }: { item: BriefingItem; number: nu
     const source = edition.sources.find(s => s.id === id);
     return source && <sup key={id}><a href={source.url} title={source.publisher} target="_blank" rel="noreferrer">〔来源〕</a></sup>;
   });
+  const quotedSourceIds = new Set(item.blocks?.filter(block => block.kind === "quote").map(block => block.sourceId));
   const blockContent = (block: ContentBlock, index: number) => {
     if (block.kind === "text") return <p key={index}>{block.text}{sourceMarks(block.sourceIds)}</p>;
     if (block.kind === "stat") return <div className="entry-stat" key={index}><span>{block.label}</span><strong>{block.value}</strong>{block.note && <p>{block.note}{sourceMarks(block.sourceIds)}</p>}</div>;
     if (block.kind === "image") return <figure className="entry-image block-image" key={index}><a href={assetPath(block.image.path)} target="_blank" rel="noreferrer"><img src={assetPath(block.image.path)} alt={block.image.alt} width={block.image.width} height={block.image.height} loading="lazy" /></a><figcaption>{block.image.caption}{block.image.sourceUrl && <a href={block.image.sourceUrl} target="_blank" rel="noreferrer"> · 图片出处</a>}</figcaption></figure>;
     const source = edition.sources.find(s => s.id === block.sourceId);
-    return source && <blockquote className="voice" key={index}><p>{block.text}</p><cite><a href={source.url} target="_blank" rel="noreferrer">{source.platform} / {source.author}</a> · {source.timeEvidence}</cite></blockquote>;
+    return source && <blockquote className="voice" key={index}><p>{block.text}</p><cite><a href={source.url} target="_blank" rel="noreferrer">{source.platform} / {source.author}</a> · {source.timeEvidence}</cite>{source.engagement?.map((metric, i) => <small key={i}> · {({likes:"赞",shares:"转发",comments:"评论",views:"播放",votes:"票"} as Record<string,string>)[metric.kind]} {metric.value}（采集于 {metric.observedAt}）</small>)}</blockquote>;
   };
   return (
     <section id={item.id} className={`digest-entry format-${item.format}`}>
@@ -49,7 +50,7 @@ function DigestEntry({ item, number, edition }: { item: BriefingItem; number: nu
           return source && <sup key={id}><a href={source.url} title={source.publisher} target="_blank" rel="noreferrer">〔来源〕</a></sup>;
         })}</p>
       ))}
-      {item.voices?.map((voice, i) => {
+      {item.voices?.filter(voice => !quotedSourceIds.has(voice.sourceId)).map((voice, i) => {
         const source = edition.sources.find(s => s.id === voice.sourceId);
         return source && <blockquote className="voice" key={i}>
           <p>{voice.text}</p>
