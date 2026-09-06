@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -27,10 +29,17 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      - name: Build application
-        run: npm run build
-      - name: Generate static page
-        run: node scripts/generate-pages.mjs
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reject stale new editions
+        if: github.event_name == 'push' && github.event.before != '0000000000000000000000000000000000000000'
+        env:
+          BASE_SHA: ${{ github.event.before }}
+        run: node scripts/validate-content.mjs --changed-from "$BASE_SHA"
+      - name: Test editorial rules, build and check static pages
+        run: npm test
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -46,3 +55,18 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Check out verification script
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify deployed commit and edition
+        env:
+          EXPECTED_SHA: ${{ github.sha }}
+        run: |
+          for attempt in 1 2 3 4 5 6; do
+            if node scripts/check-deployment.mjs "$EXPECTED_SHA"; then exit 0; fi
+            sleep 10
+          done
+          exit 1

@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
+.edition-notice, .edition-contents, .source-details {
+  margin: 18px 0;
+  color: var(--muted);
+  font: 14px/1.8 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+}
+.edition-notice { padding: 12px 16px; border-left: 3px solid var(--line); }
+summary { cursor: pointer; }
+.edition-contents ol { padding-left: 24px; }
+.edition-contents li { margin: 9px 0; }
+.voice { margin: 20px 0; padding: 0 0 0 18px; border-left: 2px solid var(--red); }
+.voice cite, .voice small { font: 13px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; color: var(--muted); }
+.entry-permalink { color: var(--red); }
+.digest-entry sup { font-size: 11px; white-space: nowrap; }
+.source-details p { font-size: 14px; }
+html[data-theme="dark"] .post-header h1 { color: var(--ink); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
 :root {
   --green: #244339;
   --green-deep: #18332b;
@@ -143,6 +160,7 @@ html[data-theme="dark"] .daily-post {
 }
 
 .digest-entry {
+  scroll-margin-top: 20px;
   padding: 30px 0 28px;
   border-bottom: 1px solid var(--line);
 }
@@ -256,7 +274,7 @@ html[data-theme="dark"] .entry-labels .entry-section-label {
 
 .entry-visuals {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 14px;
   width: min(100%, 700px);
   margin-top: 16px;

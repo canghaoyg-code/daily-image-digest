@@ -1,0 +1,9 @@
+{
+  "note": "公开 RSS 是候选补充，不代表全网热点。每期另从可读热榜发现主题，按主题寻找动态账号；将浏览器读到的公开原文与榜单观测导入候选池。可用 --sources 指定当期来源文件。",
+  "feeds": [
+    {"id":"chinanews", "platform":"中新网", "lane":"公共事务/经济", "url":"https://www.chinanews.com.cn/rss/scroll-news.xml"},
+    {"id":"bbc-world", "platform":"BBC", "lane":"国际", "url":"https://feeds.bbci.co.uk/news/world/rss.xml"},
+    {"id":"nasa", "platform":"NASA", "lane":"科学/自然", "url":"https://www.nasa.gov/feed/"}
+  ],
+  "discoveryPlatforms": ["微博", "百度", "抖音", "B站", "知乎", "头条", "Google 新闻", "新闻门户", "X", "Reddit", "YouTube", "Bluesky"]
+}

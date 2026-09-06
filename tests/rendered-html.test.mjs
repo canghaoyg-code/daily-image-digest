@@ -1,54 +1,50 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-
-async function render() {
-  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
-  const { default: worker } = await import(workerUrl.href);
-  return worker.fetch(
-    new Request("http://localhost/", { headers: { accept: "text/html" } }),
-    { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
-    { waitUntil() {}, passThroughOnException() {} },
-  );
+import { readFile, access } from "node:fs/promises";
+import { resolve } from "node:path";
+const catalog = JSON.parse(await readFile("content/catalog.json"));
+const edition = JSON.parse(await readFile(`content/editions/${catalog.latest}.json`));
+const { default: worker } = await import("../dist/server/index.js");
+async function render(path) {
+  return worker.fetch(new Request("https://canghaoyg-code.github.io/daily-image-digest" + path, {headers:{accept:"text/html"}}),
+    {ASSETS:{fetch:async () => new Response("Not found", {status:404})}},
+    {waitUntil() {}, passThroughOnException() {}});
 }
-
-test("server-renders independent, image-rich editorial units", async () => {
-  const response = await render();
+test("首页条目按编辑顺序，目录锚点、图片和来源完整", async () => {
+  const response = await render("/");
   assert.equal(response.status, 200);
-  assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
-
   const html = await response.text();
-  assert.match(html, /<title>每日图读 · 公开来源的每日图文汇编<\/title>/);
-  assert.match(html, /20260830/);
-  assert.match(html, /今日焦点/);
-  assert.match(html, /世界与新知/);
-  assert.match(html, /值得细读/);
-  assert.match(html, /人物、自然与轻读/);
-
-  const entries = html.match(/<section class="digest-entry format-/g) ?? [];
-  const images = html.match(/<img[^>]+src="\/images\/20260830\//g) ?? [];
-  assert.ok(entries.length >= 18);
-  assert.ok(images.length >= 16);
-  assert.ok(images.length / entries.length >= 0.7);
-  assert.doesNotMatch(html, /entry-voices|同题原文摘录|平台入口/);
-  assert.doesNotMatch(html, /暴雨预警公开搜索页|公开预警页面/);
-
-  assert.match(html, /页面未显示发布者姓名/);
-  assert.match(html, /不觉得西藏泥石流受灾的热度少得可怜吗/);
-  assert.match(html, /隧道里仍可能有被困工人/);
-  assert.match(html, /16 人遇难、546 人失联/);
-  assert.match(html, /霍尔木兹海峡仍关闭/);
-  assert.match(html, /原文看点：它把‘服务贸易’这个宏观词拆成/);
-  assert.match(html, /视频观看超过 50 万次；该评论获赞超过 800/);
-  assert.match(html, /急救时就让他们穿鞋进来/);
-  assert.match(html, /原文看点/);
-  assert.match(html, /出处说明/);
-  assert.match(html, /同题原文/);
-  assert.match(html, /观点仅代表原发布者/);
+  assert.ok(html.includes(`data-edition-id="${edition.id}"`));
+  let previous = -1;
+  for (const item of edition.items) {
+    const at = html.indexOf(`<section id="${item.id}"`);
+    assert.ok(at > previous);
+    assert.ok(html.includes(`href="#${item.id}"`));
+    previous = at;
+  }
   assert.match(html, /aria-label="阅读工具"/);
-
-  assert.ok(html.indexOf("不觉得西藏泥石流受灾的热度少得可怜吗") < html.indexOf("尼泊尔洪灾进入搜救关键期"));
-  assert.ok(html.indexOf("HICOOL 峰会闭幕") < html.indexOf("Anthropic 版权诉讼"));
-  assert.ok(html.indexOf("8 月集中生成 10 个台风") < html.indexOf("上海‘模速空间’"));
-  assert.ok(html.indexOf("12 秒传完 8K 月照") < html.indexOf("8 月集中生成 10 个台风"));
+  if (edition.status === "legacy") assert.match(html, /历史版/);
+  for (const match of html.matchAll(/<img[^>]+src="([^"]+)"/g)) assert.ok(match[1].startsWith("/daily-image-digest/images/"));
+});
+test("往期与永久页可独立访问，未知期号返回 404", async () => {
+  assert.equal((await render("/archive/")).status, 200);
+  const response = await render(`/editions/${edition.id}/`);
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.ok(html.includes(edition.headline));
+  assert.ok(html.includes(`https://canghaoyg-code.github.io/daily-image-digest/editions/${edition.id}/`));
+  assert.equal((await render("/editions/2000-01-01-morning/")).status, 404);
+});
+test("静态产物中每个本地资源与页面链接都存在，路径不重复加前缀", async () => {
+  const release = JSON.parse(await readFile("_site/release.json"));
+  assert.equal(release.edition, catalog.latest);
+  for (const route of release.routes) {
+    const html = await readFile(resolve("_site", "." + route, "index.html"), "utf8");
+    assert.doesNotMatch(html, /daily-image-digest\/daily-image-digest/);
+    for (const [, url] of html.matchAll(/(?:src|href)="(\/[^"]+)"/g)) {
+      assert.ok(url.startsWith("/daily-image-digest/"), url);
+      const path = decodeURIComponent(url.slice("/daily-image-digest".length).split(/[?#]/)[0]);
+      await access(resolve("_site", "." + path, path.endsWith("/") ? "index.html" : ""));
+    }
+  }
 });

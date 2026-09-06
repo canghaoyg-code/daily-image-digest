@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { siteUrl, sitePath } from "../lib/site";
 
 export function generateMetadata(): Metadata {
-  const metadataBase = new URL("https://zaowan-dubao.canghaoyg.chatgpt.site");
+  const metadataBase = new URL(siteUrl);
   return {
     metadataBase,
     title: "每日图读 · 公开来源的每日图文汇编",
     description: "把官方通报、媒体报道、机构发布和创作者内容编成一份连续可读的每日图文汇编。",
     icons: {
-      icon: "/favicon.svg",
-      shortcut: "/favicon.svg",
+      icon: sitePath("/favicon.svg"),
+      shortcut: sitePath("/favicon.svg"),
     },
     openGraph: {
       type: "website",
@@ -18,7 +19,7 @@ export function generateMetadata(): Metadata {
       description: "公开来源 · 图文汇编 · 连续阅读",
       images: [
         {
-          url: new URL("/og.png", metadataBase),
+          url: new URL("og.png", metadataBase),
           width: 1774,
           height: 887,
           alt: "每日图读：公开来源、图文汇编、连续阅读",
@@ -29,7 +30,7 @@ export function generateMetadata(): Metadata {
       card: "summary_large_image",
       title: "每日图读",
       description: "公开来源 · 图文汇编 · 连续阅读",
-      images: [new URL("/og.png", metadataBase)],
+      images: [new URL("og.png", metadataBase)],
     },
   };
 }

@@ -1,55 +1,48 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
+import { parsePreferences } from "../lib/preferences.mjs";
 
 type Theme = "light" | "dark";
 type FontSize = "small" | "normal" | "large";
 type ReadingWidth = "narrow" | "normal" | "wide";
 
 const STORAGE_KEY = "morning-evening-reader";
+let memoryValue = "";
+function snapshot() {
+  try { return window.localStorage.getItem(STORAGE_KEY) ?? memoryValue; } catch { return memoryValue; }
+}
+function subscribe(notify: () => void) {
+  window.addEventListener("storage", notify);
+  window.addEventListener("reader-preferences", notify);
+  return () => { window.removeEventListener("storage", notify); window.removeEventListener("reader-preferences", notify); };
+}
+const serverSnapshot = () => "";
+function savePreferences(value: string) {
+  memoryValue = value;
+  try { window.localStorage.setItem(STORAGE_KEY, value); } catch { /* Use memory when storage is unavailable. */ }
+  window.dispatchEvent(new Event("reader-preferences"));
+}
 
 export default function ReaderControls() {
-  const [theme, setTheme] = useState<Theme>("light");
-  const [fontSize, setFontSize] = useState<FontSize>("normal");
-  const [readingWidth, setReadingWidth] = useState<ReadingWidth>("normal");
-  const [focusMode, setFocusMode] = useState(false);
+  const raw = useSyncExternalStore(subscribe, snapshot, serverSnapshot);
+  const { theme, fontSize, readingWidth, focusMode } = parsePreferences(raw);
   const [settingsOpen, setSettingsOpen] = useState(false);
-  const [preferencesLoaded, setPreferencesLoaded] = useState(false);
+  function change(update: object) {
+    savePreferences(JSON.stringify({theme, fontSize, readingWidth, focusMode, ...update}));
+  }
+  const setTheme = (value: Theme) => change({theme:value});
+  const setFontSize = (value: FontSize) => change({fontSize:value});
+  const setReadingWidth = (value: ReadingWidth) => change({readingWidth:value});
+  const setFocusMode = (value: boolean) => change({focusMode:value});
 
   useEffect(() => {
-    const stored = window.localStorage.getItem(STORAGE_KEY);
-    if (!stored) {
-      setPreferencesLoaded(true);
-      return;
-    }
-
-    const preferences = JSON.parse(stored) as {
-      theme?: Theme;
-      fontSize?: FontSize;
-      readingWidth?: ReadingWidth;
-      focusMode?: boolean;
-    };
-
-    setTheme(preferences.theme ?? "light");
-    setFontSize(preferences.fontSize ?? "normal");
-    setReadingWidth(preferences.readingWidth ?? "normal");
-    setFocusMode(preferences.focusMode ?? false);
-    setPreferencesLoaded(true);
-  }, []);
-
-  useEffect(() => {
-    if (!preferencesLoaded) return;
-
     const root = document.documentElement;
-    root.dataset.theme = theme;
-    root.dataset.fontSize = fontSize;
-    root.dataset.readingWidth = readingWidth;
+    root.setAttribute("data-theme", theme);
+    root.setAttribute("data-font-size", fontSize);
+    root.setAttribute("data-reading-width", readingWidth);
     root.classList.toggle("focus-mode", focusMode);
-    window.localStorage.setItem(
-      STORAGE_KEY,
-      JSON.stringify({ theme, fontSize, readingWidth, focusMode }),
-    );
-  }, [theme, fontSize, readingWidth, focusMode, preferencesLoaded]);
+  }, [theme, fontSize, readingWidth, focusMode]);
 
   return (
     <aside className="reader-toolbar" aria-label="阅读工具">
