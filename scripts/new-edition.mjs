@@ -7,5 +7,10 @@ const cutoff = new Date(Math.min(now.getTime(), Date.parse(`${date}T${slot === "
 const edition = {schemaVersion:1, id, editionDate:date, status:"draft", headline:"", cutoffAt:cutoff.toISOString(), generatedAt:now.toISOString(), sources:[], stories:[], items:[], editorialReview:{reviewedAt:now.toISOString(), imageRelevance:"", voiceDiversity:"", readingOrder:"", coverage:""}};
 await mkdir(".cache/drafts", {recursive:true});
 const path = `.cache/drafts/${id}.json`;
-await writeFile(path, JSON.stringify(edition, null, 2) + "\n", {flag:"wx"});
-console.log(`北京时间 ${date}；截稿 ${cutoff.toISOString()}；草稿 ${path}（未发布）`);
+try {
+  await writeFile(path, JSON.stringify(edition, null, 2) + "\n", {flag:"wx"});
+  console.log(`北京时间 ${date}；截稿 ${cutoff.toISOString()}；草稿 ${path}（未发布）`);
+} catch (error) {
+  if (error.code !== "EEXIST") throw error;
+  console.log(`北京时间 ${date}；已存在当期草稿，继续使用 ${path}`);
+}

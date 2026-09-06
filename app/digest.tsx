@@ -2,9 +2,13 @@
 /* eslint-disable @next/next/no-img-element */
 import { sourceKindLabels } from "./briefing-data";
 import { itemImages } from "../lib/editorial.mjs";
-import type { BriefingItem, Edition, EditorialImage } from "../lib/types";
+import type { BriefingItem, Edition, EditorialImage, ContentBlock } from "../lib/types";
 import ReaderControls from "./reader-controls";
 import { sitePath } from "../lib/site";
+
+function assetPath(path: string) {
+  return /^https?:\/\//.test(path) ? path : sitePath(path);
+}
 
 function DigestEntry({ item, number, edition }: { item: BriefingItem; number: number; edition: Edition }) {
   const mediaFirst = ["visual", "feature", "social"].includes(item.format);
@@ -13,8 +17,8 @@ function DigestEntry({ item, number, edition }: { item: BriefingItem; number: nu
     <div className="entry-visuals">
       {images.map((img, i) => (
         <figure className="entry-image" key={img.path + i}>
-          <a href={sitePath(img.path)} target="_blank" rel="noreferrer">
-            <img src={sitePath(img.path)} alt={img.alt} width={img.width} height={img.height} loading={number === 1 && i === 0 ? "eager" : "lazy"} />
+          <a href={assetPath(img.path)} target="_blank" rel="noreferrer">
+            <img src={assetPath(img.path)} alt={img.alt} width={img.width} height={img.height} loading={number === 1 && i === 0 ? "eager" : "lazy"} />
           </a>
           <figcaption>{img.caption}{img.sourceUrl && <a href={img.sourceUrl} target="_blank" rel="noreferrer"> · 图片出处</a>}</figcaption>
         </figure>
@@ -22,13 +26,24 @@ function DigestEntry({ item, number, edition }: { item: BriefingItem; number: nu
       {item.visualStat && <div className="entry-stat"><span>{item.visualStat.label}</span><strong>{item.visualStat.value}</strong><p>{item.visualStat.note}</p></div>}
     </div>
   );
+  const sourceMarks = (sourceIds?: string[]) => sourceIds?.map(id => {
+    const source = edition.sources.find(s => s.id === id);
+    return source && <sup key={id}><a href={source.url} title={source.publisher} target="_blank" rel="noreferrer">〔来源〕</a></sup>;
+  });
+  const blockContent = (block: ContentBlock, index: number) => {
+    if (block.kind === "text") return <p key={index}>{block.text}{sourceMarks(block.sourceIds)}</p>;
+    if (block.kind === "stat") return <div className="entry-stat" key={index}><span>{block.label}</span><strong>{block.value}</strong>{block.note && <p>{block.note}{sourceMarks(block.sourceIds)}</p>}</div>;
+    if (block.kind === "image") return <figure className="entry-image block-image" key={index}><a href={assetPath(block.image.path)} target="_blank" rel="noreferrer"><img src={assetPath(block.image.path)} alt={block.image.alt} width={block.image.width} height={block.image.height} loading="lazy" /></a><figcaption>{block.image.caption}{block.image.sourceUrl && <a href={block.image.sourceUrl} target="_blank" rel="noreferrer"> · 图片出处</a>}</figcaption></figure>;
+    const source = edition.sources.find(s => s.id === block.sourceId);
+    return source && <blockquote className="voice" key={index}><p>{block.text}</p><cite><a href={source.url} target="_blank" rel="noreferrer">{source.platform} / {source.author}</a> · {source.timeEvidence}</cite></blockquote>;
+  };
   return (
     <section id={item.id} className={`digest-entry format-${item.format}`}>
       <div className="entry-labels"><span className="entry-section-label">{item.section}</span>{item.labels?.map(label => <span key={label}>{label}</span>)}</div>
       <h2><a className="entry-permalink" href={`#${item.id}`} aria-label={`定位第 ${number} 条`}>【{number}】</a><a href={item.href} target="_blank" rel="noreferrer">{item.title}</a></h2>
       {mediaFirst && media}
       {edition.status === "legacy" && (item.author || item.engagement) && <p className="entry-source">{item.author}{item.engagement && ` · ${item.engagement}`}</p>}
-      {item.details.map((detail, i) => (
+      {item.blocks?.map(blockContent) ?? item.details.map((detail, i) => (
         <p key={i}>{detail}{item.evidence?.filter(p => p.detailIndex === i).flatMap(p => p.sourceIds).map(id => {
           const source = edition.sources.find(s => s.id === id);
           return source && <sup key={id}><a href={source.url} title={source.publisher} target="_blank" rel="noreferrer">〔来源〕</a></sup>;

@@ -11,6 +11,11 @@ export type EditorialImage = {
   path: string; alt: string; caption: string; kind: "original" | "background" | "cover" | "screenshot";
   sourceUrl?: string; originalUrl?: string; relevance?: string; width?: number; height?: number;
 };
+export type ContentBlock =
+  | {kind: "text"; text: string; sourceIds?: string[]}
+  | {kind: "image"; image: EditorialImage}
+  | {kind: "quote"; text: string; sourceId: string; role: VoiceRole}
+  | {kind: "stat"; label: string; value: string; note?: string; sourceIds?: string[]};
 export type BriefingItem = {
   id: string; storyId?: string; title: string;
   section: "今日焦点" | "世界与新知" | "值得细读" | "人物、自然与轻读";
@@ -21,6 +26,7 @@ export type BriefingItem = {
   recommendation?: string; verificationNote?: string;
   relatedSources?: Array<{label: string; href: string}>;
   details: string[];
+  blocks?: ContentBlock[];
   sourceIds?: string[]; freshnessSourceId?: string; selectionReason?: string; updateNote?: string;
   evidence?: Array<{detailIndex: number; sourceIds: string[]}>;
   voices?: Array<{sourceId: string; role: VoiceRole; text: string; angle: string}>;

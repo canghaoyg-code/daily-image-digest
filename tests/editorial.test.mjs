@@ -12,7 +12,7 @@ function fixture(today = 7) {
   const sources = Array.from({length:10}, (_, i) => ({id:`s${i}`, url:`https://example.org/post/${i}`, platform:"测试平台", publisher:`发布者${i}`, author:`账号${i}`, publishedAt:i < today ? "2026-09-06T08:00:00+08:00" : "2026-09-05T08:00:00+08:00", observedAt:now, timeEvidence:"页面可见时间", excerpt:"原文短摘录", evidenceKind:"page", access:"public"}));
   return {schemaVersion:1, id:"2026-09-06-evening", editionDate:"2026-09-06", status:"published", generatedAt:now, cutoffAt:"2026-09-06T20:00:00+08:00", headline:"测试期号",
     editorialReview:{reviewedAt:now, imageRelevance:"逐图检查", voiceDiversity:"独立角度", readingOrder:"长短交错", coverage:"公共事务与轻读"},
-    sources, items:sources.map((s, i) => ({id:`entry-${i}`, title:`测试${i}`, section:i === 9 ? "人物、自然与轻读" : "今日焦点", format:"brief", source:s.publisher, sourceType:"媒体", sourceKind:"media-report", time:s.publishedAt.slice(0,10) + (i >= today ? " · 背景" : ""), labels:i >= today ? ["背景"] : [], href:s.url, details:[s.publisher + "认为这是一条独立信息"], sourceIds:[s.id], freshnessSourceId:s.id, selectionReason:"独立信息", evidence:[{detailIndex:0, sourceIds:[s.id]}]}))};
+    sources, items:sources.map((s, i) => ({id:`entry-${i}`, title:`测试${i}`, section:i === 9 ? "人物、自然与轻读" : "今日焦点", format:"brief", source:s.publisher, sourceType:"媒体", sourceKind:"media-report", time:s.publishedAt.slice(0,10) + (i >= today ? " · 背景" : ""), labels:i >= today ? ["背景"] : [], href:s.url, details:[s.publisher + "认为这是一条独立信息"], blocks:[{kind:"text", text:s.publisher + "认为这是一条独立信息", sourceIds:[s.id]}], sourceIds:[s.id], freshnessSourceId:s.id, selectionReason:"独立信息", evidence:[{detailIndex:0, sourceIds:[s.id]}]}))};
 }
 const check = edition => validateEdition(edition, {forPublication:true, now});
 test("时区、非法日期和早晚版顺序", () => {

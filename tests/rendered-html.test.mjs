@@ -24,7 +24,7 @@ test("首页条目按编辑顺序，目录锚点、图片和来源完整", async
   }
   assert.match(html, /aria-label="阅读工具"/);
   if (edition.status === "legacy") assert.match(html, /历史版/);
-  for (const match of html.matchAll(/<img[^>]+src="([^"]+)"/g)) assert.ok(match[1].startsWith("/daily-image-digest/images/"));
+  for (const match of html.matchAll(/<img[^>]+src="([^"]+)"/g)) assert.ok(match[1].startsWith("/daily-image-digest/images/") || /^https?:\/\//.test(match[1]));
 });
 test("往期与永久页可独立访问，未知期号返回 404", async () => {
   assert.equal((await render("/archive/")).status, 200);

@@ -1,0 +1,710 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-09-06-evening",
+  "editionDate": "2026-09-06",
+  "status": "published",
+  "headline": "有人冲进火场，也有人把喧闹还给老人",
+  "cutoffAt": "2026-09-06T11:47:54.133Z",
+  "generatedAt": "2026-09-06T11:47:54.133Z",
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://www.ithome.com/0/998/907.htm",
+      "platform": "IT之家",
+      "publisher": "IT之家",
+      "author": "归泷",
+      "publishedAt": "2026-09-06T11:17:49+08:00",
+      "observedAt": "2026-09-06T11:47:54.133Z",
+      "timeEvidence": "页面可见：2026/9/6 11:17:49，来源 IT之家，作者归泷",
+      "excerpt": "报道援引车队声明和现场视频，称79号车手Loek Hartog放弃比赛，救出起火赛车中的91号车手。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "s2",
+      "url": "https://sina.cn/news/detail/5339925180581579.html",
+      "platform": "新浪新闻／微博讨论汇总",
+      "publisher": "新浪新闻",
+      "author": "王诗奇Mr兔",
+      "publishedAt": "2026-09-06T01:08:19+08:00",
+      "observedAt": "2026-09-06T11:47:54.133Z",
+      "timeEvidence": "页面可见：王诗奇Mr兔 2026-09-06 01:08:19；转发2，评论1",
+      "excerpt": "帖子称79号车手从火场救人，同时转述观众、车手和车队对赛事救援保障的质疑。",
+      "engagement": [
+        {
+          "kind": "shares",
+          "value": 2,
+          "observedAt": "2026-09-06T11:47:54.133Z",
+          "evidence": "页面可见转发2"
+        },
+        {
+          "kind": "comments",
+          "value": 1,
+          "observedAt": "2026-09-06T11:47:54.133Z",
+          "evidence": "页面可见评论1"
+        }
+      ],
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "s3",
+      "url": "https://www.gamersky.com/news/202609/2204048.shtml",
+      "platform": "游民星空",
+      "publisher": "游民星空",
+      "author": "何念穿堂风",
+      "publishedAt": "2026-09-06T14:28:29+08:00",
+      "observedAt": "2026-09-06T11:47:54.133Z",
+      "timeEvidence": "页面可见：2026-09-06 14:28:29，来源新浪微博，编辑何念穿堂风",
+      "excerpt": "报道补充赛事方9月6日致歉、承认细致管理有待提高，并记录涉事车队宣布退出后续系列赛事。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "s4",
+      "url": "https://news.cnr.cn/native/gd/20260906/t20260906_527805918.shtml",
+      "platform": "央广网／央视网",
+      "publisher": "中央广播电视总台",
+      "author": "央视新闻",
+      "publishedAt": "2026-09-06T10:57:21+08:00",
+      "observedAt": "2026-09-06T11:47:54.133Z",
+      "timeEvidence": "页面可见：2026-09-06 10:57:21，来源央视新闻",
+      "excerpt": "报道解释废旧手机中黄金含量、整机与主板口径差异，以及工业回收线的高温和回收率。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "s5",
+      "url": "https://m.gmw.cn/2026-09/06/content_1304559871.htm",
+      "platform": "光明网／中国新闻网",
+      "publisher": "光明网",
+      "author": "中国新闻网",
+      "publishedAt": "2026-09-06T12:56:00+08:00",
+      "observedAt": "2026-09-06T11:47:54.133Z",
+      "timeEvidence": "页面可见：2026-09-06 12:56，来源中国新闻网",
+      "excerpt": "报道确认一名在尼泊尔热索瓦隧道受困11天的中国公民获救，生命体征平稳，并写到其与中方人员通话。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "s6",
+      "url": "https://finance.sina.com.cn/jjxw/2026-09-06/doc-iniqvzuy4428383.shtml",
+      "platform": "新浪财经／每日经济新闻",
+      "publisher": "每日经济新闻",
+      "publishedAt": "2026-09-06T10:38:00+08:00",
+      "observedAt": "2026-09-06T11:47:54.133Z",
+      "timeEvidence": "页面可见：2026年09月06日 10:38；来源每日经济新闻",
+      "excerpt": "报道转述教育部相关回应：校服购买遵循自愿原则，不得以校园活动、仪容仪表等为由设置穿着门槛。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "s7",
+      "url": "https://www.sohu.com/a/1072506013_267106",
+      "platform": "搜狐／新华社",
+      "publisher": "新华社",
+      "author": "韩赫",
+      "publishedAt": "2026-09-06T14:42:00+08:00",
+      "observedAt": "2026-09-06T11:47:54.133Z",
+      "timeEvidence": "页面可见：2026-09-06 14:42，来源新华社，记者韩赫",
+      "excerpt": "报道记录2026沈阳马拉松从起点出发、运动相机记录完赛和选手冲向终点的现场画面。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "s8",
+      "url": "https://www.sohu.com/a/1072441552_267106",
+      "platform": "搜狐／新华社图表",
+      "publisher": "新华社",
+      "author": "曹一",
+      "publishedAt": "2026-09-06T10:48:00+08:00",
+      "observedAt": "2026-09-06T11:47:54.133Z",
+      "timeEvidence": "页面可见：2026-09-06 10:48，新华社图表，作者曹一",
+      "excerpt": "图表介绍9月7日白露，说明昼夜温差、露水形成和从暑热向凉秋的季节转换。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "s9",
+      "url": "https://www.thepaper.cn/newsDetail_forward_34018681",
+      "platform": "澎湃新闻",
+      "publisher": "澎湃新闻",
+      "author": "澎湃新闻",
+      "publishedAt": "2026-09-06T08:30:00+08:00",
+      "observedAt": "2026-09-06T11:47:54.133Z",
+      "timeEvidence": "页面可见：2026-09-06 08:30，澎湃新闻",
+      "excerpt": "报道写到绍兴一处葫芦景点因游客拥挤和安全、身体原因，摘下七只葫芦，文旅方面希望把安宁还给老人。",
+      "access": "public",
+      "evidenceKind": "page"
+    }
+  ],
+  "stories": [
+    {
+      "id": "china-gt-rescue",
+      "multiVoice": true,
+      "voiceSelectionNote": "保留报道、社交讨论和后续赛事回应三种不同信息增量。",
+      "discoverySignals": [
+        {
+          "platform": "百度热搜",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "observedAt": "2026-09-06T11:47:54.133Z",
+          "evidence": "百度实时榜页面可见China GT事故相关词条进入当日热点榜。"
+        },
+        {
+          "platform": "新浪新闻／微博讨论",
+          "url": "https://sina.cn/news/detail/5339925180581579.html",
+          "observedAt": "2026-09-06T11:47:54.133Z",
+          "evidence": "页面可见多条不同账号围绕救人和救援保障发表意见，并显示转发、评论数。"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "gt-fire-rescue",
+      "storyId": "china-gt-rescue",
+      "title": "赛道上的火，和第一时间冲下车的人",
+      "section": "今日焦点",
+      "format": "visual",
+      "source": "IT之家、游民星空",
+      "sourceType": "媒体报道",
+      "sourceKind": "media-report",
+      "time": "2026-09-06 11:17 / 14:28（北京时间）",
+      "href": "https://www.ithome.com/0/998/907.htm",
+      "sourceIds": [
+        "s1",
+        "s3"
+      ],
+      "freshnessSourceId": "s3",
+      "selectionReason": "同一事故同时出现于媒体报道和热榜讨论；这一条保留事故经过与后续回应，不把救人和赛事保障压成一个结论。",
+      "details": [
+        "IT之家记录的现场视频显示，91号车起火后，79号车手Loek Hartog放弃比赛、下车用灭火器施救，并将被困车手从车内救出。游民星空随后补充，赛事组委会在9月6日致歉，称将复盘组织、应急、救援和医疗环节。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "s1",
+            "s3"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "https://imgs.gamersky.com/upimg/new_preview/2026/09/06/origin_b_202609061426163695.jpg",
+            "alt": "China GT上海站事故报道配图中的赛车现场",
+            "caption": "赛事事故报道配图；图片来源：游民星空，非喷嚏网图片。",
+            "kind": "original",
+            "sourceUrl": "https://www.gamersky.com/news/202609/2204048.shtml",
+            "originalUrl": "https://imgs.gamersky.com/upimg/new_preview/2026/09/06/origin_b_202609061426163695.jpg",
+            "relevance": "对应China GT上海站事故与赛会后续回应"
+          }
+        },
+        {
+          "kind": "text",
+          "text": "91号赛车撞击后起火，79号车手放弃自己的比赛冲入现场施救；事故之后，关注点又转向赛事的应急响应与现场保障。",
+          "sourceIds": [
+            "s1",
+            "s3"
+          ]
+        },
+        {
+          "kind": "stat",
+          "label": "现场留下的两个编号",
+          "value": "91 → 79",
+          "note": "起火赛车是91号；率先到场施救的是79号车手。",
+          "sourceIds": [
+            "s1"
+          ]
+        },
+        {
+          "kind": "quote",
+          "text": "不顾自身安危，从起火赛车中救出了FIST车手。",
+          "sourceId": "s1",
+          "role": "stakeholder"
+        }
+      ],
+      "voices": [
+        {
+          "sourceId": "s1",
+          "role": "stakeholder",
+          "text": "车手放弃比赛开展救援，最后成功将被困车手救出。",
+          "angle": "媒体报道保留了火势、灭火器和救援动作的现场线索。"
+        },
+        {
+          "sourceId": "s3",
+          "role": "critic",
+          "text": "报道记录车队退赛与赛会致歉，争议从单次事故延伸到组织、应急和医疗保障。",
+          "angle": "后续回应提供了事故之后的制度性讨论。"
+        }
+      ]
+    },
+    {
+      "id": "gt-social-voices",
+      "storyId": "china-gt-rescue",
+      "title": "“救人是本能”之外，讨论没有结束",
+      "section": "今日焦点",
+      "format": "social",
+      "source": "新浪新闻／微博讨论汇总",
+      "sourceType": "公开帖子汇总",
+      "sourceKind": "post",
+      "time": "2026-09-06 01:08（北京时间）",
+      "href": "https://sina.cn/news/detail/5339925180581579.html",
+      "sourceIds": [
+        "s2"
+      ],
+      "freshnessSourceId": "s2",
+      "selectionReason": "跨平台热点中的普通用户讨论；保留对救人行为的赞叹，也保留对救援保障的质疑。",
+      "details": [
+        "王诗奇Mr兔的公开帖子把两层情绪放在一起：一边是对79号车手冲进火场救人的称赞，另一边是观众、车手和车队对赛事救援保障的追问。这里不替帖子判断责任，只记录它如何把现场英雄叙事推向安全讨论。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "s2"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "quote",
+          "text": "路过的79号赛车车手，放弃自己的比赛去顶着巨火救人，把人从大火里救出来，绝对的赛车英雄！事后观众、车手车队对主办方的救援十分不满。",
+          "sourceId": "s2",
+          "role": "ordinary-user"
+        },
+        {
+          "kind": "text",
+          "text": "页面可见互动：转发2，评论1。数字只对应该页当时可见的这条发言，不外推为全网热度。",
+          "sourceIds": [
+            "s2"
+          ]
+        }
+      ],
+      "voices": [
+        {
+          "sourceId": "s2",
+          "role": "ordinary-user",
+          "text": "把“赛车英雄”和“救援被质疑”并列写在同一条帖子里。",
+          "angle": "普通用户将赞叹与追问同时保留下来，体现讨论的第二个声部。"
+        }
+      ]
+    },
+    {
+      "id": "phone-gold",
+      "title": "一部手机里的黄金，可能只有0.02克",
+      "section": "世界与新知",
+      "format": "visual",
+      "source": "央广网／央视新闻",
+      "sourceType": "媒体报道",
+      "sourceKind": "media-report",
+      "time": "2026-09-06 10:57（北京时间）",
+      "href": "https://news.cnr.cn/native/gd/20260906/t20260906_527805918.shtml",
+      "sourceIds": [
+        "s4"
+      ],
+      "freshnessSourceId": "s4",
+      "selectionReason": "把热搜式“手机含金量”拆成整机、主板和工业回收三个不同口径，保留可读数字。",
+      "details": [
+        "报道解释，一部现代手机的黄金含量约为0.02至0.03克；“一吨手机提炼出200克黄金”的说法，往往对应拆解后的主板等特定口径，而不是一吨完整手机。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "s4"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "https://news.cnr.cn/native/gd/20260906/W020260906394422079199.jpg",
+            "alt": "废旧手机回收报道中的手机与回收现场图片",
+            "caption": "废旧手机回收报道配图；图片来源：央广网／央视新闻。",
+            "kind": "original",
+            "sourceUrl": "https://news.cnr.cn/native/gd/20260906/t20260906_527805918.shtml",
+            "originalUrl": "https://news.cnr.cn/native/gd/20260906/W020260906394422079199.jpg",
+            "relevance": "对应手机黄金含量和废旧手机回收主题"
+          }
+        },
+        {
+          "kind": "stat",
+          "label": "单部现代手机含金量",
+          "value": "约0.02—0.03 g",
+          "note": "报道提示，整机与分拣后的主板不能混用同一个“含金量”口径。",
+          "sourceIds": [
+            "s4"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "这不是一条“手机突然变成金矿”的消息，而是一堂口径课：完整手机、拆解主板和工业回收线，分别对应不同数字。",
+          "sourceIds": [
+            "s4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phone-recycle-line",
+      "title": "真正的金子，藏在一条1300℃的流水线上",
+      "section": "值得细读",
+      "format": "standard",
+      "source": "央广网／央视新闻",
+      "sourceType": "媒体报道",
+      "sourceKind": "media-report",
+      "time": "2026-09-06 10:57（北京时间）",
+      "href": "https://news.cnr.cn/native/gd/20260906/t20260906_527805918.shtml",
+      "sourceIds": [
+        "s4"
+      ],
+      "freshnessSourceId": "s4",
+      "selectionReason": "与上一条共享原文但承担不同信息任务：上一条读数字，这一条读回收流程与隐私风险。",
+      "details": [
+        "报道写到，工业回收线通过约1300℃高温处理，并结合分选与检测，金属回收率可超过98%；面对约40亿部被丢弃的手机，回收还要处理数据擦除和隐私保护。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "s4"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "https://news.cnr.cn/native/gd/20260906/W020260906394425534870.jpg",
+            "alt": "废旧手机资源化报道中的回收处理设备图片",
+            "caption": "回收处理流程配图；图片来源：央广网／央视新闻。",
+            "kind": "original",
+            "sourceUrl": "https://news.cnr.cn/native/gd/20260906/t20260906_527805918.shtml",
+            "originalUrl": "https://news.cnr.cn/native/gd/20260906/W020260906394425534870.jpg",
+            "relevance": "对应手机回收、金属分离与隐私擦除流程"
+          }
+        },
+        {
+          "kind": "text",
+          "text": "手机回收的难点不只是把金属拿出来：它还需要在高温、分选、检测和数据擦除之间建立一条工业链。",
+          "sourceIds": [
+            "s4"
+          ]
+        },
+        {
+          "kind": "stat",
+          "label": "报道给出的回收率",
+          "value": ">98%",
+          "note": "对应工业回收线的金属回收率表述，不等于每部手机都能回收同样比例。",
+          "sourceIds": [
+            "s4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nepal-rescue",
+      "title": "被困11天后，他先看到的是灯光",
+      "section": "今日焦点",
+      "format": "feature",
+      "source": "光明网／中国新闻网",
+      "sourceType": "媒体报道",
+      "sourceKind": "media-report",
+      "time": "2026-09-06 12:56（北京时间）",
+      "href": "https://m.gmw.cn/2026-09/06/content_1304559871.htm",
+      "sourceIds": [
+        "s5"
+      ],
+      "freshnessSourceId": "s5",
+      "selectionReason": "今日中午新发布的救援进展，既有明确的获救结果，也留下当事人与救援现场的时间感。",
+      "details": [
+        "光明网转引中国新闻网消息：一名在尼泊尔热索瓦隧道受困11天的中国公民陆海涛获救，生命体征平稳，并已与中方人员通话。报道把“获救”从一句结果写回到等待、灯光和医疗观察的现场。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "s5"
+          ]
+        }
+      ],
+      "recommendation": "原文看点：不是只报“获救”两个字，而是把11天、隧道、医疗观察和与中方人员通话这些现场节点连起来。",
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "https://imgm.gmw.cn/attachement/jpg/site215/20260906/7251356095117311046.jpg",
+            "alt": "尼泊尔获救中国公民报道中的救援现场图片",
+            "caption": "救援进展报道配图；图片来源：光明网／中国新闻网。",
+            "kind": "original",
+            "sourceUrl": "https://m.gmw.cn/2026-09/06/content_1304559871.htm",
+            "originalUrl": "https://imgm.gmw.cn/attachement/jpg/site215/20260906/7251356095117311046.jpg",
+            "relevance": "对应尼泊尔热索瓦隧道获救进展"
+          }
+        },
+        {
+          "kind": "text",
+          "text": "从受困到获救，报道给出的最新节点是：已脱险、生命体征平稳，并与中方人员取得联系。",
+          "sourceIds": [
+            "s5"
+          ]
+        },
+        {
+          "kind": "quote",
+          "text": "看到灯光就使劲喊“哎”，喊了很多声……一度以为没希望了。",
+          "sourceId": "s5",
+          "role": "eyewitness"
+        }
+      ]
+    },
+    {
+      "id": "school-uniform",
+      "title": "校服可以买，但不能变成进校门的门票",
+      "section": "今日焦点",
+      "format": "brief",
+      "source": "新浪财经／每日经济新闻",
+      "sourceType": "媒体报道",
+      "sourceKind": "media-report",
+      "time": "2026-09-06 10:38（北京时间）",
+      "href": "https://finance.sina.com.cn/jjxw/2026-09-06/doc-iniqvzuy4428383.shtml",
+      "sourceIds": [
+        "s6"
+      ],
+      "freshnessSourceId": "s6",
+      "selectionReason": "教育部当天回应直接涉及家庭支出、学校管理和学生日常体验，信息边界清晰。",
+      "details": [
+        "教育部相关回应称，中小学校服购买遵循自愿原则，严禁未经集体决策选购，不得以校园活动、仪容仪表等为由设置穿着门槛；校服更新和购买还应兼顾学生家庭实际情况。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "s6"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "回应的关键不在“要不要穿”，而在两个边界：购买是否自愿，穿着是否被设置为入学或参加校园活动的门槛。",
+          "sourceIds": [
+            "s6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shenyang-marathon-start",
+      "title": "从起点出发：一座城市的周日早晨",
+      "section": "人物、自然与轻读",
+      "format": "visual",
+      "source": "搜狐／新华社",
+      "sourceType": "现场图片报道",
+      "sourceKind": "media-report",
+      "time": "2026-09-06 14:42（北京时间）",
+      "href": "https://www.sohu.com/a/1072506013_267106",
+      "sourceIds": [
+        "s7"
+      ],
+      "freshnessSourceId": "s7",
+      "selectionReason": "今天下午更新的现场图片报道，为长卷加入不依赖争议热点的公共生活画面。",
+      "details": [
+        "新华社现场照片记录沈阳马拉松从起点出发的瞬间：有人把运动相机带到赛道，有人冲向终点，也有人在志愿者引导下离开跑道。它让“马拉松”从成绩单回到一群普通人的周日早晨。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "s7"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "https://q9.itc.cn/q_70/images03/20260906/3a48074edae942acafed719b455ce663.jpeg",
+            "alt": "2026沈阳马拉松参赛选手从起点出发",
+            "caption": "参赛选手从起点处出发；新华社记者韩赫摄，图片来源：搜狐新华社报道。",
+            "kind": "original",
+            "sourceUrl": "https://www.sohu.com/a/1072506013_267106",
+            "originalUrl": "https://q9.itc.cn/q_70/images03/20260906/3a48074edae942acafed719b455ce663.jpeg",
+            "relevance": "对应2026沈阳马拉松起点现场"
+          }
+        },
+        {
+          "kind": "text",
+          "text": "同一场比赛里，起点、运动相机、终点和志愿者各有自己的观看位置。",
+          "sourceIds": [
+            "s7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shenyang-marathon-finish",
+      "title": "另一张现场：跑完以后，先跟着志愿者走",
+      "section": "人物、自然与轻读",
+      "format": "visual",
+      "source": "搜狐／新华社",
+      "sourceType": "现场图片报道",
+      "sourceKind": "media-report",
+      "time": "2026-09-06 14:42（北京时间）",
+      "href": "https://www.sohu.com/a/1072506013_267106",
+      "sourceIds": [
+        "s7"
+      ],
+      "freshnessSourceId": "s7",
+      "selectionReason": "同一图集中的另一幅独立现场画面，补足完赛后的身体状态与志愿服务，不重复起点叙事。",
+      "details": [
+        "报道配图还记录了选手完成比赛后，在志愿者引导下离开跑道的片刻；赛事画面因此不只剩下冲刺和名次，也包含跑完之后慢下来的身体。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "s7"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "https://q1.itc.cn/q_70/images03/20260906/7c34f69d68464c659f8f5b81d7dca2fa.jpeg",
+            "alt": "沈阳马拉松选手完赛后在志愿者引导下离开跑道",
+            "caption": "选手完成比赛后在志愿者引导下离开跑道；新华社记者韩赫摄，图片来源：搜狐新华社报道。",
+            "kind": "original",
+            "sourceUrl": "https://www.sohu.com/a/1072506013_267106",
+            "originalUrl": "https://q1.itc.cn/q_70/images03/20260906/7c34f69d68464c659f8f5b81d7dca2fa.jpeg",
+            "relevance": "对应2026沈阳马拉松完赛后的现场状态"
+          }
+        },
+        {
+          "kind": "quote",
+          "text": "一名参赛选手用运动相机记录自己的完赛瞬间。",
+          "sourceId": "s7",
+          "role": "eyewitness"
+        }
+      ]
+    },
+    {
+      "id": "white-dew",
+      "title": "明天白露：季节先从夜里的温差开始",
+      "section": "世界与新知",
+      "format": "visual",
+      "source": "搜狐／新华社图表",
+      "sourceType": "图表报道",
+      "sourceKind": "media-report",
+      "time": "2026-09-06 10:48（北京时间）",
+      "href": "https://www.sohu.com/a/1072441552_267106",
+      "sourceIds": [
+        "s8"
+      ],
+      "freshnessSourceId": "s8",
+      "selectionReason": "把“明天是什么节气”做成轻量的时间节点，提供气象解释而不是泛泛的节日文案。",
+      "details": [
+        "新华社图表提示，北京时间9月7日将迎来白露。所谓“白”，并不是露水的颜色，而是夜间气温下降后水汽凝结在植物上的季节信号；它也意味着暑热向凉秋转身。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "s8"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "https://5b0988e595225.cdn.sohucs.com/q_70%2Cc_zoom%2Cw_640/images/20190902/57e16658fa3e4755beb44829f2a94a61.jpeg",
+            "alt": "叶片上凝结露珠的白露资料图",
+            "caption": "资料图：叶片上的露珠；图片来源：搜狐公开图片页，非今日现场照片。",
+            "kind": "background",
+            "sourceUrl": "https://www.sohu.com/a/338176561_100177711",
+            "originalUrl": "https://5b0988e595225.cdn.sohucs.com/q_70%2Cc_zoom%2Cw_640/images/20190902/57e16658fa3e4755beb44829f2a94a61.jpeg",
+            "relevance": "对应白露节气中的露水与季节转换"
+          }
+        },
+        {
+          "kind": "stat",
+          "label": "白露到来时间",
+          "value": "9月7日 22:41",
+          "note": "新华社报道给出的北京时间；今晚读到的是明天的季节节点。",
+          "sourceIds": [
+            "s8"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "夜里先凉下来，露水才有机会被看见；节气不是一张日历贴纸，而是温度和空气一起改变的证据。",
+          "sourceIds": [
+            "s8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gourd-grandpa",
+      "title": "七只葫芦摘下之后，把安宁还给老人",
+      "section": "人物、自然与轻读",
+      "format": "social",
+      "source": "澎湃新闻",
+      "sourceType": "媒体报道",
+      "sourceKind": "media-report",
+      "time": "2026-09-06 08:30（北京时间）",
+      "href": "https://www.thepaper.cn/newsDetail_forward_34018681",
+      "sourceIds": [
+        "s9"
+      ],
+      "freshnessSourceId": "s9",
+      "selectionReason": "今天早间的轻内容不是硬凑的笑话，而是一个把游客热度、老人身体和公共空间边界放在一起的小现场。",
+      "details": [
+        "绍兴一处被网友称作“葫芦娃爷爷”的景点，因游客拥挤和安全、身体原因摘下七只葫芦；绍兴文旅随后表示，希望把安宁与清净还给两位老人。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "s9"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "quote",
+          "text": "把安宁与清净还给两位老人。",
+          "sourceId": "s9",
+          "role": "official"
+        },
+        {
+          "kind": "text",
+          "text": "热闹本身并不自动等于欢迎；当一个生活场景被围观成打卡点，退出喧闹也应该是一种被尊重的选择。",
+          "sourceIds": [
+            "s9"
+          ]
+        }
+      ],
+      "voices": [
+        {
+          "sourceId": "s9",
+          "role": "official",
+          "text": "绍兴文旅把这次摘葫芦解释为把安宁与清净还给老人。",
+          "angle": "官方回应为热闹景点补上了生活空间和身体边界。"
+        }
+      ]
+    }
+  ],
+  "editorialReview": {
+    "reviewedAt": "2026-09-06T11:47:54.133Z",
+    "imageRelevance": "7个条目带有7张直接观察到的相关图片；其中白露明确标注为资料图，图片来源与原文入口分开记录。",
+    "voiceDiversity": "China GT保留媒体现场、普通用户和后续回应三个角度；未把救人行为与赛事保障争议合并成单一结论。",
+    "readingOrder": "按火场现场→社交讨论→数字解释→救援进展→公共事务→生活现场→节令→轻读交错，避免按栏目整块堆叠。",
+    "coverage": "10条中10条的时效来源均为北京时间2026-09-06；内容覆盖公共安全、科技回收、救援、教育、体育、节令和人物轻读。"
+  }
+}

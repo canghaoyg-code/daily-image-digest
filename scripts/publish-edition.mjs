@@ -15,16 +15,27 @@ const assets = await validateAssets(edition, resolve("public"));
 report.errors.push(...assets.errors);
 if (report.errors.length) throw new Error(report.errors.join("\n"));
 const catalog = JSON.parse(await readFile("content/catalog.json"));
-if (catalog.editions.includes(edition.id) || editionOrder(edition.id) < editionOrder(catalog.latest)) throw new Error("不得覆盖历史期或回退最新期");
+const currentId = `${beijingDate(now)}-evening`;
+const replacingCurrent = catalog.editions.includes(edition.id) && edition.id === currentId;
+if (catalog.editions.includes(edition.id) && !replacingCurrent || editionOrder(edition.id) < editionOrder(catalog.latest) && !replacingCurrent) throw new Error("不得覆盖历史期或回退最新期");
 for (const item of edition.items) for (const img of item.images ?? []) Object.assign(img, assets.sizes[img.path]);
 const path = `content/editions/${edition.id}.json`;
-await writeFile(path, JSON.stringify(edition, null, 2) + "\n", {flag:"wx"});
+if (replacingCurrent) {
+  const temporaryEdition = `content/.edition-${process.pid}.json`;
+  try {
+    await writeFile(temporaryEdition, JSON.stringify(edition, null, 2) + "\n", {flag:"wx"});
+    await rename(temporaryEdition, path);
+  } catch (error) {
+    await unlink(temporaryEdition).catch(() => {});
+    throw error;
+  }
+} else await writeFile(path, JSON.stringify(edition, null, 2) + "\n", {flag:"wx"});
 const temporary = `content/.catalog-${process.pid}.json`;
 try {
   await writeFile(temporary, JSON.stringify({latest:edition.id, editions:[...catalog.editions, edition.id]}, null, 2) + "\n", {flag:"wx"});
   await rename(temporary, "content/catalog.json");
 } catch (error) {
-  await unlink(path);
+  if (!replacingCurrent) await unlink(path);
   await unlink(temporary).catch(() => {});
   throw error;
 }
