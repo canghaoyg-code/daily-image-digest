@@ -11,10 +11,19 @@ const now = "2026-09-06T12:10:00Z";
 function fixture(today = 7) {
   const sources = Array.from({length:10}, (_, i) => ({id:`s${i}`, url:`https://example.org/post/${i}`, platform:"测试平台", publisher:`发布者${i}`, author:`账号${i}`, publishedAt:i < today ? "2026-09-06T08:00:00+08:00" : "2026-09-05T08:00:00+08:00", observedAt:now, timeEvidence:"页面可见时间", excerpt:"原文短摘录", evidenceKind:"page", access:"public"}));
   return {schemaVersion:1, id:"2026-09-06-evening", editionDate:"2026-09-06", status:"published", generatedAt:now, cutoffAt:"2026-09-06T20:00:00+08:00", headline:"测试期号",
-    editorialReview:{reviewedAt:now, imageRelevance:"逐图检查", voiceDiversity:"独立角度", readingOrder:"长短交错", coverage:"公共事务与轻读"},
+    editorialReview:{decision:"approved", reviewedAt:now, imageRelevance:"逐图检查", voiceDiversity:"独立角度", readingOrder:"长短交错", coverage:"公共事务与轻读"},
     sources, items:sources.map((s, i) => ({id:`entry-${i}`, title:`测试${i}`, section:i === 9 ? "人物、自然与轻读" : "今日焦点", format:"brief", source:s.publisher, sourceType:"媒体", sourceKind:"media-report", time:s.publishedAt.slice(0,10) + (i >= today ? " · 背景" : ""), labels:i >= today ? ["背景"] : [], href:s.url, details:[s.publisher + "认为这是一条独立信息"], blocks:[{kind:"text", text:s.publisher + "认为这是一条独立信息", sourceIds:[s.id]}], sourceIds:[s.id], freshnessSourceId:s.id, selectionReason:"独立信息", evidence:[{detailIndex:0, sourceIds:[s.id]}]}))};
 }
 const check = edition => validateEdition(edition, {forPublication:true, now});
+test("写了复核说明不等于编辑通过，返工稿禁止发布但可检查", () => {
+  const edition = fixture();
+  edition.editorialReview.decision = "revise";
+  assert.match(check(edition).errors.join("\n"), /编辑验收未通过/);
+  delete edition.editorialReview.decision;
+  assert.match(check(edition).errors.join("\n"), /编辑验收未通过/);
+  edition.status = "draft";
+  assert.deepEqual(validateEdition(edition, {now}).errors, []);
+});
 test("时区、非法日期和早晚版顺序", () => {
   assert.equal(beijingDate("2026-09-05T16:01:00Z"), "2026-09-06");
   assert.equal(isInstant("2026-02-30T01:00:00Z"), false);
@@ -64,6 +73,15 @@ test("正文来源和轻读结尾为发布要求", () => {
   edition.items.at(-1).section = "今日焦点";
   assert.match(check(edition).errors.join("\n"), /正文段落缺少来源/);
   assert.match(check(edition).errors.join("\n"), /最后一条/);
+});
+test("自由编排的发言也必须关联条目内来源与真实发布者", () => {
+  const edition = fixture();
+  edition.items[0].blocks.push({kind:"quote", text:"摘录", sourceId:"s1", role:"expert", presentation:"translation"});
+  assert.match(check(edition).errors.join("\n"), /原话块缺少发布者/);
+  edition.items[0].sourceIds.push("s1");
+  assert.deepEqual(check(edition).errors, []);
+  delete edition.sources[1].author;
+  assert.match(check(edition).errors.join("\n"), /原话块缺少发布者/);
 });
 test("新一期不能使用 legacy 或过期日期绕过时效检查", async () => {
   const report = await checkFile("content/editions/2026-08-30-evening.json", {forPublication:true, now});

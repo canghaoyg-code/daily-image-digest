@@ -14,7 +14,7 @@ export type EditorialImage = {
 export type ContentBlock =
   | {kind: "text"; text: string; sourceIds?: string[]}
   | {kind: "image"; image: EditorialImage}
-  | {kind: "quote"; text: string; sourceId: string; role: VoiceRole}
+  | {kind: "quote"; text: string; sourceId: string; role: VoiceRole; speaker?: string; presentation?: "excerpt" | "translation" | "paraphrase"}
   | {kind: "stat"; label: string; value: string; note?: string; sourceIds?: string[]};
 export type BriefingItem = {
   id: string; storyId?: string; title: string;
@@ -29,7 +29,7 @@ export type BriefingItem = {
   blocks?: ContentBlock[];
   sourceIds?: string[]; freshnessSourceId?: string; selectionReason?: string; updateNote?: string;
   evidence?: Array<{detailIndex: number; sourceIds: string[]}>;
-  voices?: Array<{sourceId: string; role: VoiceRole; text: string; angle: string}>;
+  voices?: Array<{sourceId: string; role: VoiceRole; speaker?: string; text: string; angle: string; presentation?: "excerpt" | "translation" | "paraphrase"}>;
   images?: EditorialImage[];
   visualStat?: {label: string; value: string; note: string};
   image?: string; imageAlt?: string; imageCaption?: string;
@@ -38,6 +38,6 @@ export type Edition = {
   schemaVersion: number; id: string; editionDate: string; status: "legacy" | "draft" | "published";
   headline: string; cutoffAt?: string; generatedAt?: string; displayUpdatedAt?: string; legacyNote?: string;
   sources: Source[]; items: BriefingItem[];
-  editorialReview?: {reviewedAt: string; imageRelevance: string; voiceDiversity: string; readingOrder: string; coverage: string};
+  editorialReview?: {decision?: "approved" | "revise"; reviewedAt: string; imageRelevance: string; voiceDiversity: string; readingOrder: string; coverage: string};
   stories?: Array<{id: string; multiVoice?: boolean; voiceSelectionNote?: string; sustainedHeatEvidence?: string; discoverySignals?: Array<{platform: string; url: string; observedAt: string; evidence: string}>}>;
 };

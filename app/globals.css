@@ -11,6 +11,8 @@ summary { cursor: pointer; }
 .edition-contents li { margin: 9px 0; }
 .voice { margin: 20px 0; padding: 0 0 0 18px; border-left: 2px solid var(--red); }
 .voice cite, .voice small { font: 13px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; color: var(--muted); }
+.voice-byline { font: 600 14px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
+.voice-byline span { color: var(--muted); font-weight: 400; }
 .entry-permalink { color: var(--red); }
 .digest-entry sup { font-size: 11px; white-space: nowrap; }
 .source-details p { font-size: 14px; }
@@ -187,14 +189,15 @@ html[data-theme="dark"] .daily-post {
   line-height: 1.85;
 }
 
+.digest-entry.format-brief h2 { display: inline; font-size: 17px; line-height: 1.85; }
+.digest-entry.format-brief h2 + p { display: inline; margin-left: 0.5em; }
+
 .digest-entry.format-visual {
   padding-top: 34px;
 }
 
 .digest-entry.format-social {
-  padding-left: 22px;
-  border-left: 3px solid color-mix(in srgb, var(--red) 64%, var(--line));
-  background: linear-gradient(90deg, color-mix(in srgb, var(--red) 4%, transparent), transparent 45%);
+  padding-left: 0;
 }
 
 .digest-entry.format-social h2 {
@@ -209,19 +212,15 @@ html[data-theme="dark"] .daily-post {
 }
 
 .entry-labels span {
-  padding: 3px 7px;
-  border: 1px solid color-mix(in srgb, var(--green) 32%, transparent);
-  border-radius: 999px;
-  color: var(--green);
+  padding: 0;
+  color: var(--muted);
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
   font-size: 11px;
   line-height: 1;
 }
 
 .entry-labels .entry-section-label {
-  border-color: var(--green);
-  background: var(--green);
-  color: #fff;
+  color: var(--green);
 }
 
 .entry-topic {
@@ -574,7 +573,7 @@ html[data-theme="dark"] .settings-panel {
   }
 
   .digest-entry.format-social {
-    padding: 20px 0 20px 14px;
+    padding: 20px 0;
   }
 
   .reader-toolbar {

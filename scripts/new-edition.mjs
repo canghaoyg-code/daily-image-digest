@@ -4,7 +4,7 @@ const slot = process.argv[2];
 if (!["morning", "evening"].includes(slot)) throw new Error("用法：npm run edition:new -- morning|evening");
 const now = new Date(), date = beijingDate(now), id = `${date}-${slot}`;
 const cutoff = new Date(Math.min(now.getTime(), Date.parse(`${date}T${slot === "morning" ? "07" : "20"}:00:00+08:00`)));
-const edition = {schemaVersion:1, id, editionDate:date, status:"draft", headline:"", cutoffAt:cutoff.toISOString(), generatedAt:now.toISOString(), sources:[], stories:[], items:[], editorialReview:{reviewedAt:now.toISOString(), imageRelevance:"", voiceDiversity:"", readingOrder:"", coverage:""}};
+const edition = {schemaVersion:1, id, editionDate:date, status:"draft", headline:"", cutoffAt:cutoff.toISOString(), generatedAt:now.toISOString(), sources:[], stories:[], items:[], editorialReview:{decision:"revise", reviewedAt:now.toISOString(), imageRelevance:"", voiceDiversity:"", readingOrder:"", coverage:""}};
 await mkdir(".cache/drafts", {recursive:true});
 const path = `.cache/drafts/${id}.json`;
 try {

@@ -53,6 +53,24 @@ def plain(value):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", value or ""))).strip()
 
 
+def candidate_day(row):
+    """Date hints only: a feed update is never evidence of a new article."""
+    timestamp = None
+    if row.get("evidenceKind") == "page" and row.get("updateNote") and row.get("updateEvidence"):
+        timestamp = parse_time(row.get("updatedAt"))
+    timestamp = timestamp or parse_time(row.get("publishedAt"))
+    if timestamp:
+        return datetime.fromisoformat(timestamp).astimezone(BEIJING).date().isoformat()
+    if row.get("evidenceKind") == "page" and row.get("timezone") == "Asia/Shanghai":
+        try:
+            date = row.get("publishedDate", "")
+            if datetime.strptime(date, "%Y-%m-%d").strftime("%Y-%m-%d") == date:
+                return date
+        except ValueError:
+            pass
+    return None
+
+
 def parse_feed(data, feed, observed):
     if b"<!DOCTYPE" in data.upper() or b"<!ENTITY" in data.upper():
         raise ValueError("XML entity declarations are not accepted")
@@ -183,8 +201,7 @@ def run(args):
     merged = merge_candidates(rows, previous)
     dates = Counter()
     for row in merged:
-        timestamp = parse_time(row.get("publishedAt"))
-        date = datetime.fromisoformat(timestamp).astimezone(BEIJING).date().isoformat() if timestamp else None
+        date = candidate_day(row)
         dates["today" if date == day else "older" if date and date < day else "unknownOrFuture"] += 1
     # Suggest exact-title/storyHint groups; never delete separate voices/URLs.
     groups = {}

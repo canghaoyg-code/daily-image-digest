@@ -1,0 +1,965 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-09-13-evening",
+  "editionDate": "2026-09-13",
+  "status": "published",
+  "headline": "葫芦又挂回去了",
+  "cutoffAt": "2026-09-13T07:44:02.048Z",
+  "generatedAt": "2026-09-13T08:01:58.219Z",
+  "sources": [
+    {
+      "id": "gourd",
+      "url": "https://content-static.cctvnews.cctv.com/snow-book/index.html?item_id=7350316524560584298",
+      "platform": "央视新闻",
+      "publisher": "央视新闻",
+      "author": "姚道磊、张鑫梦",
+      "publishedAt": "2026-09-13T04:31:47+08:00",
+      "observedAt": "2026-09-13T07:54:38.905Z",
+      "timeEvidence": "页面显示 2026-09-13 04:31:47；《新闻周刊》本期回访。",
+      "excerpt": "报道回访陈金敖夫妇，记述9月5日剪葫芦、11日重新挂回以及游客带来的快乐和打扰。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "towel",
+      "url": "https://www.bbc.co.uk/news/articles/c4gr33g3evlo",
+      "platform": "BBC",
+      "publisher": "BBC",
+      "author": "Jaroslav Lukiv",
+      "publishedAt": "2026-09-12T20:27:25.933Z",
+      "observedAt": "2026-09-13T07:54:38.905Z",
+      "timeEvidence": "正文 Published 的 time 元素：2026-09-12T20:27:25.933Z；北京时间9月13日04:27。",
+      "excerpt": "Dayana Yastremska 展示家中受袭后的照片，称幸存的是一条 Roland Garros 毛巾。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "consumer",
+      "url": "https://www.chinanews.com.cn/cj/2026/09-13/10695626.shtml",
+      "platform": "中国新闻网",
+      "publisher": "中国新闻网",
+      "author": "吕少威",
+      "publishedAt": "2026-09-13T14:52:00+08:00",
+      "observedAt": "2026-09-13T07:54:38.905Z",
+      "timeEvidence": "2026年09月13日14:52；中新社北京9月13日电。",
+      "excerpt": "服贸会采访中，美团、快手、微信支付的发言人从体验、粉丝信任和近场服务描述各自观察。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "vr",
+      "url": "https://www.news.cn/20260913/927dd4cf928f4c43ad7430669be43a8d/c.html",
+      "platform": "新华网",
+      "publisher": "新华网",
+      "author": "任耀庭、王楷焱",
+      "publishedAt": "2026-09-13T02:55:14+08:00",
+      "observedAt": "2026-09-13T07:54:38.905Z",
+      "timeEvidence": "页面2026-09-13 02:55:14；威尼斯当地12日颁奖。",
+      "excerpt": "中国VR电影《鸽环》获第83届威尼斯电影节沉浸单元大奖，片长35分钟，以祖孙与鸽环展开。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "ai",
+      "url": "https://www.bbc.co.uk/news/articles/c14dpgm0rg4o",
+      "platform": "BBC",
+      "publisher": "BBC",
+      "author": "Paulin Kola、Lily Jamali",
+      "publishedAt": "2026-09-12T15:37:39.463Z",
+      "observedAt": "2026-09-13T07:54:38.905Z",
+      "timeEvidence": "Published time 2026-09-12T15:37:39.463Z；Updated time 2026-09-12T21:16:47.720Z。",
+      "excerpt": "Amodei提出控制前沿AI发展节奏；报道更新外界响应及不同意见。",
+      "access": "public",
+      "evidenceKind": "page",
+      "updatedAt": "2026-09-12T21:16:47.720Z",
+      "updateNote": "北京时间9月13日05:16更新：报道补入外界响应及不同意见。",
+      "updateEvidence": "正文Updated对应time元素2026-09-12T21:16:47.720Z；正文包含Altman、Musk、Delangue等响应及批评。"
+    },
+    {
+      "id": "up",
+      "url": "https://www.bbc.co.uk/news/articles/crm932el3yjo",
+      "platform": "BBC",
+      "publisher": "BBC",
+      "author": "George Wright",
+      "publishedAt": "2026-09-12T00:16:16.657Z",
+      "observedAt": "2026-09-13T07:54:38.905Z",
+      "timeEvidence": "正文 Published 的 time：2026-09-12T00:16:16.657Z；北京时间9月12日08:16。",
+      "excerpt": "Jackie Bassett回看从7岁拍到70岁的纪录片，并质问导演为何男性谈政治、女性总被问婚姻。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "kirk",
+      "url": "https://www.bbc.co.uk/news/articles/cj06jgl9qzlo",
+      "platform": "BBC",
+      "publisher": "BBC",
+      "author": "Kwasi Gyamfi Asiedu",
+      "publishedAt": "2026-09-13T00:49:08.460Z",
+      "observedAt": "2026-09-13T07:54:38.905Z",
+      "timeEvidence": "正文 Published time：2026-09-13T00:49:08.460Z；北京时间9月13日08:49。",
+      "excerpt": "对Kirk事件后遭解雇者的一周年新采访，包含当事人的现状、支持惩罚者的说法，以及和解者仍想回岗位的感受。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "panda",
+      "url": "https://www.chinanews.com.cn/tp/hd2011/2026/09-13/1204128.shtml",
+      "platform": "中国新闻网",
+      "publisher": "中国新闻网",
+      "author": "沙晗汀",
+      "publishedAt": "2026-09-13T10:30:10+08:00",
+      "observedAt": "2026-09-13T07:54:38.905Z",
+      "timeEvidence": "组图显示2026-09-13 10:30:10；图注说明拍摄于华盛顿当地9月12日。",
+      "excerpt": "旅居华盛顿美国国家动物园的青宝迎来五周岁生日，图中生日布置和数字5。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "pandaReport",
+      "url": "https://www.chinanews.com.cn/gj/2026/09-13/10695506.shtml",
+      "platform": "中国新闻网",
+      "publisher": "中国新闻网",
+      "author": "沙晗汀",
+      "publishedAt": "2026-09-13T06:45:00+08:00",
+      "observedAt": "2026-09-13T07:54:38.905Z",
+      "timeEvidence": "页面2026年09月13日06:45；中新社华盛顿9月12日电。",
+      "excerpt": "青宝的生日冰蛋糕由果汁制成，配以胡萝卜、红薯和苹果等。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "rgs",
+      "url": "https://news.ycombinator.com/item?id=49676671",
+      "platform": "Hacker News",
+      "publisher": "Hacker News",
+      "author": "RGS1811",
+      "publishedAt": "2026-09-12T20:08:47Z",
+      "observedAt": "2026-09-13T07:54:38.905Z",
+      "timeEvidence": "评论链接的时间提示 2026-09-12T20:08:47（UTC）；转为北京时间为9月13日。",
+      "excerpt": "他把限速倡议解读为商业护城河不再、能力难以转成可销售产品后的自保，而非单纯利他。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "ned",
+      "url": "https://news.ycombinator.com/item?id=49676924",
+      "platform": "Hacker News",
+      "publisher": "Hacker News",
+      "author": "nedruod",
+      "publishedAt": "2026-09-12T20:36:31Z",
+      "observedAt": "2026-09-13T07:54:38.905Z",
+      "timeEvidence": "评论链接的时间提示 2026-09-12T20:36:31（UTC）；转为北京时间为9月13日。",
+      "excerpt": "他反对直接认定对方别有用心：商业可用性并不等于对齐；数种风险同时出现时，停下来考虑并不荒唐。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "hgo",
+      "url": "https://news.ycombinator.com/item?id=49676894",
+      "platform": "Hacker News",
+      "publisher": "Hacker News",
+      "author": "hgoel",
+      "publishedAt": "2026-09-12T20:32:59Z",
+      "observedAt": "2026-09-13T07:54:38.905Z",
+      "timeEvidence": "评论链接的时间提示 2026-09-12T20:32:59（UTC）；转为北京时间为9月13日。",
+      "excerpt": "他把讨论拉回企业操作责任，认为不该把隔离环境与部署失误都说成模型自己成了罪犯。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "pizza",
+      "url": "https://news.ycombinator.com/item?id=49676969",
+      "platform": "Hacker News",
+      "publisher": "Hacker News",
+      "author": "pizza234",
+      "publishedAt": "2026-09-12T20:41:44Z",
+      "observedAt": "2026-09-13T07:54:38.905Z",
+      "timeEvidence": "评论链接的时间提示 2026-09-12T20:41:44（UTC）；转为北京时间为9月13日。",
+      "excerpt": "他不同意上述归因，援引自己对攻击案例的理解，认为模型知道规则却仍行动的可能性，不能被安全配置问题一笔带过。",
+      "access": "public",
+      "evidenceKind": "page"
+    }
+  ],
+  "stories": [
+    {
+      "id": "ai-pace",
+      "multiVoice": true,
+      "discoverySignals": [
+        {
+          "platform": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=49672510",
+          "observedAt": "2026-09-13T07:54:38.905Z",
+          "evidence": "同题讨论可见627 points、880 comments；上午已观测到479票及665条评论，延续至本次读取。"
+        },
+        {
+          "platform": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cj06jgl9qzlo",
+          "observedAt": "2026-09-13T07:54:38.905Z",
+          "evidence": "本次页面Most read榜第1是AI员工恐惧的后续报道，第7为硅谷对AI警告的不同响应，同一议题延续。"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "gourd",
+      "title": "葫芦又挂回去了",
+      "section": "今日焦点",
+      "format": "standard",
+      "source": "央视新闻 · 姚道磊、张鑫梦",
+      "sourceType": "公开原文",
+      "sourceKind": "media-report",
+      "time": "2026-09-13 04:31 回访报道；剪下为9月5日，重新挂回为9月11日",
+      "href": "https://content-static.cctvnews.cctv.com/snow-book/index.html?item_id=7350316524560584298",
+      "sourceIds": [
+        "gourd"
+      ],
+      "freshnessSourceId": "gourd",
+      "selectionReason": "保留夫妇欢迎来访的情感与围观侵入生活的矛盾，不把他们替换成抽象的流量受害者。",
+      "details": [
+        "央视9月13日的回访，把“剪掉”之后的故事接了回来：75岁的陈金敖9月5日深夜剪下七个葫芦，担心拥挤的河岸出事；在游客劝说下，本周五（9月11日）又把它们挂了回去，还做了“注意安全，安全第一”的牌子。",
+        "我看见他们就像看到我自己的亲人。",
+        "她说，来访者让自己从心底里高兴。但报道同时呈现另一面：起床、吃饭、浇水、晾衣服都成了直播内容，日常生活被持续围观。",
+        "这篇回访值得留下的，是两件同时成立的事：老人喜欢有人来；他们的家也需要不被拍摄的时间。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "gourd"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "gourd"
+          ]
+        },
+        {
+          "detailIndex": 2,
+          "sourceIds": [
+            "gourd"
+          ]
+        },
+        {
+          "detailIndex": 3,
+          "sourceIds": [
+            "gourd"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260913/gourds.jpg",
+            "originalUrl": "https://cms-emer-res.cctvnews.cctv.com/image/1005/process/1f19ed61ce0b4cecbe31f7c9f4174b70.jpg",
+            "sourceUrl": "https://content-static.cctvnews.cctv.com/snow-book/index.html?item_id=7350316524560584298",
+            "alt": "陈金敖站在窗边，双臂伸向挂着葫芦的藤架",
+            "caption": "央视《新闻周刊》视频画面：陈金敖与窗前葫芦。来源：央视新闻。",
+            "relevance": "窗户与藤架说明这是一个人的家，不是为游客搭建的景区。",
+            "kind": "cover",
+            "width": 1280,
+            "height": 664
+          }
+        },
+        {
+          "kind": "text",
+          "text": "央视9月13日的回访，把“剪掉”之后的故事接了回来：75岁的陈金敖9月5日深夜剪下七个葫芦，担心拥挤的河岸出事；在游客劝说下，本周五（9月11日）又把它们挂了回去，还做了“注意安全，安全第一”的牌子。",
+          "sourceIds": [
+            "gourd"
+          ]
+        },
+        {
+          "kind": "quote",
+          "sourceId": "gourd",
+          "speaker": "陈金敖",
+          "text": "我看见他们就像看到我自己的亲人。",
+          "presentation": "excerpt",
+          "role": "stakeholder"
+        },
+        {
+          "kind": "quote",
+          "sourceId": "gourd",
+          "speaker": "陈金敖的老伴",
+          "text": "她说，来访者让自己从心底里高兴。但报道同时呈现另一面：起床、吃饭、浇水、晾衣服都成了直播内容，日常生活被持续围观。",
+          "presentation": "paraphrase",
+          "role": "stakeholder"
+        },
+        {
+          "kind": "text",
+          "text": "这篇回访值得留下的，是两件同时成立的事：老人喜欢有人来；他们的家也需要不被拍摄的时间。",
+          "sourceIds": [
+            "gourd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "towel",
+      "title": "废墟里，一条法网毛巾还挂着",
+      "section": "世界与新知",
+      "format": "visual",
+      "source": "BBC · Jaroslav Lukiv",
+      "sourceType": "公开原文",
+      "sourceKind": "media-report",
+      "time": "2026-09-13 04:27 报道；袭击发生于9月12日",
+      "href": "https://www.bbc.co.uk/news/articles/c4gr33g3evlo",
+      "sourceIds": [
+        "towel"
+      ],
+      "freshnessSourceId": "towel",
+      "selectionReason": "废墟里，一条法网毛巾还挂着",
+      "details": [
+        "唯一幸存的，是一条罗兰·加洛斯……毛巾。",
+        "BBC于北京时间9月13日04:27报道，这名乌克兰网球选手在社交平台展示了家人在敖德萨的公寓遭9月12日袭击后的照片。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "towel"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "towel"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260913/towel.webp",
+            "originalUrl": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/4b04/live/5077a5e0-aedd-11f1-a540-61c3f7fc4e6c.jpg.webp",
+            "sourceUrl": "https://www.bbc.co.uk/news/articles/c4gr33g3evlo",
+            "alt": "橙色Roland Garros 2025毛巾挂在毁坏的房间边缘，周围是断裂墙体和废墟",
+            "caption": "Dayana Yastremska / Facebook，经BBC报道；敖德萨家中受袭后的毛巾。",
+            "relevance": "毛巾上的赛事字样与废墟形成当事人生活被打断的具体证据。",
+            "kind": "original",
+            "width": 1536,
+            "height": 2048
+          }
+        },
+        {
+          "kind": "quote",
+          "sourceId": "towel",
+          "speaker": "Dayana Yastremska",
+          "text": "唯一幸存的，是一条罗兰·加洛斯……毛巾。",
+          "presentation": "translation",
+          "role": "stakeholder"
+        },
+        {
+          "kind": "text",
+          "text": "BBC于北京时间9月13日04:27报道，这名乌克兰网球选手在社交平台展示了家人在敖德萨的公寓遭9月12日袭击后的照片。",
+          "sourceIds": [
+            "towel"
+          ]
+        },
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260913/odesa.webp",
+            "originalUrl": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/b616/live/52d9fcb0-aed9-11f1-91ea-91f4a2a08fa4.png.webp",
+            "sourceUrl": "https://www.bbc.co.uk/news/articles/c4gr33g3evlo",
+            "alt": "敖德萨一栋住宅楼上层燃烧，烟雾沿楼体上升",
+            "caption": "DSNS / Odesa region，经BBC报道；9月12日敖德萨住宅楼火情。",
+            "relevance": "远景交代毛巾照片之外的建筑受损环境。",
+            "kind": "original",
+            "width": 1536,
+            "height": 863
+          }
+        }
+      ],
+      "verificationNote": "发言及社交照片经BBC报道引用，未把它们标成本站直接读取的Facebook原帖。"
+    },
+    {
+      "id": "consumer",
+      "title": "同一场消费，平台各自看见了什么",
+      "section": "今日焦点",
+      "format": "standard",
+      "source": "中国新闻网 · 吕少威",
+      "sourceType": "公开原文",
+      "sourceKind": "media-report",
+      "time": "2026-09-13 14:52",
+      "href": "https://www.chinanews.com.cn/cj/2026/09-13/10695626.shtml",
+      "sourceIds": [
+        "consumer"
+      ],
+      "freshnessSourceId": "consumer",
+      "selectionReason": "用同一采访中的三个具名观察保留商业视角差异，并明确平台自报数字的边界。",
+      "details": [
+        "中新社9月13日在服贸会采访了三家平台：美团谈体验，快手谈粉丝信任，微信支付谈家附近的服务。",
+        "他观察到，人们愿意为兴趣、疗愈和完整体验付费，同时也在比较性价比；运动场馆还在成为社交场所。",
+        "他强调粉丝信任，称平台近六成GMV来自粉丝，粉丝转化率为非粉丝的5倍。这里是平台自己的统计口径，不是全行业结论。",
+        "他注意到演出、节庆与周边交通餐饮，以及家附近十五分钟范围内的服务，正在带来更多消费连接。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "consumer"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "consumer"
+          ]
+        },
+        {
+          "detailIndex": 2,
+          "sourceIds": [
+            "consumer"
+          ]
+        },
+        {
+          "detailIndex": 3,
+          "sourceIds": [
+            "consumer"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "中新社9月13日在服贸会采访了三家平台：美团谈体验，快手谈粉丝信任，微信支付谈家附近的服务。",
+          "sourceIds": [
+            "consumer"
+          ]
+        },
+        {
+          "kind": "quote",
+          "sourceId": "consumer",
+          "speaker": "美团 陈一方",
+          "text": "他观察到，人们愿意为兴趣、疗愈和完整体验付费，同时也在比较性价比；运动场馆还在成为社交场所。",
+          "presentation": "paraphrase",
+          "role": "stakeholder"
+        },
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260913/rowing.jpg",
+            "originalUrl": "https://i2.chinanews.com.cn/simg/ypt/2026/260913/96f5c2fd-8d03-46ed-af9e-5cf4a6684560_zsite.jpg",
+            "sourceUrl": "https://www.chinanews.com.cn/cj/2026/09-13/10695626.shtml",
+            "alt": "服贸会现场，小女孩与大人体验划船机，周围观众观看",
+            "caption": "贾天勇 / 中新社：9月12日服贸会现场，观众体验划船机。配于9月13日采访报道。",
+            "relevance": "照片给抽象的体验消费一个可见场景：参与者、设备与围观者同时在场。",
+            "kind": "original",
+            "width": 700,
+            "height": 465
+          }
+        },
+        {
+          "kind": "quote",
+          "sourceId": "consumer",
+          "speaker": "快手 陈子涛",
+          "text": "他强调粉丝信任，称平台近六成GMV来自粉丝，粉丝转化率为非粉丝的5倍。这里是平台自己的统计口径，不是全行业结论。",
+          "presentation": "paraphrase",
+          "role": "stakeholder"
+        },
+        {
+          "kind": "quote",
+          "sourceId": "consumer",
+          "speaker": "微信支付 梁伟强",
+          "text": "他注意到演出、节庆与周边交通餐饮，以及家附近十五分钟范围内的服务，正在带来更多消费连接。",
+          "presentation": "paraphrase",
+          "role": "stakeholder"
+        }
+      ]
+    },
+    {
+      "id": "vr",
+      "title": "35分钟的《鸽环》，拿到威尼斯沉浸单元大奖",
+      "section": "世界与新知",
+      "format": "brief",
+      "source": "新华网 · 任耀庭、王楷焱",
+      "sourceType": "公开原文",
+      "sourceKind": "media-report",
+      "time": "2026-09-13 02:55 报道；当地9月12日颁奖",
+      "href": "https://www.news.cn/20260913/927dd4cf928f4c43ad7430669be43a8d/c.html",
+      "sourceIds": [
+        "vr"
+      ],
+      "freshnessSourceId": "vr",
+      "selectionReason": "35分钟的《鸽环》，拿到威尼斯沉浸单元大奖",
+      "details": [
+        "新华社9月13日报道，张妤琦、陶世欣执导的中国VR电影《鸽环》在当地时间12日获第83届威尼斯电影节沉浸单元大奖。这部35分钟作品从祖孙间的一枚失落鸽环，进入记忆与亲情。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "vr"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "新华社9月13日报道，张妤琦、陶世欣执导的中国VR电影《鸽环》在当地时间12日获第83届威尼斯电影节沉浸单元大奖。这部35分钟作品从祖孙间的一枚失落鸽环，进入记忆与亲情。",
+          "sourceIds": [
+            "vr"
+          ]
+        },
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260913/pigeon-ring.jpg",
+            "originalUrl": "https://www.news.cn/20260913/927dd4cf928f4c43ad7430669be43a8d/26b5c0bf951249c284b62d761a9e3196.jpg",
+            "sourceUrl": "https://www.news.cn/20260913/927dd4cf928f4c43ad7430669be43a8d/c.html",
+            "alt": "《鸽环》两位导演在威尼斯颁奖现场手持奖杯",
+            "caption": "王楷焱 / 新华社：当地时间9月12日，《鸽环》导演张妤琦、陶世欣在颁奖现场。",
+            "relevance": "两位创作者及实物奖杯呈现新闻中的获奖现场。",
+            "kind": "original",
+            "width": 1015,
+            "height": 679
+          }
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI要限速？争论不只在“快”与“慢”之间",
+      "section": "世界与新知",
+      "format": "social",
+      "source": "BBC · Paulin Kola、Lily Jamali",
+      "sourceType": "公开原文",
+      "sourceKind": "media-report",
+      "time": "2026-09-13 05:16 更新；所选评论为当天04:08—04:41",
+      "href": "https://www.bbc.co.uk/news/articles/c14dpgm0rg4o",
+      "sourceIds": [
+        "ai",
+        "rgs",
+        "ned",
+        "hgo",
+        "pizza"
+      ],
+      "freshnessSourceId": "ai",
+      "selectionReason": "四条当天评论分别涉及商业动机、反对动机推定、企业部署责任与对该归因的反驳；不是四条同义转发。",
+      "details": [
+        "北京时间9月13日05:16更新：报道补入外界响应及不同意见。BBC报道，Anthropic负责人Dario Amodei提出控制前沿AI发展节奏，包括引入独立观察者和协调机制；不是宣布全面停止训练。",
+        "在Hacker News同题讨论里，分歧落到了动机、风险与责任归属。以下是四条独立评论的转述，保留互相反驳的关系；评论者对技术案例的判断不等于本站确认。",
+        "他把限速倡议解读为商业护城河不再、能力难以转成可销售产品后的自保，而非单纯利他。",
+        "他反对直接认定对方别有用心：商业可用性并不等于对齐；数种风险同时出现时，停下来考虑并不荒唐。",
+        "他把讨论拉回企业操作责任，认为不该把隔离环境与部署失误都说成模型自己成了罪犯。",
+        "他不同意上述归因，援引自己对攻击案例的理解，认为模型知道规则却仍行动的可能性，不能被安全配置问题一笔带过。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "ai",
+            "rgs",
+            "ned",
+            "hgo",
+            "pizza"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "ai",
+            "rgs",
+            "ned",
+            "hgo",
+            "pizza"
+          ]
+        },
+        {
+          "detailIndex": 2,
+          "sourceIds": [
+            "ai",
+            "rgs",
+            "ned",
+            "hgo",
+            "pizza"
+          ]
+        },
+        {
+          "detailIndex": 3,
+          "sourceIds": [
+            "ai",
+            "rgs",
+            "ned",
+            "hgo",
+            "pizza"
+          ]
+        },
+        {
+          "detailIndex": 4,
+          "sourceIds": [
+            "ai",
+            "rgs",
+            "ned",
+            "hgo",
+            "pizza"
+          ]
+        },
+        {
+          "detailIndex": 5,
+          "sourceIds": [
+            "ai",
+            "rgs",
+            "ned",
+            "hgo",
+            "pizza"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "北京时间9月13日05:16更新：报道补入外界响应及不同意见。BBC报道，Anthropic负责人Dario Amodei提出控制前沿AI发展节奏，包括引入独立观察者和协调机制；不是宣布全面停止训练。",
+          "sourceIds": [
+            "ai"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "在Hacker News同题讨论里，分歧落到了动机、风险与责任归属。以下是四条独立评论的转述，保留互相反驳的关系；评论者对技术案例的判断不等于本站确认。",
+          "sourceIds": [
+            "rgs",
+            "ned",
+            "hgo",
+            "pizza"
+          ]
+        },
+        {
+          "kind": "quote",
+          "sourceId": "rgs",
+          "text": "他把限速倡议解读为商业护城河不再、能力难以转成可销售产品后的自保，而非单纯利他。",
+          "presentation": "paraphrase",
+          "role": "critic"
+        },
+        {
+          "kind": "quote",
+          "sourceId": "ned",
+          "text": "他反对直接认定对方别有用心：商业可用性并不等于对齐；数种风险同时出现时，停下来考虑并不荒唐。",
+          "presentation": "paraphrase",
+          "role": "ordinary-user"
+        },
+        {
+          "kind": "quote",
+          "sourceId": "hgo",
+          "text": "他把讨论拉回企业操作责任，认为不该把隔离环境与部署失误都说成模型自己成了罪犯。",
+          "presentation": "paraphrase",
+          "role": "critic"
+        },
+        {
+          "kind": "quote",
+          "sourceId": "pizza",
+          "text": "他不同意上述归因，援引自己对攻击案例的理解，认为模型知道规则却仍行动的可能性，不能被安全配置问题一笔带过。",
+          "presentation": "paraphrase",
+          "role": "ordinary-user"
+        }
+      ],
+      "storyId": "ai-pace",
+      "updateNote": "北京时间9月13日05:16更新：报道补入外界响应及不同意见。",
+      "voices": [
+        {
+          "sourceId": "rgs",
+          "text": "他把限速倡议解读为商业护城河不再、能力难以转成可销售产品后的自保，而非单纯利他。",
+          "angle": "商业动机",
+          "role": "critic",
+          "presentation": "paraphrase"
+        },
+        {
+          "sourceId": "ned",
+          "text": "他反对直接认定对方别有用心：商业可用性并不等于对齐；数种风险同时出现时，停下来考虑并不荒唐。",
+          "angle": "反驳动机推定",
+          "role": "ordinary-user",
+          "presentation": "paraphrase"
+        },
+        {
+          "sourceId": "hgo",
+          "text": "他把讨论拉回企业操作责任，认为不该把隔离环境与部署失误都说成模型自己成了罪犯。",
+          "angle": "部署责任",
+          "role": "critic",
+          "presentation": "paraphrase"
+        },
+        {
+          "sourceId": "pizza",
+          "text": "他不同意上述归因，援引自己对攻击案例的理解，认为模型知道规则却仍行动的可能性，不能被安全配置问题一笔带过。",
+          "angle": "反驳单一部署归因",
+          "role": "ordinary-user",
+          "presentation": "paraphrase"
+        }
+      ],
+      "discovery": "Hacker News同题帖：本次观测627票、880条评论；单条评论票数不可见。观测记录：2026/9/13 15:54 北京时间",
+      "discoveryHref": "https://news.ycombinator.com/item?id=49672510",
+      "relatedSources": [
+        {
+          "label": "Dario Amodei：We must pace the frontier（倡议原文）",
+          "href": "https://darioamodei.com/post/we-must-pace-the-frontier"
+        },
+        {
+          "label": "Hacker News完整讨论",
+          "href": "https://news.ycombinator.com/item?id=49672510"
+        }
+      ]
+    },
+    {
+      "id": "up",
+      "title": "从7岁拍到70岁，她终于问：为什么总问我婚姻？",
+      "section": "值得细读",
+      "format": "feature",
+      "source": "BBC · George Wright",
+      "sourceType": "公开原文",
+      "sourceKind": "media-report",
+      "time": "2026-09-12 08:16 · 长期阅读",
+      "href": "https://www.bbc.co.uk/news/articles/crm932el3yjo",
+      "sourceIds": [
+        "up"
+      ],
+      "freshnessSourceId": "up",
+      "selectionReason": "昨日原创人物采访，保留摄制者与被摄者之间的权力问题；不冒充当天新闻。",
+      "details": [
+        "长期阅读｜BBC9月12日采访Jackie Bassett。1964年，她还是《7 Up》里的小女孩；到21岁，镜头追问她婚前是否认识过足够多的男人。49岁时，她反过来质问导演：为何对男性谈政治，对女性却反复问家庭？",
+        "你会按你的想法剪辑这个节目，我对那没有控制权。",
+        "这组采访的余味不只是“时间过得真快”：被拍摄者也在争取如何讲述自己。Jackie后来认可新导演更像交谈的方式；她回望的既是人生，也是镜头曾怎样理解一个女人。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "up"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "up"
+          ]
+        },
+        {
+          "detailIndex": 2,
+          "sourceIds": [
+            "up"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260913/21up.webp",
+            "originalUrl": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/3ae5/live/fcf4c7b0-adcc-11f1-a540-61c3f7fc4e6c.jpg.webp",
+            "sourceUrl": "https://www.bbc.co.uk/news/articles/crm932el3yjo",
+            "alt": "《21 Up》参与者的黑白肖像排列成组，标有姓名",
+            "caption": "Granada Television / ITV，经BBC编排：参与者在《21 Up》中的肖像。",
+            "relevance": "与后面的70岁肖像对照，让长期追踪的时间尺度可见。",
+            "kind": "original",
+            "width": 1536,
+            "height": 1301
+          }
+        },
+        {
+          "kind": "text",
+          "text": "长期阅读｜BBC9月12日采访Jackie Bassett。1964年，她还是《7 Up》里的小女孩；到21岁，镜头追问她婚前是否认识过足够多的男人。49岁时，她反过来质问导演：为何对男性谈政治，对女性却反复问家庭？",
+          "sourceIds": [
+            "up"
+          ]
+        },
+        {
+          "kind": "quote",
+          "sourceId": "up",
+          "speaker": "Jackie Bassett",
+          "text": "你会按你的想法剪辑这个节目，我对那没有控制权。",
+          "presentation": "translation",
+          "role": "stakeholder"
+        },
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260913/70up.webp",
+            "originalUrl": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/bb41/live/47fb0e20-add9-11f1-a540-61c3f7fc4e6c.jpg.webp",
+            "sourceUrl": "https://www.bbc.co.uk/news/articles/crm932el3yjo",
+            "alt": "同一纪录片系列参与者在《70 Up》中的彩色近照",
+            "caption": "ITV，经BBC编排：《70 Up》参与者肖像。",
+            "relevance": "让上一张青春照片中的人以现在的样子出现，而不是用泛泛的老年资料图。",
+            "kind": "original",
+            "width": 1536,
+            "height": 1192
+          }
+        },
+        {
+          "kind": "text",
+          "text": "这组采访的余味不只是“时间过得真快”：被拍摄者也在争取如何讲述自己。Jackie后来认可新导演更像交谈的方式；她回望的既是人生，也是镜头曾怎样理解一个女人。",
+          "sourceIds": [
+            "up"
+          ]
+        }
+      ],
+      "labels": [
+        "长期阅读"
+      ],
+      "recommendation": "读她对采访问题和剪辑权的具体反问；同一组人物跨越几十年的画面，比一段“岁月感慨”更有信息。"
+    },
+    {
+      "id": "kirk",
+      "title": "“我想要的只是工作回来”",
+      "section": "世界与新知",
+      "format": "standard",
+      "source": "BBC · Kwasi Gyamfi Asiedu",
+      "sourceType": "公开原文",
+      "sourceKind": "media-report",
+      "time": "2026-09-13 08:49 新采访",
+      "href": "https://www.bbc.co.uk/news/articles/cj06jgl9qzlo",
+      "sourceIds": [
+        "kirk"
+      ],
+      "freshnessSourceId": "kirk",
+      "selectionReason": "今天新刊的一周年追访，保留受影响者、惩罚支持者和不同结局，不用旧案冒充新发生。",
+      "details": [
+        "BBC9月13日重新采访了因在Charlie Kirk遇害后发表批评言论而失去工作的人。一年之后，有人获得和解金，有人仍在重建生活。",
+        "这位体育记者说，他不后悔自己的批评，但后悔连锁后果波及职业、妻子和孩子。他卖掉房子搬走，如今尝试做自己的播客。",
+        "这位南卡罗来纳州共和党议员则认为，对庆祝政治暗杀者施加社会羞耻与职业后果，是恰当的社会反应。",
+        "这位野生动物生物学家虽达成48.5万美元和解，仍说自己原本想要的是工作回来，并不把赔偿看成正义已经实现。",
+        "这些新采访追问：批评一个人、庆祝其死亡、以及雇主应如何回应，是否能被当作同一件事。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "kirk"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "kirk"
+          ]
+        },
+        {
+          "detailIndex": 2,
+          "sourceIds": [
+            "kirk"
+          ]
+        },
+        {
+          "detailIndex": 3,
+          "sourceIds": [
+            "kirk"
+          ]
+        },
+        {
+          "detailIndex": 4,
+          "sourceIds": [
+            "kirk"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "BBC9月13日重新采访了因在Charlie Kirk遇害后发表批评言论而失去工作的人。一年之后，有人获得和解金，有人仍在重建生活。",
+          "sourceIds": [
+            "kirk"
+          ]
+        },
+        {
+          "kind": "quote",
+          "sourceId": "kirk",
+          "speaker": "Gerald Bourguet",
+          "text": "这位体育记者说，他不后悔自己的批评，但后悔连锁后果波及职业、妻子和孩子。他卖掉房子搬走，如今尝试做自己的播客。",
+          "presentation": "paraphrase",
+          "role": "stakeholder"
+        },
+        {
+          "kind": "quote",
+          "sourceId": "kirk",
+          "speaker": "Jordan Pace",
+          "text": "这位南卡罗来纳州共和党议员则认为，对庆祝政治暗杀者施加社会羞耻与职业后果，是恰当的社会反应。",
+          "presentation": "paraphrase",
+          "role": "stakeholder"
+        },
+        {
+          "kind": "quote",
+          "sourceId": "kirk",
+          "speaker": "Brittney Brown",
+          "text": "这位野生动物生物学家虽达成48.5万美元和解，仍说自己原本想要的是工作回来，并不把赔偿看成正义已经实现。",
+          "presentation": "paraphrase",
+          "role": "stakeholder"
+        },
+        {
+          "kind": "text",
+          "text": "这些新采访追问：批评一个人、庆祝其死亡、以及雇主应如何回应，是否能被当作同一件事。",
+          "sourceIds": [
+            "kirk"
+          ]
+        }
+      ],
+      "recommendation": "原文并列受影响者、支持惩罚者与和解后的失落，避免只用赔偿数字替当事人宣布“胜利”。"
+    },
+    {
+      "id": "panda",
+      "title": "五岁的青宝，有一块果汁冰蛋糕",
+      "section": "人物、自然与轻读",
+      "format": "visual",
+      "source": "中国新闻网 · 沙晗汀",
+      "sourceType": "公开原文",
+      "sourceKind": "media-report",
+      "time": "2026-09-13 10:30 组图；华盛顿当地9月12日生日",
+      "href": "https://www.chinanews.com.cn/tp/hd2011/2026/09-13/1204128.shtml",
+      "sourceIds": [
+        "panda",
+        "pandaReport"
+      ],
+      "freshnessSourceId": "panda",
+      "selectionReason": "用当天发布的生日现场图和小食物细节自然收尾。",
+      "details": [
+        "当地时间9月12日，华盛顿美国国家动物园给青宝过五岁生日。中新社的当日报道写到，它的冰蛋糕用葡萄汁、苹果汁制作，配上胡萝卜、红薯和苹果。这个生日，蛋糕也得适合熊猫吃。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "panda",
+            "pandaReport"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260913/panda.jpg",
+            "originalUrl": "https://i2.chinanews.com.cn/simg/hd/2026/09/13/08fe42e437f84f4b8b3a8492073edc46.jpg",
+            "sourceUrl": "https://www.chinanews.com.cn/tp/hd2011/2026/09-13/1204128.shtml",
+            "alt": "青宝坐在树木与生日贺卡之间，旁边摆着数字5和生日布置",
+            "caption": "沙晗汀 / 中新社：华盛顿当地9月12日，青宝的五岁生日；组图9月13日10:30发布。",
+            "relevance": "生日数字、熊猫和现场布置共同交代这一小场庆祝。",
+            "kind": "original",
+            "width": 930,
+            "height": 620
+          }
+        },
+        {
+          "kind": "text",
+          "text": "当地时间9月12日，华盛顿美国国家动物园给青宝过五岁生日。中新社的当日报道写到，它的冰蛋糕用葡萄汁、苹果汁制作，配上胡萝卜、红薯和苹果。这个生日，蛋糕也得适合熊猫吃。",
+          "sourceIds": [
+            "panda",
+            "pandaReport"
+          ]
+        }
+      ],
+      "relatedSources": [
+        {
+          "label": "沙晗汀：生日现场报道与冰蛋糕细节",
+          "href": "https://www.chinanews.com.cn/gj/2026/09-13/10695506.shtml"
+        }
+      ]
+    }
+  ],
+  "editorialReview": {
+    "decision": "approved",
+    "reviewedAt": "2026-09-13T08:01:15.290Z",
+    "imageRelevance": "正式渲染器1280px桌面与390px手机已查看：8张独立图全部complete且naturalWidth>0，覆盖6/8条。窗前葫芦、废墟毛巾与火情、划船机参与现场、获奖创作者、21/70岁对照组图、生日青宝各自说明正文；未使用已下载但信息量弱的AI头像、盲人父母合影，也没有复制喷嚏图片。",
+    "voiceDiversity": "14个发言块：陈金敖夫妇、三家平台、四名HN评论者、Jackie、三名Kirk事件受访者及Yastremska。Hacker News四条评论分别为商业动机、反对动机推定、部署责任及对此归因的反驳，均链接评论原文并标北京时间；仅主题帖可见627票880评论，没有给个人虚配。记者与受访者分别显示；直接短引、译摘与转述分开。页面AI区实测4个声音，无重复。",
+    "readingOrder": "实读开篇、AI重点组、手机VR短讯、21/70岁人物长读和熊猫结尾。长段落之间有图片及短讯，不按section聚合。390px视口document.scrollWidth=390；图片完整不裁切。短讯标题紧接一个正文段落，深读图文交错。草稿不提供伪永久链接，正式往期链接由构建检查。",
+    "coverage": "日期核查7/8当天（87.5%），1/8昨日长期阅读（12.5%），无更早或未知日期。覆盖公共生活、消费、战争现场、AI争论、VR电影、人物与动物；BBC占4/8条，另为央视、中新社、新华社，并用HN独立评论展开。未选物流转载与无当日新进展材料。国内社交原帖仍不足，尚不能宣称达到参考站的全量密度与民间表达广度；本次为材料先行的较短一期。参考链接本次已显示会员测试页，未绕过。"
+  }
+}

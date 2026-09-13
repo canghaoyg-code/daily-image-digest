@@ -4,7 +4,9 @@
 
 ## 新流程
 
-发现候选 → 原文证据 → 事件与多声部 → 编辑选材 → 日期/图片/来源检查 → 静态页面 → GitHub Pages 验证。
+发现线索 → 追读原帖/现场/回应/图表 → 选择材料 → 最少必要写作与编排 → 真实性检查 → 正式页面阅读验收 → GitHub Pages 验证。
+
+编辑规则见 [docs/EDITORIAL.md](docs/EDITORIAL.md)，成品验收见 [docs/ACCEPTANCE.md](docs/ACCEPTANCE.md)。规则与代码完成不等于出刊成功；必须交付经过实际阅读检查的完整一期。原始材料不足时回到采集，不通过增加字段、改CSS或补旧稿替代选材。
 
 - `config/discovery.json` 是可替换的 RSS 起点，不是固定采集范围。社交平台、热榜和账号按当天话题变化。
 - `scripts/collect.py` 读取公开 RSS/Atom，也接收浏览器读取的公开原文观测。输出保存在忽略提交的 `.cache/collection/`；不会直接写入正式内容。
@@ -25,11 +27,13 @@ python3 scripts/collect.py --import .cache/browser-observations.json
 python3 scripts/collect.py --import-only --import .cache/browser-observations.json
 npm run edition:new -- morning
 # 编辑生成的 .cache/drafts/当日期号.json，并阅读 docs/EDITORIAL.md
+node scripts/preview-edition.mjs .cache/drafts/当日期号.json
+# 本机正式渲染器验收后再入库；预览不会修改最新期号
 npm run edition:publish -- .cache/drafts/当日期号.json
 npm test
 ```
 
-`edition:publish` 只把合格草稿加入本地期号库；不执行网络发布，也不覆盖既有期号。若检查失败，不修改最新期号。所有日期都以执行时的 Asia/Shanghai 自然日为准，早版截稿不晚于 07:00，晚版不晚于 20:00。编辑结束时更新 generatedAt 与 editorialReview.reviewedAt。
+`edition:publish` 只把合格草稿加入本地期号库；不执行网络发布。允许替换当天晚间版，不覆盖历史期。若检查失败，不修改最新期号。所有日期都以执行时的 Asia/Shanghai 自然日为准，早版截稿不晚于 07:00，晚版不晚于 20:00。编辑结束时更新 generatedAt 与 editorialReview.reviewedAt。
 
 `npm test` 包含单元测试、Python 采集测试、内容/图片检查、lint、前端类型检查、生产构建、静态输出、所有本地链接及图片资源存在性检查。前端类型检查只覆盖 app/lib，保留的旧 Worker/D1 示例不是 GitHub Pages 运行部分。
 

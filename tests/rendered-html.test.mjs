@@ -35,6 +35,24 @@ test("往期与永久页可独立访问，未知期号返回 404", async () => {
   assert.ok(html.includes(`https://canghaoyg-code.github.io/daily-image-digest/editions/${edition.id}/`));
   assert.equal((await render("/editions/2000-01-01-morning/")).status, 404);
 });
+test("原声区分摘录与转述，块内已呈现的同一发言不重复，记者不替代受访者", async () => {
+  const html = await (await render("/")).text();
+  const escape = text => text.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#x27;");
+  for (const item of edition.items) {
+    const quotes = (item.blocks ?? []).filter(b => b.kind === "quote");
+    const section = html.slice(html.indexOf(`<section id="${item.id}"`)).split("</section>")[0];
+    for (const quote of quotes) {
+      const tag = (quote.presentation ?? "paraphrase") === "paraphrase" ? "div" : "blockquote";
+      assert.ok(section.includes(`<${tag} class="voice" data-presentation="${quote.presentation ?? "paraphrase"}"`));
+      if (quote.speaker) {
+        assert.ok(section.includes(escape(quote.speaker)));
+        assert.ok(section.includes("以下时间为报道时间"));
+      }
+      const sameText = quotes.filter(q => q.text === quote.text).length;
+      assert.equal(section.split(`<p>${escape(quote.text)}</p>`).length - 1, sameText, item.id + ": 发言不应重复渲染");
+    }
+  }
+});
 test("静态产物中每个本地资源与页面链接都存在，路径不重复加前缀", async () => {
   const release = JSON.parse(await readFile("_site/release.json"));
   assert.equal(release.edition, catalog.latest);

@@ -8,6 +8,20 @@ spec.loader.exec_module(collect)
 
 
 class CollectorTests(unittest.TestCase):
+    def test_page_update_requires_both_visible_time_and_new_material(self):
+        row = {"evidenceKind":"page", "publishedAt":"2026-09-12T15:37:39Z", "updatedAt":"2026-09-12T21:16:47Z"}
+        self.assertEqual(collect.candidate_day(row), "2026-09-12")
+        row.update(updateNote="New responses", updateEvidence="Visible Updated time")
+        self.assertEqual(collect.candidate_day(row), "2026-09-13")
+        row["evidenceKind"] = "feed"
+        self.assertEqual(collect.candidate_day(row), "2026-09-12")
+
+    def test_date_only_requires_original_page_and_beijing_context(self):
+        row = {"publishedDate":"2026-09-13", "timezone":"Asia/Shanghai", "evidenceKind":"page"}
+        self.assertEqual(collect.candidate_day(row), "2026-09-13")
+        row["timezone"] = "Europe/London"
+        self.assertIsNone(collect.candidate_day(row))
+
     def test_feed_is_discovery_not_page_proof(self):
         xml = b'<rss><channel><item><title>Test</title><link>https://example.org/a</link><pubDate>Sat, 05 Sep 2026 16:05:00 GMT</pubDate></item></channel></rss>'
         row = collect.parse_feed(xml, {"platform":"test", "url":"https://example.org/feed"}, "2026-09-05T17:00:00+00:00")[0]
