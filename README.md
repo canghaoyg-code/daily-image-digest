@@ -26,14 +26,22 @@ python3 scripts/collect.py --sources .cache/today-sources.json
 python3 scripts/collect.py --import .cache/browser-observations.json
 python3 scripts/collect.py --import-only --import .cache/browser-observations.json
 npm run edition:new -- morning
-# 编辑生成的 .cache/drafts/当日期号.json，并阅读 docs/EDITORIAL.md
+# 导入当期采集目录；建立 newsroom.topics，不自动把 RSS 拼成新闻
+npm run newsroom -- import .cache/drafts/当日期号.json .cache/collection/本次采集目录
+npm run newsroom -- status .cache/drafts/当日期号.json
+# 编辑议题的原始材料与正式条目，补齐 status 列出的缺口
 node scripts/preview-edition.mjs .cache/drafts/当日期号.json
-# 本机正式渲染器验收后再入库；预览不会修改最新期号
+# 生成与本版成品绑定的返工表，实际阅读后填写，不自动批准
+npm run newsroom -- review .cache/drafts/当日期号.json
+npm run newsroom -- seal .cache/drafts/当日期号.json .cache/reviews/本版验收文件.json
+# 验收后再入库；预览和工作台都不会修改最新期号
 npm run edition:publish -- .cache/drafts/当日期号.json
 npm test
 ```
 
 `edition:publish` 只把合格草稿加入本地期号库；不执行网络发布。允许替换当天晚间版，不覆盖历史期。若检查失败，不修改最新期号。所有日期都以执行时的 Asia/Shanghai 自然日为准，早版截稿不晚于 07:00，晚版不晚于 20:00。编辑结束时更新 generatedAt 与 editorialReview.reviewedAt。
+
+工作台字段与取舍示例见 [docs/NEWSROOM.md](docs/NEWSROOM.md)。发布器和 CI 都检查“发现→议题→候选→材料→条目”的关联，重点议题暂缓且缺料、条目跳过选材、仅有 RSS 或沿用修改前的验收都会拒绝发布。验收绑定正文、来源、本地图片字节和当次渲染器；历史刊只锁内容，不因后续样式升级要求重新出刊。程序不会判断文字是否精彩，也不能用一张批准表证明达到参考网页的编辑水准。
 
 `npm test` 包含单元测试、Python 采集测试、内容/图片检查、lint、前端类型检查、生产构建、静态输出、所有本地链接及图片资源存在性检查。前端类型检查只覆盖 app/lib，保留的旧 Worker/D1 示例不是 GitHub Pages 运行部分。
 

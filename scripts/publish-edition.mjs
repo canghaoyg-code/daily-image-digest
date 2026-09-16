@@ -2,6 +2,7 @@ import { readFile, writeFile, rename, unlink } from "node:fs/promises";
 import { resolve } from "node:path";
 import { beijingDate, validateEdition, editionOrder, contentImages } from "../lib/editorial.mjs";
 import { validateAssets } from "../lib/content-files.mjs";
+import { newsroomReport, productFingerprint, validateAcceptance } from "../lib/newsroom.mjs";
 
 const input = process.argv[2];
 if (!input) throw new Error("用法：node scripts/publish-edition.mjs <已编辑的草稿.json>");
@@ -13,6 +14,10 @@ edition.status = "published";
 const report = validateEdition(edition, {forPublication:true, now});
 const assets = await validateAssets(edition, resolve("public"));
 report.errors.push(...assets.errors);
+const desk = newsroomReport(edition, {now});
+report.errors.push(...desk.errors, ...validateAcceptance(edition, await productFingerprint(edition), {now}));
+report.errors.push(...validateAcceptance(edition, await productFingerprint(edition, resolve("."), false), {now, archival:true}));
+report.warnings.push(...desk.warnings);
 if (report.errors.length) throw new Error(report.errors.join("\n"));
 const catalog = JSON.parse(await readFile("content/catalog.json"));
 const currentId = `${beijingDate(now)}-evening`;

@@ -1,0 +1,72 @@
+// Synthetic publication only inside a disposable directory. Never touch live content.
+import test from "node:test";
+import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
+import { readFile, writeFile, mkdir, mkdtemp, cp, readdir, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { resolve, join } from "node:path";
+import { beijingDate } from "../lib/editorial.mjs";
+
+test("真实命令串联导入、返工、批准、拒绝过期验收及入库，失败不动目录", async () => {
+  const root = await mkdtemp(join(tmpdir(), "digest-workflow-test-"));
+  const writeJSON = (path, data) => writeFile(join(root, path), JSON.stringify(data, null, 2));
+  const run = (script, ...args) => spawnSync(process.execPath, [join(root, "scripts", script), ...args], {cwd:root, encoding:"utf8"});
+  const succeeds = result => assert.equal(result.status, 0, result.stderr + result.stdout);
+  const fails = (result, pattern) => { assert.notEqual(result.status, 0); assert.match(result.stderr + result.stdout, pattern); };
+  try {
+    for (const dir of ["scripts", "lib", "app", "public/images", "content/editions", ".cache/drafts", ".cache/pool"]) await mkdir(join(root, dir), {recursive:true});
+    for (const file of ["scripts/new-edition.mjs", "scripts/newsroom.mjs", "scripts/publish-edition.mjs", "scripts/validate-content.mjs", "lib/newsroom.mjs", "lib/editorial.mjs", "lib/content-files.mjs", "app/digest.tsx", "app/globals.css", "lib/types.ts", "lib/site.ts"]) await cp(resolve(file), join(root, file));
+    await cp("public/images/20260830/jilong-rescue-01.png", join(root, "public/images/test.png"));
+    const now = new Date().toISOString(), day = beijingDate(now), id = `${day}-morning`, path = `.cache/drafts/${id}.json`;
+    succeeds(run("new-edition.mjs", "morning"));
+    const draft = JSON.parse(await readFile(join(root, path)));
+    assert.equal(draft.newsroom.version, 1);
+    const source = {id:"source", url:"https://example.org/post/1", platform:"测试社区", publisher:"测试作者", author:"测试作者", publishedAt:`${day}T00:00:00+08:00`, observedAt:now, timeEvidence:"测试页面时间", excerpt:"合成测试，不是真实新闻", access:"public", evidenceKind:"page"};
+    const image = {path:"/images/test.png", alt:"仅供测试的图片", caption:"测试图片来源", sourceUrl:source.url, originalUrl:"https://example.org/photo.png", kind:"original", relevance:"测试配图关联"};
+    const text = "仅用于隔离测试的合成内容，不提交期号库";
+    Object.assign(draft, {headline:"合成测试", sources:[source], items:[{id:"entry", title:"合成条目", section:"人物、自然与轻读", format:"visual", source:source.publisher, sourceType:"个人", sourceKind:"post", time:day, href:source.url, details:[text], sourceIds:[source.id], freshnessSourceId:source.id, selectionReason:"测试", evidence:[{detailIndex:0, sourceIds:[source.id]}], blocks:[{kind:"text", text, sourceIds:[source.id]}, {kind:"image", image}]}]});
+    Object.assign(draft.editorialReview, {imageRelevance:"测试", voiceDiversity:"测试", readingOrder:"测试", coverage:"测试"});
+    await writeJSON(path, draft);
+    await writeJSON("content/catalog.json", {latest:"2026-08-30-evening", editions:["2026-08-30-evening"]});
+    const originalCatalog = await readFile(join(root, "content/catalog.json"), "utf8");
+    const unchanged = async () => assert.equal(await readFile(join(root, "content/catalog.json"), "utf8"), originalCatalog);
+    await writeJSON(".cache/pool/report.json", {beijingDate:day, startedAt:now, channels:[{platform:"测试社区", url:"https://example.org/hot", kind:"community", status:"read", observedAt:now, evidence:"测试热门议题榜"}], unobservedPlatforms:["测试社区", "未观测平台"]});
+    await writeFile(join(root, ".cache/pool/candidates.jsonl"), JSON.stringify({id:"candidate", url:source.url, title:"合成原帖", sightings:[{platform:"测试社区", url:"https://example.org/hot", kind:"community", observedAt:now, evidence:"测试具体原帖"}]}) + "\n");
+    succeeds(run("newsroom.mjs", "import", path, ".cache/pool"));
+    let current = JSON.parse(await readFile(join(root, path)));
+    assert.equal(current.newsroom.observations.length, 2, "同入口的不同观察不丢失");
+    assert.deepEqual(current.newsroom.unobservedPlatforms, ["未观测平台"]);
+    fails(run("newsroom.mjs", "review", path), /尚未形成议题|绕过议题/);
+    current.newsroom.topics = [{id:"topic", title:"合成主题", priority:"focus", reason:"测试材料价值", decision:"selected", observationIds:["observation-1"], candidateIds:["candidate"], itemIds:["entry"], materials:[{kind:"image", purpose:"测试现场", status:"missing", nextAction:"读取测试源图"}]}];
+    current.editorialReview.decision = "approved";
+    await writeJSON(path, current);
+    fails(run("publish-edition.mjs", path), /缺少测试现场|缺少与本版成品绑定/);
+    await unchanged();
+    Object.assign(current.newsroom.topics[0].materials[0], {status:"ready", sourceIds:["source"], imagePaths:["/images/test.png"]});
+    await writeJSON(path, current);
+    succeeds(run("newsroom.mjs", "review", path));
+    const reviewPath = ".cache/reviews/" + (await readdir(join(root, ".cache/reviews")))[0];
+    const review = JSON.parse(await readFile(join(root, reviewPath)));
+    fails(run("newsroom.mjs", "seal", path, reviewPath), /未批准|仍需返工/);
+    Object.assign(review, {decision:"approved", reviewer:"测试执行器（仅合成样本）", reviewedAt:new Date().toISOString()});
+    for (const assessment of [...Object.values(review.assessments), ...review.screens]) Object.assign(assessment, {verdict:"pass", itemIds:["entry"], evidence:"合成测试证据，不冒充真实阅读"});
+    await writeJSON(reviewPath, review);
+    succeeds(run("newsroom.mjs", "seal", path, reviewPath));
+    current = JSON.parse(await readFile(join(root, path)));
+    current.headline += "已修改";
+    await writeJSON(path, current);
+    fails(run("publish-edition.mjs", path), /成品已改变/);
+    await unchanged();
+    current.headline = "合成测试";
+    await writeJSON(path, current);
+    succeeds(run("publish-edition.mjs", path));
+    const published = JSON.parse(await readFile(join(root, `content/editions/${id}.json`)));
+    assert.equal(published.status, "published");
+    assert.ok(published.items[0].blocks[1].image.width > 0);
+    assert.equal(JSON.parse(await readFile(join(root, "content/catalog.json"))).latest, id);
+    // Archive validation must survive publisher-added image dimensions/status.
+    await writeJSON("content/catalog.json", {latest:id, editions:[id]});
+    succeeds(run("validate-content.mjs"));
+    succeeds(run("validate-content.mjs", "--publish"));
+  } finally { await rm(root, {recursive:true, force:true}); }
+});
