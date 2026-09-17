@@ -1,0 +1,2895 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-09-17-evening",
+  "editionDate": "2026-09-17",
+  "status": "published",
+  "headline": "进了后厨，才发现人家要的是满汉全席",
+  "cutoffAt": "2026-09-17T06:07:17.964Z",
+  "generatedAt": "2026-09-17T14:40:03Z",
+  "sources": [
+    {
+      "id": "fed-report",
+      "url": "https://www.nbd.com.cn/articles/2026-09-17/4583694.html",
+      "platform": "网页",
+      "publisher": "每日经济新闻",
+      "author": "岳楚鹏、兰素英",
+      "publishedAt": "2026-09-17T03:31:00+08:00",
+      "observedAt": "2026-09-17T00:29:00Z",
+      "timeEvidence": "原页可见 2026-09-17 03:31（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "报道美联储加息、点阵图及独家采访研究者。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "fed-trader",
+      "url": "https://weibo.com/1896820725/RitbUAxd7",
+      "platform": "微博",
+      "publisher": "天津股侠",
+      "author": "天津股侠",
+      "publishedAt": "2026-09-17T06:23:00+08:00",
+      "observedAt": "2026-09-17T00:29:00Z",
+      "timeEvidence": "原页可见 2026-09-17 06:23（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "个人交易判断：加息可能给全球资本市场带来压力。",
+      "access": "public",
+      "evidenceKind": "page",
+      "engagement": [
+        {
+          "kind": "likes",
+          "value": 1515,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见likes 1515，按页面显示记录。"
+        },
+        {
+          "kind": "shares",
+          "value": 36,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见shares 36，按页面显示记录。"
+        },
+        {
+          "kind": "comments",
+          "value": 97,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见comments 97，按页面显示记录。"
+        }
+      ]
+    },
+    {
+      "id": "fed-relief",
+      "url": "https://weibo.com/1357064103/RisKV5BCm",
+      "platform": "微博",
+      "publisher": "交易者简放",
+      "author": "交易者简放",
+      "publishedAt": "2026-09-17T05:16:00+08:00",
+      "observedAt": "2026-09-17T00:29:00Z",
+      "timeEvidence": "原页可见 2026-09-17 05:16（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "个人帖子写道加息终于落地。",
+      "access": "public",
+      "evidenceKind": "page",
+      "engagement": [
+        {
+          "kind": "likes",
+          "value": 742,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见likes 742，按页面显示记录。"
+        },
+        {
+          "kind": "shares",
+          "value": 4,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见shares 4，按页面显示记录。"
+        },
+        {
+          "kind": "comments",
+          "value": 70,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见comments 70，按页面显示记录。"
+        }
+      ]
+    },
+    {
+      "id": "tea-worker",
+      "url": "https://weibo.com/7909482041/RihRo7r8g",
+      "platform": "微博",
+      "publisher": "清冷23",
+      "author": "清冷23",
+      "publishedAt": "2026-09-16T01:32:00+08:00",
+      "observedAt": "2026-09-17T00:29:00Z",
+      "timeEvidence": "原页可见 2026-09-16 01:32（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "当事人自述举报食品安全、申请仲裁后有人到老家找祖父母。",
+      "access": "public",
+      "evidenceKind": "page",
+      "engagement": [
+        {
+          "kind": "likes",
+          "value": 338000,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见likes 338000，按页面显示记录。"
+        },
+        {
+          "kind": "shares",
+          "value": 13000,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见shares 13000，按页面显示记录。"
+        },
+        {
+          "kind": "comments",
+          "value": 9286,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见comments 9286，按页面显示记录。"
+        }
+      ]
+    },
+    {
+      "id": "tea-video",
+      "url": "https://weibo.com/7909482041/RihSEu194",
+      "platform": "微博",
+      "publisher": "清冷23",
+      "author": "清冷23",
+      "publishedAt": "2026-09-16T01:35:00+08:00",
+      "observedAt": "2026-09-17T00:29:00Z",
+      "timeEvidence": "原页可见 2026-09-16 01:35（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "当事人公开视频原帖，封面文字质问为何联系家人。",
+      "access": "public",
+      "evidenceKind": "page",
+      "engagement": [
+        {
+          "kind": "likes",
+          "value": 22000,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见likes 22000，按页面显示记录。"
+        },
+        {
+          "kind": "shares",
+          "value": 284,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见shares 284，按页面显示记录。"
+        },
+        {
+          "kind": "comments",
+          "value": 416,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见comments 416，按页面显示记录。"
+        }
+      ]
+    },
+    {
+      "id": "tea-response",
+      "url": "https://weibo.com/1682207150/RiuIfh83i",
+      "platform": "微博",
+      "publisher": "南方日报",
+      "author": "林诗妍（南都N视频）",
+      "publishedAt": "2026-09-17T10:15:00+08:00",
+      "observedAt": "2026-09-17T06:00:00Z",
+      "timeEvidence": "原页可见 2026-09-17 10:15（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "记者采访品牌方：否认胁迫，称监管检查结果待正式文件。",
+      "access": "public",
+      "evidenceKind": "page",
+      "engagement": [
+        {
+          "kind": "likes",
+          "value": 7,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见likes 7，按页面显示记录。"
+        },
+        {
+          "kind": "comments",
+          "value": 6,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见comments 6，按页面显示记录。"
+        }
+      ]
+    },
+    {
+      "id": "tea-comment",
+      "url": "https://weibo.com/6406589744/Riw0s8rmx",
+      "platform": "微博",
+      "publisher": "机智小恩恩",
+      "author": "机智小恩恩",
+      "publishedAt": "2026-09-17T13:33:00+08:00",
+      "observedAt": "2026-09-17T06:00:00Z",
+      "timeEvidence": "原页可见 2026-09-17 13:33（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "评论认为劳资纠纷不应牵连家人，也提醒在职时及时处理问题。",
+      "access": "public",
+      "evidenceKind": "page",
+      "engagement": [
+        {
+          "kind": "likes",
+          "value": 100,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见likes 100，按页面显示记录。"
+        },
+        {
+          "kind": "comments",
+          "value": 14,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见comments 14，按页面显示记录。"
+        }
+      ]
+    },
+    {
+      "id": "ai-work",
+      "url": "https://www.workercn.cn/c/2026-09-17/8895601.shtml",
+      "platform": "网页",
+      "publisher": "工人日报",
+      "author": "董鲁豫",
+      "publishedAt": "2026-09-17T04:11:00+08:00",
+      "observedAt": "2026-09-17T00:29:00Z",
+      "timeEvidence": "原页可见 2026-09-17 04:11（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "原创采访求职者、招聘方和学者，讨论AI技能与岗位交付。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "airport-report",
+      "url": "https://www.xinhuanet.com/20260916/3a9ba678eb48464a826d5706dfd9dc5b/c.html",
+      "platform": "网页",
+      "publisher": "新华社",
+      "author": "许仕豪、肖亚卓、赵紫羽",
+      "publishedAt": "2026-09-16T20:23:00+08:00",
+      "observedAt": "2026-09-17T00:29:00Z",
+      "timeEvidence": "原页可见 2026-09-16 20:23（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "现场报道多国运动员在名古屋机场等待登记与接驳。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "airport-comment",
+      "url": "https://weibo.com/1712398333/RiuK9sR5Z",
+      "platform": "微博",
+      "publisher": "李平康_",
+      "author": "李平康_",
+      "publishedAt": "2026-09-17T10:20:00+08:00",
+      "observedAt": "2026-09-17T06:00:00Z",
+      "timeEvidence": "原页可见 2026-09-17 10:20（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "评论把问题延伸到大型赛事接待能力和申办取舍。",
+      "access": "public",
+      "evidenceKind": "page",
+      "engagement": [
+        {
+          "kind": "likes",
+          "value": 10,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见likes 10，按页面显示记录。"
+        },
+        {
+          "kind": "shares",
+          "value": 1,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见shares 1，按页面显示记录。"
+        },
+        {
+          "kind": "comments",
+          "value": 14,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见comments 14，按页面显示记录。"
+        }
+      ]
+    },
+    {
+      "id": "medical-family",
+      "url": "https://news.sina.com.cn/c/2026-09-16/doc-inirzshu2757092.shtml",
+      "platform": "网页",
+      "publisher": "南方日报／南方+",
+      "author": "南方+记者（页面未署名）",
+      "publishedAt": "2026-09-16T19:49:00+08:00",
+      "observedAt": "2026-09-17T00:29:00Z",
+      "timeEvidence": "原页可见 2026-09-16 19:49（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "家属采访澄清父母身体情况，称导师曾提供帮助，希望停止造谣。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "medical-apology",
+      "url": "https://weibo.com/1622814864/RiqfifGiF",
+      "platform": "微博",
+      "publisher": "主播秋婉",
+      "author": "主播秋婉",
+      "publishedAt": "2026-09-16T22:53:00+08:00",
+      "observedAt": "2026-09-17T00:29:00Z",
+      "timeEvidence": "原页可见 2026-09-16 22:53（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "公开承认未等真相落地就把愤怒交出去，并向导师道歉。",
+      "access": "public",
+      "evidenceKind": "page",
+      "engagement": [
+        {
+          "kind": "likes",
+          "value": 6407,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见likes 6407，按页面显示记录。"
+        },
+        {
+          "kind": "shares",
+          "value": 35,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见shares 35，按页面显示记录。"
+        },
+        {
+          "kind": "comments",
+          "value": 440,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见comments 440，按页面显示记录。"
+        }
+      ]
+    },
+    {
+      "id": "medical-doctor",
+      "url": "https://weibo.com/5694463602/RipsZyyYu",
+      "platform": "微博",
+      "publisher": "种牙匠黄建生",
+      "author": "种牙匠黄建生",
+      "publishedAt": "2026-09-16T20:54:00+08:00",
+      "observedAt": "2026-09-17T00:29:00Z",
+      "timeEvidence": "原页可见 2026-09-16 20:54（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "公开呼吁相关账号道歉并考虑帮助家属。",
+      "access": "public",
+      "evidenceKind": "page",
+      "engagement": [
+        {
+          "kind": "likes",
+          "value": 232,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见likes 232，按页面显示记录。"
+        },
+        {
+          "kind": "shares",
+          "value": 15,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见shares 15，按页面显示记录。"
+        },
+        {
+          "kind": "comments",
+          "value": 33,
+          "observedAt": "2026-09-17T00:29:00Z",
+          "evidence": "原页可见comments 33，按页面显示记录。"
+        }
+      ]
+    },
+    {
+      "id": "gaza",
+      "url": "https://www.bbc.com/news/articles/cvp8d00j9gg5o",
+      "platform": "网页",
+      "publisher": "BBC",
+      "author": "Yolande Knell、David Gritten",
+      "publishedAt": "2026-09-17T01:16:00+08:00",
+      "observedAt": "2026-09-17T00:29:00Z",
+      "timeEvidence": "原页可见 2026-09-17 01:16（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "报道加沙受损建筑倒塌和救援现场。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "brain",
+      "url": "https://www.chinanews.com.cn/gj/2026/09-17/10698074.shtml",
+      "platform": "网页",
+      "publisher": "中国新闻网",
+      "author": "孙自法",
+      "publishedAt": "2026-09-17T12:14:00+08:00",
+      "observedAt": "2026-09-17T06:00:00Z",
+      "timeEvidence": "原页可见 2026-09-17 12:14（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "报道人脑类器官在小鼠体内形成神经网络，并写明伦理要求。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "mural",
+      "url": "https://www.chinanews.com.cn/sh/shipin/cns/2026/09-17/news1069193.shtml",
+      "platform": "网页",
+      "publisher": "中国新闻网",
+      "author": "张立程",
+      "publishedAt": "2026-09-17T12:25:00+08:00",
+      "observedAt": "2026-09-17T06:00:00Z",
+      "timeEvidence": "原页可见 2026-09-17 12:25（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "视频报道山西芮城壁画艺术周和临摹展。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "lotus",
+      "url": "https://www.chinanews.com.cn/tp/2026/09-17/10698168.shtml",
+      "platform": "网页",
+      "publisher": "中国新闻网",
+      "author": "余瑞冬",
+      "publishedAt": "2026-09-17T13:55:00+08:00",
+      "observedAt": "2026-09-17T06:00:00Z",
+      "timeEvidence": "原页可见 2026-09-17 13:55（北京时间），已直接阅读正文/原帖。",
+      "excerpt": "原创摄影记录洪湖莲藕采收、转运和加工包装。",
+      "access": "public",
+      "evidenceKind": "page"
+    }
+  ],
+  "stories": [
+    {
+      "id": "fed",
+      "multiVoice": true,
+      "discoverySignals": [
+        {
+          "platform": "微博",
+          "url": "https://s.weibo.com/top/summary?cate=realtimehot",
+          "observedAt": "2026-09-16T23:54:00Z",
+          "evidence": "07:54榜单第1，2799885。"
+        },
+        {
+          "platform": "百度",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "observedAt": "2026-09-16T23:55:00Z",
+          "evidence": "07:55榜单第1，7808366。"
+        }
+      ]
+    },
+    {
+      "id": "tea-labor",
+      "multiVoice": true,
+      "sustainedHeatEvidence": "微博相关话题07:54第36，14:08复读时对应回应话题仍第26；后一次观察晚于14:07截稿，仅作为持续讨论背景。",
+      "discoverySignals": [
+        {
+          "platform": "微博",
+          "url": "https://s.weibo.com/top/summary?cate=realtimehot",
+          "observedAt": "2026-09-16T23:54:00Z",
+          "evidence": "07:54一点点相关话题第36，129231。"
+        }
+      ]
+    },
+    {
+      "id": "airport",
+      "multiVoice": true,
+      "voiceSelectionNote": "保留新华社现场与次日独立体育评论；张博恒视频入口已失效，未用同稿转载凑第三条。",
+      "discoverySignals": [
+        {
+          "platform": "微博",
+          "url": "https://s.weibo.com/top/summary?cate=realtimehot",
+          "observedAt": "2026-09-16T23:54:00Z",
+          "evidence": "07:54机场滞留第5，758065。"
+        },
+        {
+          "platform": "百度",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "observedAt": "2026-09-16T23:55:00Z",
+          "evidence": "07:55机场第7，7235817。"
+        }
+      ]
+    },
+    {
+      "id": "medical",
+      "multiVoice": true,
+      "discoverySignals": [
+        {
+          "platform": "微博",
+          "url": "https://s.weibo.com/top/summary?cate=realtimehot",
+          "observedAt": "2026-09-16T23:54:00Z",
+          "evidence": "07:54南医大事件第6，710183。"
+        },
+        {
+          "platform": "百度",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "observedAt": "2026-09-16T23:55:00Z",
+          "evidence": "07:55南医大事件第8，7137286。"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "fed",
+      "title": "三年后再加息：18位决策者给出的分岔路",
+      "section": "今日焦点",
+      "format": "social",
+      "source": "每日经济新闻",
+      "sourceType": "财经报道",
+      "sourceKind": "media-report",
+      "time": "2026-09-17 03:31",
+      "href": "https://www.nbd.com.cn/articles/2026-09-17/4583694.html",
+      "details": [
+        "美联储以12比0通过加息25个基点，这是自2023年7月以来首次上调。每日经济新闻原文展示的点阵图里，18名决策者对今年利率路径并不一致；报道所引机构对下一步行动也各有判断。",
+        "同一篇报道采访的布法罗大学助理教授 Collin Anderson 把风险放在能源冲击与本已脆弱的就业市场之间；两名交易者的帖子则分别关注全球市场压力和不确定性结束。"
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "美联储以12比0通过加息25个基点，这是自2023年7月以来首次上调。每日经济新闻原文展示的点阵图里，18名决策者对今年利率路径并不一致；报道所引机构对下一步行动也各有判断。",
+          "sourceIds": [
+            "fed-report"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "同一篇报道采访的布法罗大学助理教授 Collin Anderson 把风险放在能源冲击与本已脆弱的就业市场之间；两名交易者的帖子则分别关注全球市场压力和不确定性结束。",
+          "sourceIds": [
+            "fed-report"
+          ]
+        },
+        {
+          "kind": "quote",
+          "sourceId": "fed-report",
+          "role": "expert",
+          "text": "他认为能源价格冲击可能与疲弱就业相互叠加，使进一步加息的代价更重。",
+          "angle": "从供给冲击和就业风险解释后续政策。",
+          "presentation": "paraphrase",
+          "speaker": "Collin Anderson（经每日经济新闻采访）"
+        },
+        {
+          "kind": "quote",
+          "sourceId": "fed-trader",
+          "role": "stakeholder",
+          "text": "“总体偏空全球资本市场。”",
+          "angle": "从交易者角度判断加息对市场的压力。",
+          "presentation": "excerpt",
+          "speaker": "天津股侠"
+        },
+        {
+          "kind": "quote",
+          "sourceId": "fed-relief",
+          "role": "stakeholder",
+          "text": "“不管怎么说，终于落地了。”",
+          "angle": "表达政策落地后不确定性暂时结束。",
+          "presentation": "excerpt",
+          "speaker": "交易者简放"
+        }
+      ],
+      "sourceIds": [
+        "fed-report",
+        "fed-trader",
+        "fed-relief"
+      ],
+      "freshnessSourceId": "fed-report",
+      "selectionReason": "微博和百度早间榜单均第1；保留决策分歧、研究者判断与交易者反应，不压成单一结论。",
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "fed-report"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "fed-report"
+          ]
+        }
+      ],
+      "storyId": "fed",
+      "voices": [
+        {
+          "sourceId": "fed-report",
+          "role": "expert",
+          "speaker": "Collin Anderson（经每日经济新闻采访）",
+          "text": "他认为能源价格冲击可能与疲弱就业相互叠加，使进一步加息的代价更重。",
+          "angle": "从供给冲击和就业风险解释后续政策。",
+          "presentation": "paraphrase"
+        },
+        {
+          "sourceId": "fed-trader",
+          "role": "stakeholder",
+          "speaker": "天津股侠",
+          "text": "“总体偏空全球资本市场。”",
+          "angle": "从交易者角度判断加息对市场的压力。",
+          "presentation": "excerpt"
+        },
+        {
+          "sourceId": "fed-relief",
+          "role": "stakeholder",
+          "speaker": "交易者简放",
+          "text": "“不管怎么说，终于落地了。”",
+          "angle": "表达政策落地后不确定性暂时结束。",
+          "presentation": "excerpt"
+        }
+      ],
+      "discovery": "07:54微博第1、07:55百度第1",
+      "discoveryHref": "https://s.weibo.com/top/summary?cate=realtimehot",
+      "images": [
+        {
+          "path": "/images/20260917/fed.jpg",
+          "alt": "美联储利率预测点阵图，横轴为年份、纵轴为利率",
+          "caption": "图表：每日经济新闻原文所载美联储利率预测点阵图；散点展示不同决策者的利率预测。",
+          "kind": "original",
+          "sourceUrl": "https://www.nbd.com.cn/articles/2026-09-17/4583694.html",
+          "originalUrl": "https://tmp-file-1252627319.cos.ap-shanghai.myqcloud.com/wx_article_img/GXaOuDJovOpicXfUZUGXaN1o8ic2g9JU5bpU4osFdWwuOibMvqBAibRxxcoEWxXPItiagic8NzvxyxYmabnctmMD0FAGxaloibvXmhnmVyx8Y5E9uM.jpg",
+          "relevance": "点阵图的散布直接呈现政策路径分歧。",
+          "width": 830,
+          "height": 637
+        }
+      ]
+    },
+    {
+      "id": "tea-labor",
+      "title": "一点点：员工称维权后家人被找上门，品牌回应否认胁迫",
+      "section": "今日焦点",
+      "format": "social",
+      "source": "南方日报",
+      "sourceType": "采访回应",
+      "sourceKind": "interview",
+      "time": "2026-09-17 10:15",
+      "href": "https://weibo.com/1682207150/RiuIfh83i",
+      "details": [
+        "吴先生在9月16日原帖中称，自己曾反映茶叶异物并申请劳动仲裁；他指称8月13日三名工作人员到老家找祖父母，并要求品牌公开道歉。这是当事人陈述，不是本站认定的调查结论。",
+        "南方日报9月17日采访品牌方，品牌称找家属是因为联系当事人无果，否认上门有威胁话语；报道同时说门店食品安全检查结果仍待正式文件。评论者机智小恩恩认为劳动争议不应牵连家人，也提醒员工在职时及时处理问题。"
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "吴先生在9月16日原帖中称，自己曾反映茶叶异物并申请劳动仲裁；他指称8月13日三名工作人员到老家找祖父母，并要求品牌公开道歉。这是当事人陈述，不是本站认定的调查结论。",
+          "sourceIds": [
+            "tea-worker",
+            "tea-video"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "南方日报9月17日采访品牌方，品牌称找家属是因为联系当事人无果，否认上门有威胁话语；报道同时说门店食品安全检查结果仍待正式文件。评论者机智小恩恩认为劳动争议不应牵连家人，也提醒员工在职时及时处理问题。",
+          "sourceIds": [
+            "tea-response",
+            "tea-comment"
+          ]
+        },
+        {
+          "kind": "quote",
+          "sourceId": "tea-worker",
+          "role": "eyewitness",
+          "text": "“我要求道歉。”",
+          "angle": "本人叙述家人被联系后的核心诉求。",
+          "presentation": "excerpt",
+          "speaker": "吴先生（微博账号清冷23）"
+        },
+        {
+          "kind": "quote",
+          "sourceId": "tea-response",
+          "role": "stakeholder",
+          "text": "品牌方面否认上门胁迫，称联系当事人无果后请家人协调，并称监管检查暂未收到问题反馈。",
+          "angle": "回应上门目的和食品安全检查状态。",
+          "presentation": "paraphrase",
+          "speaker": "一点点品牌方面（经南都N视频采访）"
+        },
+        {
+          "kind": "quote",
+          "sourceId": "tea-comment",
+          "role": "critic",
+          "text": "她认为劳资纠纷不应把家人卷入，也提醒员工在职时及时处理问题。",
+          "angle": "一边批评联系家属，一边讨论员工反映问题的时点。",
+          "presentation": "paraphrase",
+          "speaker": "机智小恩恩"
+        }
+      ],
+      "sourceIds": [
+        "tea-response",
+        "tea-worker",
+        "tea-video",
+        "tea-comment"
+      ],
+      "freshnessSourceId": "tea-response",
+      "selectionReason": "微博相关话题持续出现在榜单；保留当事人原帖、品牌9月17日回应和独立评论，监管结论仍待发布。",
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "tea-worker",
+            "tea-video"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "tea-response",
+            "tea-comment"
+          ]
+        }
+      ],
+      "storyId": "tea-labor",
+      "voices": [
+        {
+          "sourceId": "tea-worker",
+          "role": "eyewitness",
+          "speaker": "吴先生（微博账号清冷23）",
+          "text": "“我要求道歉。”",
+          "angle": "本人叙述家人被联系后的核心诉求。",
+          "presentation": "excerpt"
+        },
+        {
+          "sourceId": "tea-response",
+          "role": "stakeholder",
+          "speaker": "一点点品牌方面（经南都N视频采访）",
+          "text": "品牌方面否认上门胁迫，称联系当事人无果后请家人协调，并称监管检查暂未收到问题反馈。",
+          "angle": "回应上门目的和食品安全检查状态。",
+          "presentation": "paraphrase"
+        },
+        {
+          "sourceId": "tea-comment",
+          "role": "critic",
+          "speaker": "机智小恩恩",
+          "text": "她认为劳资纠纷不应把家人卷入，也提醒员工在职时及时处理问题。",
+          "angle": "一边批评联系家属，一边讨论员工反映问题的时点。",
+          "presentation": "paraphrase"
+        }
+      ],
+      "relatedSources": [
+        {
+          "label": "当事人原帖",
+          "href": "https://weibo.com/7909482041/RihRo7r8g"
+        },
+        {
+          "label": "当事人公开视频原帖",
+          "href": "https://weibo.com/7909482041/RihSEu194"
+        }
+      ],
+      "discovery": "一点点相关话题在07:54第36；14:08观测“一点点否认威胁离职员工家人”第26",
+      "discoveryHref": "https://s.weibo.com/top/summary?cate=realtimehot",
+      "images": [
+        {
+          "path": "/images/20260917/tea-original-cover.jpg",
+          "alt": "员工吴先生公开视频封面上的文字质问",
+          "caption": "视频封面：当事人吴先生公开发布的视频封面；画面文字直接呈现其对联系家人的质问。",
+          "kind": "cover",
+          "sourceUrl": "https://weibo.com/7909482041/RihSEu194",
+          "originalUrl": "https://wx2.sinaimg.cn/orj480/008DhnAZly1ih4vis2jvfj30u01hcjtb.jpg",
+          "relevance": "让读者看到当事人的原始表达。",
+          "width": 480,
+          "height": 853
+        }
+      ]
+    },
+    {
+      "id": "ai-work",
+      "title": "“以为学会了AI炒菜，进了后厨才发现要做满汉全席”",
+      "section": "值得细读",
+      "format": "feature",
+      "source": "工人日报",
+      "sourceType": "深度采访",
+      "sourceKind": "interview",
+      "time": "2026-09-17 04:11",
+      "href": "https://www.workercn.cn/c/2026-09-17/8895601.shtml",
+      "details": [
+        "求职者王雅慧说，自己原以为学会用AI就够了，入职后才发现岗位需要把工具做成可交付的产品。她把落差形容为：“进了后厨才发现人家要的是满汉全席。”",
+        "采访中，招聘方丁先生称会让求职者做产品周边创意任务，观察其如何理解需求；受访学者和从业者把差距指向任务拆解、验证结果与业务场景，而不是只会写提示词。报道注明部分受访者使用化名。"
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "求职者王雅慧说，自己原以为学会用AI就够了，入职后才发现岗位需要把工具做成可交付的产品。她把落差形容为：“进了后厨才发现人家要的是满汉全席。”",
+          "sourceIds": [
+            "ai-work"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "采访中，招聘方丁先生称会让求职者做产品周边创意任务，观察其如何理解需求；受访学者和从业者把差距指向任务拆解、验证结果与业务场景，而不是只会写提示词。报道注明部分受访者使用化名。",
+          "sourceIds": [
+            "ai-work"
+          ]
+        },
+        {
+          "kind": "quote",
+          "sourceId": "ai-work",
+          "role": "stakeholder",
+          "text": "“进了后厨才发现人家要的是满汉全席。”",
+          "angle": "表达工具熟练与岗位交付之间的落差。",
+          "presentation": "excerpt",
+          "speaker": "求职者王雅慧（报道中的化名）"
+        }
+      ],
+      "sourceIds": [
+        "ai-work"
+      ],
+      "freshnessSourceId": "ai-work",
+      "selectionReason": "当天工人日报原创采访，把AI技能差距落到求职者和招聘方的工作现场。",
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "ai-work"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "ai-work"
+          ]
+        }
+      ],
+      "voices": [
+        {
+          "sourceId": "ai-work",
+          "role": "stakeholder",
+          "speaker": "求职者王雅慧（报道中的化名）",
+          "text": "“进了后厨才发现人家要的是满汉全席。”",
+          "angle": "表达工具熟练与岗位交付之间的落差。",
+          "presentation": "excerpt"
+        }
+      ],
+      "recommendation": "原文看点：它把抽象的“AI技能鸿沟”落到具体求职经历和招聘测试，也写出企业如何观察真实交付能力。"
+    },
+    {
+      "id": "nagoya",
+      "title": "机场等了近六小时之后，运动员的赛前行程还在继续",
+      "section": "今日焦点",
+      "format": "standard",
+      "source": "新华社",
+      "sourceType": "现场报道",
+      "sourceKind": "media-report",
+      "time": "背景 · 2026-09-16 20:23；另含 2026-09-17 10:20 评论",
+      "href": "https://www.xinhuanet.com/20260916/3a9ba678eb48464a826d5706dfd9dc5b/c.html",
+      "details": [
+        "新华社记录，9月16日多支队伍抵达名古屋后，登记和接驳衔接不顺；体操队约18时才离开机场。等待时，队员铺开瑜伽垫和泡沫轴活动。现场志愿者说，他们也不清楚原因，“可能一环没扣上一环”。",
+        "9月17日，体育博主李平康_把问题解释为赛事接待能力不足，并反问这类大型赛事是否值得争取主办；“经费严重不足”是他的推测。张博恒相关视频入口已失效，因此不把媒体转述当作运动员本人原帖。"
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "新华社记录，9月16日多支队伍抵达名古屋后，登记和接驳衔接不顺；体操队约18时才离开机场。等待时，队员铺开瑜伽垫和泡沫轴活动。现场志愿者说，他们也不清楚原因，“可能一环没扣上一环”。",
+          "sourceIds": [
+            "airport-report"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "9月17日，体育博主李平康_把问题解释为赛事接待能力不足，并反问这类大型赛事是否值得争取主办；“经费严重不足”是他的推测。张博恒相关视频入口已失效，因此不把媒体转述当作运动员本人原帖。",
+          "sourceIds": [
+            "airport-report",
+            "airport-comment"
+          ]
+        },
+        {
+          "kind": "quote",
+          "sourceId": "airport-report",
+          "role": "eyewitness",
+          "text": "“可能一环没扣上一环。”",
+          "angle": "现场人员也无法解释调度链条卡在哪里。",
+          "presentation": "excerpt",
+          "speaker": "新华社报道所引志愿者"
+        },
+        {
+          "kind": "quote",
+          "sourceId": "airport-comment",
+          "role": "critic",
+          "text": "他认为问题在主办方接待能力，并追问亚运会一类赛事是否值得花大价钱争取举办。",
+          "angle": "把单次接待问题延伸到赛事申办取舍。",
+          "presentation": "paraphrase",
+          "speaker": "李平康_"
+        }
+      ],
+      "sourceIds": [
+        "airport-report",
+        "airport-comment"
+      ],
+      "freshnessSourceId": "airport-report",
+      "selectionReason": "机场现场报道为9月16日，作为前一日跨平台高热事件的背景；次日评论提供独立的赛事申办角度。原运动员视频入口已失效。",
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "airport-report"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "airport-report",
+            "airport-comment"
+          ]
+        }
+      ],
+      "storyId": "airport",
+      "labels": [
+        "背景"
+      ],
+      "voices": [
+        {
+          "sourceId": "airport-report",
+          "role": "eyewitness",
+          "speaker": "新华社报道所引志愿者",
+          "text": "“可能一环没扣上一环。”",
+          "angle": "现场人员也无法解释调度链条卡在哪里。",
+          "presentation": "excerpt"
+        },
+        {
+          "sourceId": "airport-comment",
+          "role": "critic",
+          "speaker": "李平康_",
+          "text": "他认为问题在主办方接待能力，并追问亚运会一类赛事是否值得花大价钱争取举办。",
+          "angle": "把单次接待问题延伸到赛事申办取舍。",
+          "presentation": "paraphrase"
+        }
+      ],
+      "relatedSources": [
+        {
+          "label": "新华社现场报道及照片",
+          "href": "https://www.xinhuanet.com/20260916/3a9ba678eb48464a826d5706dfd9dc5b/c.html"
+        },
+        {
+          "label": "李平康_微博评论",
+          "href": "https://weibo.com/1712398333/RiuK9sR5Z"
+        }
+      ],
+      "images": [
+        {
+          "path": "/images/20260917/airport-gym.jpeg",
+          "alt": "中国体操队队员在名古屋机场候机区使用瑜伽垫活动",
+          "caption": "资料图；新华社记者赵紫羽摄：体操队员在机场等待转运时铺开瑜伽垫，照片摄于9月16日。",
+          "kind": "background",
+          "sourceUrl": "https://www.xinhuanet.com/20260916/3a9ba678eb48464a826d5706dfd9dc5b/c.html",
+          "originalUrl": "https://www.xinhuanet.com/20260916/3a9ba678eb48464a826d5706dfd9dc5b/2Niir52Pb03Pch6x.jpeg",
+          "relevance": "呈现等待如何占用运动员行程。",
+          "width": 1024,
+          "height": 576
+        },
+        {
+          "path": "/images/20260917/airport-route.jpeg",
+          "alt": "中国羽毛球队队员在机场查询前往酒店的路线",
+          "caption": "资料图；新华社记者赵紫羽摄：羽毛球队员在交通中心查询酒店路线，照片摄于9月16日。",
+          "kind": "background",
+          "sourceUrl": "https://www.xinhuanet.com/20260916/3a9ba678eb48464a826d5706dfd9dc5b/c.html",
+          "originalUrl": "https://www.xinhuanet.com/20260916/3a9ba678eb48464a826d5706dfd9dc5b/6kevDKohvj3az28L.jpeg",
+          "relevance": "补足接驳中断时的现场信息。",
+          "width": 1024,
+          "height": 576
+        }
+      ]
+    },
+    {
+      "id": "gaza",
+      "title": "加沙一栋受损楼房倒塌，救援者徒手开始搜寻",
+      "section": "世界与新知",
+      "format": "visual",
+      "source": "BBC",
+      "sourceType": "现场报道",
+      "sourceKind": "media-report",
+      "time": "2026-09-17 01:16",
+      "href": "https://www.bbc.com/news/articles/cvp8d00j9gg5o",
+      "details": [
+        "BBC报道，当地9月16日一栋此前在冲突中受损、倾斜的建筑倒塌，救援者从废墟中徒手搜寻。住户和救援人员谈到避难地点不足；报道引述联合国方面称，部分救援设备难以进入。"
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "BBC报道，当地9月16日一栋此前在冲突中受损、倾斜的建筑倒塌，救援者从废墟中徒手搜寻。住户和救援人员谈到避难地点不足；报道引述联合国方面称，部分救援设备难以进入。",
+          "sourceIds": [
+            "gaza"
+          ]
+        },
+        {
+          "kind": "quote",
+          "sourceId": "gaza",
+          "role": "eyewitness",
+          "text": "报道转述联合国协调员对避难和救援风险的说明。",
+          "angle": "从救援条件补充居民现场处境。",
+          "presentation": "paraphrase",
+          "speaker": "联合国协调员（经BBC报道）"
+        }
+      ],
+      "sourceIds": [
+        "gaza"
+      ],
+      "freshnessSourceId": "gaza",
+      "selectionReason": "原页时间元素换算为北京时间9月17日01:16；照片直接对应报道中的救援现场。",
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "gaza"
+          ]
+        }
+      ],
+      "voices": [
+        {
+          "sourceId": "gaza",
+          "role": "eyewitness",
+          "speaker": "联合国协调员（经BBC报道）",
+          "text": "报道转述联合国协调员对避难和救援风险的说明。",
+          "angle": "从救援条件补充居民现场处境。",
+          "presentation": "paraphrase"
+        }
+      ],
+      "images": [
+        {
+          "path": "/images/20260917/gaza.webp",
+          "alt": "救援人员在加沙倒塌建筑废墟间搜寻",
+          "caption": "路透社摄影：救援人员在9月16日倒塌建筑废墟中搜寻；图片由BBC原报道刊载。",
+          "kind": "original",
+          "sourceUrl": "https://www.bbc.com/news/articles/cvp8d00j9gg5o",
+          "originalUrl": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/fb2d/live/367ebb50-b1b8-11f1-bc1f-3f186ca4140c.jpg.webp",
+          "relevance": "对应报道所述的救援现场。",
+          "width": 1536,
+          "height": 864
+        }
+      ]
+    },
+    {
+      "id": "medical-background",
+      "title": "家属澄清、公开道歉与一条追问",
+      "section": "今日焦点",
+      "format": "social",
+      "source": "南方日报／南方+",
+      "sourceType": "家属采访与公开发言",
+      "sourceKind": "media-report",
+      "time": "背景 · 2026-09-16 19:49—22:53",
+      "href": "https://news.sina.com.cn/c/2026-09-16/doc-inirzshu2757092.shtml",
+      "details": [
+        "南方+9月16日采访中，逝者二姐陈女士称，父母的身体情况与网上流传说法不同，并感谢导师曾在家庭困难时提供帮助；她希望停止造谣。此处只呈现家属说法，不推断事件原因。",
+        "同日晚间，主播秋婉公开承认自己未等事实落地便把愤怒指向导师，并为相关表达道歉；种牙匠黄建生则提出，大账号应道歉，并考虑将部分流量收益捐给家属。"
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "南方+9月16日采访中，逝者二姐陈女士称，父母的身体情况与网上流传说法不同，并感谢导师曾在家庭困难时提供帮助；她希望停止造谣。此处只呈现家属说法，不推断事件原因。",
+          "sourceIds": [
+            "medical-family"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "同日晚间，主播秋婉公开承认自己未等事实落地便把愤怒指向导师，并为相关表达道歉；种牙匠黄建生则提出，大账号应道歉，并考虑将部分流量收益捐给家属。",
+          "sourceIds": [
+            "medical-apology",
+            "medical-doctor"
+          ]
+        },
+        {
+          "kind": "quote",
+          "sourceId": "medical-family",
+          "role": "stakeholder",
+          "text": "她澄清父母的身体情况，并希望网上停止造谣。",
+          "angle": "家属纠正外界传播的具体说法。",
+          "presentation": "paraphrase",
+          "speaker": "二姐陈女士（经南方+采访）"
+        },
+        {
+          "kind": "quote",
+          "sourceId": "medical-apology",
+          "role": "critic",
+          "text": "“我没等真相落地，就直接把愤怒交了出去。”",
+          "angle": "公开承认未等事实厘清便指向导师。",
+          "presentation": "excerpt",
+          "speaker": "主播秋婉"
+        },
+        {
+          "kind": "quote",
+          "sourceId": "medical-doctor",
+          "role": "expert",
+          "text": "他呼吁相关大账号道歉，并提议把部分流量收益捐给家属。",
+          "angle": "把注意力放在发声账号的责任和家属支持。",
+          "presentation": "paraphrase",
+          "speaker": "种牙匠黄建生"
+        }
+      ],
+      "sourceIds": [
+        "medical-family",
+        "medical-apology",
+        "medical-doctor"
+      ],
+      "freshnessSourceId": "medical-family",
+      "selectionReason": "微博与百度前一日均出现高热；作为背景保留家属、道歉者和专业身份账号的不同表达，不写死因推断。",
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "medical-family"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "medical-apology",
+            "medical-doctor"
+          ]
+        }
+      ],
+      "storyId": "medical",
+      "labels": [
+        "背景"
+      ],
+      "voices": [
+        {
+          "sourceId": "medical-family",
+          "role": "stakeholder",
+          "speaker": "二姐陈女士（经南方+采访）",
+          "text": "她澄清父母的身体情况，并希望网上停止造谣。",
+          "angle": "家属纠正外界传播的具体说法。",
+          "presentation": "paraphrase"
+        },
+        {
+          "sourceId": "medical-apology",
+          "role": "critic",
+          "speaker": "主播秋婉",
+          "text": "“我没等真相落地，就直接把愤怒交了出去。”",
+          "angle": "公开承认未等事实厘清便指向导师。",
+          "presentation": "excerpt"
+        },
+        {
+          "sourceId": "medical-doctor",
+          "role": "expert",
+          "speaker": "种牙匠黄建生",
+          "text": "他呼吁相关大账号道歉，并提议把部分流量收益捐给家属。",
+          "angle": "把注意力放在发声账号的责任和家属支持。",
+          "presentation": "paraphrase"
+        }
+      ],
+      "relatedSources": [
+        {
+          "label": "主播秋婉公开道歉",
+          "href": "https://weibo.com/1622814864/RiqfifGiF"
+        },
+        {
+          "label": "种牙匠黄建生公开评论",
+          "href": "https://weibo.com/5694463602/RipsZyyYu"
+        }
+      ]
+    },
+    {
+      "id": "brain-organoid",
+      "title": "人脑类器官在小鼠脑内形成神经网络，研究团队强调伦理边界",
+      "section": "世界与新知",
+      "format": "standard",
+      "source": "中国新闻网",
+      "sourceType": "科技报道",
+      "sourceKind": "media-report",
+      "time": "2026-09-17 12:14",
+      "href": "https://www.chinanews.com.cn/gj/2026/09-17/10698074.shtml",
+      "details": [
+        "中新网报道，研究者为移植的人脑类器官在小鼠脑内腾出空间；论文称移植组织形成神经回路，并在运动和记忆任务上观察到差异。作者指出，该模型希望用于神经发育研究，也要求为持续开展此类实验制定伦理规范。"
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "中新网报道，研究者为移植的人脑类器官在小鼠脑内腾出空间；论文称移植组织形成神经回路，并在运动和记忆任务上观察到差异。作者指出，该模型希望用于神经发育研究，也要求为持续开展此类实验制定伦理规范。",
+          "sourceIds": [
+            "brain"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "brain"
+      ],
+      "freshnessSourceId": "brain",
+      "selectionReason": "当天科研报道有结构性新意，也保留研究限制和伦理讨论；配图来自研究团队公开说明的成像图。",
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "brain"
+          ]
+        }
+      ],
+      "relatedSources": [
+        {
+          "label": "Nature 原始研究论文",
+          "href": "https://www.nature.com/articles/s41586-026-11032-2"
+        },
+        {
+          "label": "斯坦福医学院研究说明",
+          "href": "https://med.stanford.edu/news/all-news/2026/09/model-to-study-brain-development.html"
+        }
+      ],
+      "images": [
+        {
+          "path": "/images/20260917/brain-mri.jpeg",
+          "alt": "小鼠脑横切面MRI及估算出的神经纤维通路方向图",
+          "caption": "资料图：斯坦福医学院 Pasca 实验室发布的横切面MRI与估算神经纤维通路图，对应同一研究。",
+          "kind": "background",
+          "sourceUrl": "https://www.chinanews.com.cn/gj/2026/09-17/10698074.shtml",
+          "originalUrl": "https://med.stanford.edu/news/all-news/2026/09/model-to-study-brain-development.html",
+          "relevance": "帮助理解移植组织与小鼠脑通路整合。",
+          "width": 1600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "mural-week",
+      "title": "三种壁画传统在一场临摹展里并置",
+      "section": "人物、自然与轻读",
+      "format": "visual",
+      "source": "中国新闻网",
+      "sourceType": "现场视频",
+      "sourceKind": "media-report",
+      "time": "2026-09-17 12:25",
+      "href": "https://www.chinanews.com.cn/sh/shipin/cns/2026/09-17/news1069193.shtml",
+      "details": [
+        "中新网视频记录山西芮城壁画艺术周的展览现场。展品来自敦煌、永乐宫和法海寺壁画的临摹作品，共170余幅；不是将三处原址文物搬到同一展厅。"
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "中新网视频记录山西芮城壁画艺术周的展览现场。展品来自敦煌、永乐宫和法海寺壁画的临摹作品，共170余幅；不是将三处原址文物搬到同一展厅。",
+          "sourceIds": [
+            "mural"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "mural"
+      ],
+      "freshnessSourceId": "mural",
+      "selectionReason": "现场画面能看到临摹作品的并置尺度与色彩，条目说明临摹品与原址文物的区别。",
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "mural"
+          ]
+        }
+      ],
+      "relatedSources": [
+        {
+          "label": "壁画艺术周现场视频原文",
+          "href": "https://www.chinanews.com.cn/sh/shipin/cns/2026/09-17/news1069193.shtml"
+        }
+      ],
+      "images": [
+        {
+          "path": "/images/20260917/mural-cover.jpg",
+          "alt": "山西芮城壁画艺术周展出的永乐宫壁画临摹作品",
+          "caption": "画面：中国新闻网视频报道中的永乐宫壁画临摹展现场。",
+          "kind": "original",
+          "sourceUrl": "https://www.chinanews.com.cn/sh/shipin/cns/2026/09-17/news1069193.shtml",
+          "originalUrl": "https://poss-videocloud.cns.com.cn/oss/2026/09/17/chinanews/MEIZI_YUNSHI/onair/B4D0AFC9053745A9A70ABA6B6B70C780.jpg",
+          "relevance": "让读者看到作品并置而非只读活动通稿。",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "id": "honghu-lotus",
+      "title": "洪湖的莲藕：从水田转运到加工包装",
+      "section": "人物、自然与轻读",
+      "format": "visual",
+      "source": "中国新闻网",
+      "sourceType": "原创摄影",
+      "sourceKind": "media-report",
+      "time": "2026-09-17 13:55",
+      "href": "https://www.chinanews.com.cn/tp/2026/09-17/10698168.shtml",
+      "details": [
+        "中新社记者9月16日在湖北洪湖拍下农户将刚挖出的莲藕转运上岸，以及企业生产线上的包装作业。原文称当地莲藕种植面积、产量、加工产值和市场份额居全国前列。"
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "中新社记者9月16日在湖北洪湖拍下农户将刚挖出的莲藕转运上岸，以及企业生产线上的包装作业。原文称当地莲藕种植面积、产量、加工产值和市场份额居全国前列。",
+          "sourceIds": [
+            "lotus"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "lotus"
+      ],
+      "freshnessSourceId": "lotus",
+      "selectionReason": "当天发布的原创摄影组图提供从水田采收到加工包装的劳动现场，作为长卷收尾。",
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "lotus"
+          ]
+        }
+      ],
+      "relatedSources": [
+        {
+          "label": "中新网原始摄影组图",
+          "href": "https://www.chinanews.com.cn/tp/2026-09-17/10698168.shtml"
+        }
+      ],
+      "images": [
+        {
+          "path": "/images/20260917/lotus-bank.jpg",
+          "alt": "洪湖农户在水田边分拣并转运新挖出的莲藕",
+          "caption": "中新社记者余瑞冬摄，9月16日，湖北荆州洪湖农户将挖出的莲藕转运上岸。",
+          "kind": "original",
+          "sourceUrl": "https://www.chinanews.com.cn/tp/2026/09-17/10698168.shtml",
+          "originalUrl": "https://i2.chinanews.com.cn/simg/ypt/2026/260917/1ee67ae2-1f37-4bc0-83b3-7e415bcb6ddf_zsite.jpg",
+          "relevance": "展示莲藕从水田离开前的采收与转运。",
+          "width": 700,
+          "height": 524
+        },
+        {
+          "path": "/images/20260917/lotus-work.jpg",
+          "alt": "洪湖莲藕产品生产线上工作人员进行包装",
+          "caption": "中新社记者余瑞冬摄，9月16日，湖北洪湖一家企业内工人包装莲藕产品。",
+          "kind": "original",
+          "sourceUrl": "https://www.chinanews.com.cn/tp/2026/09-17/10698168.shtml",
+          "originalUrl": "https://i2.chinanews.com.cn/simg/ypt/2026/260917/a8d57560-3488-4020-a30d-cb6e546ebd01_zsite.jpg",
+          "relevance": "与水田采收形成加工环节对照。",
+          "width": 700,
+          "height": 466
+        }
+      ]
+    }
+  ],
+  "newsroom": {
+    "version": 1,
+    "observations": [
+      {
+        "platform": "中新网",
+        "url": "https://www.chinanews.com.cn/rss/scroll-news.xml",
+        "kind": "feed",
+        "status": "read",
+        "observedAt": "2026-09-17T06:07:31.471071+00:00",
+        "evidence": "RSS 候选，原页尚未读取",
+        "id": "observation-4"
+      },
+      {
+        "platform": "BBC",
+        "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "kind": "feed",
+        "status": "read",
+        "observedAt": "2026-09-17T06:07:36.356659+00:00",
+        "evidence": "RSS 候选，原页尚未读取",
+        "id": "observation-5"
+      },
+      {
+        "platform": "NASA",
+        "url": "https://www.nasa.gov/feed/",
+        "kind": "feed",
+        "status": "read",
+        "observedAt": "2026-09-17T06:07:39.385105+00:00",
+        "evidence": "RSS 候选，原页尚未读取",
+        "id": "observation-6"
+      },
+      {
+        "platform": "每日经济新闻",
+        "url": "https://www.nbd.com.cn/articles/2026-09-17/4583694.html",
+        "kind": "topic-search",
+        "status": "read",
+        "observedAt": "2026-09-17T00:12:00Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-7"
+      },
+      {
+        "platform": "微博",
+        "url": "https://weibo.com/1896820725/RitbUAxd7",
+        "kind": "community",
+        "status": "read",
+        "observedAt": "2026-09-17T00:12:00Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-8"
+      },
+      {
+        "platform": "微博",
+        "url": "https://weibo.com/1357064103/RisKV5BCm",
+        "kind": "community",
+        "status": "read",
+        "observedAt": "2026-09-17T00:12:00Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-9"
+      },
+      {
+        "platform": "微博",
+        "url": "https://weibo.com/7909482041/RihRo7r8g",
+        "kind": "community",
+        "status": "read",
+        "observedAt": "2026-09-17T06:22:17Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-10"
+      },
+      {
+        "platform": "微博",
+        "url": "https://weibo.com/7909482041/RihSEu194",
+        "kind": "community",
+        "status": "read",
+        "observedAt": "2026-09-17T06:22:17Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-11"
+      },
+      {
+        "platform": "微博",
+        "url": "https://weibo.com/1682207150/RiuIfh83i",
+        "kind": "community",
+        "status": "read",
+        "observedAt": "2026-09-17T06:22:17Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-12"
+      },
+      {
+        "platform": "微博",
+        "url": "https://weibo.com/6406589744/Riw0s8rmx",
+        "kind": "community",
+        "status": "read",
+        "observedAt": "2026-09-17T06:22:17Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-13"
+      },
+      {
+        "platform": "工人日报",
+        "url": "https://www.workercn.cn/c/2026-09-17/8895601.shtml",
+        "kind": "topic-search",
+        "status": "read",
+        "observedAt": "2026-09-17T00:12:00Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-14"
+      },
+      {
+        "platform": "新华社",
+        "url": "https://www.xinhuanet.com/20260916/3a9ba678eb48464a826d5706dfd9dc5b/c.html",
+        "kind": "topic-search",
+        "status": "read",
+        "observedAt": "2026-09-17T00:12:00Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-15"
+      },
+      {
+        "platform": "微博",
+        "url": "https://weibo.com/1712398333/RiuK9sR5Z",
+        "kind": "community",
+        "status": "read",
+        "observedAt": "2026-09-17T06:22:17Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-16"
+      },
+      {
+        "platform": "新浪新闻",
+        "url": "https://news.sina.com.cn/c/2026-09-16/doc-inirzshu2757092.shtml",
+        "kind": "topic-search",
+        "status": "read",
+        "observedAt": "2026-09-17T00:12:00Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-17"
+      },
+      {
+        "platform": "微博",
+        "url": "https://weibo.com/1622814864/RiqfifGiF",
+        "kind": "community",
+        "status": "read",
+        "observedAt": "2026-09-17T00:12:00Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-18"
+      },
+      {
+        "platform": "微博",
+        "url": "https://weibo.com/5694463602/RipsZyyYu",
+        "kind": "community",
+        "status": "read",
+        "observedAt": "2026-09-17T00:12:00Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-19"
+      },
+      {
+        "platform": "BBC",
+        "url": "https://www.bbc.com/news/articles/cvp8d00j9gg5o",
+        "kind": "topic-search",
+        "status": "read",
+        "observedAt": "2026-09-17T00:12:00Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-20"
+      },
+      {
+        "platform": "中国新闻网",
+        "url": "https://www.chinanews.com.cn/gj/2026/09-17/10698074.shtml",
+        "kind": "topic-search",
+        "status": "read",
+        "observedAt": "2026-09-17T06:22:17Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-21"
+      },
+      {
+        "platform": "中国新闻网",
+        "url": "https://www.chinanews.com.cn/sh/shipin/cns/2026/09-17/news1069193.shtml",
+        "kind": "topic-search",
+        "status": "read",
+        "observedAt": "2026-09-17T06:22:17Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-22"
+      },
+      {
+        "platform": "中国新闻网",
+        "url": "https://www.chinanews.com.cn/tp/2026/09-17/10698168.shtml",
+        "kind": "topic-search",
+        "status": "read",
+        "observedAt": "2026-09-17T06:22:17Z",
+        "evidence": "浏览器直接核读原文、可见时间和必要图片语境。",
+        "id": "observation-23"
+      },
+      {
+        "platform": "微博",
+        "url": "https://video.weibo.com/show?fid=1034:5343895073259592",
+        "kind": "community",
+        "status": "failed",
+        "observedAt": "2026-09-17T06:16:00Z",
+        "evidence": "媒体链接指向的张博恒原视频显示已删除；其主页目前未见相应原帖，不把其他账号搬运当成本人原帖。",
+        "id": "observation-24"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "ec9c591a21bb8dc6",
+        "url": "https://www.chinanews.com.cn/sh/2026/09-17/10698177.shtml",
+        "title": "辽宁绥中一中学部分学生出现呕吐等症状 当地通报",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:58:19 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "8f5155d3c6321340",
+        "url": "https://www.chinanews.com.cn/sh/2026/09-17/10698194.shtml",
+        "title": "黑攀乱象调查",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:56:05 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "f33ab754cb36ee01",
+        "url": "https://www.chinanews.com.cn/tp/2026/09-17/10698168.shtml",
+        "title": "（活力中国调研行）湖北洪湖深耕莲藕产业",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:55:03 +0800",
+        "observationIds": [
+          "observation-4",
+          "observation-23"
+        ]
+      },
+      {
+        "id": "7901605e5037d1f9",
+        "url": "https://www.chinanews.com.cn/gn/2026/09-17/10698158.shtml",
+        "title": "沈跃跃出席2026上海合作组织传统医学论坛开幕式并发表主旨讲话",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:52:51 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "0398a7574c1bdb84",
+        "url": "https://www.chinanews.com.cn/gj/2026/09-17/10698189.shtml",
+        "title": "韩外交部：研讨向霍尔木兹海峡派兵事宜着眼于确保航行稳定",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:51:27 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "a4b52304002db1a6",
+        "url": "https://www.chinanews.com.cn/gj/2026/09-17/10698180.shtml",
+        "title": "沙特拦截弹储备告急，求助法英巴埃，“美方库存已大幅减少”",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:49:55 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "6a99193a2812fa50",
+        "url": "http://www.chinanews.com.cn/edu/shipin/cns/2026/09-17/news1069201.shtml",
+        "title": "第二届“一带一路”职业教育国际论坛开幕 聚焦国际合作与人才共育",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:45:07 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "75ff734c1701ee2c",
+        "url": "https://www.chinanews.com.cn/gn/2026/09-17/10698186.shtml",
+        "title": "白洋淀建生态监测“数智网”：从“跑断腿”到一屏观全域",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:43:59 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "250917e65c0705e4",
+        "url": "https://www.chinanews.com.cn/aseaninfo/2026/09-17/10698183.shtml",
+        "title": "东盟秘书长高金洪：东盟与中国可在三个领域深化经济伙伴关系",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:43:25 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "c5a894f5bbeb2b2e",
+        "url": "https://www.chinanews.com.cn/gn/2026/09-17/10698185.shtml",
+        "title": "北京香山论坛今天闭幕：从“对话”到“共治” 凝聚全球安全治理共识",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:41:22 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "5841bcb4fc7d7b44",
+        "url": "https://www.chinanews.com.cn/cj/2026/09-17/10698182.shtml",
+        "title": "丝路焕新释放发展新动能，新疆书写“财富与美”时代答卷",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:38:02 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "18932ec7a07055fc",
+        "url": "https://www.chinanews.com.cn/gn/2026/09-17/10698164.shtml",
+        "title": "学习进行时丨让新兴技术照亮共同繁荣之路",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:37:12 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "98426f38e01a251e",
+        "url": "http://www.chinanews.com.cn/tw/shipin/2026/09-17/news1069198.shtml",
+        "title": "100秒直击岛内舆论：台湾只有一条路，统一是“必答题”",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:36:53 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "92b077f310442ee4",
+        "url": "http://www.chinanews.com.cn/tp/hd2011/2026/09-17/1204549.shtml",
+        "title": "我国成功发射天仪51、52星",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:35:33 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "c9d5aac7bbcc472a",
+        "url": "https://www.chinanews.com.cn/gn/2026/09-17/10698167.shtml",
+        "title": "拾光纪·“守百姓幸福，护家国平安”，总书记这样嘱托人民公安",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:33:34 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "e30b777ca66a118b",
+        "url": "https://www.chinanews.com.cn/cul/2026/09-17/10698175.shtml",
+        "title": "（文化中国行·校馆弦歌）中国典籍如何“走进去”“走上去”？上外教授王有勇：要借帆出海、借智译介",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:31:34 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "8f4042e0298fa08d",
+        "url": "https://www.chinanews.com.cn/gn/2026/09-17/10698172.shtml",
+        "title": "中国成功发射卫星互联网低轨25组卫星",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:30:14 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "d6e23bea9f90efc5",
+        "url": "https://www.chinanews.com.cn/gj/2026/09-17/10698145.shtml",
+        "title": "美国再次拒绝向阿巴斯发放入境签证",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:26:22 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "b29b480c068cc1ff",
+        "url": "https://www.chinanews.com.cn/sh/2026/09-17/10698171.shtml",
+        "title": "（长征胜利90周年）遵义会议纪念馆多维度升级游客参观体验",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:26:10 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "cbd895a3f6ffaa84",
+        "url": "https://www.chinanews.com.cn/cul/2026/09-17/10698173.shtml",
+        "title": "直播海报：民歌大观“景迈风景好 千年茶山谣”景迈山专场音乐分享会",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:23:40 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "3e1b623f755d8b06",
+        "url": "https://www.chinanews.com.cn/iframe/2026/09-17/10698170.shtml",
+        "title": "中新网直播：民歌大观“景迈风景好 千年茶山谣”景迈山专场音乐分享会",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:22:09 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "d63c69df9398849d",
+        "url": "https://www.chinanews.com.cn/mz/2026/09-17/10698165.shtml",
+        "title": "广西将开展首个民族团结进步宣传周活动",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:21:57 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "f513becad8ef6505",
+        "url": "https://www.chinanews.com.cn/edu/2026/09-17/10698160.shtml",
+        "title": "武汉团队发现棉花品种改良新靶点",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:19:39 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "e290e94567401603",
+        "url": "https://www.chinanews.com.cn/aseaninfo/2026/09-17/10698159.shtml",
+        "title": "广西将持续完善平陆运河物流解决方案 建设平陆运河经济带",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:18:39 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "fa190382e18908be",
+        "url": "https://www.chinanews.com.cn/cj/2026/09-17/10698163.shtml",
+        "title": "海关旅检AI中台“乐宝”投运 福州长乐机场最快15秒无感通关",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:17:11 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "7a97a3bc2bd6b45a",
+        "url": "https://www.chinanews.com.cn/gj/2026/09-17/10698157.shtml",
+        "title": "巴西央行将基准利率下调至13.75%",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:11:35 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "91e65dba75f0de08",
+        "url": "https://www.chinanews.com.cn/gj/2026/09-17/10698161.shtml",
+        "title": "美高官称需为月球周边作战做准备，美国要把战场延伸至太空？",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:09:21 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "a34231955adf5d22",
+        "url": "https://www.chinanews.com.cn/ty/2026/09-17/10698155.shtml",
+        "title": "中国代表团亮相爱知·名古屋亚运会欢迎仪式",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:06:31 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "f3b5b41f5ecb3f02",
+        "url": "https://www.chinanews.com.cn/aseaninfo/2026/09-17/10698156.shtml",
+        "title": "第23届中国—东盟博览会开幕 新成员东帝汶首次亮相",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:04:59 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "69f72ae8bf3dd6fe",
+        "url": "https://www.chinanews.com.cn/dwq/2026/09-17/10698154.shtml",
+        "title": "评论：香港首个五年规划融大局向未来",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 13:04:23 +0800",
+        "observationIds": [
+          "observation-4"
+        ]
+      },
+      {
+        "id": "5aadc1b0ce05c7a6",
+        "url": "https://www.bbc.co.uk/news/articles/cv0lrxw6ygl2o?at_campaign=rss&at_medium=RSS",
+        "title": "Assad regime planned US journalist's kidnap for weeks, BBC finds",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 05:00:18 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "f566869bab0224fb",
+        "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_campaign=rss&at_medium=RSS",
+        "title": "US interest rates raised for first time in three years",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 00:40:17 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "8d0496066c9b340e",
+        "url": "https://www.bbc.co.uk/news/articles/cr3wjz3edd10o?at_campaign=rss&at_medium=RSS",
+        "title": "Snapchat open to putting time limits on teens, boss tells BBC",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 23:41:57 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "338b60a931cf7ae1",
+        "url": "https://www.bbc.co.uk/news/articles/ck62m0r4r1y3o?at_campaign=rss&at_medium=RSS",
+        "title": "Rosenberg: Russia's elections will have few surprises, but for the Kremlin they matter",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 05:00:36 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "9a97ee7bba79adc0",
+        "url": "https://www.bbc.co.uk/news/articles/c8g49e0gwxeno?at_campaign=rss&at_medium=RSS",
+        "title": "Photos show widespread damage at US sites from Iranian attacks",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 18:36:16 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "25294f89a24d1252",
+        "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_campaign=rss&at_medium=RSS",
+        "title": "EU chief backs plan for Canada to become 'associate member'",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 00:32:05 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "c5792671ac76d212",
+        "url": "https://www.bbc.co.uk/news/articles/cm986j81ky55o?at_campaign=rss&at_medium=RSS",
+        "title": "International students, 'visa hoppers' and backpackers targeted in Australia migration crackdown",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 05:05:09 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "b5553b3555c0ad8b",
+        "url": "https://www.bbc.co.uk/news/articles/c62l8g8qlr0ko?at_campaign=rss&at_medium=RSS",
+        "title": "US House votes to hold billionaire Epstein associate Leon Black in contempt",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 19:59:57 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "10e2d1ac33aaa7aa",
+        "url": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_campaign=rss&at_medium=RSS",
+        "title": "Eight children among 21 killed after war-damaged Gaza building collapses, rescuers say",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 17:16:47 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "de4d7df28f8167d4",
+        "url": "https://www.bbc.co.uk/news/articles/c639m42y43v4o?at_campaign=rss&at_medium=RSS",
+        "title": "Michelin-starred Seoul restaurant fined for using ants as garnish",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 15:48:50 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "55dc66ad885c68ed",
+        "url": "https://www.bbc.co.uk/news/articles/c6dj4nn0n97ro?at_campaign=rss&at_medium=RSS",
+        "title": "Eight German state premiers back Merz amid speculation over future",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 14:50:26 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "d1c96941abd9d9b5",
+        "url": "https://www.bbc.co.uk/news/articles/c6j9xrx80ekro?at_campaign=rss&at_medium=RSS",
+        "title": "Trump chief of staff Susie Wiles announces she's cancer-free",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 19:12:48 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "f095ad1d825af580",
+        "url": "https://www.bbc.co.uk/news/articles/cqx2zpj4y525o?at_campaign=rss&at_medium=RSS",
+        "title": "OpenAI boss says world 'right to be afraid' but should trust AI firms",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 10:02:05 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "36f3277d8ad092c8",
+        "url": "https://www.bbc.co.uk/news/articles/cr89jqd1w45eo?at_campaign=rss&at_medium=RSS",
+        "title": "Saudi Arabia says it shot down Houthi drone south of Mecca",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 08:36:17 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "45585a9beca17a49",
+        "url": "https://www.bbc.co.uk/news/articles/cwzrz4xmknjgo?at_campaign=rss&at_medium=RSS",
+        "title": "Charlie Kirk's family alleges 'stunning failures' by Utah officials led to his shooting",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 15:33:19 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "9969a2428bc0dc63",
+        "url": "https://www.bbc.co.uk/news/articles/c6kgxjl35822o?at_campaign=rss&at_medium=RSS",
+        "title": "Colombia and Brazil deadliest countries for environmental activists, report says",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 11:02:54 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "5b6046d030c776a5",
+        "url": "https://www.bbc.co.uk/news/articles/cqy0z5y7wnp2o?at_campaign=rss&at_medium=RSS",
+        "title": "US limits visas for South African officials over alleged anti-white discrimination",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 13:57:03 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "9c03d26f4ef9807d",
+        "url": "https://www.bbc.co.uk/news/articles/cjp3077led9qo?at_campaign=rss&at_medium=RSS",
+        "title": "US accuses Russia of trying to kill Ukrainian allies overseas",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 12:26:00 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "0478778434c7b39f",
+        "url": "https://www.bbc.co.uk/news/articles/cq986j7x1nd3o?at_campaign=rss&at_medium=RSS",
+        "title": "Philippines' Duterte seen in person at International Criminal Court for first time",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 11:50:09 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "26d046fc08b59e5d",
+        "url": "https://www.bbc.co.uk/news/articles/c34gd48x5rlwo?at_campaign=rss&at_medium=RSS",
+        "title": "Why Trump is all-in on AI despite the warnings",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 08:41:44 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "545fd445230ceca9",
+        "url": "https://www.bbc.co.uk/news/articles/ck0e3rnxev27o?at_campaign=rss&at_medium=RSS",
+        "title": "Carney's new love-in with EU has everything to do with Trump",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 11:08:01 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "ba4d89e9f4f16c03",
+        "url": "https://www.bbc.co.uk/news/articles/c65yw2gq2nrno?at_campaign=rss&at_medium=RSS",
+        "title": "Satellite image reveals major damage that shut crucial Saudi oil pipeline",
+        "evidenceKind": "feed",
+        "timeEvidence": "Tue, 15 Sep 2026 14:21:14 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "7371e861f47e0d57",
+        "url": "https://www.bbc.co.uk/news/articles/cmy4zqgk97wlo?at_campaign=rss&at_medium=RSS",
+        "title": "What weapon could the US have put into space?",
+        "evidenceKind": "feed",
+        "timeEvidence": "Tue, 15 Sep 2026 14:23:14 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "7004de817c0ea514",
+        "url": "https://www.bbc.co.uk/news/articles/c33kmred368o?at_campaign=rss&at_medium=RSS",
+        "title": "Ukraine's postal workers deliver lifeline under Russian fire",
+        "evidenceKind": "feed",
+        "timeEvidence": "Tue, 15 Sep 2026 05:01:46 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "d0570a8d80944a07",
+        "url": "https://www.bbc.co.uk/news/videos/cmew984dq92lo?at_campaign=rss&at_medium=RSS",
+        "title": "Inside Singapore's 'Fort Knox' for city's $2bn dirty money auction",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 22:13:36 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "6297f9e45d96348f",
+        "url": "https://www.bbc.co.uk/news/videos/c9dr7e1lr265o?at_campaign=rss&at_medium=RSS",
+        "title": "Watch: Leaked photos reveal extensive damage at US bases in Gulf",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 21:24:24 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "a4d32bc31d58d224",
+        "url": "https://www.bbc.co.uk/news/videos/cmzezj8gr224o?at_campaign=rss&at_medium=RSS",
+        "title": "Runaway horse captured by police on motorbikes",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 05:57:23 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "55bdfe739ffeb9ef",
+        "url": "https://www.bbc.co.uk/news/videos/cmn07yjqg5rwo?at_campaign=rss&at_medium=RSS",
+        "title": "Warning of space arms race as US confirms weapons in Earth's orbit",
+        "evidenceKind": "feed",
+        "timeEvidence": "Tue, 15 Sep 2026 17:35:02 GMT",
+        "observationIds": [
+          "observation-5"
+        ]
+      },
+      {
+        "id": "e9c1827473aea1a5",
+        "url": "https://science.nasa.gov/image-article/apod-2026-september-17-a-treasure-chest-in-the-carina-nebula/",
+        "title": "APOD: 2026 September 17 – A Treasure Chest in the Carina Nebula",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 04:05:00 +0000",
+        "observationIds": [
+          "observation-6"
+        ]
+      },
+      {
+        "id": "1cbc3dc7d279763a",
+        "url": "https://science.nasa.gov/earth/earth-observatory/summer-goes-out-with-a-heat-dome/",
+        "title": "Summer Goes Out With a Heat Dome",
+        "evidenceKind": "feed",
+        "timeEvidence": "Thu, 17 Sep 2026 04:01:00 +0000",
+        "observationIds": [
+          "observation-6"
+        ]
+      },
+      {
+        "id": "e663f5ea5d5fe975",
+        "url": "https://www.nasa.gov/people-of-nasa/armstrong-people/passion-meets-precision-at-nasas-flight-research-lab/",
+        "title": "Passion Meets Precision at NASA’s Flight Research Lab",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 21:06:08 +0000",
+        "observationIds": [
+          "observation-6"
+        ]
+      },
+      {
+        "id": "ef8ec3770539c9ae",
+        "url": "https://science.nasa.gov/solar-system/moon/nasas-moon-orbiter-spots-new-once-in-century-moon-crater/",
+        "title": "NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 18:06:35 +0000",
+        "observationIds": [
+          "observation-6"
+        ]
+      },
+      {
+        "id": "6b6f9a8e2d180b8b",
+        "url": "https://www.nasa.gov/technology/space-comms/nasa-celebrates-restoration-of-guam-station-damaged-by-typhoon-mawar/",
+        "title": "NASA Celebrates Restoration of Guam Station Damaged by Typhoon Mawar",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 16:12:01 +0000",
+        "observationIds": [
+          "observation-6"
+        ]
+      },
+      {
+        "id": "99f40581eed35fd5",
+        "url": "https://www.nasa.gov/science-research/earth-science/nasa-watches-earths-weight-finds-center-of-mass/",
+        "title": "NASA Watches Earth’s Weight, Finds Center of Mass",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 16:08:00 +0000",
+        "observationIds": [
+          "observation-6"
+        ]
+      },
+      {
+        "id": "3e0accfcbafb531f",
+        "url": "https://www.nasa.gov/image-article/indonesias-anak-krakatau/",
+        "title": "Indonesia’s Anak Krakatau",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 15:23:51 +0000",
+        "observationIds": [
+          "observation-6"
+        ]
+      },
+      {
+        "id": "b7e43fc8ba687e8c",
+        "url": "https://science.nasa.gov/photojournal/curiosity-postcard-celebrates-rovers-5000th-day-on-mars/",
+        "title": "Curiosity Postcard Celebrates Rover’s 5,000th Day on Mars",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 15:21:27 +0000",
+        "observationIds": [
+          "observation-6"
+        ]
+      },
+      {
+        "id": "3a642180f242f328",
+        "url": "https://www.nasa.gov/image-article/nasa-visits-schools-strengthening-floridas-skilled-workforce/",
+        "title": "NASA Visits Schools Strengthening Florida’s Skilled Workforce",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 15:14:57 +0000",
+        "observationIds": [
+          "observation-6"
+        ]
+      },
+      {
+        "id": "3eb545021f358853",
+        "url": "https://www.nasa.gov/news-release/nasa-astronaut-reid-wiseman-to-join-nfl-fans-in-baltimore/",
+        "title": "NASA Astronaut Reid Wiseman to Join NFL Fans in Baltimore",
+        "evidenceKind": "feed",
+        "timeEvidence": "Wed, 16 Sep 2026 15:00:18 +0000",
+        "observationIds": [
+          "observation-6"
+        ]
+      },
+      {
+        "id": "bcbe04448de2cbd8",
+        "url": "https://www.nbd.com.cn/articles/2026-09-17/4583694.html",
+        "title": "报道加息25基点、点阵图和各机构分歧，并独家采访Collin Anderson。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页可见 2026-09-17 03:31（北京时间）；已阅读正文。 早间07:55—08:10核读，此观测时间按批次记录。",
+        "observationIds": [
+          "observation-7"
+        ]
+      },
+      {
+        "id": "77ed65fb086f2e81",
+        "url": "https://weibo.com/1896820725/RitbUAxd7",
+        "title": "认为继续加息预期会给全球资本市场带来压力。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页可见 2026-09-17 06:23（北京时间）；已阅读正文。 早间07:55—08:10核读，此观测时间按批次记录。",
+        "observationIds": [
+          "observation-8"
+        ]
+      },
+      {
+        "id": "577b5583387285ad",
+        "url": "https://weibo.com/1357064103/RisKV5BCm",
+        "title": "不管怎么说，终于落地了。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页可见 2026-09-17 05:16（北京时间）；已阅读正文。 早间07:55—08:10核读，此观测时间按批次记录。",
+        "observationIds": [
+          "observation-9"
+        ]
+      },
+      {
+        "id": "aae90c029d57f61a",
+        "url": "https://weibo.com/7909482041/RihRo7r8g",
+        "title": "自述举报异物、申请劳动仲裁后有人上门找祖父母，要求公开道歉。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页可见 2026-09-16 01:32（北京时间）；已阅读正文。",
+        "observationIds": [
+          "observation-10"
+        ]
+      },
+      {
+        "id": "9c8ae9a5d9e71946",
+        "url": "https://weibo.com/7909482041/RihSEu194",
+        "title": "公开视频标题：我举报一点点食品安全，有人找到我老家；封面为本人写下的质问。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页可见 2026-09-16 01:35（北京时间）；已阅读正文。",
+        "observationIds": [
+          "observation-11"
+        ]
+      },
+      {
+        "id": "b0884a80cf9e5d5a",
+        "url": "https://weibo.com/1682207150/RiuIfh83i",
+        "title": "原文明确9月17日采访品牌：否认胁迫；监管部门此前检查，调查结果待出。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页可见 2026-09-17 10:15（北京时间）；已阅读正文。",
+        "observationIds": [
+          "observation-12"
+        ]
+      },
+      {
+        "id": "352f23913e7b3d15",
+        "url": "https://weibo.com/6406589744/Riw0s8rmx",
+        "title": "认为职场纠纷不该牵连家人，同时认为员工发现问题应及时处理。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页可见 2026-09-17 13:33（北京时间）；已阅读正文。",
+        "observationIds": [
+          "observation-13"
+        ]
+      },
+      {
+        "id": "56d91a517a7daeba",
+        "url": "https://www.workercn.cn/c/2026-09-17/8895601.shtml",
+        "title": "采访求职者、招聘者和学者，讨论简历里的AI熟练与实际岗位交付之间的差距。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页可见 2026-09-17 04:11（北京时间）；已阅读正文。 早间07:55—08:10核读，此观测时间按批次记录。",
+        "observationIds": [
+          "observation-14"
+        ]
+      },
+      {
+        "id": "6235fd3348c0b193",
+        "url": "https://www.xinhuanet.com/20260916/3a9ba678eb48464a826d5706dfd9dc5b/c.html",
+        "title": "现场采访记录多国代表团等待接驳、注册系统和交通调度卡住，体操队就地活动。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页可见 2026-09-16 20:23（北京时间）；已阅读正文。 早间07:55—08:10核读，此观测时间按批次记录。",
+        "observationIds": [
+          "observation-15"
+        ]
+      },
+      {
+        "id": "c8cbba4c82ada5c3",
+        "url": "https://weibo.com/1712398333/RiuK9sR5Z",
+        "title": "将接待混乱归因于主办能力，反问大型赛事申办是否值得；经费不足是其推测。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页可见 2026-09-17 10:20（北京时间）；已阅读正文。",
+        "observationIds": [
+          "observation-16"
+        ]
+      },
+      {
+        "id": "1703b23f051ed110",
+        "url": "https://news.sina.com.cn/c/2026-09-16/doc-inirzshu2757092.shtml",
+        "title": "二姐陈女士澄清父母并非均在ICU，称导师曾提供帮助，希望停止造谣。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页可见 2026-09-16 19:49（北京时间）；已阅读正文。 早间07:55—08:10核读，此观测时间按批次记录。",
+        "observationIds": [
+          "observation-17"
+        ]
+      },
+      {
+        "id": "1f4ec473cb556826",
+        "url": "https://weibo.com/1622814864/RiqfifGiF",
+        "title": "承认未等事实厘清便投入愤怒，并就针对导师的表达道歉。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页可见 2026-09-16 22:53（北京时间）；已阅读正文。 早间07:55—08:10核读，此观测时间按批次记录。",
+        "observationIds": [
+          "observation-18"
+        ]
+      },
+      {
+        "id": "d36144941156914c",
+        "url": "https://weibo.com/5694463602/RipsZyyYu",
+        "title": "呼吁相关大账号道歉，并提出把部分流量收益捐给家人。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页可见 2026-09-16 20:54（北京时间）；已阅读正文。 早间07:55—08:10核读，此观测时间按批次记录。",
+        "observationIds": [
+          "observation-19"
+        ]
+      },
+      {
+        "id": "a0a1de212b62e802",
+        "url": "https://www.bbc.com/news/articles/cvp8d00j9gg5o",
+        "title": "报道加沙9月16日受损楼房倒塌及救援；居民解释明知危险仍找不到别处居住。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页显示相对发布时间，页面时间元素 datetime=2026-09-16T17:16:47.388Z，换算北京时间9月17日01:16。 早间07:55—08:10核读，此观测时间按批次记录。",
+        "observationIds": [
+          "observation-20"
+        ]
+      },
+      {
+        "id": "e43569d2316e2aa1",
+        "url": "https://www.chinanews.com.cn/gj/2026/09-17/10698074.shtml",
+        "title": "报道人脑类器官在小鼠体内的整合研究，并保留伦理规范要求。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页可见 2026-09-17 12:14（北京时间）；已阅读正文。",
+        "observationIds": [
+          "observation-21"
+        ]
+      },
+      {
+        "id": "4a111b314a38570c",
+        "url": "https://www.chinanews.com.cn/sh/shipin/cns/2026/09-17/news1069193.shtml",
+        "title": "9月17日发布现场视频；艺术周9月15日至21日，展出的是壁画临摹作品而非搬迁文物。",
+        "evidenceKind": "page",
+        "timeEvidence": "原页可见 2026-09-17 12:25（北京时间）；已阅读正文。",
+        "observationIds": [
+          "observation-22"
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "id": "fed",
+        "title": "时隔三年加息：决策、政策分歧与交易者反应",
+        "priority": "focus",
+        "reason": "两个公开热榜均居首；需同时保留政策图表、研究者和交易者声音。",
+        "observationIds": [
+          "observation-7",
+          "observation-8",
+          "observation-9"
+        ],
+        "candidateIds": [
+          "bcbe04448de2cbd8",
+          "77ed65fb086f2e81",
+          "577b5583387285ad"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "fed"
+        ],
+        "materials": [
+          {
+            "kind": "voice",
+            "purpose": "保留每日经济新闻原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "fed-report"
+            ]
+          },
+          {
+            "kind": "voice",
+            "purpose": "保留天津股侠原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "fed-trader"
+            ]
+          },
+          {
+            "kind": "voice",
+            "purpose": "保留交易者简放原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "fed-relief"
+            ]
+          },
+          {
+            "kind": "image",
+            "purpose": "点阵图的散布直接呈现政策路径分歧。",
+            "status": "ready",
+            "sourceIds": [
+              "fed-report"
+            ],
+            "imagePaths": [
+              "/images/20260917/fed.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tea-labor",
+        "title": "一点点离职员工与家属联系争议",
+        "priority": "focus",
+        "reason": "榜单持续出现；本人、品牌回应和独立评论提供不同角度。",
+        "observationIds": [
+          "observation-12",
+          "observation-10",
+          "observation-11",
+          "observation-13"
+        ],
+        "candidateIds": [
+          "b0884a80cf9e5d5a",
+          "aae90c029d57f61a",
+          "9c8ae9a5d9e71946",
+          "352f23913e7b3d15"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "tea-labor"
+        ],
+        "materials": [
+          {
+            "kind": "voice",
+            "purpose": "保留南方日报原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "tea-response"
+            ]
+          },
+          {
+            "kind": "voice",
+            "purpose": "保留清冷23原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "tea-worker"
+            ]
+          },
+          {
+            "kind": "report",
+            "purpose": "保留清冷23原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "tea-video"
+            ]
+          },
+          {
+            "kind": "voice",
+            "purpose": "保留机智小恩恩原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "tea-comment"
+            ]
+          },
+          {
+            "kind": "image",
+            "purpose": "让读者看到当事人的原始表达。",
+            "status": "ready",
+            "sourceIds": [
+              "tea-video"
+            ],
+            "imagePaths": [
+              "/images/20260917/tea-original-cover.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ai-work",
+        "title": "AI技能与真实岗位交付",
+        "priority": "support",
+        "reason": "当天原创采访，具体写到求职者、招聘方和技能要求。",
+        "observationIds": [
+          "observation-14"
+        ],
+        "candidateIds": [
+          "56d91a517a7daeba"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "ai-work"
+        ],
+        "materials": [
+          {
+            "kind": "voice",
+            "purpose": "保留工人日报原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "ai-work"
+            ]
+          },
+          {
+            "kind": "feature",
+            "purpose": "原文看点：它把抽象的“AI技能鸿沟”落到具体求职经历和招聘测试，也写出企业如何观察真实交付能力。",
+            "status": "ready",
+            "sourceIds": [
+              "ai-work"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "airport",
+        "title": "名古屋机场等待及接待争议",
+        "priority": "support",
+        "reason": "跨平台高热背景，现场照片与次日评论有信息增量。",
+        "observationIds": [
+          "observation-15",
+          "observation-16"
+        ],
+        "candidateIds": [
+          "6235fd3348c0b193",
+          "c8cbba4c82ada5c3"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "nagoya"
+        ],
+        "materials": [
+          {
+            "kind": "voice",
+            "purpose": "保留新华社原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "airport-report"
+            ]
+          },
+          {
+            "kind": "voice",
+            "purpose": "保留李平康_原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "airport-comment"
+            ]
+          },
+          {
+            "kind": "image",
+            "purpose": "呈现等待如何占用运动员行程。",
+            "status": "ready",
+            "sourceIds": [
+              "airport-report"
+            ],
+            "imagePaths": [
+              "/images/20260917/airport-gym.jpeg"
+            ]
+          },
+          {
+            "kind": "image",
+            "purpose": "补足接驳中断时的现场信息。",
+            "status": "ready",
+            "sourceIds": [
+              "airport-report"
+            ],
+            "imagePaths": [
+              "/images/20260917/airport-route.jpeg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "gaza",
+        "title": "加沙倒塌建筑救援",
+        "priority": "support",
+        "reason": "北京时间当天凌晨的国际现场报道。",
+        "observationIds": [
+          "observation-20"
+        ],
+        "candidateIds": [
+          "a0a1de212b62e802"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "gaza"
+        ],
+        "materials": [
+          {
+            "kind": "voice",
+            "purpose": "保留BBC原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "gaza"
+            ]
+          },
+          {
+            "kind": "image",
+            "purpose": "对应报道所述的救援现场。",
+            "status": "ready",
+            "sourceIds": [
+              "gaza"
+            ],
+            "imagePaths": [
+              "/images/20260917/gaza.webp"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "medical",
+        "title": "南医大事件中的家属澄清与后续舆论",
+        "priority": "focus",
+        "reason": "前一日跨平台高热，作为背景保留三种不同表达。",
+        "observationIds": [
+          "observation-17",
+          "observation-18",
+          "observation-19"
+        ],
+        "candidateIds": [
+          "1703b23f051ed110",
+          "1f4ec473cb556826",
+          "d36144941156914c"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "medical-background"
+        ],
+        "materials": [
+          {
+            "kind": "voice",
+            "purpose": "保留南方日报／南方+原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "medical-family"
+            ]
+          },
+          {
+            "kind": "voice",
+            "purpose": "保留主播秋婉原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "medical-apology"
+            ]
+          },
+          {
+            "kind": "voice",
+            "purpose": "保留种牙匠黄建生原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "medical-doctor"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "brain",
+        "title": "人脑类器官研究",
+        "priority": "support",
+        "reason": "当天科技报道并保留伦理语境。",
+        "observationIds": [
+          "observation-21"
+        ],
+        "candidateIds": [
+          "e43569d2316e2aa1"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "brain-organoid"
+        ],
+        "materials": [
+          {
+            "kind": "report",
+            "purpose": "保留中国新闻网原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "brain"
+            ]
+          },
+          {
+            "kind": "image",
+            "purpose": "帮助理解移植组织与小鼠脑通路整合。",
+            "status": "ready",
+            "sourceIds": [
+              "brain"
+            ],
+            "imagePaths": [
+              "/images/20260917/brain-mri.jpeg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mural",
+        "title": "永乐宫壁画艺术周临摹展",
+        "priority": "reserve",
+        "reason": "当天现场视频提供可读的文化图像。",
+        "observationIds": [
+          "observation-22"
+        ],
+        "candidateIds": [
+          "4a111b314a38570c"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "mural-week"
+        ],
+        "materials": [
+          {
+            "kind": "report",
+            "purpose": "保留中国新闻网原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "mural"
+            ]
+          },
+          {
+            "kind": "image",
+            "purpose": "让读者看到作品并置而非只读活动通稿。",
+            "status": "ready",
+            "sourceIds": [
+              "mural"
+            ],
+            "imagePaths": [
+              "/images/20260917/mural-cover.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lotus",
+        "title": "洪湖莲藕采收和加工",
+        "priority": "reserve",
+        "reason": "当天原创摄影呈现劳动现场，作为轻读收尾。",
+        "observationIds": [
+          "observation-4",
+          "observation-23"
+        ],
+        "candidateIds": [
+          "f33ab754cb36ee01"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "honghu-lotus"
+        ],
+        "materials": [
+          {
+            "kind": "report",
+            "purpose": "保留中国新闻网原文中的独立信息",
+            "status": "ready",
+            "sourceIds": [
+              "lotus"
+            ]
+          },
+          {
+            "kind": "image",
+            "purpose": "展示莲藕从水田离开前的采收与转运。",
+            "status": "ready",
+            "sourceIds": [
+              "lotus"
+            ],
+            "imagePaths": [
+              "/images/20260917/lotus-bank.jpg"
+            ]
+          },
+          {
+            "kind": "image",
+            "purpose": "与水田采收形成加工环节对照。",
+            "status": "ready",
+            "sourceIds": [
+              "lotus"
+            ],
+            "imagePaths": [
+              "/images/20260917/lotus-work.jpg"
+            ]
+          }
+        ]
+      }
+    ],
+    "unobservedPlatforms": [
+      "百度",
+      "抖音",
+      "B站",
+      "知乎",
+      "头条",
+      "Google 新闻",
+      "新闻门户",
+      "X",
+      "Reddit",
+      "YouTube",
+      "Bluesky"
+    ]
+  },
+  "editorialReview": {
+    "decision": "approved",
+    "reviewedAt": "2026-09-17T14:42:13Z",
+    "imageRelevance": "已逐张查看9张本地图片；淘汰误匹配的推荐缩略图、不可读科研图和无关资料图。保留点阵图、本人视频封面、两张机场现场、加沙救援、研究成像、壁画现场、两张莲藕劳动图。",
+    "voiceDiversity": "已直接阅读当事人原帖、品牌采访、交易者帖子、家属采访、公开道歉和独立评论；机场原运动员视频失效，已在条目中如实说明。",
+    "readingOrder": "数组按编辑节奏交错：政策图表、劳动争议多声部、深读、机场现场、国际图片、背景声部、科技、文化、自然收尾。",
+    "coverage": "包含经济、劳动、国际、科技、文化与人物自然；旧内容均标背景，主标题取当天原文观点。",
+    "acceptance": {
+      "fingerprint": "c004497075101826921c0ac1428a3ab429b4697886be459502e04b6004ea6555",
+      "contentFingerprint": "b82183cc8dcf0cdfd101207db2bbcda3af5e8430e92fb54f4cb4077ba3b5775f",
+      "decision": "approved",
+      "reviewer": "Codex 编辑复核",
+      "reviewedAt": "2026-09-17T14:42:13Z",
+      "assessments": {
+        "voices": {
+          "verdict": "pass",
+          "itemIds": [
+            "fed",
+            "tea-labor",
+            "nagoya",
+            "medical-background"
+          ],
+          "evidence": "实际读取交易者、当事人、品牌采访、新华社现场、家属采访、公开道歉和独立评论；13个原声块均显示平台、发布者、时间、出处和呈现方式，机场原运动员视频失效已明确说明。"
+        },
+        "images": {
+          "verdict": "pass",
+          "itemIds": [
+            "fed",
+            "tea-labor",
+            "nagoya",
+            "gaza",
+            "brain-organoid",
+            "mural-week",
+            "honghu-lotus"
+          ],
+          "evidence": "9张独立本地图片逐张查看并在页面滚动后解码，分别提供点阵图、当事人封面、机场现场、救援现场、研究成像、壁画作品和采收包装现场；已排除推荐缩略图、不可读研究图和无关资料图。"
+        },
+        "agenda": {
+          "verdict": "pass",
+          "itemIds": [
+            "fed",
+            "tea-labor",
+            "ai-work",
+            "nagoya",
+            "gaza",
+            "medical-background",
+            "brain-organoid",
+            "mural-week",
+            "honghu-lotus"
+          ],
+          "evidence": "9条按连续长卷交错：政策图表、劳动多声部、原创深读、机场背景、国际现场、南医大背景、科技、文化、自然收尾；7条当天，2条明确背景。"
+        },
+        "reading": {
+          "verdict": "pass",
+          "itemIds": [
+            "fed",
+            "tea-labor",
+            "ai-work",
+            "nagoya",
+            "gaza",
+            "medical-background",
+            "brain-organoid",
+            "mural-week",
+            "honghu-lotus"
+          ],
+          "evidence": "桌面检查了标题、首条图表、中段多声部和壁画/莲藕收尾；手机从首屏滚到底部检查标题、来源、图注、原文链接、图片解码和横向溢出。"
+        }
+      },
+      "screens": [
+        {
+          "viewport": "desktop",
+          "verdict": "pass",
+          "itemIds": [
+            "fed",
+            "tea-labor",
+            "ai-work",
+            "nagoya",
+            "gaza",
+            "medical-background",
+            "brain-organoid",
+            "mural-week",
+            "honghu-lotus"
+          ],
+          "evidence": "1280x720桌面预览；标题、点阵图、长卷层次、中段壁画和莲藕条目可读，来源与图片出处链接可见。"
+        },
+        {
+          "viewport": "mobile",
+          "verdict": "pass",
+          "itemIds": [
+            "fed",
+            "tea-labor",
+            "ai-work",
+            "nagoya",
+            "gaza",
+            "medical-background",
+            "brain-organoid",
+            "mural-week",
+            "honghu-lotus"
+          ],
+          "evidence": "390x844手机预览；document.scrollWidth为390，无横向溢出；滚动至页面底部后9张图片均complete且有实际宽高。"
+        }
+      ],
+      "findings": [],
+      "omissions": [],
+      "diagnostic": {
+        "errors": [],
+        "warnings": [],
+        "next": [],
+        "inventory": {
+          "topics": 9,
+          "entries": 9,
+          "voiceBlocks": 13,
+          "paraphrases": 7,
+          "publishers": {
+            "每日经济新闻": 1,
+            "南方日报": 1,
+            "工人日报": 1,
+            "新华社": 1,
+            "BBC": 1,
+            "南方日报／南方+": 1,
+            "中国新闻网": 3
+          }
+        }
+      }
+    }
+  }
+}
