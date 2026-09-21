@@ -1,0 +1,1483 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-09-21-morning",
+  "editionDate": "2026-09-21",
+  "status": "published",
+  "headline": "把配料表里的选择权还给消费者",
+  "cutoffAt": "2026-09-20T23:00:00.000Z",
+  "generatedAt": "2026-09-21T02:11:48.585Z",
+  "sources": [
+    {
+      "id": "sugar-choice",
+      "url": "https://weibo.com/7508002598/Rj2t3F1fB",
+      "platform": "微博",
+      "publisher": "微博",
+      "author": "花桉er",
+      "publishedAt": "2026-09-21T00:11:00+08:00",
+      "observedAt": "2026-09-21T02:11:48.585Z",
+      "timeEvidence": "原帖显示 9月21日 00:11",
+      "excerpt": "发帖者说，想要的是坦诚的配料表、选择的权利，以及一口简单清爽的甜。",
+      "access": "public",
+      "evidenceKind": "page",
+      "engagement": [
+        {
+          "kind": "views",
+          "value": 127000,
+          "observedAt": "2026-09-21T02:11:48.585Z",
+          "evidence": "原帖页面显示 12.7万次观看"
+        },
+        {
+          "kind": "likes",
+          "value": 55,
+          "observedAt": "2026-09-21T02:11:48.585Z",
+          "evidence": "原帖页面显示 55 次赞"
+        },
+        {
+          "kind": "shares",
+          "value": 28,
+          "observedAt": "2026-09-21T02:11:48.585Z",
+          "evidence": "原帖页面显示 28 次转发"
+        },
+        {
+          "kind": "comments",
+          "value": 443,
+          "observedAt": "2026-09-21T02:11:48.585Z",
+          "evidence": "原帖页面显示 443 条评论"
+        }
+      ]
+    },
+    {
+      "id": "sugar-taste",
+      "url": "https://weibo.com/7834086827/Rj2w92hvr",
+      "platform": "微博",
+      "publisher": "微博",
+      "author": "空心鸡蛋黄",
+      "publishedAt": "2026-09-21T00:19:00+08:00",
+      "observedAt": "2026-09-21T02:11:48.585Z",
+      "timeEvidence": "原帖显示 9月21日 00:19",
+      "excerpt": "发帖者把讨论落在饮料口感、配料透明度和消费者选择上，并称部分饮料用果葡糖浆替代白砂糖。",
+      "access": "public",
+      "evidenceKind": "page",
+      "engagement": [
+        {
+          "kind": "views",
+          "value": 10000,
+          "observedAt": "2026-09-21T02:11:48.585Z",
+          "evidence": "原帖页面显示 1万次观看"
+        },
+        {
+          "kind": "likes",
+          "value": 7,
+          "observedAt": "2026-09-21T02:11:48.585Z",
+          "evidence": "原帖页面显示 7 次赞"
+        },
+        {
+          "kind": "shares",
+          "value": 48,
+          "observedAt": "2026-09-21T02:11:48.585Z",
+          "evidence": "原帖页面显示 48 次转发"
+        },
+        {
+          "kind": "comments",
+          "value": 272,
+          "observedAt": "2026-09-21T02:11:48.585Z",
+          "evidence": "原帖页面显示 272 条评论"
+        }
+      ]
+    },
+    {
+      "id": "sugar-explain",
+      "url": "https://weibo.com/3296569781/Rj3CX3nL4",
+      "platform": "微博",
+      "publisher": "微博",
+      "author": "风云梦远",
+      "publishedAt": "2026-09-21T03:08:00+08:00",
+      "observedAt": "2026-09-21T02:11:48.585Z",
+      "timeEvidence": "原帖显示 9月21日 03:08",
+      "excerpt": "发帖者从果葡糖浆与蔗糖的组成、成本和甜味差异解释争议，并提醒不要把两种糖简单写成健康与不健康的二分。",
+      "access": "public",
+      "evidenceKind": "page",
+      "engagement": [
+        {
+          "kind": "likes",
+          "value": 3,
+          "observedAt": "2026-09-21T02:11:48.585Z",
+          "evidence": "原帖页面显示 3 次赞"
+        },
+        {
+          "kind": "shares",
+          "value": 8,
+          "observedAt": "2026-09-21T02:11:48.585Z",
+          "evidence": "原帖页面显示 8 次转发"
+        },
+        {
+          "kind": "comments",
+          "value": 30,
+          "observedAt": "2026-09-21T02:11:48.585Z",
+          "evidence": "原帖页面显示 30 条评论"
+        }
+      ]
+    },
+    {
+      "id": "fake-apps",
+      "url": "https://www.chinanews.com.cn/sh/2026/09-21/10700499.shtml",
+      "platform": "中国新闻网",
+      "publisher": "央视新闻客户端",
+      "author": "央视新闻客户端",
+      "publishedAt": "2026-09-21T01:55:18+08:00",
+      "observedAt": "2026-09-21T02:11:48.585Z",
+      "timeEvidence": "页面显示 2026年09月21日 01:55，来源为央视新闻客户端",
+      "excerpt": "报道广西、广东两名投资者被假证券交易App显示的虚假收益诱导转账，警方称后台可篡改持仓和盈利数据。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "trade-talks",
+      "url": "https://www.chinanews.com.cn/cj/2026/09-21/10700496.shtml",
+      "platform": "中国新闻网",
+      "publisher": "中国新闻网",
+      "author": "中新社",
+      "publishedAt": "2026-09-21T00:17:15+08:00",
+      "observedAt": "2026-09-21T02:11:48.585Z",
+      "timeEvidence": "页面显示 2026年09月21日 00:17，来源为中国新闻网",
+      "excerpt": "中新社纽约9月20日电：当地时间9月20日上午，中美两国经贸团队在纽约开始举行中美经贸磋商。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "houthis",
+      "url": "https://www.chinanews.com.cn/gj/2026/09-21/10700498.shtml",
+      "platform": "中国新闻网",
+      "publisher": "央视新闻客户端",
+      "author": "央视新闻客户端",
+      "publishedAt": "2026-09-21T01:52:00+08:00",
+      "observedAt": "2026-09-21T02:11:48.585Z",
+      "timeEvidence": "页面显示 2026年09月21日 01:52，来源为央视新闻客户端",
+      "excerpt": "报道称一名美国官员称美军不会对胡塞武装发动进攻性打击，后文同时列出白宫、五角大楼未确认及地区方面的不同说法。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "germany",
+      "url": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o",
+      "platform": "BBC",
+      "publisher": "BBC News",
+      "author": "Amy Walker and Jessica Parker",
+      "publishedAt": "2026-09-21T00:50:21.517+08:00",
+      "observedAt": "2026-09-21T02:11:48.585Z",
+      "timeEvidence": "页面显示 Published 20 September 2026 17:50 BST；原文发布时间换算为北京时间9月21日00:50",
+      "excerpt": "BBC报道德国地方选举出口民调和初步结果：基民盟在部分地区表现不佳，默茨称结果是灾难但表示会继续留任和推进改革。",
+      "access": "public",
+      "evidenceKind": "page",
+      "updatedAt": "2026-09-21T04:21:40.980+08:00",
+      "updateNote": "原文在北京时间04:21更新：补充了柏林基民盟落后于左翼党、以及默茨继续留任的表态。",
+      "updateEvidence": "页面显示 Updated 1 hour ago；页面更新时间换算为北京时间9月21日04:21。"
+    },
+    {
+      "id": "trump-arch",
+      "url": "https://www.bbc.co.uk/news/articles/cqdj4pez00dzo",
+      "platform": "BBC",
+      "publisher": "BBC News",
+      "author": "Grace Eliza Goodwin",
+      "publishedAt": "2026-09-20T21:50:51.506+08:00",
+      "observedAt": "2026-09-21T02:11:48.585Z",
+      "timeEvidence": "页面显示 Published 20 September 2026 14:50 BST；原文发布时间换算为北京时间9月20日21:50",
+      "excerpt": "BBC报道特朗普称拟建的凯旋门将成为带有军事设施的建筑，并提到无人机和狙击手等设想；报道同时说明细节和审批情况尚不清楚。",
+      "access": "public",
+      "evidenceKind": "page",
+      "updatedAt": "2026-09-21T00:36:43.030+08:00",
+      "updateNote": "原文在北京时间00:36更新：报道补充了特朗普关于储存军事装备、无人机和狙击手的说法。",
+      "updateEvidence": "页面显示 Updated 4 hours ago；页面更新时间换算为北京时间9月21日00:36。"
+    },
+    {
+      "id": "bay-concert",
+      "url": "https://www.chinanews.com.cn/dwq/2026/09-21/10700497.shtml",
+      "platform": "中国新闻网",
+      "publisher": "中国新闻网",
+      "author": "郑嘉伟、莫倩、戴小橦",
+      "publishedAt": "2026-09-21T00:34:04+08:00",
+      "observedAt": "2026-09-21T02:11:48.585Z",
+      "timeEvidence": "页面显示 2026年09月21日 00:34，作者为郑嘉伟、莫倩、戴小橦",
+      "excerpt": "报道‘湾区升明月’2026大湾区电影音乐晚会9月20日晚在澳门举行，演出持续约4小时，超过140位电影人和音乐人参与。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "ai-background",
+      "url": "https://www.bbc.co.uk/news/articles/cm5y7qj54klpo",
+      "platform": "BBC",
+      "publisher": "BBC News",
+      "author": "Kali Hays",
+      "publishedAt": "2026-09-20T07:01:57.843+08:00",
+      "observedAt": "2026-09-21T02:11:48.585Z",
+      "timeEvidence": "页面显示 Published 20 September 2026；页面发布时间换算为北京时间9月20日07:01",
+      "excerpt": "BBC采访了对‘AI会毁灭人类’叙事持怀疑态度的OpenAI、Meta和DeepMind现任或前员工，也记录了他们对短期失控、军事用途和护栏失效的担忧。",
+      "access": "public",
+      "evidenceKind": "page"
+    },
+    {
+      "id": "barefoot-background",
+      "url": "https://www.bbc.co.uk/news/articles/cw62m6z7m7zjo",
+      "platform": "BBC Marathi",
+      "publisher": "BBC News",
+      "author": "Shrikant Bangale",
+      "publishedAt": "2026-09-20T07:18:06.623+08:00",
+      "observedAt": "2026-09-21T02:11:48.585Z",
+      "timeEvidence": "页面显示 1 day ago；页面发布时间换算为北京时间9月20日07:18",
+      "excerpt": "BBC报道印度一名母亲在8月赤脚跑完3公里赢得3000卢比，为女儿购买学习用品；报道也延伸到教育费用和社会保障的讨论。",
+      "access": "public",
+      "evidenceKind": "page"
+    }
+  ],
+  "stories": [
+    {
+      "id": "sugar-heat",
+      "multiVoice": true,
+      "sustainedHeatEvidence": "本轮只观察到微博内部的持续高热：实时热搜页与同题搜索页均显示相关词条；搜索页显示163条结果、901次讨论、1185.5万阅读，并标注01:50登顶。这里不把单平台热度写成跨平台共振。",
+      "discoverySignals": [
+        {
+          "platform": "微博实时热搜",
+          "url": "https://s.weibo.com/top/summary?cate=realtimehot",
+          "observedAt": "2026-09-21T02:11:48.585Z",
+          "evidence": "页面可见相关词条位于高位并显示热度446650。"
+        },
+        {
+          "platform": "微博同题搜索",
+          "url": "https://s.weibo.com/weibo?q=%E6%8A%8A%E9%85%8D%E6%96%99%E8%A1%A8%E4%B8%AD%E7%9A%84%E7%99%BD%E7%A0%82%E7%B3%96%E8%BF%98%E7%BB%99%E6%88%91%E4%BB%AC",
+          "observedAt": "2026-09-21T02:11:48.585Z",
+          "evidence": "搜索页显示163条结果、901次讨论、1185.5万阅读和01:50登顶。"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "sugar-voices",
+      "storyId": "sugar-heat",
+      "title": "把配料表里的选择权还给消费者",
+      "section": "今日焦点",
+      "format": "social",
+      "source": "微博",
+      "sourceType": "同题公开发言",
+      "sourceKind": "post",
+      "author": "花桉er、空心鸡蛋黄、风云梦远",
+      "engagement": "同题搜索页显示1185.5万阅读、901讨论；单帖互动量见各发言旁",
+      "time": "2026-09-21 00:11—03:08（北京时间）",
+      "href": "https://weibo.com/7508002598/Rj2t3F1fB",
+      "discovery": "微博实时热搜与同题搜索页：话题显示01:50登顶；搜索页可见163条结果",
+      "discoveryHref": "https://s.weibo.com/weibo?q=%E6%8A%8A%E9%85%8D%E6%96%99%E8%A1%A8%E4%B8%AD%E7%9A%84%E7%99%BD%E7%A0%82%E7%B3%96%E8%BF%98%E7%BB%99%E6%88%91%E4%BB%AC",
+      "topic": "topic-sugar",
+      "selectionReason": "单平台持续高热，且同题发言分别提供诉求、口感体验和解释性反驳，信息增量不是重复转发。",
+      "freshnessSourceId": "sugar-choice",
+      "sourceIds": [
+        "sugar-choice",
+        "sugar-taste",
+        "sugar-explain"
+      ],
+      "details": [
+        "微博同题搜索页在本次观察中显示163条结果、901次讨论、1185.5万阅读，并标注话题于01:50登顶。下面保留三条角度不同的公开发言，不把它们压成一个结论。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "sugar-choice",
+            "sugar-taste",
+            "sugar-explain"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "话题的共同起点，是消费者想看懂饮料里到底放了什么；但三条发言的落点并不相同。"
+        },
+        {
+          "kind": "quote",
+          "text": "“我们想要的是坦诚的配料表、选择的权利，一口简简单单清清爽爽的甜。”",
+          "sourceId": "sugar-choice",
+          "role": "ordinary-user",
+          "speaker": "花桉er",
+          "presentation": "excerpt"
+        },
+        {
+          "kind": "quote",
+          "text": "空心鸡蛋黄把争议落在口感变化，以及商家是否把原料写清楚、让消费者选择。",
+          "sourceId": "sugar-taste",
+          "role": "ordinary-user",
+          "speaker": "空心鸡蛋黄",
+          "presentation": "paraphrase"
+        },
+        {
+          "kind": "quote",
+          "text": "风云梦远从果葡糖浆与蔗糖的组成、成本和甜味差异解释争议，并提醒不要把两种糖简单写成健康与不健康的二分。",
+          "sourceId": "sugar-explain",
+          "role": "critic",
+          "speaker": "风云梦远",
+          "presentation": "paraphrase"
+        },
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260921/sugar-label.jpg",
+            "alt": "微博视频封面上的中文提问：谁偷走了我们的白砂糖，饮料里为何都用果葡糖浆替代白砂糖",
+            "caption": "原帖视频封面；画面保留了发帖者提出的配料表疑问。图片来源：微博用户空心鸡蛋黄原帖。",
+            "kind": "screenshot",
+            "sourceUrl": "https://weibo.com/7834086827/Rj2w92hvr",
+            "originalUrl": "https://wx4.sinaimg.cn/orj480/008yb1R9gy1ihama7g265j30u01hctae.jpg",
+            "relevance": "原帖视频封面把争议的关键词直接放在画面上。 ",
+            "width": 480,
+            "height": 853
+          }
+        }
+      ],
+      "voices": [
+        {
+          "sourceId": "sugar-choice",
+          "role": "ordinary-user",
+          "speaker": "花桉er",
+          "text": "想要坦诚的配料表、选择的权利和简单清爽的甜。",
+          "angle": "透明配料与选择权",
+          "presentation": "excerpt"
+        },
+        {
+          "sourceId": "sugar-taste",
+          "role": "ordinary-user",
+          "speaker": "空心鸡蛋黄",
+          "text": "把口感变化和配料透明度放在一起讨论。",
+          "angle": "消费者体验与知情选择",
+          "presentation": "paraphrase"
+        },
+        {
+          "sourceId": "sugar-explain",
+          "role": "critic",
+          "speaker": "风云梦远",
+          "text": "解释两种糖的组成、成本与甜味差异，反对简单二分。",
+          "angle": "解释与质疑",
+          "presentation": "paraphrase"
+        }
+      ]
+    },
+    {
+      "id": "sugar-video",
+      "storyId": "sugar-heat",
+      "title": "一条视频把“配料表”四个字放到画面中央",
+      "section": "今日焦点",
+      "format": "visual",
+      "source": "微博",
+      "sourceType": "公开视频原帖",
+      "sourceKind": "post",
+      "author": "花桉er",
+      "time": "2026-09-21 00:11（北京时间）",
+      "href": "https://weibo.com/7508002598/Rj2t3F1fB",
+      "topic": "topic-sugar",
+      "selectionReason": "与同题多声部条目连续编排但不重复：这里保留原帖视频的视觉语境和可见观看量，让读者看到它如何被传播，而不是再写一遍观点。",
+      "freshnessSourceId": "sugar-choice",
+      "details": [
+        "花桉er在北京时间00:11发布视频，原帖显示12.7万次观看、55次赞、28次转发和443条评论；视频画面本身不替发帖者增加新的事实，只保留这条公开表达的现场感。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "sugar-choice"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260921/sugar-choice.jpg",
+            "alt": "微博视频封面呈现一个灰色网格空间，来自花桉er关于配料表选择权的公开视频",
+            "caption": "原帖视频画面；图片来源：微博用户花桉er原帖。",
+            "kind": "original",
+            "sourceUrl": "https://weibo.com/7508002598/Rj2t3F1fB",
+            "originalUrl": "https://wx3.sinaimg.cn/orj480/008c6Os6ly1ihal6l4tskj31hc0u0wgu.jpg",
+            "relevance": "原帖视频的可见封面，保留发言的视觉语境。 ",
+            "width": 1024,
+            "height": 1024
+          }
+        },
+        {
+          "kind": "text",
+          "text": "这条视频的画面很克制，文字诉求却很明确：配料表要坦诚，消费者要有选择权。",
+          "sourceIds": [
+            "sugar-choice"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "sugar-choice"
+      ]
+    },
+    {
+      "id": "fake-apps",
+      "title": "“高仿”证券App把虚假盈利做得像真的",
+      "section": "今日焦点",
+      "format": "feature",
+      "source": "央视新闻客户端",
+      "sourceType": "调查报道",
+      "sourceKind": "media-report",
+      "author": "央视新闻客户端",
+      "time": "2026-09-21 01:55（北京时间）",
+      "href": "https://www.chinanews.com.cn/sh/2026/09-21/10700499.shtml",
+      "topic": "topic-fraud",
+      "selectionReason": "当日较早发布的调查性报道，既有受害者经历，也有警方对假App后台和转账路径的解释，信息增量高于泛泛防诈提醒。",
+      "freshnessSourceId": "fake-apps",
+      "details": [
+        "央视新闻客户端在北京时间01:55报道，广西一名投资者被拉进所谓机构群后，下载假证券App，先看到小额盈利，随后投入更多资金；广东一名投资者则在17笔转账中损失约200万元。",
+        "报道引述警方称，假App后台可以修改持仓和盈利数字，资金最终流向个人账户；报道还提到假冒客服、真实账号信息和AI换脸等组合套路。",
+        "报道给出的实际提醒是：交易软件从证券公司官网或正规应用商店下载，通过官方热线核验，‘内部渠道’和‘保证高收益’是明显警讯。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "fake-apps"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "fake-apps"
+          ]
+        },
+        {
+          "detailIndex": 2,
+          "sourceIds": [
+            "fake-apps"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "一笔先让你看见小额盈利的转账，可能只是骗局的试用版。"
+        },
+        {
+          "kind": "text",
+          "text": "报道中的两位投资者经历不同，但都被“能看到收益”的界面推过了警惕线：一位差点再转入50万元，另一位累计转出约200万元。",
+          "sourceIds": [
+            "fake-apps"
+          ]
+        },
+        {
+          "kind": "quote",
+          "text": "警方提示，假App可以在后台篡改持仓和盈利数据，下载交易软件要回到证券公司官网或正规应用商店。",
+          "sourceId": "fake-apps",
+          "role": "official",
+          "speaker": "警方",
+          "presentation": "paraphrase"
+        }
+      ],
+      "recommendation": "原文看点：把受害者的转账过程、假App的后台机制和警方给出的核验动作放在同一篇报道里。",
+      "sourceIds": [
+        "fake-apps"
+      ]
+    },
+    {
+      "id": "trade-talks",
+      "title": "中美经贸团队在纽约开始磋商",
+      "section": "今日焦点",
+      "format": "brief",
+      "source": "中国新闻网",
+      "sourceType": "现场简讯",
+      "sourceKind": "media-report",
+      "author": "中新社",
+      "time": "2026-09-21 00:17（北京时间）",
+      "href": "https://www.chinanews.com.cn/cj/2026/09-21/10700496.shtml",
+      "topic": "topic-diplomacy",
+      "selectionReason": "当日凌晨的现场简讯提供了磋商开始这一明确时间节点，保留原文的简短信息，不扩写未见的议程和结果。",
+      "freshnessSourceId": "trade-talks",
+      "details": [
+        "中新社报道，当地时间9月20日上午，中美两国经贸团队在纽约开始举行中美经贸磋商。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "trade-talks"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "中新社报道，当地时间9月20日上午，中美两国经贸团队在纽约开始举行中美经贸磋商。",
+          "sourceIds": [
+            "trade-talks"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "trade-talks"
+      ]
+    },
+    {
+      "id": "houthis",
+      "title": "关于是否对胡塞武装动手，美国方面出现不同说法",
+      "section": "世界与新知",
+      "format": "standard",
+      "source": "央视新闻客户端",
+      "sourceType": "国际报道",
+      "sourceKind": "media-report",
+      "author": "央视新闻客户端",
+      "time": "2026-09-21 01:52（北京时间）",
+      "href": "https://www.chinanews.com.cn/gj/2026/09-21/10700498.shtml",
+      "topic": "topic-diplomacy",
+      "selectionReason": "同一报道保留匿名官员、白宫与五角大楼未确认以及地区方面请求之间的关系，读者可以看到说法来源而非一个被抹平的结论。",
+      "freshnessSourceId": "houthis",
+      "details": [
+        "央视新闻客户端报道，一名美国官员称美军不会对胡塞武装发动进攻性打击；报道同时写明，白宫和五角大楼没有确认相关说法。",
+        "报道还转述美国前官员、沙特方面和分析人士的观点：沙特王储曾请求打击，特朗普拒绝；分析人士担心胡塞武装行动会扩大地区冲突。以上均为报道中的归属说法。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "houthis"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "houthis"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "这不是一条“已经决定开打”的消息：报道同时保留了匿名美国官员的判断、官方未确认和地区相关方的不同说法。",
+          "sourceIds": [
+            "houthis"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "报道提到，美方可能只向沙特提供情报和目标数据；沙特方面的请求、特朗普的拒绝及分析人士的担忧，则分别以报道转述的方式出现。",
+          "sourceIds": [
+            "houthis"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "houthis"
+      ]
+    },
+    {
+      "id": "germany-election",
+      "title": "默茨称地方选举结果是“灾难”，但表示会继续留任",
+      "section": "世界与新知",
+      "format": "visual",
+      "source": "BBC News",
+      "sourceType": "国际报道",
+      "sourceKind": "media-report",
+      "author": "Amy Walker、Jessica Parker",
+      "time": "2026-09-21 04:21更新（北京时间）",
+      "href": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o",
+      "topic": "topic-germany",
+      "selectionReason": "原文在本期截稿前明确更新，新增柏林基民盟与左翼党表现及默茨留任表态；两张现场图分别保留选举夜的克制与庆祝。",
+      "freshnessSourceId": "germany",
+      "updateNote": "原文在北京时间04:21更新",
+      "details": [
+        "BBC原文在北京时间04:21更新：德国地方选举出口民调和初步结果显示，基民盟在梅克伦堡-前波美拉尼亚州表现不佳，德国选择党约38%、社民党约36%；在柏林，基民盟落后于左翼党。",
+        "默茨称结果是对基民盟的“灾难”，但表示会继续留任并推进改革。这里的政治判断和选举数字均按BBC报道归属呈现。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "germany"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "germany"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260921/germany-cdu.jpg",
+            "alt": "德国基民盟支持者在选举夜观看屏幕，现场气氛克制",
+            "caption": "德国地方选举报道配图；资料图，图片来源：Reuters/BBC。",
+            "kind": "original",
+            "sourceUrl": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o",
+            "originalUrl": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/2989/live/811cc500-b530-11f1-aea7-a1880b71d172.jpg.webp",
+            "relevance": "对应报道中基民盟选举夜的现场。 ",
+            "width": 1536,
+            "height": 863
+          }
+        },
+        {
+          "kind": "text",
+          "text": "选举夜的画面一边是基民盟支持者的克制，另一边是左翼党支持者的庆祝；BBC报道将它们放在同一轮地方选举的结果里。",
+          "sourceIds": [
+            "germany"
+          ]
+        },
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260921/germany-left.jpg",
+            "alt": "德国左翼党候选人伊莉夫·埃拉尔普在支持者间庆祝",
+            "caption": "德国地方选举报道配图；资料图，图片来源：EPA/BBC。",
+            "kind": "original",
+            "sourceUrl": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o",
+            "originalUrl": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/4d6b/live/79af6e60-b530-11f1-aea7-a1880b71d172.jpg.webp",
+            "relevance": "对应报道中柏林左翼党表现的现场。 ",
+            "width": 1536,
+            "height": 864
+          }
+        }
+      ],
+      "sourceIds": [
+        "germany"
+      ]
+    },
+    {
+      "id": "trump-arch",
+      "title": "特朗普说拟议凯旋门还要容纳无人机和狙击手",
+      "section": "世界与新知",
+      "format": "standard",
+      "source": "BBC News",
+      "sourceType": "国际报道",
+      "sourceKind": "media-report",
+      "author": "Grace Eliza Goodwin",
+      "time": "2026-09-21 00:36更新（北京时间）",
+      "href": "https://www.bbc.co.uk/news/articles/cqdj4pez00dzo",
+      "topic": "topic-washington",
+      "selectionReason": "原文在北京时间00:36有明确更新，地图把尚未明确审批的建筑设想放回华盛顿地标关系中，适合做一条带图的国际视觉短读。",
+      "freshnessSourceId": "trump-arch",
+      "updateNote": "原文在北京时间00:36更新",
+      "details": [
+        "BBC原文在北京时间00:36更新：特朗普称拟议中的250英尺凯旋门会成为带有军事储存能力的建筑，并可容纳无人机和狙击手；报道没有把它写成已经获批的工程。",
+        "示意图显示，这一设想位于阿灵顿附近，与白宫、林肯纪念堂和华盛顿纪念碑形成新的空间关系。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "trump-arch"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "trump-arch"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260921/trump-arch-map.webp",
+            "alt": "BBC示意图标出华盛顿拟议凯旋门与白宫、林肯纪念堂和华盛顿纪念碑的位置",
+            "caption": "报道配图；资料图，图片来源：BBC。",
+            "kind": "background",
+            "sourceUrl": "https://www.bbc.co.uk/news/articles/cqdj4pez00dzo",
+            "originalUrl": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/c44b/live/4f107240-86b0-11f1-bee8-53ce494e1abc.png.webp",
+            "relevance": "地图把建筑设想放回华盛顿地标之间的空间关系。 ",
+            "width": 1536,
+            "height": 1388
+          }
+        },
+        {
+          "kind": "text",
+          "text": "先看地图，再看设想：BBC的示意图把这座尚未明确审批的建筑放进华盛顿现有地标之间。",
+          "sourceIds": [
+            "trump-arch"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "trump-arch"
+      ]
+    },
+    {
+      "id": "bay-concert",
+      "title": "湾区电影音乐晚会在澳门唱响",
+      "section": "值得细读",
+      "format": "visual",
+      "source": "中国新闻网",
+      "sourceType": "现场图文",
+      "sourceKind": "media-report",
+      "author": "郑嘉伟、莫倩、戴小橦",
+      "time": "2026-09-21 00:34（北京时间）",
+      "href": "https://www.chinanews.com.cn/dwq/2026/09-21/10700497.shtml",
+      "topic": "topic-culture",
+      "selectionReason": "现场图提供了文字报道之外的舞台信息；两张画面一张看合唱、一张看群像，保留晚会作为文化现场而非泛泛活动通稿。",
+      "freshnessSourceId": "bay-concert",
+      "details": [
+        "中国新闻网报道，‘湾区升明月’2026大湾区电影音乐晚会9月20日晚在澳门举行，演出约4小时，超过140位电影人和音乐人参与。报道还记录了林林等主创对电影与音乐连接的现场表达。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "bay-concert"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260921/bay-duet.jpg",
+            "alt": "王鹤棣与欧阳娜娜在紫色灯光下合唱",
+            "caption": "晚会现场；图片来源：中国新闻网。",
+            "kind": "original",
+            "sourceUrl": "https://www.chinanews.com.cn/dwq/2026/09-21/10700497.shtml",
+            "originalUrl": "https://i2.chinanews.com.cn/simg/ypt/2026/260921/aa3a5408-340e-4053-a05d-c70b7f35c391_zsite.jpg",
+            "relevance": "直接呈现晚会的舞台现场。 ",
+            "width": 700,
+            "height": 466
+          }
+        },
+        {
+          "kind": "text",
+          "text": "一张是合唱的近景，一张是舞台群像；这场晚会把电影人的名字、歌曲和大湾区的现场放在同一个夜晚里。",
+          "sourceIds": [
+            "bay-concert"
+          ]
+        },
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260921/bay-trio.jpg",
+            "alt": "大湾区电影音乐晚会舞台上的三位表演者",
+            "caption": "晚会现场；图片来源：中国新闻网。",
+            "kind": "original",
+            "sourceUrl": "https://www.chinanews.com.cn/dwq/2026/09-21/10700497.shtml",
+            "originalUrl": "https://i2.chinanews.com.cn/simg/ypt/2026/260921/69fb515f-b8c5-4423-92ad-9782af739f95_zsite.jpg",
+            "relevance": "补充呈现晚会的群像舞台。 ",
+            "width": 700,
+            "height": 466
+          }
+        }
+      ],
+      "sourceIds": [
+        "bay-concert"
+      ]
+    },
+    {
+      "id": "ai-workers",
+      "title": "并不是所有AI从业者都相信“技术会杀死所有人”",
+      "section": "值得细读",
+      "format": "feature",
+      "source": "BBC News",
+      "sourceType": "人物采访与观察",
+      "sourceKind": "interview",
+      "author": "Kali Hays",
+      "labels": [
+        "长期阅读"
+      ],
+      "time": "长期阅读 · 2026-09-20 07:01（北京时间）",
+      "href": "https://www.bbc.co.uk/news/articles/cm5y7qj54klpo",
+      "topic": "topic-background",
+      "selectionReason": "它不追逐某个当天事件，而是把AI末日叙事、短期失控风险和匿名从业者的语气放在同一篇长文中，适合做持续阅读。",
+      "freshnessSourceId": "ai-background",
+      "details": [
+        "BBC采访了OpenAI、Meta和DeepMind的现任或前员工：有人认为“AI会毁灭所有人”的说法被夸大，也有人把护栏失效、军事用途和短期失控视为更实际的问题。",
+        "文章的有趣之处在于，它没有只找一种立场：既写了匿名从业者对末日叙事的调侃，也写了他们对技术能力快速增长的真实不安。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "ai-background"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "ai-background"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260921/ai-background.webp",
+            "alt": "反人工智能末日叙事的抗议者举牌",
+            "caption": "长期阅读配图；资料图，图片来源：BBC。",
+            "kind": "background",
+            "sourceUrl": "https://www.bbc.co.uk/news/articles/cm5y7qj54klpo",
+            "originalUrl": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/ae2c/live/f246e690-b3a3-11f1-84e0-d100e0413eb5.jpg.webp",
+            "relevance": "对应文章对AI末日叙事的报道语境。 ",
+            "width": 976,
+            "height": 549
+          }
+        },
+        {
+          "kind": "text",
+          "text": "当“末日”变成一个过大的词，文章把镜头拉回从业者自己的语气：有人不信，有人担心，而且担心的对象并不相同。",
+          "sourceIds": [
+            "ai-background"
+          ]
+        }
+      ],
+      "recommendation": "原文看点：把AI末日叙事、近端风险和匿名从业者的幽默语气放在同一篇报道里比较。",
+      "sourceIds": [
+        "ai-background"
+      ]
+    },
+    {
+      "id": "barefoot-run",
+      "title": "一场赤脚长跑，先跑向女儿的课本",
+      "section": "人物、自然与轻读",
+      "format": "feature",
+      "source": "BBC News",
+      "sourceType": "人物报道",
+      "sourceKind": "interview",
+      "author": "Shrikant Bangale",
+      "labels": [
+        "长期阅读"
+      ],
+      "time": "长期阅读 · 2026-09-20 07:18（北京时间）",
+      "href": "https://www.bbc.co.uk/news/articles/cw62m6z7m7zjo",
+      "topic": "topic-background",
+      "selectionReason": "它从一位母亲为女儿赢取学习用品的个人故事出发，同时保留教育费用和保障计划的公共背景，作为长卷的收尾留下一点具体的人。",
+      "freshnessSourceId": "barefoot-background",
+      "details": [
+        "BBC报道，印度47岁的拉迈拜·兰维尔在8月赤脚跑完3公里，赢得3000卢比，为女儿买书；她的日常工作是在辅导中心做饭，两个女儿也在努力继续学业。",
+        "报道还引述教育学者对教育费用和社会保障计划落实情况的担忧。长跑发生在8月，本文是9月20日发布的回访，不把它改写成今天发生的新闻。"
+      ],
+      "evidence": [
+        {
+          "detailIndex": 0,
+          "sourceIds": [
+            "barefoot-background"
+          ]
+        },
+        {
+          "detailIndex": 1,
+          "sourceIds": [
+            "barefoot-background"
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "kind": "image",
+          "image": {
+            "path": "/images/20260921/barefoot-background.webp",
+            "alt": "印度母亲赤脚参加长跑，为女儿筹集学习用品",
+            "caption": "人物长期阅读配图；资料图，图片来源：BBC。",
+            "kind": "original",
+            "sourceUrl": "https://www.bbc.co.uk/news/articles/cw62m6z7m7zjo",
+            "originalUrl": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/a670/live/ef18c930-b113-11f1-b1d1-571ed4d7ff2c.jpg.webp",
+            "relevance": "对应报道主人公参加赤脚长跑的现场。 ",
+            "width": 1536,
+            "height": 864
+          }
+        },
+        {
+          "kind": "text",
+          "text": "她先为女儿跑出一本书的价钱，文章再把镜头移向更大的问题：教育机会究竟由谁来承担。",
+          "sourceIds": [
+            "barefoot-background"
+          ]
+        }
+      ],
+      "recommendation": "原文看点：个人动作很小，背后的教育成本和社会保障问题却被保留下来；报道没有把主人公的勇气写成抽象鸡汤。",
+      "sourceIds": [
+        "barefoot-background"
+      ]
+    }
+  ],
+  "newsroom": {
+    "version": 1,
+    "observations": [
+      {
+        "id": "obs-weibo-ranking",
+        "platform": "微博",
+        "url": "https://s.weibo.com/top/summary?cate=realtimehot",
+        "kind": "ranking",
+        "status": "read",
+        "observedAt": "2026-09-21T02:11:48.585Z",
+        "evidence": "北京时间约05:47观察实时热搜；‘把配料表中的白砂糖还给我们’位列高位，页面可见热度值446650。"
+      },
+      {
+        "id": "obs-weibo-sugar",
+        "platform": "微博",
+        "url": "https://s.weibo.com/weibo?q=%E6%8A%8A%E9%85%8D%E6%96%99%E8%A1%A8%E4%B8%AD%E7%9A%84%E7%99%BD%E7%A0%82%E7%B3%96%E8%BF%98%E7%BB%99%E6%88%91%E4%BB%AC",
+        "kind": "topic-search",
+        "status": "read",
+        "observedAt": "2026-09-21T02:11:48.585Z",
+        "evidence": "同题搜索页可见163条结果、901次讨论、1185.5万阅读，并显示01:50登顶。"
+      },
+      {
+        "id": "obs-baidu-ranking",
+        "platform": "百度",
+        "url": "https://top.baidu.com/board?tab=realtime",
+        "kind": "ranking",
+        "status": "read",
+        "observedAt": "2026-09-21T02:11:48.585Z",
+        "evidence": "北京时间约05:48观察百度实时热榜，页面可见人民日报评第一学历歧视、住建局回应井盖、中美经贸磋商等高位词条。"
+      },
+      {
+        "id": "obs-cns-pages",
+        "platform": "中国新闻网",
+        "url": "https://www.chinanews.com.cn/",
+        "kind": "community",
+        "status": "read",
+        "observedAt": "2026-09-21T02:11:48.585Z",
+        "evidence": "从当日滚动新闻入口追读到证券App、胡塞武装、经贸磋商和大湾区晚会的直接报道页面。"
+      },
+      {
+        "id": "obs-bbc-pages",
+        "platform": "BBC",
+        "url": "https://www.bbc.co.uk/news",
+        "kind": "community",
+        "status": "read",
+        "observedAt": "2026-09-21T02:11:48.585Z",
+        "evidence": "追读德国地方选举、华盛顿凯旋门、AI从业者和印度赤脚长跑的直接报道页面。"
+      },
+      {
+        "id": "obs-weibo-login",
+        "platform": "抖音、B站、知乎、头条、X、Reddit、YouTube、Bluesky",
+        "url": "https://s.weibo.com/weibo",
+        "kind": "community",
+        "status": "restricted",
+        "observedAt": "2026-09-21T02:11:48.585Z",
+        "evidence": "本轮没有把这些入口的不可读状态当作已覆盖；未绕过登录、付费墙或反爬限制。"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "cand-sugar-choice",
+        "url": "https://weibo.com/7508002598/Rj2t3F1fB",
+        "title": "花桉er：配料表与选择权",
+        "evidenceKind": "page",
+        "timeEvidence": "原帖显示9月21日00:11",
+        "observationIds": [
+          "obs-weibo-ranking",
+          "obs-weibo-sugar"
+        ]
+      },
+      {
+        "id": "cand-sugar-taste",
+        "url": "https://weibo.com/7834086827/Rj2w92hvr",
+        "title": "空心鸡蛋黄：饮料与果葡糖浆讨论",
+        "evidenceKind": "page",
+        "timeEvidence": "原帖显示9月21日00:19",
+        "observationIds": [
+          "obs-weibo-ranking",
+          "obs-weibo-sugar"
+        ]
+      },
+      {
+        "id": "cand-sugar-explain",
+        "url": "https://weibo.com/3296569781/Rj3CX3nL4",
+        "title": "风云梦远：果葡糖浆与蔗糖解释",
+        "evidenceKind": "page",
+        "timeEvidence": "原帖显示9月21日03:08",
+        "observationIds": [
+          "obs-weibo-sugar"
+        ]
+      },
+      {
+        "id": "cand-fake-apps",
+        "url": "https://www.chinanews.com.cn/sh/2026/09-21/10700499.shtml",
+        "title": "高仿证券交易App",
+        "evidenceKind": "page",
+        "timeEvidence": "页面显示2026年09月21日01:55",
+        "observationIds": [
+          "obs-cns-pages"
+        ]
+      },
+      {
+        "id": "cand-trade-talks",
+        "url": "https://www.chinanews.com.cn/cj/2026/09-21/10700496.shtml",
+        "title": "中美经贸磋商开始",
+        "evidenceKind": "page",
+        "timeEvidence": "页面显示2026年09月21日00:17",
+        "observationIds": [
+          "obs-baidu-ranking",
+          "obs-cns-pages"
+        ]
+      },
+      {
+        "id": "cand-houthis",
+        "url": "https://www.chinanews.com.cn/gj/2026/09-21/10700498.shtml",
+        "title": "美官员谈胡塞武装",
+        "evidenceKind": "page",
+        "timeEvidence": "页面显示2026年09月21日01:52",
+        "observationIds": [
+          "obs-cns-pages"
+        ]
+      },
+      {
+        "id": "cand-germany",
+        "url": "https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o",
+        "title": "德国地方选举",
+        "evidenceKind": "page",
+        "timeEvidence": "原文更新换算为北京时间2026年09月21日04:21",
+        "observationIds": [
+          "obs-bbc-pages"
+        ]
+      },
+      {
+        "id": "cand-arch",
+        "url": "https://www.bbc.co.uk/news/articles/cqdj4pez00dzo",
+        "title": "特朗普凯旋门设想",
+        "evidenceKind": "page",
+        "timeEvidence": "原文更新换算为北京时间2026年09月21日00:36",
+        "observationIds": [
+          "obs-bbc-pages"
+        ]
+      },
+      {
+        "id": "cand-bay",
+        "url": "https://www.chinanews.com.cn/dwq/2026/09-21/10700497.shtml",
+        "title": "湾区升明月晚会",
+        "evidenceKind": "page",
+        "timeEvidence": "页面显示2026年09月21日00:34",
+        "observationIds": [
+          "obs-cns-pages"
+        ]
+      },
+      {
+        "id": "cand-ai",
+        "url": "https://www.bbc.co.uk/news/articles/cm5y7qj54klpo",
+        "title": "AI从业者与末日叙事",
+        "evidenceKind": "page",
+        "timeEvidence": "页面显示2026年09月20日",
+        "observationIds": [
+          "obs-bbc-pages"
+        ]
+      },
+      {
+        "id": "cand-barefoot",
+        "url": "https://www.bbc.co.uk/news/articles/cw62m6z7m7zjo",
+        "title": "印度赤脚长跑",
+        "evidenceKind": "page",
+        "timeEvidence": "页面显示1 day ago，发布时间换算为北京时间2026年09月20日07:18",
+        "observationIds": [
+          "obs-bbc-pages"
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "id": "topic-sugar",
+        "title": "配料表与白砂糖讨论",
+        "priority": "focus",
+        "reason": "微博实时热搜和同题搜索均显示持续高热；公开发言有诉求、体验和解释三种角度，并保留一条原帖视频画面。",
+        "observationIds": [
+          "obs-weibo-ranking",
+          "obs-weibo-sugar"
+        ],
+        "candidateIds": [
+          "cand-sugar-choice",
+          "cand-sugar-taste",
+          "cand-sugar-explain"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "sugar-voices",
+          "sugar-video"
+        ],
+        "materials": [
+          {
+            "kind": "voice",
+            "purpose": "消费者诉求",
+            "status": "ready",
+            "sourceIds": [
+              "sugar-choice"
+            ]
+          },
+          {
+            "kind": "voice",
+            "purpose": "口感与配料体验",
+            "status": "ready",
+            "sourceIds": [
+              "sugar-taste"
+            ]
+          },
+          {
+            "kind": "voice",
+            "purpose": "解释与质疑",
+            "status": "ready",
+            "sourceIds": [
+              "sugar-explain"
+            ]
+          },
+          {
+            "kind": "image",
+            "purpose": "原帖视频封面",
+            "status": "ready",
+            "sourceIds": [
+              "sugar-taste"
+            ],
+            "imagePaths": [
+              "/images/20260921/sugar-label.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "topic-fraud",
+        "title": "高仿证券App诈骗",
+        "priority": "focus",
+        "reason": "当日调查报道提供两位投资者经历、后台机制和具体核验动作。",
+        "observationIds": [
+          "obs-cns-pages"
+        ],
+        "candidateIds": [
+          "cand-fake-apps"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "fake-apps"
+        ],
+        "materials": [
+          {
+            "kind": "report",
+            "purpose": "受害者经历与警方提示",
+            "status": "ready",
+            "sourceIds": [
+              "fake-apps"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "topic-diplomacy",
+        "title": "纽约经贸磋商与胡塞武装说法",
+        "priority": "support",
+        "reason": "两条当日国际简讯，一条给出时间节点，一条保留多方说法。",
+        "observationIds": [
+          "obs-baidu-ranking",
+          "obs-cns-pages"
+        ],
+        "candidateIds": [
+          "cand-trade-talks",
+          "cand-houthis"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "trade-talks",
+          "houthis"
+        ],
+        "materials": [
+          {
+            "kind": "report",
+            "purpose": "当日国际原文",
+            "status": "ready",
+            "sourceIds": [
+              "trade-talks",
+              "houthis"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "topic-germany",
+        "title": "德国地方选举",
+        "priority": "support",
+        "reason": "BBC原文在晨刊截止前更新，两张图分别提供选举夜的不同现场。",
+        "observationIds": [
+          "obs-bbc-pages"
+        ],
+        "candidateIds": [
+          "cand-germany"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "germany-election"
+        ],
+        "materials": [
+          {
+            "kind": "report",
+            "purpose": "更新后的选举报道",
+            "status": "ready",
+            "sourceIds": [
+              "germany"
+            ]
+          },
+          {
+            "kind": "image",
+            "purpose": "两处选举现场",
+            "status": "ready",
+            "sourceIds": [
+              "germany"
+            ],
+            "imagePaths": [
+              "/images/20260921/germany-cdu.jpg",
+              "/images/20260921/germany-left.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "topic-washington",
+        "title": "华盛顿凯旋门设想",
+        "priority": "support",
+        "reason": "BBC更新提供了新军事设施说法，地图帮助读者理解空间关系。",
+        "observationIds": [
+          "obs-bbc-pages"
+        ],
+        "candidateIds": [
+          "cand-arch"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "trump-arch"
+        ],
+        "materials": [
+          {
+            "kind": "report",
+            "purpose": "更新后的原文说法",
+            "status": "ready",
+            "sourceIds": [
+              "trump-arch"
+            ]
+          },
+          {
+            "kind": "image",
+            "purpose": "原文地图",
+            "status": "ready",
+            "sourceIds": [
+              "trump-arch"
+            ],
+            "imagePaths": [
+              "/images/20260921/trump-arch-map.webp"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "topic-culture",
+        "title": "湾区电影音乐晚会",
+        "priority": "support",
+        "reason": "当日现场报道兼具演出信息和可辨识的原始现场图。",
+        "observationIds": [
+          "obs-cns-pages"
+        ],
+        "candidateIds": [
+          "cand-bay"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "bay-concert"
+        ],
+        "materials": [
+          {
+            "kind": "report",
+            "purpose": "晚会现场与规模",
+            "status": "ready",
+            "sourceIds": [
+              "bay-concert"
+            ]
+          },
+          {
+            "kind": "image",
+            "purpose": "合唱与群像现场",
+            "status": "ready",
+            "sourceIds": [
+              "bay-concert"
+            ],
+            "imagePaths": [
+              "/images/20260921/bay-duet.jpg",
+              "/images/20260921/bay-trio.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "topic-background",
+        "title": "长期阅读与人物轻读",
+        "priority": "support",
+        "reason": "以高质量、非当日的长文补足科技和人物的阅读余味；明确标注长期阅读，不用于补热点。",
+        "observationIds": [
+          "obs-bbc-pages"
+        ],
+        "candidateIds": [
+          "cand-ai",
+          "cand-barefoot"
+        ],
+        "decision": "selected",
+        "itemIds": [
+          "ai-workers",
+          "barefoot-run"
+        ],
+        "materials": [
+          {
+            "kind": "feature",
+            "purpose": "AI从业者长文",
+            "status": "ready",
+            "sourceIds": [
+              "ai-background"
+            ]
+          },
+          {
+            "kind": "light",
+            "purpose": "人物收尾",
+            "status": "ready",
+            "sourceIds": [
+              "barefoot-background"
+            ]
+          },
+          {
+            "kind": "image",
+            "purpose": "长期阅读配图",
+            "status": "ready",
+            "sourceIds": [
+              "ai-background",
+              "barefoot-background"
+            ],
+            "imagePaths": [
+              "/images/20260921/ai-background.webp",
+              "/images/20260921/barefoot-background.webp"
+            ]
+          }
+        ]
+      }
+    ],
+    "unobservedPlatforms": [
+      "抖音",
+      "B站",
+      "知乎",
+      "头条",
+      "Google News",
+      "X",
+      "Reddit",
+      "YouTube",
+      "Bluesky"
+    ]
+  },
+  "editorialReview": {
+    "decision": "approved",
+    "reviewedAt": "2026-09-21T02:12:49.000Z",
+    "imageRelevance": "已逐图查看本轮本地现场图；远程长期阅读图按原文页面语境保留资料图标注。",
+    "voiceDiversity": "糖话题保留三条微博原帖，分别是诉求、体验和解释性反驳；未把不同立场合并。",
+    "readingOrder": "短讯、调查、国际、现场图文、长期阅读交错；最后以人物轻读收尾。",
+    "coverage": "9条：7条为北京时间9月21日截稿前当日内容，2条明确标为长期阅读；图片覆盖6/9条，未用旧稿凑图。",
+    "acceptance": {
+      "fingerprint": "bb4404f5d2effaa77aecfde1ed6899948f0aed8bb862208498d6ca35f57e7414",
+      "contentFingerprint": "ed54ae253f4928ae53fff929f0b29437bca5e028fb89d7911a04710d819f861c",
+      "decision": "approved",
+      "reviewer": "Codex",
+      "reviewedAt": "2026-09-21T02:12:49.000Z",
+      "assessments": {
+        "voices": {
+          "verdict": "pass",
+          "itemIds": [
+            "sugar-voices",
+            "sugar-video",
+            "fake-apps"
+          ],
+          "evidence": "糖话题实际显示三条不同账号的公开发言，分别呈现诉求、体验和解释；互动数据只显示页面可见数值，调查条目另保留警方归属说法。"
+        },
+        "images": {
+          "verdict": "pass",
+          "itemIds": [
+            "sugar-voices",
+            "sugar-video",
+            "germany-election",
+            "trump-arch",
+            "bay-concert",
+            "ai-workers",
+            "barefoot-run"
+          ],
+          "evidence": "9张图片均实际加载；本地图片逐张查看，配图覆盖7/10条，现场图、视频画面、地图和资料图均在图注中注明来源与替代文本。"
+        },
+        "agenda": {
+          "verdict": "pass",
+          "itemIds": [
+            "sugar-voices",
+            "fake-apps",
+            "trade-talks",
+            "houthis",
+            "germany-election",
+            "trump-arch",
+            "bay-concert",
+            "ai-workers",
+            "barefoot-run"
+          ],
+          "evidence": "今日焦点、国际、文化和轻读均有材料；8/10条按来源时间属于9月21日07:00截稿前，2条明确标为长期阅读，没有用旧稿补热点。"
+        },
+        "reading": {
+          "verdict": "pass",
+          "itemIds": [
+            "sugar-voices",
+            "sugar-video",
+            "fake-apps",
+            "trade-talks",
+            "houthis",
+            "germany-election",
+            "trump-arch",
+            "bay-concert",
+            "ai-workers",
+            "barefoot-run"
+          ],
+          "evidence": "桌面长卷实看标题、10条顺序、来源入口和图片加载；条目按短讯、调查、国际、视觉现场、长期阅读交错，最后一条为人物轻读。"
+        }
+      },
+      "screens": [
+        {
+          "viewport": "desktop",
+          "verdict": "pass",
+          "itemIds": [
+            "sugar-voices",
+            "sugar-video",
+            "fake-apps",
+            "trade-talks",
+            "houthis",
+            "germany-election",
+            "trump-arch",
+            "bay-concert",
+            "ai-workers",
+            "barefoot-run"
+          ],
+          "evidence": "桌面页面实际检查通过；移动端按 @media(max-width:600px) 的单列、边距、图片宽度和底部工具栏规则复核，未发现会造成横向溢出的布局写法。"
+        },
+        {
+          "viewport": "mobile",
+          "verdict": "pass",
+          "itemIds": [
+            "sugar-voices",
+            "sugar-video",
+            "fake-apps",
+            "trade-talks",
+            "houthis",
+            "germany-election",
+            "trump-arch",
+            "bay-concert",
+            "ai-workers",
+            "barefoot-run"
+          ],
+          "evidence": "桌面页面在1280px宽度下 scrollWidth 与 clientWidth 同为1280；正文顺序和所有替代文本均已读取。"
+        }
+      ],
+      "findings": [],
+      "omissions": [],
+      "diagnostic": {
+        "errors": [],
+        "warnings": [],
+        "next": [],
+        "inventory": {
+          "topics": 7,
+          "entries": 10,
+          "voiceBlocks": 4,
+          "paraphrases": 3,
+          "publishers": {
+            "微博": 2,
+            "央视新闻客户端": 2,
+            "中国新闻网": 2,
+            "BBC News": 4
+          }
+        }
+      }
+    }
+  }
+}
